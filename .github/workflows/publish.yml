@@ -6,8 +6,7 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
+  actions: write
 
 concurrency:
   group: publish
@@ -47,16 +46,14 @@ jobs:
           git add -A episodes.json episodes bolum feed.xml index.html
           git commit -m "Bölüm: $(python3 -c "import json;print(json.load(open('../payload/inbox/episode.json'))['title'])")" || echo "no changes"
           git push origin HEAD:master
+      # A push made with GITHUB_TOKEN does not trigger other workflows, and the github-pages
+      # environment only accepts deployments from master, so start the Pages workflow on master.
+      - name: Deploy Pages
+        if: steps.meta.outputs.test != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --repo "${{ github.repository }}" --ref master
       - name: Delete inbox branch
         if: always()
         working-directory: site
         run: git push origin --delete "${{ github.ref_name }}"
-
-  deploy:
-    needs: ingest
-    if: needs.ingest.outputs.test != 'true'
-    uses: ./.github/workflows/pages.yml
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
