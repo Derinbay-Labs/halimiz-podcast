@@ -30,7 +30,7 @@ def main():
         tag = f"test-{date}"
         subprocess.run(["gh", "release", "create", tag, str(mp3), "--repo", repo, "--target", "master",
                         "--draft", "--title", f"TEST {meta['title']}", "--notes", "test"], check=True)
-        subprocess.run(["gh", "release", "delete", tag, "--repo", repo, "--yes", "--cleanup-tag"], check=True)
+        subprocess.run(["gh", "release", "delete", tag, "--repo", repo, "--yes"], check=True)
         print(f"test ok: draft release with {mp3.stat().st_size} bytes created and deleted")
 
     exists = (not meta.get("test")) and subprocess.run(
