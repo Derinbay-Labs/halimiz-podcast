@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:podcast="https://podcastindex.org/namespace/1.0">
+<channel>
+<title>HAL'imiz Ne Olacak?</title>
+<link>https://halimiz.derinbay.com/</link>
+<atom:link href="https://halimiz.derinbay.com/feed.xml" rel="self" type="application/rss+xml"/>
+<language>tr</language>
+<copyright>© 2026 Derinbay Labs</copyright>
+<description><![CDATA[Her sabah yapay zekâ ve teknoloji dünyasının öne çıkan haberleri, kaynaklarıyla. HAL'imiz Ne Olacak? (Halimiz Ne Olacak), Derinbay Labs'in günlük yapay zekâ ve teknoloji programı: model ve ürün lansmanları, şirket duyuruları, araştırmalar, yatırımlar ve regülasyon. Bölümler yapay zekâ ile üretilir; tüm kaynaklar bölüm notlarında.]]></description>
+<itunes:summary><![CDATA[Her sabah yapay zekâ ve teknoloji dünyasının öne çıkan haberleri, kaynaklarıyla. HAL'imiz Ne Olacak? (Halimiz Ne Olacak), Derinbay Labs'in günlük yapay zekâ ve teknoloji programı: model ve ürün lansmanları, şirket duyuruları, araştırmalar, yatırımlar ve regülasyon. Bölümler yapay zekâ ile üretilir; tüm kaynaklar bölüm notlarında.]]></itunes:summary>
+<itunes:author>Derinbay Labs</itunes:author>
+<itunes:owner><itunes:name>Derinbay Labs</itunes:name><itunes:email>podcast@derinbay.com</itunes:email></itunes:owner>
+<itunes:image href="https://halimiz.derinbay.com/assets/cover.jpg"/>
+<image><url>https://halimiz.derinbay.com/assets/cover.jpg</url><title>HAL'imiz Ne Olacak?</title><link>https://halimiz.derinbay.com/</link></image>
+<itunes:category text="Technology"><itunes:category text="Tech News"/></itunes:category>
+<itunes:explicit>false</itunes:explicit>
+<itunes:type>episodic</itunes:type>
+<podcast:guid>ed974b2e-9ded-53a9-b6ef-8a43cbb481e2</podcast:guid>
+<podcast:locked>no</podcast:locked>
+<podcast:medium>podcast</podcast:medium>
+<lastBuildDate>Tue, 03 Nov 2026 16:59:31 +0000</lastBuildDate>
+<generator>Derinbay Labs halimiz-podcast</generator>
+</channel></rss>

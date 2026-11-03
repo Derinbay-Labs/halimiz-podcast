@@ -1,0 +1,20 @@
+{
+  "title": "HAL'imiz Ne Olacak?",
+  "author": "Derinbay Labs",
+  "owner_name": "Derinbay Labs",
+  "owner_email": "podcast@derinbay.com",
+  "site_url": "https://halimiz.derinbay.com",
+  "feed_path": "feed.xml",
+  "language": "tr",
+  "copyright": "© 2026 Derinbay Labs",
+  "category": "Technology",
+  "subcategory": "Tech News",
+  "explicit": false,
+  "type": "episodic",
+  "cover_path": "assets/cover.jpg",
+  "tagline": "Her sabah yapay zekâ dünyasında olanlar ve bizim için anlamı.",
+  "description": "Her sabah yapay zekâ ve teknoloji dünyasının öne çıkan haberleri, kaynaklarıyla. HAL'imiz Ne Olacak? (Halimiz Ne Olacak), Derinbay Labs'in günlük yapay zekâ ve teknoloji programı: model ve ürün lansmanları, şirket duyuruları, araştırmalar, yatırımlar ve regülasyon. Bölümler yapay zekâ ile üretilir; tüm kaynaklar bölüm notlarında.",
+  "ai_disclosure": "Bu bölüm yapay zekâ ile üretilmiştir. Sesler yapay zekâ sunuculara aittir; içerik, kaynakları bölüm notlarında verilen günlük bültene dayanır. Doğrulanmamış iddialar bölümde öyle belirtilir.",
+  "github_repo": "Derinbay-Labs/halimiz-podcast",
+  "publisher_url": "https://derinbay.com"
+}
