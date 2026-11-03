@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "date": "2026-11-03",
+    "title": "3 Kasım: Anthropic'in halka arz belgesi, Marvell–Lumentum, Apple'ın rekoru",
+    "summary": "Anthropic'in güncellenen halka arz belgesi ~17 milyar $'lık çeyrek geliri ve \"yapay zekâyla dramatik hızlanma\" eşiğine yaklaşıldığı uyarısını ortaya koydu; Marvell, Lumentum'u 115 milyar $'a alarak tarihin en büyük halka açık teknoloji birleşmesini duyurdu, Apple ise rekor eylül çeyreği açıkladı.",
+    "audio_url": "https://github.com/Derinbay-Labs/halimiz-podcast/releases/download/2026-11-03/halimiz-2026-11-03.mp3",
+    "audio_bytes": 21888194,
+    "duration_seconds": 1824.0,
+    "guid": "halimiz-2026-11-03",
+    "notes_md": "episodes/2026-11-03/notes.md",
+    "pub_date": "2026-11-03T21:19:53+03:00"
+  }
+]
