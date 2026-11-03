@@ -20,4 +20,4 @@ python3 tools/build.py          # yalnızca besleme ve sayfaları yeniden üretm
 
 `podcast.json` program kimliğini tutar (ad, yayıncı, açıklama, kategori, AI beyanı). Kapak: `assets/cover.html` → `assets/cover.jpg` (3000×3000).
 
-Bölümler yapay zekâ ile üretilir; kaynaklar her bölümün notlarında.
+Bölümler yapay zekâ yardımı ile hazırlanır; kaynaklar her bölümün notlarında.
