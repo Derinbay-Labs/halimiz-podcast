@@ -16,6 +16,8 @@ concurrency:
 jobs:
   ingest:
     runs-on: ubuntu-latest
+    outputs:
+      test: ${{ steps.meta.outputs.test }}
     steps:
       - name: Checkout master
         uses: actions/checkout@v4
@@ -27,12 +29,17 @@ jobs:
         with:
           ref: ${{ github.ref_name }}
           path: payload
+      - name: Read episode metadata
+        id: meta
+        run: |
+          echo "test=$(python3 -c "import json;print(str(json.load(open('payload/inbox/episode.json')).get('test', False)).lower())")" >> "$GITHUB_OUTPUT"
       - name: Release + episodes.json + feed
         working-directory: site
         env:
           GH_TOKEN: ${{ github.token }}
         run: python3 tools/ingest.py ../payload/inbox
       - name: Commit to master
+        if: steps.meta.outputs.test != 'true'
         working-directory: site
         run: |
           git config user.name "Derinbay Labs"
@@ -41,11 +48,13 @@ jobs:
           git commit -m "Bölüm: $(python3 -c "import json;print(json.load(open('../payload/inbox/episode.json'))['title'])")" || echo "no changes"
           git push origin HEAD:master
       - name: Delete inbox branch
+        if: always()
         working-directory: site
         run: git push origin --delete "${{ github.ref_name }}"
 
   deploy:
     needs: ingest
+    if: needs.ingest.outputs.test != 'true'
     uses: ./.github/workflows/pages.yml
     permissions:
       contents: read

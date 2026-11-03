@@ -74,6 +74,7 @@ def main():
     ap.add_argument("--title")
     ap.add_argument("--summary")
     ap.add_argument("--no-push", action="store_true")
+    ap.add_argument("--test", action="store_true", help="draft release only, nothing public")
     a = ap.parse_args()
 
     show = json.loads((ROOT / "podcast.json").read_text(encoding="utf-8"))
@@ -94,6 +95,9 @@ def main():
            else datetime.fromisoformat(a.date).replace(hour=7, tzinfo=IST)).replace(microsecond=0)
     meta = {"date": a.date, "title": title, "summary": summary, "asset": asset,
             "audio_bytes": size, "duration_seconds": round(secs, 1), "pub_date": pub.isoformat()}
+    if a.test:
+        meta["test"] = True
+    branch = f"inbox/test-{a.date}" if a.test else f"inbox/{a.date}"
     (inbox / "inbox" / "episode.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n",
                                                  encoding="utf-8")
     (inbox / "inbox" / "notes.md").write_text(notes, encoding="utf-8")
@@ -101,11 +105,11 @@ def main():
     if not a.no_push:
         url = f"https://github.com/{show['github_repo']}"
         g = ["git", "-C", str(inbox)]
-        run(g + ["init", "-q", "-b", f"inbox/{a.date}"])
+        run(g + ["init", "-q", "-b", branch])
         run(g + ["add", "inbox"])
         run(g + ["-c", "user.name=Derinbay Labs", "-c", "user.email=podcast@derinbay.com",
                  "commit", "-qm", f"inbox: {title}"])
-        run(g + ["push", "-f", url, f"HEAD:refs/heads/inbox/{a.date}"])
+        run(g + ["push", "-f", url, f"HEAD:refs/heads/{branch}"])
     print(json.dumps(meta, ensure_ascii=False))
 
 

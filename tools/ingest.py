@@ -25,8 +25,19 @@ def main():
     date, asset = meta["date"], meta["asset"]
     mp3 = inbox / asset
 
-    exists = subprocess.run(["gh", "release", "view", date, "--repo", repo], capture_output=True).returncode == 0
-    if exists:
+    if meta.get("test"):
+        # test run: draft release (never public) + upload, then remove it again
+        tag = f"test-{date}"
+        subprocess.run(["gh", "release", "create", tag, str(mp3), "--repo", repo, "--target", "master",
+                        "--draft", "--title", f"TEST {meta['title']}", "--notes", "test"], check=True)
+        subprocess.run(["gh", "release", "delete", tag, "--repo", repo, "--yes", "--cleanup-tag"], check=True)
+        print(f"test ok: draft release with {mp3.stat().st_size} bytes created and deleted")
+
+    exists = (not meta.get("test")) and subprocess.run(
+        ["gh", "release", "view", date, "--repo", repo], capture_output=True).returncode == 0
+    if meta.get("test"):
+        pass
+    elif exists:
         subprocess.run(["gh", "release", "upload", date, str(mp3), "--repo", repo, "--clobber"], check=True)
     else:
         subprocess.run(["gh", "release", "create", date, str(mp3), "--repo", repo, "--target", "master",
