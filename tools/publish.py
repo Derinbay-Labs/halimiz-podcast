@@ -103,13 +103,20 @@ def main():
     (inbox / "inbox" / "notes.md").write_text(notes, encoding="utf-8")
 
     if not a.no_push:
-        url = f"https://github.com/{show['github_repo']}"
-        g = ["git", "-C", str(inbox)]
-        run(g + ["init", "-q", "-b", branch])
-        run(g + ["add", "inbox"])
-        run(g + ["-c", "user.name=Derinbay Labs", "-c", "user.email=podcast@derinbay.com",
+        # the branch must start from master so it carries .github/workflows/publish.yml
+        wt = ROOT / "build" / f"wt-{a.date}"
+        g = ["git", "-C", str(ROOT)]
+        run(g + ["fetch", "-q", "origin", "master"])
+        if wt.exists():
+            run(g + ["worktree", "remove", "--force", str(wt)])
+        run(g + ["worktree", "add", "-q", "--detach", str(wt), "FETCH_HEAD"])
+        shutil.copytree(inbox / "inbox", wt / "inbox")
+        w = ["git", "-C", str(wt)]
+        run(w + ["add", "inbox"])
+        run(w + ["-c", "user.name=Derinbay Labs", "-c", "user.email=podcast@derinbay.com",
                  "commit", "-qm", f"inbox: {title}"])
-        run(g + ["push", "-f", url, f"HEAD:refs/heads/{branch}"])
+        run(w + ["push", "-f", "origin", f"HEAD:refs/heads/{branch}"])
+        run(g + ["worktree", "remove", "--force", str(wt)])
     print(json.dumps(meta, ensure_ascii=False))
 
 
