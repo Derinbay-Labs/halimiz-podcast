@@ -164,128 +164,16 @@ def build_feed(show, episodes):
     (ROOT / show["feed_path"]).write_text("\n".join(x) + "\n", encoding="utf-8")
 
 
-# ---------- pages ----------
+# ---------- pages (see tools/pages.py for the design) ----------
 
-CSS = """
-:root{--bg:#f6f4ef;--fg:#16181d;--muted:#5c6170;--line:#dcd8cf;--accent:#c2410c;--card:#fffdf8}
-@media (prefers-color-scheme:dark){:root{--bg:#111318;--fg:#ecebe6;--muted:#a3a7b3;--line:#2a2e38;--accent:#f59e0b;--card:#171a21}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
-main{max-width:760px;margin:0 auto;padding:32px 16px 64px}a{color:var(--accent)}
-header.show{display:flex;gap:24px;align-items:center;margin-bottom:32px;flex-wrap:wrap}
-header.show img{width:160px;height:160px;border-radius:12px}
-h1{font-size:2rem;line-height:1.15;margin:0 0 8px}h2{font-size:1.35rem;margin:40px 0 12px}h3{font-size:1.1rem;margin:28px 0 8px}
-.muted{color:var(--muted)}.tag{font-size:.95rem;color:var(--muted);margin:0}
-ul.eps{list-style:none;padding:0;margin:0}ul.eps li{border-top:1px solid var(--line);padding:16px 0}
-ul.eps a.t{font-weight:600;color:var(--fg);text-decoration:none}ul.eps a.t:hover{color:var(--accent)}
-audio{width:100%;margin:16px 0}.note{font-size:.9rem;color:var(--muted);border-left:3px solid var(--line);padding-left:12px}
-.sub a{display:inline-block;margin:0 12px 8px 0}
-.listen{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 8px}
-.listen a.pf{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;text-decoration:none;font-size:.95rem;font-weight:700;transition:transform .12s,filter .12s}
-.listen a.pf:hover{transform:translateY(-1px);filter:brightness(1.08)}
-.listen a.pf img{width:20px;height:20px;display:block}
-.listen a.rss{background:var(--card);color:var(--fg);border:1px solid var(--line)}
-footer{margin-top:48px;font-size:.9rem;color:var(--muted)}
-"""
-
-
-def page(show, title, desc, canonical, body, jsonld):
-    return f"""<!doctype html>
-<html lang="tr"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{html.escape(title)}</title>
-<meta name="description" content="{html.escape(desc, quote=True)}">
-<link rel="canonical" href="{canonical}">
-<link rel="alternate" type="application/rss+xml" title="{html.escape(show['title'])}" href="{show['site_url'].rstrip('/')}/{show['feed_path']}">
-<meta property="og:title" content="{html.escape(title, quote=True)}">
-<meta property="og:description" content="{html.escape(desc, quote=True)}">
-<meta property="og:image" content="{show['site_url'].rstrip('/')}/{show['cover_path']}">
-<meta property="og:url" content="{canonical}"><meta property="og:type" content="website">
-<link rel="icon" href="/assets/cover-small.jpg">
-<style>{CSS}</style>
-<script type="application/ld+json">{json.dumps(jsonld, ensure_ascii=False)}</script>
-</head><body><main>
-{body}
-<footer>{html.escape(show['copyright'])} · <a href="{show['publisher_url']}">Derinbay Labs</a> · <a href="/{show['feed_path']}">RSS</a></footer>
-</main></body></html>
-"""
-
-
-def listen_links(show):
-    """Buttons for the platforms the show is live on (podcast.json "platforms" with a url) + RSS."""
-    links = []
-    for p in show.get("platforms", []):
-        if not p.get("url"):
-            continue
-        color = p.get("color", "#444444")
-        style = f"background:{color};color:{text_on(color)}"
-        # official badge/icon, if one has been placed at assets/badges/<slug>.svg or .png
-        icon = ""
-        for ext in ("svg", "png"):
-            if (ROOT / "assets" / "badges" / f"{p.get('slug')}.{ext}").exists():
-                icon = f'<img src="/assets/badges/{p["slug"]}.{ext}" alt="" width="20" height="20">'
-                break
-        links.append(f'<a class="pf" style="{style}" href="{html.escape(p["url"], quote=True)}" '
-                     f'rel="noopener">{icon}{html.escape(p["label"])}</a>')
-    links.append(f'<a class="pf rss" href="/{show["feed_path"]}">RSS</a>')
-    return '<p class="listen">' + "".join(links) + "</p>"
-
-
-def text_on(hex_color):
-    """Black or white text, whichever reads better on the given background."""
-    r, g, b = (int(hex_color.lstrip("#")[i:i + 2], 16) / 255 for i in (0, 2, 4))
-    lin = [c / 12.92 if c <= 0.04045 else ((c + 0.055) / 1.055) ** 2.4 for c in (r, g, b)]
-    lum = 0.2126 * lin[0] + 0.7152 * lin[1] + 0.0722 * lin[2]
-    return "#000000" if (lum + 0.05) / 0.05 > 1.05 / (lum + 0.05) else "#ffffff"
+def notes_md(ep):
+    path = ROOT / ep["notes_md"]
+    return path.read_text(encoding="utf-8") if path.exists() else ""
 
 
 def build_pages(show, episodes):
-    site = show["site_url"].rstrip("/")
-    cover = f"/{show['cover_path']}"
-    series = {"@type": "PodcastSeries", "name": show["title"], "url": site + "/",
-              "webFeed": f"{site}/{show['feed_path']}", "inLanguage": "tr",
-              "author": {"@type": "Organization", "name": show["author"], "url": show["publisher_url"]},
-              "image": site + cover, "description": show["description"]}
-    same_as = [p["url"] for p in show.get("platforms", []) if p.get("url")]
-    if same_as:
-        series["sameAs"] = same_as
-    items = []
-    for ep in episodes:
-        items.append(f'<li><a class="t" href="/bolum/{ep["date"]}/">{html.escape(ep["title"])}</a>'
-                     f'<br><span class="muted">{tr_date(ep["date"])} · {round(ep["duration_seconds"] / 60)} dk</span>'
-                     f'<p class="tag">{html.escape(ep["summary"])}</p></li>')
-    body = f"""<header class="show"><img src="{cover}" alt="{html.escape(show['title'])} kapak görseli" width="160" height="160">
-<div><h1>{html.escape(show['title'])}</h1><p class="tag">{html.escape(show['tagline'])}</p>
-<p class="muted">Yayıncı: {html.escape(show['author'])}</p></div></header>
-{listen_links(show)}
-<p>{html.escape(show['description'])}</p>
-<h2>Bölümler</h2>
-{'<ul class="eps">' + ''.join(items) + '</ul>' if items else '<p class="muted">İlk bölüm çok yakında.</p>'}
-"""
-    (ROOT / "index.html").write_text(
-        page(show, f"{show['title']} — Günlük yapay zekâ ve teknoloji podcasti", show["description"],
-             site + "/", body, series), encoding="utf-8")
-
-    for ep in episodes:
-        d = ROOT / "bolum" / ep["date"]
-        d.mkdir(parents=True, exist_ok=True)
-        url = f"{site}/bolum/{ep['date']}/"
-        ld = {"@context": "https://schema.org", "@type": "PodcastEpisode", "name": ep["title"], "url": url,
-              "datePublished": ep["date"], "description": ep["summary"], "inLanguage": "tr",
-              "timeRequired": f"PT{int(ep['duration_seconds'] // 60)}M",
-              "associatedMedia": {"@type": "MediaObject", "contentUrl": ep["audio_url"]},
-              "partOfSeries": {"@type": "PodcastSeries", "name": show["title"], "url": site + "/"}}
-        body = f"""<p><a href="/">← {html.escape(show['title'])}</a></p>
-<h1>{html.escape(ep['title'])}</h1>
-<p class="muted">{tr_date(ep['date'])} · {show['author']}</p>
-<audio controls preload="none" src="{html.escape(ep['audio_url'], quote=True)}"></audio>
-{listen_links(show)}
-<p><strong>{html.escape(ep['summary'])}</strong></p>
-{notes_html(ep)}
-<p class="note">{html.escape(show['ai_disclosure'])}</p>
-"""
-        (d / "index.html").write_text(
-            page(show, f"{ep['title']} | {show['title']}", ep["summary"], url, body,
-                 {"@context": "https://schema.org", **ld}), encoding="utf-8")
+    import pages as _site_pages  # tools/pages.py
+    _site_pages.build_pages(ROOT, show, episodes, notes_md, notes_html)
 
 
 def main():
