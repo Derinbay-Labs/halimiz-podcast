@@ -1,16 +1,19 @@
 #!/usr/bin/env python3
-"""Publish one episode: process audio, upload it as a GitHub release, update the feed.
+"""Prepare one episode and hand it to GitHub Actions for publishing.
+
+Runs where the audio is (the daily Claude session). It does NOT create the release itself:
+it processes the audio, writes an inbox payload and pushes it to a short-lived branch
+`inbox/<date>`. The workflow .github/workflows/publish.yml then creates the release,
+updates episodes.json + feed + pages on master, deploys Pages and deletes the branch.
 
 Usage:
-  python3 tools/publish.py --date 2026-11-03 --audio ~/Downloads/x.m4a --notes day.md \
-      [--title "3 Kasım: ..."] [--summary "..."] [--no-upload] [--no-push]
+  python3 tools/publish.py --date 2026-11-04 --audio ses.m4a --notes bulten.md \
+      --title "4 Kasım: ..." [--summary "..."] [--no-push]
 
 - --notes: the day's bulletin section in markdown (## heading, Günün öne çıkanı, sections).
-- Audio: intro/outro from assets/intro.mp3 and assets/outro.mp3 are added if present,
-  loudness is normalised to about -16 LUFS (Apple's target), output is 96 kbps mono MP3.
-- Upload: a release tagged with the date, asset halimiz-<date>.mp3 (needs `gh` authenticated
-  for the repo). --no-upload skips it (dry run) and keeps the processed file in build/.
-- Re-running for the same date replaces that day's entry; the enclosure URL never changes.
+- Audio: assets/intro.mp3 and assets/outro.mp3 are added if present, loudness is
+  normalised to about -16 LUFS (Apple's target), output is 96 kbps mono MP3.
+- --no-push: dry run; the payload stays in build/inbox-<date>/.
 """
 import argparse
 import json
@@ -60,8 +63,7 @@ def default_texts(notes, date):
     heads = re.findall(r"^\*\*(.+?)\*\*", notes.split("### Diğer gelişmeler")[0], re.M)
     heads = [h.rstrip(".") for h in heads if not h.startswith("Günün öne çıkanı")]
     short = heads[0].split(":")[0] if heads else "Günün yapay zekâ gündemi"
-    title = f"{d.day} {TR_MONTHS[d.month - 1]}: {short}"
-    return title, summary.replace("\\~", "~")
+    return f"{d.day} {TR_MONTHS[d.month - 1]}: {short}", summary.replace("\\~", "~")
 
 
 def main():
@@ -71,56 +73,40 @@ def main():
     ap.add_argument("--notes", required=True)
     ap.add_argument("--title")
     ap.add_argument("--summary")
-    ap.add_argument("--no-upload", action="store_true")
     ap.add_argument("--no-push", action="store_true")
     a = ap.parse_args()
 
     show = json.loads((ROOT / "podcast.json").read_text(encoding="utf-8"))
-    repo = show["github_repo"]
     notes = Path(a.notes).read_text(encoding="utf-8")
     title, summary = default_texts(notes, a.date)
     title, summary = a.title or title, a.summary or summary
 
-    build = ROOT / "build"
-    build.mkdir(exist_ok=True)
+    inbox = ROOT / "build" / f"inbox-{a.date}"
+    shutil.rmtree(inbox, ignore_errors=True)
+    (inbox / "inbox").mkdir(parents=True)
     asset = f"halimiz-{a.date}.mp3"
-    out = build / asset
+    out = inbox / "inbox" / asset
     process_audio(a.audio, out)
     secs, size = duration(out), out.stat().st_size
-    url = f"https://github.com/{repo}/releases/download/{a.date}/{asset}"
 
-    if not a.no_upload:
-        exists = subprocess.run(["gh", "release", "view", a.date, "--repo", repo],
-                                capture_output=True).returncode == 0
-        if exists:
-            run(["gh", "release", "upload", a.date, str(out), "--repo", repo, "--clobber"])
-        else:
-            run(["gh", "release", "create", a.date, str(out), "--repo", repo,
-                 "--title", title, "--notes", f"{summary}\n\n{show['ai_disclosure']}"])
-
-    ep_dir = ROOT / "episodes" / a.date
-    ep_dir.mkdir(parents=True, exist_ok=True)
-    (ep_dir / "notes.md").write_text(notes, encoding="utf-8")
-
-    eps_path = ROOT / "episodes.json"
-    eps = [e for e in json.loads(eps_path.read_text(encoding="utf-8")) if e["date"] != a.date]
     today = datetime.now(IST).date().isoformat()
     pub = (datetime.now(IST) if a.date == today
-           else datetime.fromisoformat(a.date).replace(hour=11, tzinfo=IST)).replace(microsecond=0)
-    eps.append({"date": a.date, "title": title, "summary": summary, "audio_url": url,
-                "audio_bytes": size, "duration_seconds": round(secs, 1),
-                "guid": f"halimiz-{a.date}", "notes_md": f"episodes/{a.date}/notes.md",
-                "pub_date": pub.isoformat()})
-    eps.sort(key=lambda e: e["date"])
-    eps_path.write_text(json.dumps(eps, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-
-    run([sys.executable, str(ROOT / "tools/build.py")])
+           else datetime.fromisoformat(a.date).replace(hour=7, tzinfo=IST)).replace(microsecond=0)
+    meta = {"date": a.date, "title": title, "summary": summary, "asset": asset,
+            "audio_bytes": size, "duration_seconds": round(secs, 1), "pub_date": pub.isoformat()}
+    (inbox / "inbox" / "episode.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n",
+                                                 encoding="utf-8")
+    (inbox / "inbox" / "notes.md").write_text(notes, encoding="utf-8")
 
     if not a.no_push:
-        run(["git", "-C", str(ROOT), "add", "-A", "episodes.json", "episodes", "bolum", "feed.xml", "index.html"])
-        run(["git", "-C", str(ROOT), "commit", "-m", f"Bölüm: {title}"])
-        run(["git", "-C", str(ROOT), "push", "origin", "HEAD:master"])
-    print(json.dumps({"title": title, "audio_url": url, "bytes": size, "seconds": round(secs)}, ensure_ascii=False))
+        url = f"https://github.com/{show['github_repo']}"
+        g = ["git", "-C", str(inbox)]
+        run(g + ["init", "-q", "-b", f"inbox/{a.date}"])
+        run(g + ["add", "inbox"])
+        run(g + ["-c", "user.name=Derinbay Labs", "-c", "user.email=podcast@derinbay.com",
+                 "commit", "-qm", f"inbox: {title}"])
+        run(g + ["push", "-f", url, f"HEAD:refs/heads/inbox/{a.date}"])
+    print(json.dumps(meta, ensure_ascii=False))
 
 
 if __name__ == "__main__":

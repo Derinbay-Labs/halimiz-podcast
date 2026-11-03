@@ -9,8 +9,9 @@ Derinbay Labs'in günlük yapay zekâ ve teknoloji podcasti. Bu depo programın 
 ## Nasıl çalışır
 
 1. Günlük AI & Teknoloji Bülteni hazırlanır; NotebookLM bültenden Türkçe sesli özet üretir.
-2. `tools/publish.py` sesi işler (intro/outro, ~-16 LUFS, 96 kbps mono MP3), release olarak yükler, `episodes.json`'u günceller ve `tools/build.py` ile beslemeyi ve sayfaları yeniden üretir.
-3. Değişiklik `main`'e gönderilir; Pages siteyi yayımlar, platformlar yeni bölümü beslemeden alır.
+2. `tools/publish.py` sesi işler (intro/outro, ~-16 LUFS, 96 kbps mono MP3) ve geçici bir `inbox/<tarih>` dalına gönderir.
+3. `.github/workflows/publish.yml` release'i oluşturur, `tools/ingest.py` ile `episodes.json`, besleme ve sayfaları günceller, master'a yazar, Pages'i yayımlar ve inbox dalını siler.
+4. Platformlar yeni bölümü beslemeden alır.
 
 ```
 python3 tools/publish.py --date 2026-11-04 --audio ses.m4a --notes bulten.md --title "4 Kasım: ..."

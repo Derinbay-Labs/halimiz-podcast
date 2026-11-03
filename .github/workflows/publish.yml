@@ -1,0 +1,53 @@
+name: Bölüm yayımla
+
+on:
+  push:
+    branches: ["inbox/**"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout master
+        uses: actions/checkout@v4
+        with:
+          ref: master
+          path: site
+      - name: Checkout inbox
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          path: payload
+      - name: Release + episodes.json + feed
+        working-directory: site
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 tools/ingest.py ../payload/inbox
+      - name: Commit to master
+        working-directory: site
+        run: |
+          git config user.name "Derinbay Labs"
+          git config user.email "podcast@derinbay.com"
+          git add -A episodes.json episodes bolum feed.xml index.html
+          git commit -m "Bölüm: $(python3 -c "import json;print(json.load(open('../payload/inbox/episode.json'))['title'])")" || echo "no changes"
+          git push origin HEAD:master
+      - name: Delete inbox branch
+        working-directory: site
+        run: git push origin --delete "${{ github.ref_name }}"
+
+  deploy:
+    needs: ingest
+    uses: ./.github/workflows/pages.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
