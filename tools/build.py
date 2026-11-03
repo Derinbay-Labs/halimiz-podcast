@@ -145,7 +145,8 @@ def build_feed(show, episodes):
         body = (f"<p>{html.escape(ep['summary'])}</p>"
                 f"{notes_html(ep)}"
                 f"<p><em>{html.escape(show['ai_disclosure'])}</em></p>"
-                f'<p><a href="{page}">Bölüm sayfası ve kaynaklar</a></p>')
+                f'<p>Bölüm sayfası ve kaynaklar: <a href="{page}">{page}</a><br>'
+                f'Tüm dinleme platformları: <a href="{site}/">{site.split("//")[-1]}</a></p>')
         x.append("<item>")
         x.append(f"<title>{escape(ep['title'])}</title>")
         x.append(f"<link>{escape(page)}</link>")
@@ -177,7 +178,11 @@ h1{font-size:2rem;line-height:1.15;margin:0 0 8px}h2{font-size:1.35rem;margin:40
 ul.eps{list-style:none;padding:0;margin:0}ul.eps li{border-top:1px solid var(--line);padding:16px 0}
 ul.eps a.t{font-weight:600;color:var(--fg);text-decoration:none}ul.eps a.t:hover{color:var(--accent)}
 audio{width:100%;margin:16px 0}.note{font-size:.9rem;color:var(--muted);border-left:3px solid var(--line);padding-left:12px}
-.sub a{display:inline-block;margin:0 12px 8px 0}footer{margin-top:48px;font-size:.9rem;color:var(--muted)}
+.sub a{display:inline-block;margin:0 12px 8px 0}
+.listen{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 8px}
+.listen a{display:inline-block;padding:8px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--fg);text-decoration:none;font-size:.95rem;font-weight:600}
+.listen a:hover{border-color:var(--accent);color:var(--accent)}
+footer{margin-top:48px;font-size:.9rem;color:var(--muted)}
 """
 
 
@@ -203,6 +208,14 @@ def page(show, title, desc, canonical, body, jsonld):
 """
 
 
+def listen_links(show):
+    """Buttons for the platforms the show is live on (podcast.json "platforms" with a url) + RSS."""
+    links = [f'<a href="{html.escape(p["url"], quote=True)}" rel="noopener">{html.escape(p["label"])}</a>'
+             for p in show.get("platforms", []) if p.get("url")]
+    links.append(f'<a href="/{show["feed_path"]}">RSS</a>')
+    return '<p class="listen">' + "".join(links) + "</p>"
+
+
 def build_pages(show, episodes):
     site = show["site_url"].rstrip("/")
     cover = f"/{show['cover_path']}"
@@ -210,6 +223,9 @@ def build_pages(show, episodes):
               "webFeed": f"{site}/{show['feed_path']}", "inLanguage": "tr",
               "author": {"@type": "Organization", "name": show["author"], "url": show["publisher_url"]},
               "image": site + cover, "description": show["description"]}
+    same_as = [p["url"] for p in show.get("platforms", []) if p.get("url")]
+    if same_as:
+        series["sameAs"] = same_as
     items = []
     for ep in episodes:
         items.append(f'<li><a class="t" href="/bolum/{ep["date"]}/">{html.escape(ep["title"])}</a>'
@@ -218,8 +234,8 @@ def build_pages(show, episodes):
     body = f"""<header class="show"><img src="{cover}" alt="{html.escape(show['title'])} kapak görseli" width="160" height="160">
 <div><h1>{html.escape(show['title'])}</h1><p class="tag">{html.escape(show['tagline'])}</p>
 <p class="muted">Yayıncı: {html.escape(show['author'])}</p></div></header>
+{listen_links(show)}
 <p>{html.escape(show['description'])}</p>
-<p class="sub"><a href="/{show['feed_path']}">RSS beslemesi</a></p>
 <h2>Bölümler</h2>
 {'<ul class="eps">' + ''.join(items) + '</ul>' if items else '<p class="muted">İlk bölüm çok yakında.</p>'}
 """
@@ -240,6 +256,7 @@ def build_pages(show, episodes):
 <h1>{html.escape(ep['title'])}</h1>
 <p class="muted">{tr_date(ep['date'])} · {show['author']}</p>
 <audio controls preload="none" src="{html.escape(ep['audio_url'], quote=True)}"></audio>
+{listen_links(show)}
 <p><strong>{html.escape(ep['summary'])}</strong></p>
 {notes_html(ep)}
 <p class="note">{html.escape(show['ai_disclosure'])}</p>
