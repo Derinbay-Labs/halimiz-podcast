@@ -56,7 +56,7 @@
     {
       "name": "Amazon Music",
       "label": "Amazon Music'te dinle",
-      "url": "",
+      "url": "https://music.amazon.com/podcasts/da15db05-5206-4757-94b4-d1dc3e2771d5/halimiz-ne-olacak",
       "slug": "amazon-music",
       "color": "#25D1DA"
     }
