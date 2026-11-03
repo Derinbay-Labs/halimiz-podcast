@@ -29,8 +29,7 @@ I18N = {
         "inThis": "Bu bölümde", "topics": "konu", "play": "Oynat", "pause": "Duraklat",
         "whereTitle": "Nerede dinliyorsan.", "whereSub": "Yeni bölüm her sabah tüm platformlara aynı anda düşer.",
         "archiveTitle": "Önceki bölümler", "allEpisodes": "Tüm bölümler", "back": "Ana sayfa",
-        "howKicker": "Nasıl hazırlanır", "close1": "Her sabah.", "close2": "Kaynaklarıyla.",
-        "followSpotify": "Spotify'da takip et", "rss": "RSS beslemesi", "download": "MP3 indir",
+        "howKicker": "Nasıl hazırlanır", "close1": "Her sabah.", "close2": "Kaynaklarıyla.", "rss": "RSS beslemesi", "download": "MP3 indir",
         "steps": [["Tara", "Gece boyunca model ve ürün lansmanları, şirket duyuruları, araştırmalar, yatırımlar ve regülasyon haberleri toplanır."],
                   ["Kaynakla", "Bölümler yapay zekâ yardımıyla hazırlanır; her iddianın kaynağı bölüm notlarında açıkça listelenir."],
                   ["Yayınla", "Sabah, 30 dakikalık bölüm tüm dinleme platformlarına aynı anda düşer."]],
@@ -44,8 +43,7 @@ I18N = {
         "inThis": "In this episode", "topics": "topics", "play": "Play", "pause": "Pause",
         "whereTitle": "Wherever you listen.", "whereSub": "Each new episode lands on every platform at the same time, every morning.",
         "archiveTitle": "Earlier episodes", "allEpisodes": "All episodes", "back": "Home",
-        "howKicker": "How it's made", "close1": "Every morning.", "close2": "With sources.",
-        "followSpotify": "Follow on Spotify", "rss": "RSS feed", "download": "Download MP3",
+        "howKicker": "How it's made", "close1": "Every morning.", "close2": "With sources.", "rss": "RSS feed", "download": "Download MP3",
         "steps": [["Scan", "Overnight we gather model and product launches, company announcements, research, investment and regulation news."],
                   ["Source", "Episodes are prepared with AI assistance; the source for every claim is listed openly in the show notes."],
                   ["Publish", "In the morning, the 30-minute episode lands on every listening platform at once."]],
@@ -59,8 +57,7 @@ I18N = {
         "inThis": "In dieser Folge", "topics": "Themen", "play": "Abspielen", "pause": "Pause",
         "whereTitle": "Wo immer du hörst.", "whereSub": "Jede neue Folge erscheint jeden Morgen gleichzeitig auf allen Plattformen.",
         "archiveTitle": "Frühere Folgen", "allEpisodes": "Alle Folgen", "back": "Startseite",
-        "howKicker": "So entsteht es", "close1": "Jeden Morgen.", "close2": "Mit Quellen.",
-        "followSpotify": "Auf Spotify folgen", "rss": "RSS-Feed", "download": "MP3 herunterladen",
+        "howKicker": "So entsteht es", "close1": "Jeden Morgen.", "close2": "Mit Quellen.", "rss": "RSS-Feed", "download": "MP3 herunterladen",
         "steps": [["Sichten", "Über Nacht sammeln wir Modell- und Produktstarts, Unternehmensmeldungen, Forschung, Investitionen und Regulierung."],
                   ["Belegen", "Die Folgen entstehen mit KI-Unterstützung; die Quelle jeder Aussage steht offen in den Shownotes."],
                   ["Veröffentlichen", "Am Morgen erscheint die 30-minütige Folge gleichzeitig auf allen Plattformen."]],
@@ -365,12 +362,10 @@ def how_section():
 
 
 def close_section(show):
-    spotify = next((p["url"] for p in show.get("platforms", []) if p["name"] == "Spotify" and p.get("url")), "")
     feed = f"{show['site_url'].rstrip('/')}/{show['feed_path']}"
-    sp = f'<a class="btn btn-ghost" href="{e(spotify, quote=True)}">{t("followSpotify")}</a>' if spotify else ""
     return f"""<section class="close">
   <h2><span>{t('close1')}</span><span>{t('close2')}</span></h2>
-  <div class="row">{sp}<a class="btn btn-ghost" href="{feed}">{t('rss')}</a></div>
+  <div class="row"><a class="btn btn-ghost" href="{feed}">{t('rss')}</a></div>
 </section>
 <footer class="bot">
   <span>{e(show['copyright'])}</span>
