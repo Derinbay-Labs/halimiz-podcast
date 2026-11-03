@@ -21,32 +21,44 @@
     {
       "name": "Spotify",
       "label": "Spotify'da dinle",
-      "url": "https://open.spotify.com/show/65dTdCV2lLwxRnlVw7lpcv"
+      "url": "https://open.spotify.com/show/65dTdCV2lLwxRnlVw7lpcv",
+      "slug": "spotify",
+      "color": "#1DB954"
     },
     {
       "name": "Apple Podcasts",
       "label": "Apple Podcasts'te dinle",
-      "url": "https://podcasts.apple.com/tr/podcast/halimiz-ne-olacak/id6830310917"
+      "url": "https://podcasts.apple.com/tr/podcast/halimiz-ne-olacak/id6830310917",
+      "slug": "apple-podcasts",
+      "color": "#872EC4"
     },
     {
       "name": "Pocket Casts",
       "label": "Pocket Casts'te dinle",
-      "url": "https://pca.st/vfon6a8x"
+      "url": "https://pca.st/vfon6a8x",
+      "slug": "pocket-casts",
+      "color": "#D9322B"
     },
     {
       "name": "Deezer",
       "label": "Deezer'da dinle",
-      "url": "https://www.deezer.com/tr/show/1003726011"
+      "url": "https://www.deezer.com/tr/show/1003726011",
+      "slug": "deezer",
+      "color": "#A238FF"
     },
     {
       "name": "YouTube",
       "label": "YouTube'da izle",
-      "url": ""
+      "url": "",
+      "slug": "youtube",
+      "color": "#FF0033"
     },
     {
       "name": "Amazon Music",
       "label": "Amazon Music'te dinle",
-      "url": ""
+      "url": "",
+      "slug": "amazon-music",
+      "color": "#25D1DA"
     }
   ]
 }

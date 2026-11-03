@@ -180,8 +180,10 @@ ul.eps a.t{font-weight:600;color:var(--fg);text-decoration:none}ul.eps a.t:hover
 audio{width:100%;margin:16px 0}.note{font-size:.9rem;color:var(--muted);border-left:3px solid var(--line);padding-left:12px}
 .sub a{display:inline-block;margin:0 12px 8px 0}
 .listen{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 8px}
-.listen a{display:inline-block;padding:8px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--fg);text-decoration:none;font-size:.95rem;font-weight:600}
-.listen a:hover{border-color:var(--accent);color:var(--accent)}
+.listen a.pf{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;text-decoration:none;font-size:.95rem;font-weight:700;transition:transform .12s,filter .12s}
+.listen a.pf:hover{transform:translateY(-1px);filter:brightness(1.08)}
+.listen a.pf img{width:20px;height:20px;display:block}
+.listen a.rss{background:var(--card);color:var(--fg);border:1px solid var(--line)}
 footer{margin-top:48px;font-size:.9rem;color:var(--muted)}
 """
 
@@ -210,10 +212,30 @@ def page(show, title, desc, canonical, body, jsonld):
 
 def listen_links(show):
     """Buttons for the platforms the show is live on (podcast.json "platforms" with a url) + RSS."""
-    links = [f'<a href="{html.escape(p["url"], quote=True)}" rel="noopener">{html.escape(p["label"])}</a>'
-             for p in show.get("platforms", []) if p.get("url")]
-    links.append(f'<a href="/{show["feed_path"]}">RSS</a>')
+    links = []
+    for p in show.get("platforms", []):
+        if not p.get("url"):
+            continue
+        color = p.get("color", "#444444")
+        style = f"background:{color};color:{text_on(color)}"
+        # official badge/icon, if one has been placed at assets/badges/<slug>.svg or .png
+        icon = ""
+        for ext in ("svg", "png"):
+            if (ROOT / "assets" / "badges" / f"{p.get('slug')}.{ext}").exists():
+                icon = f'<img src="/assets/badges/{p["slug"]}.{ext}" alt="" width="20" height="20">'
+                break
+        links.append(f'<a class="pf" style="{style}" href="{html.escape(p["url"], quote=True)}" '
+                     f'rel="noopener">{icon}{html.escape(p["label"])}</a>')
+    links.append(f'<a class="pf rss" href="/{show["feed_path"]}">RSS</a>')
     return '<p class="listen">' + "".join(links) + "</p>"
+
+
+def text_on(hex_color):
+    """Black or white text, whichever reads better on the given background."""
+    r, g, b = (int(hex_color.lstrip("#")[i:i + 2], 16) / 255 for i in (0, 2, 4))
+    lin = [c / 12.92 if c <= 0.04045 else ((c + 0.055) / 1.055) ** 2.4 for c in (r, g, b)]
+    lum = 0.2126 * lin[0] + 0.7152 * lin[1] + 0.0722 * lin[2]
+    return "#000000" if (lum + 0.05) / 0.05 > 1.05 / (lum + 0.05) else "#ffffff"
 
 
 def build_pages(show, episodes):
