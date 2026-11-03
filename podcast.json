@@ -29,8 +29,18 @@
       "url": "https://podcasts.apple.com/tr/podcast/halimiz-ne-olacak/id6830310917"
     },
     {
+      "name": "Pocket Casts",
+      "label": "Pocket Casts'te dinle",
+      "url": "https://pca.st/vfon6a8x"
+    },
+    {
       "name": "YouTube",
       "label": "YouTube'da izle",
+      "url": ""
+    },
+    {
+      "name": "Amazon Music",
+      "label": "Amazon Music'te dinle",
       "url": ""
     }
   ]
