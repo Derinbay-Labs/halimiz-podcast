@@ -125,6 +125,9 @@ def build_feed(show, episodes):
              f"<itunes:name>{escape(show['owner_name'])}</itunes:name>"
              f"<itunes:email>{escape(show['owner_email'])}</itunes:email>"
              "</itunes:owner>")
+    # some directories (Spotify) also look for the contact address in the RSS 2.0 fields
+    x.append(f"<managingEditor>{escape(show['owner_email'])} ({escape(show['owner_name'])})</managingEditor>")
+    x.append(f"<webMaster>{escape(show['owner_email'])} ({escape(show['owner_name'])})</webMaster>")
     x.append(f'<itunes:image href="{escape(cover_url)}"/>')
     x.append(f"<image><url>{escape(cover_url)}</url><title>{escape(show['title'])}</title>"
              f"<link>{escape(site)}/</link></image>")
@@ -133,7 +136,7 @@ def build_feed(show, episodes):
     x.append(f"<itunes:explicit>{'true' if show['explicit'] else 'false'}</itunes:explicit>")
     x.append(f"<itunes:type>{show['type']}</itunes:type>")
     x.append(f"<podcast:guid>{pod_guid}</podcast:guid>")
-    x.append("<podcast:locked>no</podcast:locked>")
+    x.append(f'<podcast:locked owner="{escape(show["owner_email"])}">no</podcast:locked>')
     x.append(f"<podcast:medium>podcast</podcast:medium>")
     x.append(f"<lastBuildDate>{format_datetime(datetime.fromisoformat(last))}</lastBuildDate>")
     x.append("<generator>Derinbay Labs halimiz-podcast</generator>")
