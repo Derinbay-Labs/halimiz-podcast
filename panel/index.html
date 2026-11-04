@@ -67,8 +67,9 @@ Chart.defaults.color = css('--muted'); Chart.defaults.borderColor = css('--line'
 const series = ['--s1','--s2','--s3','--s4','--s5','--s6'].map(css);
 
 async function load() {
-  const [m, b] = await Promise.all([fetch('data/metrics.json?' + Date.now()).then(r => r.json()),
-                                    fetch('data/budget.json?' + Date.now()).then(r => r.json())]);
+  const base = location.origin + location.pathname.replace(/[^/]*$/, '');
+  const [m, b] = await Promise.all([fetch(base + 'data/metrics.json?' + Date.now()).then(r => r.json()),
+                                    fetch(base + 'data/budget.json?' + Date.now()).then(r => r.json())]);
   document.getElementById('updated').textContent = m.updated ? 'Güncellendi: ' + new Date(m.updated).toLocaleString('tr-TR') : '';
   const g = m.goal || {};
   const dayN = g.start ? Math.max(1, Math.round((Date.now() - new Date(g.start)) / 864e5) + 1) : null;
