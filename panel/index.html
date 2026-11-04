@@ -97,7 +97,7 @@ async function load() {
                       : [{ label: 'İndirme', data: daily.map(d => d.downloads || 0), backgroundColor: series[0] }]),
       { label: 'Hedef', type: 'line', data: daily.map(() => g.daily_downloads), borderColor: css('--ink'), borderDash: [4, 4], pointRadius: 0, borderWidth: 1 } ] },
       options: { scales: { x: { stacked: true, grid: { display: false } }, y: { stacked: true, beginAtZero: true } }, plugins: { legend: { position: 'bottom' } } } });
-  } else document.getElementById('downloads-empty').textContent = 'Henüz günlük veri yok; ölçüm ajanı ilk gece yazacak.';
+  } else { document.getElementById('downloads').style.display = 'none'; document.getElementById('downloads-empty').textContent = 'Henüz günlük veri yok; ölçüm ajanı ilk gece yazacak.'; }
 
   // followers
   const fls = (m.followers || []).slice().sort((a, c) => a.date.localeCompare(c.date));
@@ -106,7 +106,7 @@ async function load() {
     new Chart(document.getElementById('followers'), { type: 'line', data: { labels: fls.map(d => trd(d.date)),
       datasets: keys.map(([k, l], i) => ({ label: l, data: fls.map(d => d[k] ?? null), borderColor: series[i], backgroundColor: series[i], pointRadius: 2, borderWidth: 2, tension: .2, spanGaps: true })) },
       options: { scales: { x: { grid: { display: false } }, y: { beginAtZero: true } }, plugins: { legend: { position: 'bottom' } } } });
-  } else document.getElementById('followers-empty').textContent = 'Henüz veri yok.';
+  } else { document.getElementById('followers').style.display = 'none'; document.getElementById('followers-empty').textContent = 'Henüz veri yok.'; }
 
   // site
   if (daily.some(d => d.site_visits != null)) {
@@ -114,7 +114,7 @@ async function load() {
       { label: 'Ziyaret', data: daily.map(d => d.site_visits ?? null), borderColor: series[1], backgroundColor: series[1], pointRadius: 2, borderWidth: 2, tension: .2 },
       { label: 'YouTube izlenme', data: daily.map(d => d.youtube_views ?? null), borderColor: series[0], backgroundColor: series[0], pointRadius: 2, borderWidth: 2, tension: .2 } ] },
       options: { scales: { x: { grid: { display: false } }, y: { beginAtZero: true } }, plugins: { legend: { position: 'bottom' } } } });
-  } else document.getElementById('site-empty').textContent = 'Cloudflare Web Analytics verisi henüz yok.';
+  } else { document.getElementById('site').style.display = 'none'; document.getElementById('site-empty').textContent = 'Cloudflare Web Analytics verisi henüz yok.'; }
 
   // budget
   const spentBy = {}; (m.ads || []).forEach(a => { spentBy[a.budget_item || a.campaign] = (spentBy[a.budget_item || a.campaign] || 0) + (a.spend || 0); });
