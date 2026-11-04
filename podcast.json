@@ -51,7 +51,7 @@
     {
       "name": "YouTube",
       "label": "YouTube'da izle",
-      "url": "",
+      "url": "https://www.youtube.com/@halimizpodcast",
       "slug": "youtube",
       "color": "#FF0033"
     },
@@ -62,5 +62,11 @@
       "slug": "amazon-music",
       "color": "#25D1DA"
     }
-  ]
+  ],
+  "social": {
+    "linkedin": "https://www.linkedin.com/company/halimizpodcast",
+    "youtube": "https://www.youtube.com/@halimizpodcast",
+    "x": "",
+    "instagram": ""
+  }
 }
