@@ -59,9 +59,10 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           REPO: ${{ github.repository }}
         run: |
-          for sha in $(gh api "repos/$REPO/deployments?environment=github-pages&per_page=10" --jq '.[].sha' | sort -u); do
+          for sha in $(gh api "repos/$REPO/deployments?environment=github-pages&per_page=50" --jq '.[].sha' | sort -u); do
             [ "$sha" = "$GITHUB_SHA" ] && continue
-            st=$(gh api "repos/$REPO/pages/deployments/$sha" --jq .status 2>/dev/null || true)
+            st=$(gh api "repos/$REPO/pages/deployments/$sha" --jq .status 2>&1 || true)
+            echo "$sha: $st"
             case "$st" in
               deployment_queued|deployment_in_progress|syncing_files|finished_file_sync|updating_pages|purging_cdn)
                 echo "cancelling stuck deployment $sha ($st)"
