@@ -25,19 +25,49 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: master
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install card tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-inter >/dev/null || sudo apt-get install -y -qq fonts-dejavu-core >/dev/null
+          pip install -q pillow
+      # link-preview cards (assets/og/*.png) are build output; a failure falls back to the cover
+      - name: Open Graph cards
+        run: python3 tools/og.py || echo "og cards skipped"
       - name: Build feed and pages
         run: python3 tools/build.py
       - name: Collect site
         run: |
           mkdir _site
-          cp -r index.html feed.xml CNAME .nojekyll assets _site/
-          [ -d bolum ] && cp -r bolum _site/ || true
+          cp -r index.html feed.xml robots.txt sitemap.xml 404.html favicon.ico CNAME .nojekyll assets _site/
+          for d in bolum konu hakkinda; do [ -d "$d" ] && cp -r "$d" _site/ || true; done
+          key=$(python3 -c "import json;print(json.load(open('podcast.json')).get('indexnow_key',''))")
+          [ -n "$key" ] && cp "$key.txt" _site/ || true
           rm -f _site/assets/cover.html _site/assets/badges/README.md
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
       - id: deployment
         uses: actions/deploy-pages@v4
+      # tell Bing, Yandex and other IndexNow engines which pages changed; best effort
+      - name: Notify IndexNow
+        run: |
+          python3 - <<'EOF' || true
+          import json, urllib.request
+          show = json.load(open("podcast.json"))
+          key = show.get("indexnow_key")
+          if key:
+              site = show["site_url"].rstrip("/")
+              eps = sorted(json.load(open("episodes.json")), key=lambda e: e["date"], reverse=True)[:2]
+              urls = [site + "/", site + "/bolum/", site + "/konu/"] + [f"{site}/bolum/{e['date']}/" for e in eps]
+              body = json.dumps({"host": site.split("//", 1)[1], "key": key, "keyLocation": f"{site}/{key}.txt",
+                                 "urlList": urls}).encode()
+              req = urllib.request.Request("https://api.indexnow.org/indexnow", data=body,
+                                           headers={"Content-Type": "application/json; charset=utf-8"})
+              print("IndexNow:", urllib.request.urlopen(req, timeout=20).status, len(urls), "url")
+          EOF
       # tell Podcast Index (and the apps that follow it) that the feed changed; best effort
       - name: Notify Podcast Index
         run: |

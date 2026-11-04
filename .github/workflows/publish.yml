@@ -43,7 +43,7 @@ jobs:
         run: |
           git config user.name "Derinbay Labs"
           git config user.email "podcast@derinbay.com"
-          git add -A episodes.json episodes bolum feed.xml index.html
+          git add -A episodes.json episodes bolum konu feed.xml index.html sitemap.xml 404.html
           git commit -m "Bölüm: $(python3 -c "import json;print(json.load(open('../payload/inbox/episode.json'))['title'])")" || echo "no changes"
           git push origin HEAD:master
       # A push made with GITHUB_TOKEN does not trigger other workflows, and the github-pages

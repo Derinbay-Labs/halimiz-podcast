@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://halimiz.derinbay.com/sitemap.xml

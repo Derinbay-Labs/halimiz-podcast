@@ -14,6 +14,7 @@
   "cover_path": "assets/cover.jpg",
   "tagline": "Her sabah yapay zekâ dünyasında olanlar ve bizim için anlamı.",
   "description": "Her sabah yapay zekâ ve teknoloji dünyasının öne çıkan haberleri, kaynaklarıyla. HAL'imiz Ne Olacak? (Halimiz Ne Olacak), Derinbay Labs'in günlük yapay zekâ ve teknoloji programı: model ve ürün lansmanları, şirket duyuruları, araştırmalar, yatırımlar ve regülasyon. Bölümler yapay zekâ yardımı ile hazırlanır; tüm kaynaklar bölüm notlarında. Tüm dinleme platformları: halimiz.derinbay.com",
+  "meta_description": "Her sabah yapay zekâ ve teknoloji dünyasının öne çıkan haberleri, kaynaklarıyla. Derinbay Labs'in günlük Türkçe yapay zekâ podcasti.",
   "ai_disclosure": "Bu bölüm yapay zekâ yardımı ile hazırlanmıştır. Sesler yapay zekâ sunuculara aittir; içerik, kaynakları bölüm notlarında verilen günlük bültene dayanır. Doğrulanmamış iddialar bölümde öyle belirtilir.",
   "github_repo": "Derinbay-Labs/halimiz-podcast",
   "stats_prefix": "https://op3.dev/e",
@@ -68,5 +69,6 @@
     "youtube": "https://www.youtube.com/@halimizpodcast",
     "x": "https://x.com/halimizpodcast",
     "instagram": "https://www.instagram.com/halimizpodcast"
-  }
+  },
+  "indexnow_key": "516eabdd2b67378f2fab39ff2e895d1d"
 }

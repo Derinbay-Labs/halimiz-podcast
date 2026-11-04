@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build feed.xml, index.html and episode pages from podcast.json + episodes.json.
+"""Build feed.xml and the site (pages, robots.txt, sitemap.xml) from podcast.json + episodes.json.
 
 Usage: python3 tools/build.py            (run from the repo root or anywhere)
 
@@ -9,6 +9,7 @@ on a GitHub runner or on a laptop.
 import html
 import json
 import re
+import sys
 import uuid
 from datetime import datetime, timezone
 from email.utils import format_datetime
@@ -16,6 +17,8 @@ from pathlib import Path
 from xml.sax.saxutils import escape
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "tools"))
+import seo  # noqa: E402  (tools/seo.py)
 PODCAST_NS_GUID = uuid.UUID("ead4c236-bf58-58c6-a2c6-a6b28d128cb6")  # Podcasting 2.0 namespace
 
 TR_MONTHS = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz",
@@ -120,7 +123,7 @@ def notes_html(ep):
 
 # ---------- feed ----------
 
-def build_feed(show, episodes):
+def build_feed(show, episodes, extras=None):
     site = show["site_url"].rstrip("/")
     feed_url = f"{site}/{show['feed_path']}"
     cover_url = f"{site}/{show['cover_path']}"
@@ -179,6 +182,11 @@ def build_feed(show, episodes):
         x.append("<itunes:episodeType>full</itunes:episodeType>")
         x.append("<itunes:explicit>false</itunes:explicit>")
         x.append(f'<itunes:image href="{escape(cover_url)}"/>')
+        ex = (extras or {}).get(ep["date"])
+        if ex and ex["segments"]:
+            x.append(f'<podcast:transcript url="{escape(page)}transkript.srt" type="application/x-subrip" language="tr"/>')
+        if ex and ex["chapters"]:
+            x.append(f'<podcast:chapters url="{escape(page)}chapters.json" type="application/json+chapters"/>')
         x.append("</item>")
     x.append("</channel></rss>")
     (ROOT / show["feed_path"]).write_text("\n".join(x) + "\n", encoding="utf-8")
@@ -191,16 +199,17 @@ def notes_md(ep):
     return path.read_text(encoding="utf-8") if path.exists() else ""
 
 
-def build_pages(show, episodes):
+def build_pages(show, episodes, extras):
     import pages as _site_pages  # tools/pages.py
-    _site_pages.build_pages(ROOT, show, episodes, notes_md, notes_html)
+    return _site_pages.build_pages(ROOT, show, episodes, notes_md, notes_html, extras)
 
 
 def main():
     show, episodes = load()
-    build_feed(show, episodes)
-    build_pages(show, episodes)
-    print(f"built feed + pages for {len(episodes)} episode(s)")
+    extras = {ep["date"]: seo.episode_extras(ROOT, ep, notes_md(ep)) for ep in episodes}
+    build_feed(show, episodes, extras)
+    urls = build_pages(show, episodes, extras)
+    print(f"built feed + pages for {len(episodes)} episode(s); sitemap has {len(urls)} url(s)")
 
 
 if __name__ == "__main__":

@@ -102,6 +102,8 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 <itunes:image href="https://halimiz.derinbay.com/assets/cover.jpg"/>
+<podcast:transcript url="https://halimiz.derinbay.com/bolum/2026-11-04/transkript.srt" type="application/x-subrip" language="tr"/>
+<podcast:chapters url="https://halimiz.derinbay.com/bolum/2026-11-04/chapters.json" type="application/json+chapters"/>
 </item>
 <item>
 <title>3 Kasım: Anthropic'in halka arz belgesi, Marvell–Lumentum, Apple'ın rekoru</title>
@@ -157,5 +159,7 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 <itunes:image href="https://halimiz.derinbay.com/assets/cover.jpg"/>
+<podcast:transcript url="https://halimiz.derinbay.com/bolum/2026-11-03/transkript.srt" type="application/x-subrip" language="tr"/>
+<podcast:chapters url="https://halimiz.derinbay.com/bolum/2026-11-03/chapters.json" type="application/json+chapters"/>
 </item>
 </channel></rss>

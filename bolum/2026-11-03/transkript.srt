@@ -1,0 +1,1575 @@
+1
+00:00:00,000 --> 00:00:07,100
+Biliyor musun? Genelde teknoloji dünyasından bahsederken hepimizin beklentisi her zaman bir tür mühendislik kesinliği yönündedir.
+
+2
+00:00:07,200 --> 00:00:10,420
+Yani tıpkı tıbbi bir teşhis gibi olmasını isteriz hani.
+
+3
+00:00:10,560 --> 00:00:12,020
+Kesinlikle siyah ya da beyaz.
+
+4
+00:00:12,200 --> 00:00:20,140
+Aynen öyle. Kolunu kırarsın, röntgen makinesi o pürüzlü beyaz çizgiyi gösterir ve doktor sadece parmağıyla işaret edip şeyde işte kırık tam burada.
+
+5
+00:00:20,400 --> 00:00:25,720
+İkilidir durum. Yani ya kırıktır ya da değildir. Veri sana her zaman o net sınırı çizer aslında.
+
+6
+00:00:25,720 --> 00:00:28,580
+Tabii ve bu kesinlikle aslında çok rahatlatıcı bir şey.
+
+7
+00:00:28,960 --> 00:00:32,480
+Şeylerin görünür olmasını net bir şekilde kategorize edilmesini seviyoruz.
+
+8
+00:00:33,080 --> 00:00:42,780
+Ama yapay zeka gelişiminin ve altyapısının bugünkü o kaotik dünyasına adım attığında aniden o güvendiğimiz röntgen makinesi tamamen bozuluyor.
+
+9
+00:00:42,880 --> 00:00:43,920
+Paramparça oluyor hatta.
+
+10
+00:00:44,140 --> 00:00:44,420
+Aynen.
+
+11
+00:00:45,180 --> 00:00:51,060
+Karşımızdaki manzara dürüst olmak gerekirse devasa ve tamamen bulanık bir yapboz gibi şu an.
+
+12
+00:00:51,060 --> 00:00:55,240
+Ve bugün önümüzde gerçekten çok kapsamlı, devasa bir kaynak yığını var.
+
+13
+00:00:55,720 --> 00:01:03,200
+3 Kasım 2026 tarihli yapay zeka bülteni ve tabii onun dayandığı tüm o kalın inanılmaz detaylı raporlar.
+
+14
+00:01:03,400 --> 00:01:06,100
+Ki bu raporların içi sadece teknolojiyle de dolu değil.
+
+15
+00:01:06,220 --> 00:01:07,620
+Hani çok daha büyük dinamikler var.
+
+16
+00:01:07,800 --> 00:01:08,280
+Doğru.
+
+17
+00:01:08,360 --> 00:01:12,760
+Hatta içinde bugün gerçekleşen Amerika Birleşik Devletleri ara seçimleri,
+
+18
+00:01:12,760 --> 00:01:19,720
+Çin'in yeni regulasyonları, Rusya'nın kararnameleri gibi çok hassas dünyayı sarsan jeopolitik konularda var.
+
+19
+00:01:20,200 --> 00:01:23,580
+Ama biz bu derinlemesini incelemede bir kural koyuyoruz.
+
+20
+00:01:23,580 --> 00:01:27,840
+O politik gürültüyü, siyasi tartışmaları tamamen kapıda bırakıyoruz.
+
+21
+00:01:28,120 --> 00:01:29,660
+Bu çok önemli bir vurgu bence.
+
+22
+00:01:29,920 --> 00:01:33,260
+Çünkü bültendeki konular ister sağ ister sol kanattan olsun.
+
+23
+00:01:33,700 --> 00:01:35,460
+Bizim görevimiz hiçbir taraf tutmamak.
+
+24
+00:01:35,700 --> 00:01:37,360
+Kesinlikle siyasi bir duruşumuz yok.
+
+25
+00:01:37,720 --> 00:01:38,440
+Görevimiz çok net.
+
+26
+00:01:38,780 --> 00:01:43,220
+Yani sadece verinin, teknolojinin ve o büyük paranın ne söylediğine bakacağız.
+
+27
+00:01:43,760 --> 00:01:46,120
+Kaynaklardaki fikirleri tamamen tarafsız aktaracağız.
+
+28
+00:01:46,600 --> 00:01:47,820
+Harikasın tam olarak bu.
+
+29
+00:01:48,200 --> 00:01:53,100
+Bültendeki hiçbir haberi atlamadan bu karmaşık röntgen filmini hep birlikte okuyacağız.
+
+30
+00:01:53,100 --> 00:01:56,920
+Yani dinleyenler için de söylüyorum tüm detaylara sırayla iniyoruz.
+
+31
+00:01:57,080 --> 00:02:03,420
+Sadece ne olduğuna değil o mekanizmaların arka plandaki o devasa çarkların nasıl çalıştığına da inmek zorundayız.
+
+32
+00:02:03,500 --> 00:02:07,200
+Çünkü gerçekten eşi benzeri görülmemiş bir veri yığını ile karşı karşıyayız bugün.
+
+33
+00:02:07,560 --> 00:02:08,880
+O zaman hadi bunu biraz deşelim.
+
+34
+00:02:09,520 --> 00:02:13,020
+İlk durağımız Anthropic'in güncellenen halka arz belgesi.
+
+35
+00:02:13,080 --> 00:02:15,060
+Yani şu meşhur S1A raporu var ya.
+
+36
+00:02:15,200 --> 00:02:16,980
+Evet o devasa dosya.
+
+37
+00:02:16,980 --> 00:02:24,040
+Yani bir şirketin borsaya açılmadan önce yatırımcılara çıkıp hani işte benim tüm finansal sırlarım dediği o kritik belge.
+
+38
+00:02:24,640 --> 00:02:27,640
+Rakamlara şöyle bir bakıyorum ve gerçekten aklım almıyor.
+
+39
+00:02:27,840 --> 00:02:28,980
+Çok uçuk rakamlar değil mi?
+
+40
+00:02:29,320 --> 00:02:36,180
+İnanılmaz. Şirket 3. çeyrekte gelirini yıllık %1127 artırarak 17 milyar dolara çıkarmış.
+
+41
+00:02:36,580 --> 00:02:42,020
+Bakın %1127. Buraya kadar her şey tam bir silikon vadisi rüyası gibi.
+
+42
+00:02:42,240 --> 00:02:43,240
+Kesinlikle öyle duyuluyor.
+
+43
+00:02:43,240 --> 00:02:58,900
+Ama sonra şey kısmına net zarara bir bakıyorum. 23,29 milyar dolar. Tamam bu zararın büyük kısmı dönüştürülebilir tahvil değerlemelerinden geliyor. Yani geçmişte yatırımcılara verilen hisse sözlerinin bugün çok daha pahalı hale gelmesinden kaynaklanıyor. Bunu anlıyorum.
+
+44
+00:02:59,100 --> 00:03:00,400
+Muhasebesel bir durum yani evet.
+
+45
+00:03:00,620 --> 00:03:12,280
+Aynen ama benim asıl takıldığım yer şirketin o donanım yani işlem gücü, Compute için altına girdiği devasa taahhüt. Sıkı dur tam 895,4 milyar dolar.
+
+46
+00:03:12,280 --> 00:03:13,560
+İnanılmaz bir rakam.
+
+47
+00:03:13,840 --> 00:03:15,580
+Neredeyse 1 trilyon dolar yahu.
+
+48
+00:03:16,300 --> 00:03:17,140
+Anthropic neden?
+
+49
+00:03:17,400 --> 00:03:20,620
+Neden bu kadar akıl almaz bir donanım faturasına imza atıyor?
+
+50
+00:03:21,080 --> 00:03:28,460
+Çünkü yatırımcıları uyardıkları o kritik eşiğe, yani yapay zekaya atfedilebilir dramatik hızlanma noktasına yaklaşıyorlar hızlı.
+
+51
+00:03:29,080 --> 00:03:30,400
+Dramatik hızlanma derken?
+
+52
+00:03:31,280 --> 00:03:41,620
+Şöyle düşün, bu kavram aslında yapay zekanın kendi mimarisini ve kodunu geliştirerek hiçbir insan müdahalesi olmadan kendini hızla çok daha zeki hale getirdiği o kırılma anını temsil ediyor.
+
+53
+00:03:41,620 --> 00:03:48,500
+Ve bunu yapabilmek için dünyadaki mevcut donanımların çok ama çok ötesinde devasa bir kapasiteye ihtiyaçları var.
+
+54
+00:03:49,020 --> 00:03:51,520
+Yani o yüzden bu kadar donanım topluyorlar.
+
+55
+00:03:51,700 --> 00:03:52,300
+Kesinlikle.
+
+56
+00:03:52,860 --> 00:03:57,380
+Wall Street bu 895 milyar dolarlık faturayı görünce haklı olarak irkildi tabii.
+
+57
+00:03:58,020 --> 00:04:05,680
+Şirketin o 2 trilyon dolarlık tahmini değerlemesini, hani o rüya rakamı 1,5 ile 1,6 trilyon bandına çekmeye çalışıyorlar şu an.
+
+58
+00:04:06,040 --> 00:04:10,160
+Ama Anthropic'in bu faturası bize sadece onların ne kadar para yaktığını göstermiyor.
+
+59
+00:04:10,160 --> 00:04:13,480
+Donanım sektörünün temelden nasıl değiştiğini de kanıtlıyor.
+
+60
+00:04:13,920 --> 00:04:17,260
+Yani bu paralar sadece öyle buluttaki yazılıma falan gitmiyor.
+
+61
+00:04:17,780 --> 00:04:21,800
+Doğrudan fiziksel dünyaya, sunuculara o devasa kabloları akıyor.
+
+62
+00:04:22,240 --> 00:04:25,920
+Ki bu da beni bültendeki o diğer devasa satın alma haberine getiriyor.
+
+63
+00:04:26,080 --> 00:04:29,940
+Biliyorsun Marvell, Lumentum'u 115 milyar dolara satın alıyor.
+
+64
+00:04:30,580 --> 00:04:33,860
+Tarihin en büyük halka açık teknoloji birleşmesi diyorlar buna.
+
+65
+00:04:34,440 --> 00:04:35,640
+Evet, tam olarak öyle.
+
+66
+00:04:35,640 --> 00:04:38,960
+Hisse başına yaklaşık 1132 dolar ödeyecekler.
+
+67
+00:04:39,040 --> 00:04:42,900
+Bu da şirketin mevcut değerine %23,9'u bir prim demek.
+
+68
+00:04:43,600 --> 00:04:49,580
+Birleşen yeni dev şirketin %67'si Marvell'da kalacak ve hedefte 2028'in ilk yarısı.
+
+69
+00:04:50,140 --> 00:04:52,020
+Ama benim anlamadığım bir şey var burada.
+
+70
+00:04:52,300 --> 00:04:52,700
+Nedir o?
+
+71
+00:04:53,280 --> 00:04:56,800
+Yani Lumentum dediğimiz bu şirket temelde optik bileşenler üretiyor.
+
+72
+00:04:56,900 --> 00:05:00,340
+Hani lazerler ve fiber bağlantılar falan bildiğimiz bir donanım şirketi.
+
+73
+00:05:00,340 --> 00:05:06,440
+Neden bir çip üreticisi için 115 milyar dolar edecek kadar hayati bir konuma geldi aniden?
+
+74
+00:05:06,840 --> 00:05:11,960
+Bak bunu anlamak için günümüzün veri merkezlerini devasa bir otoyol ağı gibi düşünmek zorundayız.
+
+75
+00:05:12,040 --> 00:05:12,920
+Otoyol ağı.
+
+76
+00:05:13,080 --> 00:05:13,320
+Evet.
+
+77
+00:05:13,640 --> 00:05:14,580
+Hı ilginç.
+
+78
+00:05:14,860 --> 00:05:17,760
+Eskiden çipler çok zeki, izole şehirler gibiydi.
+
+79
+00:05:18,200 --> 00:05:19,980
+Her iş kendi içlerinde halledilirdi, biterdi.
+
+80
+00:05:20,480 --> 00:05:25,200
+Ama artık bu yapay zeka modelleri o kadar büyük ki tek bir çipe asla sığmıyorlar.
+
+81
+00:05:25,200 --> 00:05:30,080
+On binlerce çip aynı anda aynı problemi çözmek için senkronize çalışmak zorunda.
+
+82
+00:05:30,340 --> 00:05:32,680
+Yani sürekli birbirleriyle konuşmaları gerekiyor.
+
+83
+00:05:32,880 --> 00:05:33,420
+Aynen öyle.
+
+84
+00:05:33,860 --> 00:05:38,560
+Çiplerin kendi işlem hızı ne kadar yüksek olursa olsun, o çipler arasındaki veri aktarımı,
+
+85
+00:05:38,860 --> 00:05:42,600
+yani şehirler arasındaki otoyollar yavaşsa tüm sistem tıkanıp kalır.
+
+86
+00:05:43,260 --> 00:05:45,300
+Lumentum'un ürettiği o optik bağlantılar var ya,
+
+87
+00:05:45,600 --> 00:05:49,700
+işte onlar ışık hızında veri transferi sağlayan devasa fiber otoyollar demek.
+
+88
+00:05:50,820 --> 00:05:56,540
+Yani Marvell Go hamleyle sadece çipleri değil, o çiplerin arasındaki tüm sinir sistemini de ele geçirmiş oluyor.
+
+89
+00:05:56,700 --> 00:05:57,660
+Tam üstüne bastın.
+
+90
+00:05:57,660 --> 00:06:05,680
+Broadcom gibi devlerin peşine düşüp o 550 milyar dolarlık yapay zeka altyapı pazarına doğrudan, en tepe noktadan oynuyorlar şu an.
+
+91
+00:06:06,060 --> 00:06:09,000
+Optik bağlantılar yeni nesil ekonominin sinir sistemi.
+
+92
+00:06:09,140 --> 00:06:10,960
+Bu gerçekten çok mantıklı ama bekle.
+
+93
+00:06:11,380 --> 00:06:19,760
+Eğer Anthropic ve Marvell gibi şirketler tarihin en devasa, en pahalı teknolojik altyapısını kurmak için milyarlarca dolar yakıyorsa,
+
+94
+00:06:20,400 --> 00:06:22,780
+bu işten şu an günün sonunda kim karlı çıkıyor?
+
+95
+00:06:23,180 --> 00:06:24,880
+Tabii ki altyapıya dokunmayanlar.
+
+96
+00:06:25,320 --> 00:06:29,980
+Aynen. Görünüşe göre bu altyapıyı hiç inşa etmeyen tek bir şirket var, Apple.
+
+97
+00:06:30,520 --> 00:06:34,240
+Bültendeki detaylara göre Apple inanılmaz rekor bir Eylül çeyreği açıkladı.
+
+98
+00:06:34,700 --> 00:06:37,300
+114,5 milyar dolar gelir.
+
+99
+00:06:37,620 --> 00:06:38,780
+Muazzam bir rakam.
+
+100
+00:06:39,040 --> 00:06:44,280
+Düşünsene sadece iPhone satışları bile %17 artıp 57,6 milyar dolara fırlamış.
+
+101
+00:06:44,740 --> 00:06:47,640
+Hizmetler geliri desen 31,6 milyar dolar.
+
+102
+00:06:47,640 --> 00:06:51,540
+Ve şirketin CFO'su Kevan Parekh'in çok kritik bir cümlesi var orada.
+
+103
+00:06:52,040 --> 00:06:57,040
+Yapay zeka fırsatlarını temelde üçüncü taraf uygulamalar ve ortaklıklarda gördüklerini söylüyor adam.
+
+104
+00:06:57,400 --> 00:06:58,680
+Kendi işlerine bakıyorlar yani.
+
+105
+00:06:59,260 --> 00:07:06,160
+Yani sanki Anthropic ve Marvell tarihin en pahalı elektrik şebekesini ve enerji santrallerini kan ter içinde inşa ediyor.
+
+106
+00:07:06,260 --> 00:07:14,220
+Apple ise sadece o elektriğe takılan en premium, en şık lambaları satıp o devasa elektrik faturasını da başkalarına ödetiyor gibi bir durum var.
+
+107
+00:07:14,900 --> 00:07:19,120
+Bu aslında Apple'ın o meşhur tarihsel stratejisinin tam bir özeti işte.
+
+108
+00:07:19,120 --> 00:07:27,100
+Yani riskli ve aşırı maliyette altyapı yatırımını başkalarına bırak, sen sadece kullanıcı deneyimini ve platformun kendisini kontrol et.
+
+109
+00:07:27,380 --> 00:07:28,740
+Harika bir pozisyon gerçekten.
+
+110
+00:07:29,100 --> 00:07:36,360
+Öyle. Ama Apple'ın bu üçüncü taraf geliştiricilere berbağlama stratejisinin çok büyük, ölümcül bir zayıf noktası var şu an.
+
+111
+00:07:36,520 --> 00:07:37,500
+O da regulasyonlar.
+
+112
+00:07:38,320 --> 00:07:40,760
+Özellikle de Çin pazarında işler çok değişiyor.
+
+113
+00:07:41,520 --> 00:07:44,860
+Bülten'de dikkat ettin mi bilmiyorum ama burada çok büyüleyici bir detay var.
+
+114
+00:07:44,860 --> 00:07:49,880
+Evet, Çin Ulusal Kalkınma ve Reform Komisyonu'ndan Wang Ruomeng'in açıklamaları var raporda.
+
+115
+00:07:50,280 --> 00:07:54,560
+Çin yönetimi yapay zeka geliştiricileri için yepyeni ve çok katı kurallar getiriyor.
+
+116
+00:07:55,100 --> 00:08:06,920
+Sadece modeli piyasaya sürerken değil, verinin ta ilk toplanmasından o işlem gücünün kullanımına ve ta en son kullanıcıya dağıtımına kadar tüm o yaşam döngüsünü denetleyeceklerini açıkladılar.
+
+117
+00:08:07,260 --> 00:08:08,660
+Adım adım izleyecekler yani.
+
+118
+00:08:08,660 --> 00:08:16,100
+Kesinlikle ve işte o büyük geliştiriciler, DeepSeek, Moonshot, Alibaba falan hepsi bu kuralların doğrudan hedefinde şu an.
+
+119
+00:08:16,520 --> 00:08:20,060
+Gerekçe ise çok tanıdık aslında modellerin kontrolden çıkmasını önlemek.
+
+120
+00:08:20,240 --> 00:08:25,220
+Evet çünkü Çin bu devasa teknolojik gücün sadece kapasitesini artırmayı hedeflemiyor.
+
+121
+00:08:25,740 --> 00:08:29,700
+Onun üzerindeki kontrolü milimetrik olarak sıkıl sıkıya elinde tutmayı hedefliyor.
+
+122
+00:08:30,340 --> 00:08:37,080
+Bir modelin veriyi nasıl yuttuğunu, onu nasıl işlediğini ve sana bana ne tür çıktılar verdiğini anbean izlemek istiyorlar.
+
+123
+00:08:37,080 --> 00:08:43,900
+İşte tam da burada sormak istediğin bir şey var sana. Sürekli hani medyada falan bu modellerin kontrolden çıkmasından bahsediliyor ya.
+
+124
+00:08:44,080 --> 00:08:45,520
+Evet büyük bir korku var ortada.
+
+125
+00:08:45,720 --> 00:08:54,260
+Hükümetler böyle devasa panik butonlarına basarken ben bir yandan da rapordaki SemiAnalysis'in yeni yayınladığı GDPx benchmark testine bakıyorum.
+
+126
+00:08:54,760 --> 00:09:04,640
+Bu test hani yapay zekanın çip tasarımından, hukuka, finanstan, siber güvenliğe kadar o ekonomik değeri en yüksek, en uzmanlık gerektiren görevlerdeki başarısını ölçüyor biliyorsun.
+
+127
+00:09:05,000 --> 00:09:06,460
+En zorlu sınav diyebiliriz buna.
+
+128
+00:09:06,460 --> 00:09:11,860
+Kesinlikle ve sonuçlar kelimenin tam anlamıyla içler acısı yani gülsem mi ağlasam mı bilemedim.
+
+129
+00:09:12,200 --> 00:09:14,080
+Neden? Rakamlar ne diyor tam olarak?
+
+130
+00:09:14,520 --> 00:09:19,720
+Bak zirvede Claude Opus 5.5 var ve başarı oranı sadece %12.
+
+131
+00:09:20,480 --> 00:09:23,700
+Gemini 4 karbon %10.9'da kalmış.
+
+132
+00:09:24,120 --> 00:09:35,800
+GPT-6 astra ise %9.6 ve daha da komiği o finans ve hukuk gibi karmaşık çok adımlı gerçekten uzmanlık isteyen görevlerde neredeyse hepsi koca bir sıfır çekmiş.
+
+133
+00:09:35,800 --> 00:09:36,440
+Sıfır.
+
+134
+00:09:36,780 --> 00:09:44,180
+Evet yani bir yanda devletler yapay zekayı sanki bir nükleer silahmış gibi yaşam döngüsünün her milimetresinde regüle ediyor.
+
+135
+00:09:44,560 --> 00:09:52,520
+Diğer yanda bu sözde dünyayı ele geçirecek kontrolden çıkacak süper zekalar temel bir finansal denetim görevinden koca bir sıfır alıyor.
+
+136
+00:09:53,060 --> 00:09:55,320
+Ya bu devasa bir çelişki değil mi sence de?
+
+137
+00:09:55,840 --> 00:09:58,880
+Gerçeklikle değil de sanki bir bilim kurgu filmiyle mi savaşıyoruz?
+
+138
+00:09:59,240 --> 00:10:02,600
+Şimdi ilk bakışta bu inanılmaz bir çelişki gibi görünüyor haklısın.
+
+139
+00:10:02,600 --> 00:10:07,540
+Yani neden temel bir hukuk metninde sıfır çeken sıradan bir modeli regüle edesin ki değil mi?
+
+140
+00:10:07,620 --> 00:10:08,200
+Aynen öyle.
+
+141
+00:10:08,480 --> 00:10:10,680
+Ama devletler bugünün başarısızlıklarına bakmıyor.
+
+142
+00:10:11,020 --> 00:10:13,880
+Onlar dünün ve asıl yarının ivmesine odaklanıyor.
+
+143
+00:10:14,480 --> 00:10:19,080
+Regülasyonlar genellikle gerçekleşmiş olanı değil o potansiyel risk algısını hedefler.
+
+144
+00:10:19,500 --> 00:10:20,940
+Ve tabii şirketler de boş durmuyor.
+
+145
+00:10:21,260 --> 00:10:25,220
+O senin bahsettiğin benchmark testlerindeki sıfırları silmek için strateji değiştiriyorlar.
+
+146
+00:10:25,920 --> 00:10:32,920
+Artık öyle her şeyi bilen, genel kültür ansiktopedisi gibi çalışan modeller yerine çok spesifik görevleri baştan sona halledebilen ajanlar eğitiyorlar.
+
+147
+00:10:33,200 --> 00:10:34,500
+Şu ajan meselesi.
+
+148
+00:10:34,740 --> 00:10:37,180
+Evet, Bültendeki Meituan örneğini düşün mesele.
+
+149
+00:10:37,180 --> 00:10:40,220
+Çinli yemek teslimat devi Meituan'dan bahsediyorsun değil mi?
+
+150
+00:10:40,340 --> 00:10:44,660
+Evet, LongCat 2.5 adında yeni devasa bir model çıkarmışlar piyasaya.
+
+151
+00:10:45,240 --> 00:10:48,660
+Baktığım rakamlara 1.6 trilyon parametreli bir canavar.
+
+152
+00:10:48,940 --> 00:10:50,640
+Bunun 48 milyarı da aktifmiş.
+
+153
+00:10:50,640 --> 00:11:00,400
+Ama asıl en dikkat çekici kısmı şu bence tam 1 milyon token'lık bir bağlam penceresine sahip olması ve uzun soluklu kodlama ile ajan görevlileri için özel olarak eğitilmesi.
+
+154
+00:11:00,780 --> 00:11:05,500
+İşte tam olarak kilit nokta burası. 1 milyon token'lık bağlam penceresi ne demek biliyor musun?
+
+155
+00:11:05,740 --> 00:11:07,460
+Bayağı büyük bir hafıza demek herhalde.
+
+156
+00:11:07,880 --> 00:11:17,120
+Modelin kendisine verilen o devasa bir şirket arşivini veya binlerce, on binlerce satırlık bir kod dizisini bir kerede okuyup akla tutabilmesi demek.
+
+157
+00:11:17,660 --> 00:11:21,800
+Geleneksel modeller nasıldır? Bir soruyu yanıtlar ve anında unutur seni.
+
+158
+00:11:22,320 --> 00:11:28,180
+Ama LongCat gibi modeller o büyük hafızayı kullanarak günlerce süren çok adımlı görevleri.
+
+159
+00:11:28,420 --> 00:11:34,160
+Yani senin az önce sıfır çektiklerini söylediğin o finans ve hukuk analizlerini çözmek için özel olarak tasarlanıyor.
+
+160
+00:11:34,420 --> 00:11:37,220
+Anladım. Yani sıfırları ajanlarla kapatacaklar.
+
+161
+00:11:37,400 --> 00:11:42,500
+Kesinlikle. Ve tabii bunu yapmak hiç bedava değil. İnanılmaz devasa bir sermaye istiyor bu iş.
+
+162
+00:11:42,500 --> 00:11:48,340
+Ki bu maliyet meselesi de bültendeki yapay zeka pazarında yepyeni çok dalgalı bir süreci tetiklemiş durumda.
+
+163
+00:11:48,680 --> 00:11:50,840
+O da devasa bir borçlanma dalgası.
+
+164
+00:11:51,200 --> 00:11:57,940
+Şirketler artık sadece kendi kazandıkları nakitte değil, bu trilyonluk modelleri eğitebilmek için inanılmaz borçların altına giriyorlar.
+
+165
+00:11:58,100 --> 00:11:59,520
+Herkes bankalara koşuyor yani.
+
+166
+00:11:59,960 --> 00:12:00,540
+Resmen öyle.
+
+167
+00:12:00,980 --> 00:12:06,800
+Rapora göre Oracle 20 milyar dolar toplamak için başvuru yapmış ki bunun yarısı hisse, yarısı tahvil ihracı.
+
+168
+00:12:06,800 --> 00:12:12,060
+Ve bu duyurunun hemen ardından hisseleri piyasada anında %6 düştü adamların.
+
+169
+00:12:12,500 --> 00:12:14,240
+Yatırımcı korktu tabi o borcu görünce.
+
+170
+00:12:14,580 --> 00:12:15,400
+Sadece o da değil.
+
+171
+00:12:15,740 --> 00:12:18,980
+Alphabet Avrupa'da 6 milyar euroluk tahvil ihracına çıkıyor.
+
+172
+00:12:19,340 --> 00:12:22,300
+Piyasadan tam 17 milyar euro talep geliyor düşün.
+
+173
+00:12:22,880 --> 00:12:27,800
+Sonra Bloomberg'un aktardığı habere göre Meta en az 20 milyar dolarlık tahvil satışı düşünüyor.
+
+174
+00:12:28,280 --> 00:12:29,880
+Hatta bültende şöyle bir detay da var.
+
+175
+00:12:29,880 --> 00:12:41,080
+Yapay zeka altyapısının giderek artan bir oranda kredi temerrüt takasları yani bu meşhur CDS'ler üzerinden gizli borçlanmalarla finanse edildiğine dair doğrulanmamış bazı iddialar dolanıyor etrafta.
+
+176
+00:12:41,080 --> 00:12:43,920
+Bu CDS kısmı iddia tabii. Henüz kesin değil.
+
+177
+00:12:44,300 --> 00:12:46,360
+Doğru, altını çizelim. Bu şimdilik bir iddia.
+
+178
+00:12:46,840 --> 00:12:55,100
+Ama genel tabloya bakarsan altyapı faturası o kadar devasa ki o trilyon dolarlık silikon vadisi devleri bile gidip bankaların kapısını aşındırmak zorunda kalıyor.
+
+179
+00:12:55,640 --> 00:12:58,820
+Çünkü kurdukları bu altyapının geri dönüşü için bekleyecek lüksleri yok.
+
+180
+00:12:59,200 --> 00:13:05,500
+O yarışta bir saniye bile geri kalmak pastanın yani pazarın tamamını sonsuza dek kaybetmek anlamına geliyor onlar için.
+
+181
+00:13:05,800 --> 00:13:06,980
+Çok acımasız bir yarış.
+
+182
+00:13:06,980 --> 00:13:13,120
+Hem de nasıl. Ama bu finansman ve para bulma çılgınlığının sadece teknoloji şirketleriyle sınırlı kalmadığını da görüyoruz.
+
+183
+00:13:13,620 --> 00:13:21,880
+Tahviller, borçlanmalar bir yere kadar işliyor. Asıl büyük para o limitsiz kaynak ulus devletlerin bizzat doğrudan sürece dahil olmasıyla ortaya çıkıyor.
+
+184
+00:13:22,180 --> 00:13:24,340
+Ha evet devlet düzeyindeki anlaşmalar.
+
+185
+00:13:24,400 --> 00:13:30,780
+Aynen. Birleşik Arap Emirlikleri ve OpenAI arasındaki o son dev anlaşmalar bunun en taze en çarpıcı örneği bence.
+
+186
+00:13:30,780 --> 00:13:38,940
+Evet, Abu Dhabi'de Veliyat Prensi Şeyh Halid bin Muhammed ile Sam Altman'ın bizzat masaya oturup yaptığı o dört stratejik anlaşma.
+
+187
+00:13:39,480 --> 00:13:41,180
+Detaylar gerçekten inanılmaz boyutta.
+
+188
+00:13:41,300 --> 00:13:45,200
+Bir kere makine tarafından okunabilir hükümet diye bir girişimi başlatmışlar.
+
+189
+00:13:45,460 --> 00:13:46,980
+Konsept bile çok fütüristik.
+
+190
+00:13:47,100 --> 00:13:48,840
+Gerçekten öyle, beni çok düşündürdü bu.
+
+191
+00:13:49,100 --> 00:13:57,520
+Düşünsene devletin tüm yasalarını, prosedürlerini, bürokrasisini yapay zekanın doğrudan tek seferde anlayıp işleyebileceği bir dijital formata çeviriyorlar.
+
+192
+00:13:57,520 --> 00:14:05,280
+Üstelik devletin dev enerji şirketi ADNOC, OpenAI'ın Inception42 platformunu kullanan dünyadaki ilk enerji şirketi oluyor.
+
+193
+00:14:05,520 --> 00:14:07,200
+Enerji sektörü için dev bir adım bu.
+
+194
+00:14:07,220 --> 00:14:07,780
+Kesinlikle.
+
+195
+00:14:08,060 --> 00:14:12,180
+Sonra Mubadala ile yapay zeka tabanlı yatırım analizi ortaklığı var.
+
+196
+00:14:12,680 --> 00:14:16,540
+Microsoft ile 20 bin kişilik ulusal dev bir eğitim programı planlanmış.
+
+197
+00:14:17,040 --> 00:14:21,920
+Yani özetle bütün bir ülkenin dijital sinir sistemi geleceği tek bir şirketin.
+
+198
+00:14:22,060 --> 00:14:23,680
+OpenAI'in ellerine emanet ediliyor.
+
+199
+00:14:24,040 --> 00:14:28,560
+Resmen ülke düzeyinde koca bir işletim sistemi güncellemesi yapıyorlar adamlar.
+
+200
+00:14:28,560 --> 00:14:40,060
+Ancak bu makro düzeydeki milyarlarca dolarlık o stratejik ortaklıklar OpenAI'ın sıradan bir kullanıcıya yani sana bana sunduğu hizmetle inanılmaz ironik bir tezat oluşturuyor.
+
+201
+00:14:40,480 --> 00:14:41,120
+Nasıl yani?
+
+202
+00:14:41,620 --> 00:14:44,820
+Bülten'deki o ChatGPT'nin son güncellemesine dikkat ettin mi?
+
+203
+00:14:45,500 --> 00:14:46,740
+Aa o gelene posta.
+
+204
+00:14:47,380 --> 00:14:51,860
+Evet OpenAI masaüstü uygulamasında sohbet ve iş sekmelerini birleştirmiş.
+
+205
+00:14:51,860 --> 00:14:59,340
+Yani eskiden ayrı ayrı rahatça kullanılabilen kodeks gibi kodlama araçları falan artık tamamen aynı token havuzundan harcayacakmış.
+
+206
+00:14:59,940 --> 00:15:02,460
+Bireysel kullanıcı için limitler daralıyor yani.
+
+207
+00:15:02,700 --> 00:15:03,260
+Tam olarak bu.
+
+208
+00:15:03,860 --> 00:15:05,640
+Ya tüm bunlarının anlamı ne biliyor musun?
+
+209
+00:15:05,860 --> 00:15:06,620
+Şöyle özetleyeyim.
+
+210
+00:15:06,740 --> 00:15:15,180
+OpenAI bir yandan Birleşik Arap Emirlikleri gibi koca bir ülkenin devlet dairelerini, trilyonluk enerji devlerini baştan inşa eden,
+
+211
+00:15:15,180 --> 00:15:22,460
+onlarla böyle şahşalı, milyarlarca dolarlık dev anlaşmaları imzalayan bir ulusal altyapı sağlayıcısına dönüşüyor.
+
+212
+00:15:22,640 --> 00:15:24,060
+Krallarla masaya oturuyorlar.
+
+213
+00:15:24,600 --> 00:15:24,940
+Aynen.
+
+214
+00:15:25,420 --> 00:15:30,820
+Diğer yandan da evindeki bilgisayardan kod yazmaya çalışan sıradan ChatGPT kullanıcısına dönüp diyor ki
+
+215
+00:15:30,820 --> 00:15:33,600
+token kotalarınızı idareli kullanın lütfen.
+
+216
+00:15:34,040 --> 00:15:36,500
+Artık her şey aynı kısıtlı havuzdan düşecek.
+
+217
+00:15:37,040 --> 00:15:40,960
+Yani hedef kitle makasının bu kadar acımasızca açıldığını daha önce hiç görmemiştik.
+
+218
+00:15:41,280 --> 00:15:43,600
+Bu makasın açılması kesinlikle tesadüf değil.
+
+219
+00:15:43,600 --> 00:15:54,260
+AI OpenAI'in o kurumsal müşterilere yani çok çok parası olan devasa şirketlere ve ulus devletlere odaklanması aslında piyasanın şu anki tek soğuk gerçeği.
+
+220
+00:15:54,760 --> 00:15:55,520
+Bunu ben uydurmuyorum.
+
+221
+00:15:55,880 --> 00:16:00,900
+Bunun en net kanıtını Palantir'ın 3. çeyrek finansal sonuçlarında çok şeffaf bir şekilde görüyoruz.
+
+222
+00:16:00,960 --> 00:16:02,280
+Palantir rakamları nasıldı?
+
+223
+00:16:02,920 --> 00:16:07,980
+Şirket yıllık %96 artışla 2,31 milyar dolar gelir açıklamış.
+
+224
+00:16:08,720 --> 00:16:10,280
+Bak daha da çarpıcı olanı söyleyeyim.
+
+225
+00:16:10,480 --> 00:16:12,580
+Palantir eskiden çok daha gizemliydi.
+
+226
+00:16:12,580 --> 00:16:15,680
+Daha çok askeri ve istihbarat ihaleleriyle bilinirdi.
+
+227
+00:16:15,780 --> 00:16:17,140
+CIA falan kullanıyordu hep.
+
+228
+00:16:17,320 --> 00:16:27,720
+Evet ama şimdi Amerika'daki ticari geliri yani doğrudan o sıradan büyük şirketlere yaptığı satışlar tam %148 artarak 984 milyon dolara fırlamış.
+
+229
+00:16:28,420 --> 00:16:36,800
+Büyük ticari şirketler yapay zekayı ve o derin veri analizini kendi kurumsal yapılarına entegre etmek için kelimenin tam anlamıyla kapıda sıraya girmiş durumdalar.
+
+230
+00:16:36,960 --> 00:16:38,160
+Rakamlar yalan söylemez.
+
+231
+00:16:38,160 --> 00:16:45,420
+Ama işte bu kurumsal entegrasyonun ve ticari başarının arka planında oldukça karanlık, çok can sıkıcı bir gerçek yatıyor.
+
+232
+00:16:46,140 --> 00:16:55,120
+Eğer şu an bizi dinliyorsan ve ofiste, masa başında bilgi tabanlı, o klasik beyaz yakalı bir işin varsa lütfen bu habere özellikle dikkat etmeni istiyorum.
+
+233
+00:16:55,420 --> 00:16:57,320
+Evet, işin renginin değiştiği yer burası.
+
+234
+00:16:57,660 --> 00:17:06,420
+Kesinlikle. Çünkü şirketler bu yapay zeka araçlarını büyük heveslerle, milyarlar dökerek satın alırken kendi çalışanları için ödenen beden maalesef çok ağır oluyor.
+
+235
+00:17:07,000 --> 00:17:16,300
+Raporda var dev web hosting şirketi Squarespace çalışanlarının %19'unu yani bir kalemde yaklaşık 300 kişiyi doğrudan işten çıkarıyor.
+
+236
+00:17:16,520 --> 00:17:17,440
+Sadece onlar da değil?
+
+237
+00:17:17,440 --> 00:17:25,880
+Evet. Benzer şekilde o ünlü açık kaynak yazılım şirketi SUSE'de yaklaşık 1900 kişilik tüm kadrosunun tam %10'unu azaltma kararı almış.
+
+238
+00:17:26,160 --> 00:17:35,360
+Ve sıkıdır SUSE'nin CEO'su bu işten çıkarma gerekçesi olarak doğrudan, arkasında saklanmadan, hiçbir kelime oyunu falan yapmadan otomasyon ve yapay zekayı gösteriyor.
+
+239
+00:17:35,360 --> 00:17:36,780
+Çok net bir itiraf bu.
+
+240
+00:17:37,020 --> 00:17:40,660
+Aynen öyle. Adam açıkça yapay zeka yetenekleri katlanarak ilerliyor.
+
+241
+00:17:41,040 --> 00:17:45,220
+İşimizi nasıl yapacağımızı radikal bir şekilde yeniden hayal etmek zorundayız diyor e-postada.
+
+242
+00:17:45,840 --> 00:17:49,840
+Yani bu artık hani bir bilim kurgu filminin falan 2030 senaryosu falan değil.
+
+243
+00:17:50,540 --> 00:17:56,420
+İnsanların bugün sabah işe gidip masalarını boşaltmasına neden olan çok gerçek, çok yıkıcı bir ekonomik deprem.
+
+244
+00:17:56,680 --> 00:17:59,340
+Bu gerçekten çok acımasız ve sert bir geçiş dönemi.
+
+245
+00:17:59,760 --> 00:18:04,900
+Şirket yönetimleri artık yapay zekayı senin işini kolaylaştıran tatlı bir yardımcı pilot falan olarak görmüyor.
+
+246
+00:18:05,420 --> 00:18:10,060
+Doğrudan maliyetleri kısacak, insansız bir iş gücü alternatifi olarak görüp masaya koyuyorlar.
+
+247
+00:18:10,160 --> 00:18:11,640
+Maaş ödemeyecekleri bir işçi gibi.
+
+248
+00:18:11,860 --> 00:18:16,300
+Aynen. Ancak bu durum her şirkette aynı vizyonla veya aynı hevesle yankı bulmuyor.
+
+249
+00:18:16,760 --> 00:18:24,820
+Bazı köklü şirketlerde özellikle oyun ve güvenlik departmanları yönetimin bu kontrolsüz yapay zeka hevesine devasa bir acil durum freni yaptırıyor.
+
+250
+00:18:25,320 --> 00:18:27,580
+Goldman Sachs örneği bunun en güzel kanıtı bültendeki.
+
+251
+00:18:27,580 --> 00:18:38,780
+Aa evet o haber çok ilginçti gerçekten. Goldman Sachs, Claude Code ve Microsoft'un Copilot'ı gibi o meşhur yapay zeka kodlama araçlarını kendi bankacılarına ve traderlarına tamamen yasaklamış.
+
+252
+00:18:39,200 --> 00:18:44,240
+Kurum içinde bu araçlara erişimi sadece ama sadece kendi yazılım mühendisleriyle sınırlandırmışlar.
+
+253
+00:18:44,660 --> 00:18:51,740
+İnsanların işini hızlandıracak, maliyeti düşürecek bir şeyi neden komple yasaklarsın ki böyle bir dev şirket olarak?
+
+254
+00:18:51,740 --> 00:18:55,020
+Çünkü orada devasa veri güvenliği kaygıları devreye giriyor.
+
+255
+00:18:55,520 --> 00:18:59,640
+Kurumsal dünyada şu an doğrulanmamış bir sürü risk algısı dolaşıyor koridorlarda.
+
+256
+00:19:00,160 --> 00:19:09,260
+En büyük korkuları da şu, bu dışarıdan gelen modeller bizim özel gizli finansal verilerimizi alıp başka yerlerde başka şirketlerin eğitim verisi olarak kullanır mı?
+
+257
+00:19:09,320 --> 00:19:10,660
+Haklı bir paranoya aslında.
+
+258
+00:19:10,920 --> 00:19:11,340
+Tabii canım.
+
+259
+00:19:11,800 --> 00:19:19,020
+Ayrıca modellerin ara sıra halüsinasyon görmesi, yani kendinden emin bir şekilde tamamen yanlış uydurma bilgi üretmesi durumu var.
+
+260
+00:19:19,080 --> 00:19:20,180
+Onu ben de çok yaşıyorum.
+
+261
+00:19:20,180 --> 00:19:29,260
+Düşünsene sıradan bir bankacının veya bir traderın o yanlış bilgiye güvenip saniyeler içinde yanlış tuşa basarak milyonlarca dolarlık hatalar yapmasına neden olabilir bu.
+
+262
+00:19:29,620 --> 00:19:30,480
+Banka bu riski alamaz.
+
+263
+00:19:30,900 --> 00:19:36,160
+Yani düşünsene manzarayı yönetim kademesi maliyetleri kısmak için yapay zekayı zorla şirkete sokmak istiyor.
+
+264
+00:19:36,340 --> 00:19:37,500
+Bir sürü insan işsiz kalıyor.
+
+265
+00:19:38,000 --> 00:19:42,220
+Güvenlik departmanları ise riski görüp o aynı yapay zekayı tamamen yasaklıyor.
+
+266
+00:19:42,800 --> 00:19:46,660
+Şirketler şu an kendi içlerinde çok büyük sessiz bir savaş veriyor resmen.
+
+267
+00:19:46,860 --> 00:19:47,720
+Çok kaotik bir durum.
+
+268
+00:19:48,140 --> 00:19:48,780
+Kesinlikle.
+
+269
+00:19:48,780 --> 00:20:00,980
+Peki teknik olmayan hani kod yazmayı falan hiç bilmeyen sıradan uzmanların bu yapay zeka sistemlerini güvenli bir şekilde böyle yasaklanmadan veya korkmadan kullanabilmesinin hiç mi bir yolu yok?
+
+270
+00:20:01,260 --> 00:20:04,220
+Aslında var ve piyasa tam olarak bunu çözmeye çalışıyor.
+
+271
+00:20:04,360 --> 00:20:07,620
+İşte işin gerçekten ilginçleştiği yerde tam burası bence.
+
+272
+00:20:08,180 --> 00:20:11,280
+Bülten'de Trajectory adında yeni bir girişimden bahsediliyor.
+
+273
+00:20:11,280 --> 00:20:19,200
+Sequoia Capital liderliğinde tam 45 milyon dolar yatırım almışlar ve daha şimdiden değerlemeleri 300 milyon dolara fırlamış.
+
+274
+00:20:19,620 --> 00:20:22,360
+Müşterileri arasında Harvey, NVIDIA falan var.
+
+275
+00:20:22,620 --> 00:20:24,440
+Yaptıkları şey tam da bu sorunu çözmek.
+
+276
+00:20:24,580 --> 00:20:32,560
+Teknik olmayan uzmanların yapay zeka modellerini güvenle eğitebilmesi ve kullanabilmesi için aracı bir sürekli öğrenme platformu sunuyorlar.
+
+277
+00:20:32,900 --> 00:20:36,880
+Bu trajektörünün daha ilk günden bu kadar büyük bir yatırım toplaması tesadüf değil.
+
+278
+00:20:36,880 --> 00:20:43,160
+Bize yapay zeka sektörünün şu an tam olarak bir ergenlik döneminde olduğunu, çok sancılı bir büyüme yaşadığını gösteriyor.
+
+279
+00:20:43,420 --> 00:20:45,300
+Ergenlik dönemi çok iyi bir benzetme.
+
+280
+00:20:45,360 --> 00:20:49,180
+Öyle ama kimse bu teknolojiyle nasıl yaşayacağını tam olarak bilmiyor şu an.
+
+281
+00:20:49,620 --> 00:20:53,480
+Herkes onu kendi departmanının, kendi kurallarının içine zorla sığdırmaya çalışıyor.
+
+282
+00:20:54,120 --> 00:21:01,000
+Girişimciler de işte bu trajektörü gibi şirketler bu gerilimi çözmek için köprüler inşa edip o köprüden kar etmeye çalışıyorlar.
+
+283
+00:21:01,460 --> 00:21:03,560
+Ve gayet de iyi kar ediyorlar gibi duruyor.
+
+284
+00:21:03,960 --> 00:21:04,560
+Şimdilik evet.
+
+285
+00:21:05,020 --> 00:21:14,440
+Ancak özel sektör kendi içinde bu uyum krizleriyle, yasaklarla, işten çıkarmalarla boğuşurken devletlerin bu teknolojiye bakışı çok daha net ve keskin.
+
+286
+00:21:14,940 --> 00:21:17,320
+Onlar için bu durum bir işverimliği aracı falan değil.
+
+287
+00:21:17,740 --> 00:21:20,220
+Doğrudan bir ulusal güvenlik ve beka meselesi.
+
+288
+00:21:20,240 --> 00:21:21,880
+O yüzden kendi modellerini yapıyorlar.
+
+289
+00:21:21,880 --> 00:21:26,160
+Tabii ki. Güney Kore'nin 2027 bütçe tasarısına bir bak bültendeki.
+
+290
+00:21:26,380 --> 00:21:27,800
+Evet rakamlar orada da uçuktu.
+
+291
+00:21:27,800 --> 00:21:37,480
+Adamlar sadece yapay zeka, çip üretimi ve veri merkezleri için 21,3 trilyon won yani yaklaşık 16 milyar dolar nakit ayırmışlar kenara.
+
+292
+00:21:38,140 --> 00:21:50,100
+Ve bunun içindeki o çok kritik 4,6 trilyon wonluk kısım sadece ve sadece ülkenin tamamen kendine ait bağımsız o egemen yapay zeka modeli dedikleri projeyi geliştirmek için ayrılmış.
+
+293
+00:21:50,100 --> 00:21:58,420
+Vay canına. Hani kendi dilini, kendi kültürünü, yasalarını bilen dışarıya, Amerika'ya falan hiç bağımlı olmayan bir devlet zekası yaratmak istiyorlar.
+
+294
+00:21:58,520 --> 00:22:00,500
+Aynen. Dijital bağımsızlık peşindeler.
+
+295
+00:22:01,040 --> 00:22:03,600
+Ama asıl sarsıcı olan ne biliyor musun tüm bu raporlarda?
+
+296
+00:22:04,000 --> 00:22:15,980
+Bu milyarlarca doların, tahvillerin, o dev devlet bütçelerinin döküldüğü teknolojinin perde arkasında işlerin nasıl diyeyim ne kadar kontrolden çıkmaya, ne kadar tuhaflaşmaya başladığını görmek.
+
+297
+00:22:16,220 --> 00:22:17,420
+Ne anlamda tuhaflaşmak?
+
+298
+00:22:17,420 --> 00:22:24,780
+Bak bültende MIT CSAIL yani Massachusetts Teknoloji Enstitüsü araştırmacılarının yayınladığı yepyeni bir makale var.
+
+299
+00:22:25,080 --> 00:22:28,460
+Onu okuduğumda gerçekten beynim yandı anlamakta çok zorlandım.
+
+300
+00:22:28,480 --> 00:22:29,060
+Ne bulmuşlar?
+
+301
+00:22:29,240 --> 00:22:44,460
+GPT-6 Astra modeli var ya hani o dev model kendisinden tamamen farklı apayrı mimarideki Qwen3.5 0.8B adlı küçük bir modelin içindeki ağırlıkları doğrudan kendi kendine düzenlemiş.
+
+302
+00:22:44,460 --> 00:22:53,880
+Üstelik bunu makine öğrenmesinin hani o en temel değişmez kuralı olan gradiyan inişi yani gradient descent yöntemini hiç kullanmadan yapmış.
+
+303
+00:22:54,080 --> 00:22:55,860
+Bu inanılmaz bir teknik sıçrama.
+
+304
+00:22:56,260 --> 00:22:56,800
+Dahası var.
+
+305
+00:22:57,220 --> 00:23:03,140
+Sonuç olarak da o küçük Qwen modelinin MATH-500 testindeki matematik çözme başarısını almış.
+
+306
+00:23:03,460 --> 00:23:09,460
+%7,9'dan bir anda tek hamlede %48,1'e fırlatmış.
+
+307
+00:23:09,840 --> 00:23:12,960
+Rica isen bana bunu bir insanın anlayabileceği şekilde çevirir misin?
+
+308
+00:23:13,400 --> 00:23:14,540
+Gradiyan inişi nedir?
+
+309
+00:23:14,760 --> 00:23:20,280
+Ve GPT-6'nın bunu hiç kullanmadan başka bir modeli adeta hacklemesi, kodlaması.
+
+310
+00:23:20,600 --> 00:23:21,700
+Neden bu kadar şok edici?
+
+311
+00:23:22,020 --> 00:23:24,480
+Tabii tabii bunu şöyle basitleştirerek açıklayayım sana.
+
+312
+00:23:25,180 --> 00:23:27,840
+Geleneksel olarak bir yapay zekayı sıfırdan eğitmek,
+
+313
+00:23:28,060 --> 00:23:33,320
+hani üzerinde milyarlarca minik ses düğmesi olan stadyum büyüklüğünde devasa bir miksaj masası düşün.
+
+314
+00:23:33,440 --> 00:23:34,580
+Tamam gözümde canlandı.
+
+315
+00:23:34,580 --> 00:23:37,920
+O doğru sesi yani o aradığımız doğru zekayı bulmak için
+
+316
+00:23:37,920 --> 00:23:45,800
+o milyarlarca düğmeyi çok ağır matematiksel formüllerle sürekli deneme yanılma yoluyla böyle yavaş yavaş milim milim ayarlarsın.
+
+317
+00:23:46,020 --> 00:23:47,720
+İşte buna gradiyan inişi diyoruz biz.
+
+318
+00:23:48,600 --> 00:23:52,920
+Çok yavaş, inanılmaz pahalı ve tamamen körlemesine yapılan bir süreçtir bu aslında.
+
+319
+00:23:53,420 --> 00:23:55,820
+Peki MIT'nin makalesinde farklı olan ne?
+
+320
+00:23:56,900 --> 00:24:03,700
+Orada olan şey şu, GPT-6 o dev miksaj masasındaki milyarlarca düğmeyle körlemesine oynamak yerine
+
+321
+00:24:03,700 --> 00:24:06,500
+o küçük yapay zekanın doğrudan beynine bakıyor.
+
+322
+00:24:06,500 --> 00:24:15,220
+Ve sadece doğal dili, normal mantığı kullanarak diyor ki, şu bağlantılar yanlış kurulmuş, bunları doğrudan şöyle değiştirirsen çok daha zeki olursun.
+
+323
+00:24:15,600 --> 00:24:16,320
+Şaka yapıyorsun.
+
+324
+00:24:16,680 --> 00:24:17,120
+Ciddiyim.
+
+325
+00:24:17,620 --> 00:24:24,500
+Yani o kaba kuvvet, matematiksel algoritmayı kullanmak yerine tıpkı kıdemli, yıldanmış bir yazılım mühendisinin bir stajyerin kodunu okuyup,
+
+326
+00:24:25,140 --> 00:24:28,300
+ha hata burada diyerek tek seferde düzeltmesi gibi davranıyor.
+
+327
+00:24:29,100 --> 00:24:29,700
+Düşünebiliyor musun?
+
+328
+00:24:30,100 --> 00:24:35,780
+Bir yapay zeka, başka bir yapay zekanın kodunu sadece onunla konuşarak ve mantık kurarak baştan yazıyor.
+
+329
+00:24:36,040 --> 00:24:36,640
+İnanılmaz.
+
+330
+00:24:37,020 --> 00:24:42,180
+Zaten Anthropic'in o halka arz belgesinde bahsettiğimiz dramatik hızlanma eşiği de tam olarak bu değil mi?
+
+331
+00:24:42,660 --> 00:24:48,320
+Sistemlerin kendi kendilerini insan mühendislerden çok daha hızlı, çok daha zekice eğitmeye ve düzeltmeye başlaması.
+
+332
+00:24:48,600 --> 00:24:49,140
+Kesinlikle.
+
+333
+00:24:49,540 --> 00:24:54,160
+Ve bunun işin teknik boyutu kadar ekonomik boyutu da aynı derecede inanılmaz aslında.
+
+334
+00:24:54,640 --> 00:24:56,260
+Aa evet, o sızıntı haberi.
+
+335
+00:24:56,580 --> 00:24:59,320
+Bülten'de Business Insider'ın paylaştığı bir detay vardı.
+
+336
+00:24:59,320 --> 00:25:04,380
+Tabii bunun şimdilik doğrulanmamış bir şirket için sızıntı olduğunu bir kez daha belirterek aktaralım da.
+
+337
+00:25:04,380 --> 00:25:06,020
+Evet bir iddia bu şimdilik.
+
+338
+00:25:06,400 --> 00:25:20,780
+İddiaya göre Anthropic çalışanlarının kendi şirketlerindeki günlük işlerini yaparken harcadıkları yapay zeka tokenlarının API fiyatı üzerinden hesaplanan maliyeti o çalışanların aldığı kendi yüksek maaşlarını çoktan aşmış durumda.
+
+339
+00:25:21,040 --> 00:25:26,240
+Bak bu iddia eğer doğruysa ki kuvvetle muhtemel her şeyi kökünden değiştirir.
+
+340
+00:25:26,360 --> 00:25:26,960
+Nasıl yani?
+
+341
+00:25:26,960 --> 00:25:31,840
+Bu bize silikon vadisinde değerin kaynağının artık tamamen yer değiştirdiğini gösterir.
+
+342
+00:25:32,260 --> 00:25:43,140
+Düşünsene en parlak, en pahalı Stanford mezunu mühendislerin maaşı bile onların işini kolaylaştıran o işlem gücünün yani kompütun elektrik ve çip maliyetinin altında kalıyor demek bu.
+
+343
+00:25:43,480 --> 00:25:44,120
+Vay be.
+
+344
+00:25:44,120 --> 00:25:47,160
+İşlem gücü artık sadece teknik bir altyapı meselesi değil.
+
+345
+00:25:47,520 --> 00:25:52,960
+Modern çağın toprağı, suyu, petrolden bile daha değerli en temel ekonomik metası haline geldi.
+
+346
+00:25:53,220 --> 00:25:55,280
+Petrol benzetmesi çok doğru bence.
+
+347
+00:25:55,280 --> 00:26:04,980
+Ve bu yeni metanın ne kadar stratejik, ne kadar ölümcül olduğunu Rusya Devlet Başkanı Putin'in imzaladığı son kararname bize çok net gösteriyor bültende.
+
+348
+00:26:05,400 --> 00:26:07,600
+O kararname de tam bir dönüm noktası bence.
+
+349
+00:26:07,980 --> 00:26:13,600
+Evet Ukrayna'nın Rus veri merkezlerine yaptığı o drone saldırılarının hemen ardından geldi üstelik bu karar.
+
+350
+00:26:14,060 --> 00:26:21,780
+Rusya ülkedeki tüm özel veri merkezlerinin kapasitelerinin en az %10'unu acil durumları için devlete ayırmasını kanunla şart koştu.
+
+351
+00:26:21,780 --> 00:26:27,140
+Yani eskiden savaş zamanında devletler gider fabrikaların tank üretmesi için el koyardı ya.
+
+352
+00:26:27,320 --> 00:26:28,400
+Evet seferberlik hali.
+
+353
+00:26:28,480 --> 00:26:35,100
+Aynen. Şimdi devletler tank fabrikasına değil doğrudan işlem gücüne, o buluttaki sunucu kapasitesine el koyuyor.
+
+354
+00:26:35,460 --> 00:26:41,220
+İşlem gücü gerçekten de artık ulusal bir toprak parçası gibi bizzat askeriyeyle savunuluyor ve paylaştırılıyor.
+
+355
+00:26:41,660 --> 00:26:49,300
+Çünkü artık devletlerin gerçek gücü sınırlarının fiziki genişliğiyle değil o sahip oldukları aktif işlem kapasitesinin büyüklüğüyle ölçülüyor.
+
+356
+00:26:49,400 --> 00:26:50,620
+İşlem gücü, kompüt.
+
+357
+00:26:50,620 --> 00:26:52,980
+Kesinlikle dünyanın yepyeni para birimi bu.
+
+358
+00:26:53,520 --> 00:26:57,420
+Peki sırada ne var? Takvimimiz önümüzdeki günler için oldukça yoğun.
+
+359
+00:26:58,020 --> 00:27:01,720
+En başta söylediğimiz gibi bugün ABD ara seçimleri yapılıyor.
+
+360
+00:27:01,960 --> 00:27:11,460
+Tabii ki sonuçları piyasaları ve regulasyonları çok derin etkileyecek ama dediğim gibi biz hiçbir taraf tutmadan tamamen işin veri ve teknoloji tarafını okumaya devam edeceğiz önümüzdeki günlerde de.
+
+361
+00:27:11,480 --> 00:27:12,540
+Bizim işimiz verilerle.
+
+362
+00:27:12,640 --> 00:27:18,340
+Kesinlikle. Yarın yani 4 Kasım'da Qwen Entegreli iOS betası nihayet kullanıcılarla buluşuyor.
+
+363
+00:27:18,340 --> 00:27:23,080
+Bu, Apple'ın o çok güvendiği üçüncü taraf stratejisinin ilk devasa sınavı olacak.
+
+364
+00:27:23,700 --> 00:27:32,100
+Sonra 9 Kasım haftasında ise Anthropic'in o devasa S1 belgesini, rakamları yatırımcılara tek tek anlatacağı o meşhur halka arz tanıtım turu başlıyor.
+
+365
+00:27:32,440 --> 00:27:34,400
+Ve tabii 12 Kasım'ı da unutmamak lazım.
+
+366
+00:27:34,740 --> 00:27:39,780
+Anthropic'in o çok tartışılan, güncellenen kullanım politikası resmen yürürlüğe giriyor o gün.
+
+367
+00:27:39,880 --> 00:27:41,180
+Orada neler değişiyor asıl?
+
+368
+00:27:41,180 --> 00:27:51,640
+Özellikle seçim dönemlerinde falan çok tehlikeli olan aldatıcı kampanyalar, sahte hesap ağları oluşturma ve otonom silah donanımları konusunda kurallar inanılmaz derecede sıkılaştırıldı.
+
+369
+00:27:52,060 --> 00:28:01,740
+Daha da önemlisi sağlık veya finans gibi yüksek riskli sayılan kullanım alanlarında yapay zekanın verdiği kararı günün sonunda mutlaka bir insanın denetlemesi zorunda kılındı.
+
+370
+00:28:01,940 --> 00:28:03,840
+İnsanın döngüde olması kuralı yani.
+
+371
+00:28:04,060 --> 00:28:08,880
+Aynen öyle. Ancak benim dikkatimi en çok çeken bambaşka bir madde oldu o politikada.
+
+372
+00:28:09,080 --> 00:28:09,580
+Hangisi o?
+
+373
+00:28:09,580 --> 00:28:16,780
+Modellere yönelik gereksiz, sürekli ve duygusal istismar boyutuna varan kötü amaçlı kullanıcı davranışlarının yasaklanması.
+
+374
+00:28:17,300 --> 00:28:21,580
+Buna şirketin kendi içinde model refahı yani model welfare'den deyini duyuyoruz.
+
+375
+00:28:21,940 --> 00:28:32,360
+Hadi canım. Bir saniye. Yani bir yapay zekaya zorbalık yapmanın, onu psikolojik olarak manipüle etmeye çalışmanın bildiğin şirket politikasıyla resmen yasaklandığı bir çağa mı girdik biz?
+
+376
+00:28:32,480 --> 00:28:34,140
+Görünüşe göre tam da o çağa girdik.
+
+377
+00:28:34,400 --> 00:28:37,220
+İnanılmaz gerçekten. Bilim kurgu bugün resmen.
+
+378
+00:28:38,330 --> 00:28:44,590
+Evet, bugün 3 Kasım bültenindeki o devasa kaynak yığınına baştan sona hiçbir haberi atlamadan deştik.
+
+379
+00:28:44,710 --> 00:28:47,410
+O bulanık, karmaşık röntgen filmini beraber okuduk.
+
+380
+00:28:47,410 --> 00:28:54,350
+Ama bu derinlemesini incelemeyi tamamen kapatmadan önce dinlerken kendi kendine düşünmen için bir soru bırakmak istiyoruz sana.
+
+381
+00:28:54,610 --> 00:28:58,630
+Evet, bence bugün tartıştıklarımızın hepsini kafanızda şöyle bir birleştirin.
+
+382
+00:28:58,630 --> 00:29:08,450
+Eğer GPT-6 gibi modeller başka modellerin kodunu ve zekasını o ağır gradiyan inişini bile kullanmadan doğal dille doğrudan düzenleyebiliyorsa
+
+383
+00:29:08,450 --> 00:29:10,350
+Ki bunu laboratuvarda başardılar
+
+384
+00:29:10,350 --> 00:29:17,810
+Ve eğer o ünvanlı yüksek maaşlı havalı mühendislerin kendi işleri için sisteme harcattığı işlem gücünün elektrik maliyeti
+
+385
+00:29:17,810 --> 00:29:21,890
+O mühendislerin kendi maaşlarını çoktan geçmişse asıl soru şu
+
+386
+00:29:21,890 --> 00:29:39,370
+Bir yapay zeka şirketinin finansal değerlemesi ne zaman içindeki insanların yeteneğine, sayısına veya o süslü diplomalarına göre değil de şirketin sahip olduğu ve günün 24 saati hiç uyumadan kendi kendine eğiten o otonom ajan iş gücünün hacmine göre hesaplanmaya başlanacak.
+
+387
+00:29:40,510 --> 00:29:47,750
+Şirketlerin kaç insan çalışanınız var yerine doğrudan içeride kaç dijital ajanınız var diye sorulduğu o inanılmaz kırılma anı.
+
+388
+00:29:47,750 --> 00:29:54,750
+İnsan zekasından tamamen algoritmik ve durmadan kendini yenileyen bir iş gücüne geçişin tam eşiğindeyiz.
+
+389
+00:29:55,210 --> 00:30:02,110
+Başlangıçta dediğimiz gibi o net, pürüzsüz ve siyah-beyaz basit röntgen filmleri çoktan geride kaldı artık.
+
+390
+00:30:02,390 --> 00:30:03,510
+Çoktan tarih oldu onlar.
+
+391
+00:30:03,990 --> 00:30:11,930
+Artık devasa veri merkezlerinde sürekli şekil değiştiren hem çok parlak hem de oldukça ürkütücü ve karmaşık yeni bir gerçekliğin tam içindeyiz.
+
+392
+00:30:12,470 --> 00:30:15,430
+Bu derinlemesine incelemede bize katıldığın için çok teşekkürler.
+
+393
+00:30:15,430 --> 00:30:22,710
+Lütfen bugün duyduklarına özellikle o son soruyu etrafındakilerle tartış, merak etmeye ve sürekli sorgulamaya devam et.
+
+394
+00:30:22,990 --> 00:30:23,630
+Görüşmek üzere.

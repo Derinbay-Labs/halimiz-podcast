@@ -18,6 +18,15 @@ python3 tools/publish.py --date 2026-11-04 --audio ses.m4a --notes bulten.md --t
 python3 tools/build.py          # yalnızca besleme ve sayfaları yeniden üretmek için
 ```
 
+## Site ve SEO
+
+`tools/build.py` beslemeyle birlikte siteyi de üretir: ana sayfa, bölüm sayfaları, sayfalamalı arşiv (`/bolum/`), konu sayfaları (`/konu/<konu>/`), `/hakkinda/` (`hakkinda.md`'den), `404.html`, `robots.txt` ve `sitemap.xml`. Her bölüm için `transkript.srt` ve (bulunabildiyse) `chapters.json` da yazılır; beslemede `podcast:transcript` ve `podcast:chapters` olarak yer alır.
+
+- `tools/glossary.json` — Whisper'ın yanlış duyduğu özel adların düzeltmeleri (sitede ve RSS transkriptinde uygulanır).
+- `tools/topics.json` — konu sayfalarının listesi ve eşleşme kalıpları; bir konu en az 2 bölümde geçince indekslenir.
+- `tools/og.py` — bölüm başına 1200×630 paylaşım görseli; Pages iş akışında üretilir, depoya girmez.
+- Pages iş akışı her yayında IndexNow'a (Bing, Yandex) değişen sayfaları bildirir; anahtar `podcast.json` → `indexnow_key`.
+
 `podcast.json` program kimliğini tutar (ad, yayıncı, açıklama, kategori, AI beyanı). Kapak: `assets/cover.html` → `assets/cover.jpg` (3000×3000).
 
 Bölümler yapay zekâ yardımı ile hazırlanır; kaynaklar her bölümün notlarında.
