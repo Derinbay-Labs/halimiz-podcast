@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Panel — HAL'imiz Ne Olacak?</title>
+<script src="chart.umd.min.js"></script>
+<style>
+:root{--bg:#0e1117;--surface:#151a23;--line:#262c38;--ink:#f3efe6;--muted:#9aa0ad;--accent:#f59e0b;--ok:#4ade80;--warn:#fbbf24;--bad:#f87171;
+  --s1:#f59e0b;--s2:#60a5fa;--s3:#a78bfa;--s4:#34d399;--s5:#f472b6;--s6:#94a3b8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+header{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:baseline;padding:28px 24px 8px;max-width:1200px;margin:0 auto}
+header h1{margin:0;font-size:20px;font-weight:800}
+header h1 span{color:var(--accent)}
+header .upd{color:var(--muted);font-size:13px;margin-left:auto}
+main{max-width:1200px;margin:0 auto;padding:12px 24px 56px;display:grid;gap:16px;grid-template-columns:repeat(12,1fr)}
+.card{background:var(--surface);border:1px solid var(--line);padding:18px 20px;grid-column:span 12;min-width:0}
+.card h2{margin:0 0 12px;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.kpis{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));grid-column:span 12}
+.kpi{background:var(--surface);border:1px solid var(--line);padding:18px 20px}
+.kpi .l{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.kpi .v{font-size:36px;font-weight:800;line-height:1.1;margin:6px 0 2px;font-variant-numeric:tabular-nums}
+.kpi .d{font-size:13px;color:var(--muted)}
+.kpi .d b{color:var(--accent);font-weight:600}
+.half{grid-column:span 6}
+@media (max-width:860px){.half{grid-column:span 12}}
+canvas{width:100%!important;max-height:280px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;padding:8px 10px 8px 0;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:600;color:var(--muted);font-size:12px;letter-spacing:.04em;text-transform:uppercase}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.bar{height:14px;background:var(--line);position:relative;margin:8px 0 4px}
+.bar>i{position:absolute;left:0;top:0;bottom:0;background:var(--accent)}
+.bar>i.plan{background:transparent;border-right:2px solid var(--ink)}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:8px;background:var(--muted)}
+.dot.ok{background:var(--ok)}.dot.warn{background:var(--warn)}.dot.bad{background:var(--bad)}
+.empty{color:var(--muted);font-size:14px;padding:12px 0}
+.goal{font-size:13px;color:var(--muted)}
+a{color:var(--accent)}
+</style>
+</head>
+<body>
+<header>
+  <h1>HAL'imiz Ne Olacak? <span>·</span> Panel</h1>
+  <div class="goal" id="goal"></div>
+  <div class="upd" id="updated"></div>
+</header>
+<main>
+  <section class="kpis" id="kpis"></section>
+  <section class="card"><h2>Günlük indirme (OP3 + GitHub) ve hedef</h2><canvas id="downloads" height="110"></canvas><div class="empty" id="downloads-empty"></div></section>
+  <section class="card half"><h2>Takipçi / abone</h2><canvas id="followers" height="160"></canvas><div class="empty" id="followers-empty"></div></section>
+  <section class="card half"><h2>Site trafiği (Cloudflare)</h2><canvas id="site" height="160"></canvas><div class="empty" id="site-empty"></div></section>
+  <section class="card"><h2>Bütçe · 10.000 TL</h2><div id="budget"></div></section>
+  <section class="card"><h2>Reklam kampanyaları</h2><div id="ads"></div></section>
+  <section class="card half"><h2>Son bölümler</h2><div id="episodes"></div></section>
+  <section class="card half"><h2>Ajan sağlığı</h2><div id="agents"></div><h2 style="margin-top:20px">Bekleyen öneriler</h2><div id="suggestions"></div></section>
+</main>
+<script>
+const nf = new Intl.NumberFormat('tr-TR');
+const tl = v => nf.format(Math.round(v)) + ' TL';
+const trd = s => { const d = new Date(s); return d.toLocaleDateString('tr-TR', {day:'numeric', month:'short'}); };
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+Chart.defaults.color = css('--muted'); Chart.defaults.borderColor = css('--line'); Chart.defaults.font.family = 'Inter, system-ui, sans-serif';
+const series = ['--s1','--s2','--s3','--s4','--s5','--s6'].map(css);
+
+async function load() {
+  const [m, b] = await Promise.all([fetch('data/metrics.json?' + Date.now()).then(r => r.json()),
+                                    fetch('data/budget.json?' + Date.now()).then(r => r.json())]);
+  document.getElementById('updated').textContent = m.updated ? 'Güncellendi: ' + new Date(m.updated).toLocaleString('tr-TR') : '';
+  const g = m.goal || {};
+  const dayN = g.start ? Math.max(1, Math.round((Date.now() - new Date(g.start)) / 864e5) + 1) : null;
+  document.getElementById('goal').textContent = `Hedef: günde ${g.daily_downloads} indirme · ${g.regular_listeners} düzenli dinleyici · 90. gün ${g.day90 ? trd(g.day90) : ''}` + (dayN ? ` · bugün ${dayN}. gün` : '');
+
+  // KPIs
+  const daily = (m.daily || []).slice().sort((a, c) => a.date.localeCompare(c.date));
+  const last = daily.at(-1), prev = daily.at(-2);
+  const last7 = daily.slice(-7), avg7 = last7.length ? last7.reduce((s, d) => s + (d.downloads || 0), 0) / last7.length : 0;
+  const fl = (m.followers || []).slice().sort((a, c) => a.date.localeCompare(c.date)).at(-1) || {};
+  const totalFollowers = ['spotify','apple','youtube','linkedin','x','instagram'].reduce((s, k) => s + (fl[k] || 0), 0);
+  const spend = (m.ads || []).reduce((s, a) => s + (a.spend || 0), 0);
+  const adFollowers = (m.ads || []).reduce((s, a) => s + (a.followers || 0), 0);
+  const kpis = [
+    ['Bugünkü indirme', last ? nf.format(last.downloads || 0) : '—', last && prev ? `dün ${nf.format(prev.downloads || 0)}` : 'veri yok'],
+    ['7 günlük ortalama', daily.length ? nf.format(Math.round(avg7)) : '—', `hedef <b>${g.daily_downloads}</b> / gün`],
+    ['Toplam takipçi', fl.date ? nf.format(totalFollowers) : '—', fl.date ? `son: ${trd(fl.date)}` : 'veri yok'],
+    ['Takipçi başına maliyet', adFollowers ? tl(spend / adFollowers) : '—', spend ? `toplam harcama ${tl(spend)}` : 'reklam başlamadı'],
+  ];
+  document.getElementById('kpis').innerHTML = kpis.map(([l, v, d]) => `<div class="kpi"><div class="l">${l}</div><div class="v">${v}</div><div class="d">${d}</div></div>`).join('');
+
+  // downloads
+  if (daily.length) {
+    const apps = [...new Set(daily.flatMap(d => Object.keys(d.by_app || {})))].slice(0, 5);
+    new Chart(document.getElementById('downloads'), { type: 'bar', data: { labels: daily.map(d => trd(d.date)), datasets: [
+      ...(apps.length ? apps.map((a, i) => ({ label: a, data: daily.map(d => (d.by_app || {})[a] || 0), backgroundColor: series[i], stack: 's' }))
+                      : [{ label: 'İndirme', data: daily.map(d => d.downloads || 0), backgroundColor: series[0] }]),
+      { label: 'Hedef', type: 'line', data: daily.map(() => g.daily_downloads), borderColor: css('--ink'), borderDash: [4, 4], pointRadius: 0, borderWidth: 1 } ] },
+      options: { scales: { x: { stacked: true, grid: { display: false } }, y: { stacked: true, beginAtZero: true } }, plugins: { legend: { position: 'bottom' } } } });
+  } else document.getElementById('downloads-empty').textContent = 'Henüz günlük veri yok; ölçüm ajanı ilk gece yazacak.';
+
+  // followers
+  const fls = (m.followers || []).slice().sort((a, c) => a.date.localeCompare(c.date));
+  if (fls.length) {
+    const keys = [['spotify','Spotify'],['apple','Apple'],['youtube','YouTube'],['linkedin','LinkedIn'],['x','X'],['instagram','Instagram']];
+    new Chart(document.getElementById('followers'), { type: 'line', data: { labels: fls.map(d => trd(d.date)),
+      datasets: keys.map(([k, l], i) => ({ label: l, data: fls.map(d => d[k] ?? null), borderColor: series[i], backgroundColor: series[i], pointRadius: 2, borderWidth: 2, tension: .2, spanGaps: true })) },
+      options: { scales: { x: { grid: { display: false } }, y: { beginAtZero: true } }, plugins: { legend: { position: 'bottom' } } } });
+  } else document.getElementById('followers-empty').textContent = 'Henüz veri yok.';
+
+  // site
+  if (daily.some(d => d.site_visits != null)) {
+    new Chart(document.getElementById('site'), { type: 'line', data: { labels: daily.map(d => trd(d.date)), datasets: [
+      { label: 'Ziyaret', data: daily.map(d => d.site_visits ?? null), borderColor: series[1], backgroundColor: series[1], pointRadius: 2, borderWidth: 2, tension: .2 },
+      { label: 'YouTube izlenme', data: daily.map(d => d.youtube_views ?? null), borderColor: series[0], backgroundColor: series[0], pointRadius: 2, borderWidth: 2, tension: .2 } ] },
+      options: { scales: { x: { grid: { display: false } }, y: { beginAtZero: true } }, plugins: { legend: { position: 'bottom' } } } });
+  } else document.getElementById('site-empty').textContent = 'Cloudflare Web Analytics verisi henüz yok.';
+
+  // budget
+  const spentBy = {}; (m.ads || []).forEach(a => { spentBy[a.budget_item || a.campaign] = (spentBy[a.budget_item || a.campaign] || 0) + (a.spend || 0); });
+  const totalSpent = Object.values(spentBy).reduce((s, v) => s + v, 0);
+  const today = new Date().toISOString().slice(0, 10);
+  const plannedByNow = (b.items || []).reduce((s, it) => { if (!it.from || it.from > today) return s; const f = new Date(it.from), t = new Date(it.to), n = new Date(today);
+    const frac = t <= f ? 1 : Math.min(1, (n - f) / (t - f)); return s + it.planned * frac; }, 0);
+  document.getElementById('budget').innerHTML = `
+    <div class="bar"><i style="width:${100 * totalSpent / b.total}%"></i><i class="plan" style="width:${100 * plannedByNow / b.total}%" title="plana göre bugün harcanmış olması gereken"></i></div>
+    <div class="goal">Harcanan ${tl(totalSpent)} / ${tl(b.total)} · plana göre bugün ${tl(plannedByNow)} harcanmış olmalıydı · kalan ${tl(b.total - totalSpent)}</div>
+    <table style="margin-top:14px"><tr><th>Kalem</th><th>Platform</th><th>Tarih</th><th class="n">Plan</th><th class="n">Harcanan</th></tr>
+    ${(b.items || []).map(it => `<tr><td>${it.name}</td><td>${it.platform || '—'}</td><td>${trd(it.from)} – ${trd(it.to)}</td><td class="n">${tl(it.planned)}</td><td class="n">${tl(spentBy[it.name] || 0)}</td></tr>`).join('')}</table>`;
+
+  // ads
+  const ads = m.ads || [];
+  document.getElementById('ads').innerHTML = ads.length ? `<table><tr><th>Kampanya</th><th>Platform</th><th>Durum</th><th class="n">Harcama</th><th class="n">Gösterim</th><th class="n">Tıklama</th><th class="n">TL/tık</th><th class="n">Takipçi</th><th class="n">TL/takipçi</th></tr>
+    ${ads.map(a => `<tr><td>${a.campaign}</td><td>${a.platform}</td><td>${a.status || ''}</td><td class="n">${tl(a.spend || 0)}</td><td class="n">${nf.format(a.impressions || 0)}</td><td class="n">${nf.format(a.clicks || 0)}</td><td class="n">${a.clicks ? tl(a.spend / a.clicks) : '—'}</td><td class="n">${nf.format(a.followers || 0)}</td><td class="n">${a.followers ? tl(a.spend / a.followers) : '—'}</td></tr>`).join('')}</table>`
+    : '<div class="empty">Reklam kampanyası henüz yok; ilk test 18 Kasım\'da başlıyor.</div>';
+
+  // episodes
+  const eps = (m.episodes || []).slice().sort((a, c) => c.date.localeCompare(a.date)).slice(0, 30);
+  document.getElementById('episodes').innerHTML = eps.length ? `<table><tr><th>Tarih</th><th>Bölüm</th><th class="n">İlk 7 gün</th><th class="n">YouTube</th><th class="n">Shorts</th></tr>
+    ${eps.map(e => `<tr><td>${trd(e.date)}</td><td><a href="/bolum/${e.date}/">${(e.title || '').replace(/^\d+ \w+: /, '')}</a></td><td class="n">${nf.format(e.downloads_7d || 0)}</td><td class="n">${nf.format(e.youtube_views || 0)}</td><td class="n">${nf.format(e.shorts_views || 0)}</td></tr>`).join('')}</table>`
+    : '<div class="empty">Bölüm başına veri henüz yok.</div>';
+
+  // agents
+  const st = s => s === 'ok' ? 'ok' : s === 'pending' ? '' : s === 'warn' ? 'warn' : 'bad';
+  document.getElementById('agents').innerHTML = `<table><tr><th></th><th>Ajan</th><th>Zaman</th><th>Son çalışma</th><th>Not</th></tr>
+    ${(m.agents || []).map(a => `<tr><td><span class="dot ${st(a.status)}"></span></td><td>${a.name}</td><td>${a.schedule || ''}</td><td>${a.last_run ? new Date(a.last_run).toLocaleString('tr-TR', {day:'numeric', month:'short', hour:'2-digit', minute:'2-digit'}) : '—'}</td><td>${a.note || ''}</td></tr>`).join('')}</table>`;
+  const sug = (m.suggestions || []).filter(s => s.status === 'pending');
+  document.getElementById('suggestions').innerHTML = sug.length ? `<ul>${sug.map(s => `<li>${trd(s.date)}: ${s.text}</li>`).join('')}</ul>` : '<div class="empty">Bekleyen öneri yok.</div>';
+}
+load().catch(e => { document.getElementById('kpis').innerHTML = `<div class="empty">Veri okunamadı: ${e}</div>`; });
+</script>
+</body>
+</html>

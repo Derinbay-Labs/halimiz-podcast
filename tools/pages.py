@@ -30,6 +30,7 @@ I18N = {
         "whereTitle": "Nerede dinliyorsan.", "whereSub": "Yeni bölüm her sabah tüm platformlara aynı anda düşer.",
         "archiveTitle": "Önceki bölümler", "allEpisodes": "Tüm bölümler", "back": "Ana sayfa",
         "howKicker": "Nasıl hazırlanır", "close1": "Her sabah.", "close2": "Kaynaklarıyla.", "rss": "RSS beslemesi", "download": "MP3 indir",
+        "transcript": "Transkript", "transcriptNote": "Konuşmadan otomatik çıkarılmıştır; küçük hatalar olabilir.",
         "steps": [["Tara", "Gece boyunca model ve ürün lansmanları, şirket duyuruları, araştırmalar, yatırımlar ve regülasyon haberleri toplanır."],
                   ["Kaynakla", "Bölümler yapay zekâ yardımıyla hazırlanır; her iddianın kaynağı bölüm notlarında açıkça listelenir."],
                   ["Yayınla", "Sabah, 30 dakikalık bölüm tüm dinleme platformlarına aynı anda düşer."]],
@@ -44,6 +45,7 @@ I18N = {
         "whereTitle": "Wherever you listen.", "whereSub": "Each new episode lands on every platform at the same time, every morning.",
         "archiveTitle": "Earlier episodes", "allEpisodes": "All episodes", "back": "Home",
         "howKicker": "How it's made", "close1": "Every morning.", "close2": "With sources.", "rss": "RSS feed", "download": "Download MP3",
+        "transcript": "Transcript (Turkish)", "transcriptNote": "Generated automatically from the audio; small errors are possible.",
         "steps": [["Scan", "Overnight we gather model and product launches, company announcements, research, investment and regulation news."],
                   ["Source", "Episodes are prepared with AI assistance; the source for every claim is listed openly in the show notes."],
                   ["Publish", "In the morning, the 30-minute episode lands on every listening platform at once."]],
@@ -179,6 +181,12 @@ footer.bot span{display:flex;gap:20px}footer.bot a{color:inherit}footer.bot a:ho
 .notes li strong{color:var(--color-text);font-weight:600}
 .notes a{color:var(--color-accent);text-decoration:underline;text-underline-offset:3px}
 .notes .ai{border-bottom:0;font-size:14px;color:var(--muted);border-left:3px solid var(--color-accent);padding:4px 0 4px 14px;margin-top:32px}
+.transcript{max-width:760px;margin:0 0 clamp(40px,5vw,72px);border-top:2px solid var(--color-divider)}
+.transcript summary{cursor:pointer;list-style:none;font-size:13px;font-weight:400;letter-spacing:.08em;text-transform:uppercase;color:var(--color-accent-700);padding:20px 0;border-bottom:2px solid var(--color-divider)}
+.transcript summary::-webkit-details-marker{display:none}.transcript summary::after{content:" +";}.transcript[open] summary::after{content:" −";}
+.transcript p{font-size:16px;line-height:1.65;padding:12px 0;margin:0;border-bottom:1px solid var(--color-divider);color:var(--soft)}
+.transcript .ts{font-family:var(--font-heading);font-weight:700;font-size:12px;color:var(--color-accent);margin-right:8px}
+.transcript p.ai{border-bottom:0;font-size:14px;color:var(--muted);border-left:3px solid var(--color-accent);padding:4px 0 4px 14px;margin:20px 0 8px}
 """
 
 
@@ -312,7 +320,7 @@ def player(ep, tops):
              f'{round(total / 60)} <span data-i18n="min">{T["min"]}</span></b>') if n else \
             f'<span class="kicker">{t("episode")}</span><b>{e(tr_date(ep["date"]))}</b>'
     return f"""<div class="player">
-  <audio id="audio" preload="none" src="{e(ep['audio_url'], quote=True)}" data-total="{total}"></audio>
+  <audio id="audio" preload="none" src="{e(ep['play_url'], quote=True)}" data-total="{total}"></audio>
   <div class="pl-row">
     <button type="button" class="pl-btn" aria-label="{T['play']}">
       <svg class="i-play" width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4l14 8-14 8z"/></svg>
@@ -374,6 +382,24 @@ def close_section(show):
 
 
 # ---------- pages ----------
+
+def transcript_section(root, ep):
+    """Collapsible full transcript (episodes/<date>/transcript.md), for readers and search engines."""
+    import html as _h
+    import re as _re
+    p = root / "episodes" / ep["date"] / "transcript.md"
+    if not p.exists():
+        return ""
+    paras = []
+    for line in p.read_text(encoding="utf-8").splitlines():
+        m = _re.match(r"\*\*\[(\d+:\d\d(?::\d\d)?)\]\*\* (.*)", line)
+        if m:
+            paras.append(f'<p><span class="ts">{m.group(1)}</span> {_h.escape(m.group(2))}</p>')
+    if not paras:
+        return ""
+    return (f'<details class="transcript" id="transkript"><summary><span data-i18n="transcript">{T["transcript"]}</span></summary>'
+            f'<p class="ai">{T["transcriptNote"]}</p>' + "\n".join(paras) + "</details>")
+
 
 def build_pages(root, show, episodes, notes_md, notes_html):
     """episodes: newest first. notes_md(ep) → markdown, notes_html(ep) → html."""
@@ -450,7 +476,7 @@ def build_pages(root, show, episodes, notes_md, notes_html):
       <span class="tag-outline foreign" style="justify-self:start" data-i18n="inTurkish"></span>
       <h1>{e(short_title(ep['title']))}</h1>
       <p class="sum">{e(ep['summary'])}</p>
-      <div class="row"><a class="btn btn-ghost" href="{e(ep['audio_url'], quote=True)}" download>{t('download')}</a></div>
+      <div class="row"><a class="btn btn-ghost" href="{e(ep['play_url'], quote=True)}" download>{t('download')}</a></div>
     </div>
     {player(ep, topics(notes_md(ep)))}
   </div>
@@ -458,6 +484,7 @@ def build_pages(root, show, episodes, notes_md, notes_html):
     {notes_html(ep)}
     <p class="ai">{e(show['ai_disclosure'])}</p>
   </div>
+  {transcript_section(root, ep)}
 </section>""", platforms_section(show), archive_section(episodes, ep["date"], "allEpisodes"),
             close_section(show)])
         (d / "index.html").write_text(

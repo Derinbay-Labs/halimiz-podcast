@@ -26,7 +26,27 @@ def load():
     show = json.loads((ROOT / "podcast.json").read_text(encoding="utf-8"))
     episodes = json.loads((ROOT / "episodes.json").read_text(encoding="utf-8"))
     episodes.sort(key=lambda e: e["date"], reverse=True)
+    for ep in episodes:
+        ep["play_url"] = play_url(show, ep["audio_url"])
     return show, episodes
+
+
+def podcast_guid(show):
+    feed_url = f"{show['site_url'].rstrip('/')}/{show['feed_path']}"
+    return uuid.uuid5(PODCAST_NS_GUID, feed_url.split("://", 1)[1])
+
+
+def play_url(show, audio_url):
+    """Audio URL as listeners fetch it: through the OP3 measurement prefix (op3.dev/setup).
+
+    OP3 counts every download whatever the app, without an account; the file itself
+    still comes from GitHub. The pg= parameter ties the URL to the show's podcast:guid.
+    """
+    prefix = show.get("stats_prefix")
+    if not prefix:
+        return audio_url
+    target = audio_url[len("https://"):] if audio_url.startswith("https://") else audio_url
+    return f"{prefix},pg={podcast_guid(show)}/{target}"
 
 
 def tr_date(iso):
@@ -104,7 +124,7 @@ def build_feed(show, episodes):
     site = show["site_url"].rstrip("/")
     feed_url = f"{site}/{show['feed_path']}"
     cover_url = f"{site}/{show['cover_path']}"
-    pod_guid = uuid.uuid5(PODCAST_NS_GUID, feed_url.split("://", 1)[1])
+    pod_guid = podcast_guid(show)
     last = episodes[0]["pub_date"] if episodes else datetime.now(timezone.utc).isoformat()
     x = []
     x.append('<?xml version="1.0" encoding="UTF-8"?>')
@@ -154,7 +174,7 @@ def build_feed(show, episodes):
         x.append(f"<pubDate>{format_datetime(datetime.fromisoformat(ep['pub_date']))}</pubDate>")
         x.append(f"<description><![CDATA[{body}]]></description>")
         x.append(f"<content:encoded><![CDATA[{body}]]></content:encoded>")
-        x.append(f'<enclosure url="{escape(ep["audio_url"])}" length="{ep["audio_bytes"]}" type="audio/mpeg"/>')
+        x.append(f'<enclosure url="{escape(ep["play_url"])}" length="{ep["audio_bytes"]}" type="audio/mpeg"/>')
         x.append(f"<itunes:duration>{int(round(ep['duration_seconds']))}</itunes:duration>")
         x.append("<itunes:episodeType>full</itunes:episodeType>")
         x.append("<itunes:explicit>false</itunes:explicit>")
