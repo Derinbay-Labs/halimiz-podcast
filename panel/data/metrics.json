@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T17:30:00+03:00",
+  "updated": "2026-11-04T20:25:00+03:00",
   "goal": {
     "daily_downloads": 300,
     "regular_listeners": 500,
@@ -21,37 +21,44 @@
     {
       "name": "Transkript + görseller (Actions)",
       "schedule": "Yayından sonra",
-      "last_run": "",
-      "status": "pending",
-      "note": "ilk çalışma bekleniyor"
+      "last_run": "2026-11-04T17:43:00+03:00",
+      "status": "ok",
+      "note": "3 ve 4 Kasım transkriptleri ve görselleri üretildi (28 dk)"
     },
     {
       "name": "İçerik ajanı",
-      "schedule": "Her gün 07:30",
+      "schedule": "Her gün 07:36",
       "last_run": "",
       "status": "pending",
-      "note": "kurulacak"
+      "note": "ilk çalışma 5 Kasım"
     },
     {
-      "name": "Dağıtım ajanı",
-      "schedule": "08:30 / 09:00 / 12:30",
+      "name": "Dağıtım sabah (LinkedIn + X)",
+      "schedule": "Her gün 08:41",
       "last_run": "",
       "status": "pending",
-      "note": "kurulacak"
+      "note": "ilk çalışma 5 Kasım; X hesabı açılana kadar yalnızca LinkedIn"
+    },
+    {
+      "name": "Dağıtım öğlen (Shorts + Reels)",
+      "schedule": "Her gün 12:37",
+      "last_run": "",
+      "status": "pending",
+      "note": "ilk çalışma 5 Kasım; Instagram hesabı açılana kadar yalnızca Shorts"
     },
     {
       "name": "Ölçüm ajanı",
-      "schedule": "Her gün 23:00",
+      "schedule": "Her gün 23:07",
       "last_run": "",
       "status": "pending",
-      "note": "kurulacak"
+      "note": "ilk çalışma bu gece"
     },
     {
-      "name": "Reklam ajanı",
-      "schedule": "Pazartesi 09:00",
+      "name": "Haftalık rapor + reklam önerisi",
+      "schedule": "Pazartesi 09:13",
       "last_run": "",
       "status": "pending",
-      "note": "3. haftada başlar"
+      "note": "ilk rapor 9 Kasım; reklam 18 Kasım'da başlar"
     }
   ],
   "suggestions": []
