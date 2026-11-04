@@ -227,6 +227,7 @@ a.topic:hover .tt{color:var(--color-accent)}
 .pl-label h2{font-family:var(--font-body);font-weight:400}
 .transcript summary h2{display:inline;font:inherit;color:inherit;letter-spacing:inherit}
 .transcript a.ts:hover{text-decoration:underline}
+.notes a.tl{color:inherit;text-decoration:underline;text-decoration-color:var(--color-divider);text-underline-offset:3px}.notes a.tl:hover{color:var(--color-accent);text-decoration-color:var(--color-accent)}
 .arch a .s{grid-column:2/-1;color:var(--soft);font-size:15px;line-height:1.5;font-weight:400}
 @media (max-width:560px){.arch a .s{grid-column:1/-1}}
 .arch a .n{font-feature-settings:'tnum' 1}
@@ -327,7 +328,9 @@ def md_inline(text):
     out, pos = [], 0
     for m in seo.LINK_RX.finditer(text):
         out.append(_fmt(text[pos:m.start()]))
-        out.append(f'<a href="{e(m.group(2), quote=True)}">{_fmt(m.group(1))}</a>')
+        href = m.group(2)
+        ext = ' rel="noopener"' if href.startswith("http") else ""
+        out.append(f'<a href="{e(href, quote=True)}"{ext}>{_fmt(m.group(1))}</a>')
         pos = m.end()
     out.append(_fmt(text[pos:]))
     return "".join(out)
@@ -356,6 +359,50 @@ def md_block(md):
     if in_list:
         parts.append("</ul>")
     return "\n".join(parts)
+
+
+def meta_desc(text, n=158):
+    """Search-snippet length: whole sentences up to n characters, else cut at a word."""
+    text = " ".join(text.split())
+    if len(text) <= n:
+        return text
+    cut = text[:n]
+    for sep in (". ", "; "):
+        i = cut.rfind(sep)
+        if i >= 90:
+            return cut[:i + 1].rstrip(";") + ("" if sep == ". " else ".")
+    return cut.rsplit(" ", 1)[0].rstrip(",;:") + "…"
+
+
+def time_tag(iso, weekday=False):
+    return f'<time datetime="{iso[:10]}">{e(tr_date(iso, weekday))}</time>'
+
+
+class TopicLinker:
+    """Links the first mention of each topic on a page to its /konu/ page (outside other links)."""
+
+    def __init__(self, slugs):
+        self.todo = [tp for tp in seo.topic_config()["topics"] if tp["slug"] in slugs]
+
+    def __call__(self, html_text):
+        if not self.todo:
+            return html_text
+        parts = re.split(r"(<a\b[^>]*>.*?</a>|<[^>]+>)", html_text)
+        for i, part in enumerate(parts):
+            if not part or part.startswith("<"):
+                continue
+            out, rest = [], part
+            while self.todo:
+                hits = [(m.start(), m, tp) for tp in self.todo for m in [tp["rx"].search(rest)] if m and m.group(0).strip()]
+                if not hits:
+                    break
+                _, m, tp = min(hits, key=lambda h: h[0])
+                end = m.end() + len(re.match(r"\w*", rest[m.end():]).group(0))  # whole word: "veri merkezlerinde"
+                out.append(rest[:m.start()] + f'<a class="tl" href="/konu/{tp["slug"]}/">{rest[m.start():end]}</a>')
+                rest = rest[end:]
+                self.todo.remove(tp)
+            parts[i] = "".join(out) + rest
+        return "".join(parts)
 
 
 def clip(text, n=220):
@@ -464,7 +511,7 @@ def platforms_section(show):
 
 
 def arch_rows(eps):
-    return "".join(f'<a href="/bolum/{x["date"]}/"><span class="d kicker">{e(tr_date(x["date"]))}</span>'
+    return "".join(f'<a href="/bolum/{x["date"]}/"><span class="d kicker">{time_tag(x["date"])}</span>'
                    f'<span class="tt">{e(short_title(x["title"]))}</span>'
                    f'<span class="kicker">{round(x["duration_seconds"] / 60)} <span data-i18n="min">{T["min"]}</span> →</span></a>'
                    for x in eps)
@@ -526,7 +573,8 @@ def breadcrumb_ld(site, items):
 
 # ---------- episode parts ----------
 
-def notes_section(x):
+def notes_section(x, topic_slugs=()):
+    link = TopicLinker(set(topic_slugs))
     parts = []
     for sec in x["parsed"]["sections"]:
         if sec["title"]:
@@ -534,13 +582,13 @@ def notes_section(x):
         if sec["kind"] == "highlights":
             for it in sec["items"]:
                 parts.append(f'<div class="item" id="{it["id"]}"><h3>{_fmt(it["headline"] or it["title"])}</h3>'
-                             f'<p>{md_inline(it["rest_md"])}</p></div>')
+                             f'<p>{link(md_inline(it["rest_md"]))}</p></div>')
             parts += [f"<p>{md_inline(o)}</p>" for o in sec["other"]]
         else:
             lis = []
             for it in sec["items"]:
                 head = f"<strong>{_fmt(it['headline'])}</strong> " if it["headline"] else ""
-                lis.append(f'<li id="{it["id"]}">{head}{md_inline(it["rest_md"])}</li>')
+                lis.append(f'<li id="{it["id"]}">{head}{link(md_inline(it["rest_md"]))}</li>')
             if lis:
                 parts.append("<ul>" + "".join(lis) + "</ul>")
             parts += [f"<p>{md_inline(o)}</p>" for o in sec["other"]]
@@ -569,12 +617,12 @@ def ep_nav(prev_ep, next_ep):
         return ""
     out = []
     if prev_ep:
-        out.append(f'<a class="prev" href="/bolum/{prev_ep["date"]}/"><span class="kicker">← {t("prevEp")} · {e(tr_date(prev_ep["date"]))}</span>'
+        out.append(f'<a class="prev" href="/bolum/{prev_ep["date"]}/"><span class="kicker">← {t("prevEp")} · {time_tag(prev_ep["date"])}</span>'
                    f'<b>{e(short_title(prev_ep["title"]))}</b></a>')
     else:
         out.append("<span></span>")
     if next_ep:
-        out.append(f'<a class="next" href="/bolum/{next_ep["date"]}/"><span class="kicker">{t("nextEp")} · {e(tr_date(next_ep["date"]))} →</span>'
+        out.append(f'<a class="next" href="/bolum/{next_ep["date"]}/"><span class="kicker">{t("nextEp")} · {time_tag(next_ep["date"])} →</span>'
                    f'<b>{e(short_title(next_ep["title"]))}</b></a>')
     return f'<nav class="epnav" aria-label="Bölümler">{"".join(out)}</nav>'
 
@@ -612,7 +660,7 @@ def build_pages(root, show, episodes, notes_md, notes_html=None, extras=None):
     if latest:
         lx = extras[latest["date"]]
         today = f"""<section id="bugun" class="ep">
-  <div class="meta kicker"><div>{t('todayEp')}</div><div>{e(tr_date(latest['date']))}</div><div>{round(latest['duration_seconds'] / 60)} <span data-i18n="min">{T['min']}</span></div></div>
+  <div class="meta kicker"><div>{t('todayEp')}</div><div>{time_tag(latest['date'])}</div><div>{round(latest['duration_seconds'] / 60)} <span data-i18n="min">{T['min']}</span></div></div>
   <div class="ep-grid">
     <div class="ep-text">
       <span class="tag-outline foreign" style="justify-self:start" data-i18n="inTurkish"></span>
@@ -680,14 +728,23 @@ def build_pages(root, show, episodes, notes_md, notes_html=None, extras=None):
             ep_ld["hasPart"] = [{"@type": "Clip", "name": c["title"], "startOffset": int(c["start"]),
                                  "endOffset": int(chs[k + 1]["start"]) if k + 1 < len(chs) else int(ep["duration_seconds"]),
                                  "url": f"{url}#t={int(c['start'])}"} for k, c in enumerate(chs)]
+        page_title = f"{short_title(ep['title'])} ({tr_date(ep['date'])})"
+        article = {"@type": "NewsArticle", "@id": url + "#haber", "mainEntityOfPage": url, "url": url,
+                   "headline": clip(page_title, 110), "description": ep["summary"], "inLanguage": "tr",
+                   "datePublished": ep["pub_date"], "dateModified": ep.get("modified") or ep["pub_date"],
+                   "image": [img[0], site + cover], "articleSection": "Yapay zekâ ve teknoloji",
+                   "author": {"@type": "Organization", "name": show["author"], "url": f"{site}/hakkinda/"},
+                   "publisher": {"@type": "Organization", "name": show["author"], "url": show["publisher_url"],
+                                 "logo": {"@type": "ImageObject", "url": f"{site}/assets/apple-touch-icon.png", "width": 180, "height": 180}},
+                   "about": ep_ld.get("about", []), "associatedMedia": {"@id": url + "#bolum"}}
         trail = [("Ana sayfa", "/"), ("Bölümler", "/bolum/"), (tr_date(ep["date"]), None)]
-        ld = {"@context": "https://schema.org", "@graph": [ep_ld, breadcrumb_ld(site, trail[:2] + [(ep["title"], f"/bolum/{ep['date']}/")])]}
+        ld = {"@context": "https://schema.org", "@graph": [ep_ld, article, breadcrumb_ld(site, trail[:2] + [(ep["title"], f"/bolum/{ep['date']}/")])]}
         next_ep = episodes[i - 1] if i > 0 else None
         prev_ep = episodes[i + 1] if i + 1 < len(episodes) else None
         is_latest = i == 0
         first = t("todayEp") if is_latest else t("episode")
         body = "\n".join([header(show, False), f"""<section id="bugun" class="ep">
-  <div class="meta kicker"><div>{first}</div><div>{e(tr_date(ep['date'], weekday=True))}</div><div>{round(ep['duration_seconds'] / 60)} <span data-i18n="min">{T['min']}</span></div></div>
+  <div class="meta kicker"><div>{first}</div><div>{time_tag(ep['date'], weekday=True)}</div><div>{round(ep['duration_seconds'] / 60)} <span data-i18n="min">{T['min']}</span></div></div>
   <div class="ep-grid">
     <div class="ep-text">
       {crumbs(trail)}
@@ -700,7 +757,7 @@ def build_pages(root, show, episodes, notes_md, notes_html=None, extras=None):
     {player(ep, x)}
   </div>
   <div class="notes">
-    {notes_section(x)}
+    {notes_section(x, [tp["slug"] for tp in x["topics"]])}
     <p class="ai">{e(show['ai_disclosure'])} <a href="/hakkinda/">Yayın ilkeleri</a></p>
   </div>
   {transcript_section(x)}
@@ -708,9 +765,10 @@ def build_pages(root, show, episodes, notes_md, notes_html=None, extras=None):
 </section>""", platforms_section(show), archive_section(episodes, ep["date"], "allEpisodes", EP_ARCHIVE),
             close_section(show)])
         head = (f'<meta property="article:published_time" content="{ep["pub_date"]}">\n'
+                f'<meta property="article:section" content="Yapay zekâ ve teknoloji">\n'
                 + "".join(f'<meta property="article:tag" content="{e(tp["name"], quote=True)}">\n' for tp in x["topics"][:6]))
         (d / "index.html").write_text(
-            page(show, f"{ep['title']} | {SHORT_BRAND}", ep["summary"], url, body, ld, img,
+            page(show, f"{page_title} | {SHORT_BRAND}", meta_desc(ep["summary"]), url, body, ld, img,
                  og_type="article", extra_head=head), encoding="utf-8")
         # transcript and chapters for podcast apps (referenced from the feed)
         if x["segments"]:
@@ -780,7 +838,7 @@ def build_pages(root, show, episodes, notes_md, notes_html=None, extras=None):
         rows = []
         for ep, it in hits:
             summary = seo.plain(it["rest_md"]) if it["headline"] else ""
-            rows.append(f'<a href="/bolum/{ep["date"]}/#{it["id"]}"><span class="d kicker">{e(tr_date(ep["date"]))}</span>'
+            rows.append(f'<a href="/bolum/{ep["date"]}/#{it["id"]}"><span class="d kicker">{time_tag(ep["date"])}</span>'
                         f'<span class="tt">{e(it["title"])}</span><span class="kicker">→</span>'
                         + (f'<span class="s">{e(clip(summary))}</span>' if summary else "") + "</a>")
         trail = [("Ana sayfa", "/"), ("Konular", "/konu/"), (tp["name"], None)]
