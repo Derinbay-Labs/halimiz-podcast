@@ -555,7 +555,7 @@ def close_section(show):
 </section>
 <footer class="bot">
   <span>{e(show['copyright'])}</span>
-  <span><a href="/hakkinda/">Hakkında</a><a href="/konu/">Konular</a><a href="{show['publisher_url']}">derinbay.com</a><a href="{feed}">RSS</a></span>
+  <span><a href="/hakkinda/">Hakkında</a><a href="/konu/">Konular</a><a href="{show['publisher_url']}">Derinbay Labs</a><a href="{feed}">RSS</a></span>
 </footer>"""
 
 
