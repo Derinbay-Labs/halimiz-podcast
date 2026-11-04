@@ -24,6 +24,8 @@ python3 tools/build.py          # yalnızca besleme ve sayfaları yeniden üretm
 
 - `tools/glossary.json` — Whisper'ın yanlış duyduğu özel adların düzeltmeleri (sitede ve RSS transkriptinde uygulanır).
 - `tools/topics.json` — konu sayfalarının listesi ve eşleşme kalıpları; bir konu en az 2 bölümde geçince indekslenir.
+- `icerik/` — haftalık içerik ajanının yazdığı metinler: `sozluk.json` (/sozluk/), `konular.json` (konu sayfalarındaki "Son durum"), `haftalik/<yıl>-W<hafta>.md` (/hafta/). Haftalık ve aylık arşiv sayfaları (/hafta/, /arsiv/) bölümlerden kendiliğinden üretilir.
+- `tools/newsletter.py` — yeni bölümü Buttondown abonelerine e-postayla gönderir; `BUTTONDOWN_API_KEY` repo secret'ı yoksa atlanır. Kayıt formu `podcast.json` → `newsletter.username` doluysa sitede görünür.
 - `tools/og.py` — bölüm başına 1200×630 paylaşım görseli; Pages iş akışında üretilir, depoya girmez.
 - Pages iş akışı her yayında IndexNow'a (Bing, Yandex) değişen sayfaları bildirir; anahtar `podcast.json` → `indexnow_key`.
 

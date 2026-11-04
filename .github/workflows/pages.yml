@@ -43,7 +43,7 @@ jobs:
           mkdir _site
           cp -r index.html feed.xml robots.txt sitemap.xml 404.html favicon.ico CNAME .nojekyll assets _site/
           [ -f BingSiteAuth.xml ] && cp BingSiteAuth.xml _site/ || true
-          for d in bolum konu hakkinda; do [ -d "$d" ] && cp -r "$d" _site/ || true; done
+          for d in bolum konu hakkinda sozluk hafta arsiv; do [ -d "$d" ] && cp -r "$d" _site/ || true; done
           key=$(python3 -c "import json;print(json.load(open('podcast.json')).get('indexnow_key',''))")
           [ -n "$key" ] && cp "$key.txt" _site/ || true
           rm -f _site/assets/cover.html _site/assets/badges/README.md

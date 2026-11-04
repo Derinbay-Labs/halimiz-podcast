@@ -261,3 +261,31 @@ def chapters(items, segs, duration):
     if len(found) < max(2, round(len(items) * 0.6)):
         return []
     return [{"start": 0.0, "title": "Giriş", "id": None}] + found
+
+
+# ---------- glossary, weekly summaries, topic summaries (icerik/) ----------
+
+ICERIK = TOOLS.parent / "icerik"
+
+
+@lru_cache(maxsize=1)
+def glossary():
+    p = ICERIK / "sozluk.json"
+    if not p.exists():
+        return []
+    terms = json.loads(p.read_text(encoding="utf-8")).get("terimler", [])
+    for t in terms:
+        t["rx"] = re.compile(rf"(?<!\w)(?:{t['eslesme']})", re.I)
+    return terms
+
+
+@lru_cache(maxsize=1)
+def topic_summaries():
+    p = ICERIK / "konular.json"
+    return json.loads(p.read_text(encoding="utf-8")).get("konular", {}) if p.exists() else {}
+
+
+def week_summary(week_key):
+    """Markdown summary for ISO week 'YYYY-Www' written by the weekly content agent, or ''."""
+    p = ICERIK / "haftalik" / f"{week_key}.md"
+    return p.read_text(encoding="utf-8") if p.exists() else ""

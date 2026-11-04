@@ -43,7 +43,7 @@ jobs:
         run: |
           git config user.name "Derinbay Labs"
           git config user.email "podcast@derinbay.com"
-          git add -A episodes.json episodes bolum konu feed.xml index.html sitemap.xml 404.html
+          git add -A episodes.json episodes bolum konu sozluk hafta arsiv feed.xml index.html sitemap.xml 404.html
           git commit -m "Bölüm: $(python3 -c "import json;print(json.load(open('../payload/inbox/episode.json'))['title'])")" || echo "no changes"
           git push origin HEAD:master
       # A push made with GITHUB_TOKEN does not trigger other workflows, and the github-pages
@@ -53,6 +53,13 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run pages.yml --repo "${{ github.repository }}" --ref master
+      # e-mail the bulletin to newsletter subscribers (needs the BUTTONDOWN_API_KEY secret; skipped without it)
+      - name: Newsletter
+        if: steps.meta.outputs.test != 'true'
+        working-directory: site
+        env:
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+        run: python3 tools/newsletter.py --date "$(python3 -c "import json;print(json.load(open('../payload/inbox/episode.json'))['date'])")" || true
       - name: Delete inbox branch
         if: always()
         working-directory: site

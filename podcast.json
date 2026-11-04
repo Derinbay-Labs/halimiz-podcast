@@ -70,5 +70,9 @@
     "x": "https://x.com/halimizpodcast",
     "instagram": "https://www.instagram.com/halimizpodcast"
   },
-  "indexnow_key": "516eabdd2b67378f2fab39ff2e895d1d"
+  "indexnow_key": "516eabdd2b67378f2fab39ff2e895d1d",
+  "newsletter": {
+    "provider": "buttondown",
+    "username": ""
+  }
 }

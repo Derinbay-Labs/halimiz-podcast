@@ -33,7 +33,7 @@ e = html.escape
 
 I18N = {
     "tr": {
-        "locale": "tr-TR", "navToday": "Bugün", "navListen": "Dinle", "navArchive": "Arşiv", "navTopics": "Konular", "navHow": "Nasıl",
+        "locale": "tr-TR", "navToday": "Bugün", "navListen": "Dinle", "navArchive": "Arşiv", "navTopics": "Konular", "navGlossary": "Sözlük", "navHow": "Nasıl",
         "heroSub": "Her sabah yapay zekâ dünyasında olanlar — ve bizim için anlamı. Kaynaklarıyla, 30 dakikada.",
         "inTurkish": "", "ctaListen": "Bugünkü bölümü dinle", "ctaSub": "Abone ol",
         "coverCap": "Derinbay Labs · Günlük", "coverTag": "",
@@ -49,7 +49,7 @@ I18N = {
                   ["Yayınla", "Sabah, 30 dakikalık bölüm tüm dinleme platformlarına aynı anda düşer."]],
     },
     "en": {
-        "locale": "en-GB", "navToday": "Today", "navListen": "Listen", "navArchive": "Archive", "navTopics": "Topics", "navHow": "How",
+        "locale": "en-GB", "navToday": "Today", "navListen": "Listen", "navArchive": "Archive", "navTopics": "Topics", "navGlossary": "Glossary", "navHow": "How",
         "heroSub": "What happened in AI overnight — and what it means for us. Sourced, in 30 minutes, every morning.",
         "inTurkish": "Episodes in Turkish", "ctaListen": "Play today's episode", "ctaSub": "Subscribe",
         "coverCap": "Derinbay Labs · Daily", "coverTag": "Daily AI briefing",
@@ -65,7 +65,7 @@ I18N = {
                   ["Publish", "In the morning, the 30-minute episode lands on every listening platform at once."]],
     },
     "de": {
-        "locale": "de-DE", "navToday": "Heute", "navListen": "Hören", "navArchive": "Archiv", "navTopics": "Themen", "navHow": "Wie",
+        "locale": "de-DE", "navToday": "Heute", "navListen": "Hören", "navArchive": "Archiv", "navTopics": "Themen", "navGlossary": "Glossar", "navHow": "Wie",
         "heroSub": "Was über Nacht in der KI-Welt passiert ist — und was es für uns bedeutet. Mit Quellen, in 30 Minuten, jeden Morgen.",
         "inTurkish": "Folgen auf Türkisch", "ctaListen": "Heutige Folge hören", "ctaSub": "Abonnieren",
         "coverCap": "Derinbay Labs · Täglich", "coverTag": "Täglicher KI-Überblick",
@@ -227,6 +227,16 @@ a.topic:hover .tt{color:var(--color-accent)}
 .pl-label h2{font-family:var(--font-body);font-weight:400}
 .transcript summary h2{display:inline;font:inherit;color:inherit;letter-spacing:inherit}
 .transcript a.ts:hover{text-decoration:underline}
+.period{padding:clamp(28px,4vw,48px) var(--pad) clamp(28px,4vw,48px);display:grid;gap:16px}
+.day{border-top:2px solid var(--color-divider);padding:20px 0;max-width:860px}
+.day h2{font-size:clamp(20px,2vw,26px);letter-spacing:-.01em;margin:0 0 8px}.day h2 a:hover{color:var(--color-accent)}
+.day .dsum{font-size:16px;line-height:1.6;color:var(--soft);margin:0 0 10px}
+.day ul{margin:0;padding-left:20px}.day li{font-size:16px;line-height:1.6;padding:3px 0}.day li a:hover{color:var(--color-accent)}
+.prose .rel{font-size:15px}.prose .rel a{margin-right:4px}
+section.news{border-bottom:2px solid var(--color-divider);padding-bottom:clamp(40px,5vw,72px)}
+.nl{padding:0 var(--pad);display:grid;gap:10px;max-width:640px}
+.nl input[type=email]{flex:1 1 260px;font:inherit;font-size:16px;padding:10px 12px;border:2px solid var(--color-divider);background:var(--color-bg);color:var(--color-text);border-radius:0}
+.nl input[type=email]:focus-visible{border-color:var(--color-accent)}
 .notes a.tl{color:inherit;text-decoration:underline;text-decoration-color:var(--color-divider);text-underline-offset:3px}.notes a.tl:hover{color:var(--color-accent);text-decoration-color:var(--color-accent)}
 .arch a .s{grid-column:2/-1;color:var(--soft);font-size:15px;line-height:1.5;font-weight:400}
 @media (max-width:560px){.arch a .s{grid-column:1/-1}}
@@ -381,8 +391,11 @@ def time_tag(iso, weekday=False):
 class TopicLinker:
     """Links the first mention of each topic on a page to its /konu/ page (outside other links)."""
 
-    def __init__(self, slugs):
-        self.todo = [tp for tp in seo.topic_config()["topics"] if tp["slug"] in slugs]
+    def __init__(self, slugs, terms=True):
+        self.todo = [{"rx": tp["rx"], "href": f"/konu/{tp['slug']}/"}
+                     for tp in seo.topic_config()["topics"] if tp["slug"] in slugs]
+        if terms:  # glossary terms link to /sozluk/ the same way
+            self.todo += [{"rx": g["rx"], "href": f"/sozluk/{g['slug']}/"} for g in seo.glossary()]
 
     def __call__(self, html_text):
         if not self.todo:
@@ -398,7 +411,7 @@ class TopicLinker:
                     break
                 _, m, tp = min(hits, key=lambda h: h[0])
                 end = m.end() + len(re.match(r"\w*", rest[m.end():]).group(0))  # whole word: "veri merkezlerinde"
-                out.append(rest[:m.start()] + f'<a class="tl" href="/konu/{tp["slug"]}/">{rest[m.start():end]}</a>')
+                out.append(rest[:m.start()] + f'<a class="tl" href="{tp["href"]}">{rest[m.start():end]}</a>')
                 rest = rest[end:]
                 self.todo.remove(tp)
             parts[i] = "".join(out) + rest
@@ -456,6 +469,7 @@ def header(show, home):
       <a href="{p}#dinle">{t('navListen')}</a>
       <a href="/bolum/">{t('navArchive')}</a>
       <a href="/konu/">{t('navTopics')}</a>
+      <a href="/sozluk/">{t('navGlossary')}</a>
       <a href="/hakkinda/">{t('navHow')}</a>
     </nav>
     <div class="langs" role="group" aria-label="Language">
@@ -555,7 +569,7 @@ def close_section(show):
 </section>
 <footer class="bot">
   <span>{e(show['copyright'])}</span>
-  <span><a href="/hakkinda/">Hakkında</a><a href="/konu/">Konular</a><a href="{show['publisher_url']}">Derinbay Labs</a><a href="{feed}">RSS</a></span>
+  <span><a href="/hakkinda/">Hakkında</a><a href="/konu/">Konular</a><a href="/sozluk/">Sözlük</a><a href="{show['publisher_url']}">Derinbay Labs</a><a href="{feed}">RSS</a></span>
 </footer>"""
 
 
@@ -639,6 +653,7 @@ def og_image(root, site, show, key):
 
 def build_pages(root, show, episodes, notes_md, notes_html=None, extras=None):
     """episodes: newest first. extras: {date: seo.episode_extras(...)}; computed when missing."""
+    import pages_more as _pm  # tools/pages_more.py (imports this module)
     site = show["site_url"].rstrip("/")
     cover = f"/{show['cover_path']}"
     if extras is None:
@@ -660,7 +675,7 @@ def build_pages(root, show, episodes, notes_md, notes_html=None, extras=None):
     if latest:
         lx = extras[latest["date"]]
         today = f"""<section id="bugun" class="ep">
-  <div class="meta kicker"><div>{t('todayEp')}</div><div>{time_tag(latest['date'])}</div><div>{round(latest['duration_seconds'] / 60)} <span data-i18n="min">{T['min']}</span></div></div>
+  <div class="meta kicker"><h2 class="kicker" style="font:inherit;letter-spacing:inherit;color:inherit;margin:0">Bugünün yapay zekâ haberleri</h2><div>{time_tag(latest['date'])}</div><div>{round(latest['duration_seconds'] / 60)} <span data-i18n="min">{T['min']}</span></div></div>
   <div class="ep-grid">
     <div class="ep-text">
       <span class="tag-outline foreign" style="justify-self:start" data-i18n="inTurkish"></span>
@@ -694,15 +709,15 @@ def build_pages(root, show, episodes, notes_md, notes_html=None, extras=None):
   </figure>
 </section>"""
 
-    body = "\n".join([header(show, True), hero, today, platforms_section(show),
+    body = "\n".join([header(show, True), hero, today, platforms_section(show), _pm.newsletter_section(show),
                       archive_section(episodes, latest["date"] if latest else None), how_section(),
                       close_section(show)])
     home_ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "WebSite", "@id": f"{site}/#site", "url": site + "/", "name": show["title"],
-         "alternateName": ["Halimiz Ne Olacak", "HAL'imiz Ne Olacak podcast"], "inLanguage": "tr", "publisher": {"@id": org["@id"]}},
+         "alternateName": ["Halimiz Ne Olacak", "HAL'imiz Ne Olacak podcast", "Günlük yapay zekâ haberleri"], "inLanguage": "tr", "publisher": {"@id": org["@id"]}},
         org, series]}
     (root / "index.html").write_text(
-        page(show, f"{show['title']} — Günlük yapay zekâ ve teknoloji podcasti",
+        page(show, f"Yapay zekâ haberleri, her sabah kaynaklarıyla | {show['title']}",
              show.get("meta_description") or show["description"], site + "/", body, home_ld,
              og_image(root, site, show, "home")), encoding="utf-8")
     sitemap.append((site + "/", latest["pub_date"] if latest else None))
@@ -758,11 +773,12 @@ def build_pages(root, show, episodes, notes_md, notes_html=None, extras=None):
   </div>
   <div class="notes">
     {notes_section(x, [tp["slug"] for tp in x["topics"]])}
+    <p class="weeklink"><a class="more" href="{_pm.week_path(_pm.week_key(ep['date']))}">Bu haftanın tüm haberleri <span>→</span></a></p>
     <p class="ai">{e(show['ai_disclosure'])} <a href="/hakkinda/">Yayın ilkeleri</a></p>
   </div>
   {transcript_section(x)}
   {ep_nav(prev_ep, next_ep)}
-</section>""", platforms_section(show), archive_section(episodes, ep["date"], "allEpisodes", EP_ARCHIVE),
+</section>""", platforms_section(show), _pm.newsletter_section(show), archive_section(episodes, ep["date"], "allEpisodes", EP_ARCHIVE),
             close_section(show)])
         head = (f'<meta property="article:published_time" content="{ep["pub_date"]}">\n'
                 f'<meta property="article:section" content="Yapay zekâ ve teknoloji">\n'
@@ -779,6 +795,9 @@ def build_pages(root, show, episodes, notes_md, notes_html=None, extras=None):
                                                   **({"url": f"{url}#{c['id']}"} if c["id"] else {})} for c in chs]},
                 ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
         sitemap.append((url, ep["pub_date"]))
+
+    # ----- weeks (/hafta/) and months (/arsiv/) -----
+    weeks, months = _pm.build_periods(root, show, episodes, extras, sitemap, site)
 
     # ----- archive: /bolum/, /bolum/sayfa/N/ -----
     pages_n = max(1, math.ceil(len(episodes) / ARCHIVE_PAGE))
@@ -803,6 +822,7 @@ def build_pages(root, show, episodes, notes_md, notes_html=None, extras=None):
   <h1>{e(title)}</h1>
   <p>{e(lead)}</p>
 </section>
+{_pm.period_links(weeks, months) if n == 1 else ""}
 <section class="archive"><div class="arch" style="padding-top:clamp(28px,4vw,48px)">{arch_rows(chunk)}</div></section>
 {pager}""", close_section(show)])
         ld = {"@context": "https://schema.org", "@graph": [
@@ -843,11 +863,15 @@ def build_pages(root, show, episodes, notes_md, notes_html=None, extras=None):
                         + (f'<span class="s">{e(clip(summary))}</span>' if summary else "") + "</a>")
         trail = [("Ana sayfa", "/"), ("Konular", "/konu/"), (tp["name"], None)]
         lead = f"{tp['desc']}. {n_eps} bölümde {len(hits)} haber; her biri kaynaklarıyla bölüm notlarında."
+        summ = seo.topic_summaries().get(tp["slug"])
+        summ_html = (f'<article class="prose"><h2>Son durum</h2><p>{e(summ["metin"])}</p>'
+                     f'<p class="rel kicker">Güncelleme: {time_tag(summ["tarih"])}</p></article>') if summ else ""
         body = "\n".join([header(show, False), f"""<section class="page-head">
   {crumbs(trail)}
   <h1>{e(tp['name'])}</h1>
   <p>{e(lead)}</p>
 </section>
+{summ_html}
 <section class="archive"><div class="arch" style="padding-top:clamp(28px,4vw,48px)">{"".join(rows)}</div></section>""",
                           close_section(show)])
         ld = {"@context": "https://schema.org", "@graph": [
@@ -910,6 +934,9 @@ def build_pages(root, show, episodes, notes_md, notes_html=None, extras=None):
             "HAL'imiz Ne Olacak? nasıl hazırlanıyor: kaynak seçimi, yapay zekâ kullanımı, doğrulama, tarafsızlık ve düzeltme ilkeleri.",
             f"{site}/hakkinda/", body, ld, og_image(root, site, show, "home")), encoding="utf-8")
         sitemap.append((f"{site}/hakkinda/", None))
+
+    # ----- glossary: /sozluk/ -----
+    _pm.build_glossary(root, show, episodes, extras, sitemap, site)
 
     # ----- 404 -----
     body = "\n".join([header(show, False), f"""<section class="page-head">

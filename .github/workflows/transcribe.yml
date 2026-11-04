@@ -98,7 +98,7 @@ jobs:
           python3 tools/build.py
           git config user.name "Derinbay Labs"
           git config user.email "podcast@derinbay.com"
-          git add -A episodes bolum konu feed.xml index.html sitemap.xml
+          git add -A episodes bolum konu sozluk hafta arsiv feed.xml index.html sitemap.xml
           if git commit -m "Transkript: ${{ steps.pick.outputs.dates }}"; then
             git pull --rebase origin master
             git push origin HEAD:master

@@ -1,0 +1,133 @@
+{
+  "_doc": "Sözlük (/sozluk/<slug>/). Her terim: slug, terim, kisa (tek cümle tanım, meta açıklama olarak da kullanılır), metin (paragraflar; boş satırla ayrılır), eslesme (bölüm notlarında ve transkriptte terimi bulan regex; büyük/küçük harfe duyarsız, kelime başında aranır), ilgili (isteğe bağlı: /konu/ slug'ları ya da başka terim slug'ları). Haftalık içerik ajanı her pazartesi yeni terim ekler; var olan tanımları ancak hatalıysa düzeltir.",
+  "terimler": [
+    {
+      "slug": "token",
+      "terim": "Token",
+      "kisa": "Dil modellerinin metni işlerken kullandığı en küçük birim; bir kelime, kelimenin bir parçası ya da bir noktalama işareti olabilir.",
+      "metin": "Dil modelleri metni harf harf ya da kelime kelime değil, token adı verilen parçalara bölerek okur ve üretir. Türkçede eklerin çokluğu nedeniyle tek bir kelime birkaç token'a bölünebilir; bu yüzden aynı içerik Türkçede İngilizceye göre çoğu zaman daha fazla token tutar.\n\nYapay zekâ hizmetleri genellikle token başına ücretlendirilir ve modellerin ne kadar metni aynı anda işleyebileceği (bağlam penceresi) de token cinsinden ölçülür. Haberlerde geçen \"token harcaması\" ya da \"milyon token başına fiyat\" ifadeleri bu birim üzerinden hesaplanır.",
+      "eslesme": "token",
+      "ilgili": ["baglam-penceresi", "cikarim"]
+    },
+    {
+      "slug": "baglam-penceresi",
+      "terim": "Bağlam penceresi",
+      "kisa": "Bir dil modelinin tek seferde dikkate alabildiği en fazla metin miktarı; token cinsinden ölçülür.",
+      "metin": "Bağlam penceresi, modelin bir yanıt üretirken aynı anda \"görebildiği\" metnin sınırıdır: kullanıcının yazdıkları, verilen belgeler ve modelin o ana kadar ürettikleri bu pencerenin içine sığmak zorundadır. Pencereyi aşan kısım model tarafından görülmez.\n\nGeniş bir bağlam penceresi (örneğin 1 milyon token) uzun belgeleri, büyük kod tabanlarını ya da çok adımlı ajan görevlerini tek seferde işlemeyi mümkün kılar. Ancak pencere büyüdükçe işlem maliyeti de artar ve modelin uzak kısımlardaki bilgiyi kullanma başarısı her zaman aynı kalmaz.",
+      "eslesme": "bağlam pencere|baglam pencere|context window",
+      "ilgili": ["token", "yapay-zeka-ajani"]
+    },
+    {
+      "slug": "parametre",
+      "terim": "Parametre",
+      "kisa": "Bir yapay zekâ modelinin eğitim sırasında öğrendiği sayısal değerler; modelin büyüklüğü genellikle parametre sayısıyla ifade edilir.",
+      "metin": "Bir sinir ağındaki parametreler (ağırlıklar), modelin eğitim verisinden öğrendiği bilgiyi taşıyan sayılardır. \"1,6 trilyon parametreli model\" denildiğinde, modelin içinde bu kadar ayarlanabilir değer bulunduğu kastedilir.\n\nParametre sayısı tek başına başarıyı belirlemez; eğitim verisinin kalitesi, eğitim yöntemi ve mimari de belirleyicidir. Uzmanlar karışımı (MoE) gibi mimarilerde her token için parametrelerin yalnızca bir kısmı çalışır; bu yüzden haberlerde \"toplam\" ve \"aktif\" parametre sayıları ayrı ayrı verilir.",
+      "eslesme": "parametre",
+      "ilgili": ["uzmanlar-karisimi", "gradyan-inisi"]
+    },
+    {
+      "slug": "uzmanlar-karisimi",
+      "terim": "Uzmanlar karışımı (MoE)",
+      "kisa": "Modelin farklı alt ağlara (uzmanlara) bölündüğü ve her token için yalnızca birkaç uzmanın çalıştığı model mimarisi.",
+      "metin": "Mixture of Experts (MoE) mimarisinde model, \"uzman\" adı verilen çok sayıda alt ağdan oluşur. Bir yönlendirme katmanı, işlenen her token için bu uzmanlardan yalnızca birkaçını seçer; diğerleri o adımda çalışmaz.\n\nBu yaklaşım sayesinde toplam parametre sayısı çok büyük olan bir model, her adımda çok daha az hesaplama yaparak çalışabilir. Örneğin toplamda 1,6 trilyon parametresi olan bir modelin token başına yalnızca 48 milyar parametresi aktif olabilir. Bedeli, tüm uzmanların yine de bellekte tutulması ve eğitimin daha karmaşık olmasıdır.",
+      "eslesme": "uzmanlar karışımı|mixture of experts|\\bMoE\\b|aktif parametre",
+      "ilgili": ["parametre", "cikarim"]
+    },
+    {
+      "slug": "gradyan-inisi",
+      "terim": "Gradyan inişi",
+      "kisa": "Sinir ağlarının eğitiminde, modelin hatasını azaltacak yönde parametreleri adım adım güncelleyen temel optimizasyon yöntemi.",
+      "metin": "Gradyan inişi, modelin tahmini ile doğru cevap arasındaki farkı (kaybı) ölçüp her parametrenin bu kaybı nasıl etkilediğini hesaplar ve parametreleri kaybı azaltacak yönde küçük adımlarla değiştirir. Bu işlem milyonlarca kez tekrarlanarak model eğitilir.\n\nGünümüzün büyük dil modellerinin neredeyse tamamı bu yöntemin türevleriyle eğitilir. Bu yüzden bir modelin ağırlıklarını gradyan inişi kullanmadan, doğrudan düzenleyerek geliştirmeye yönelik deneyler araştırma dünyasında dikkat çekiyor.",
+      "eslesme": "gradyan inişi|gradyan|gradient descent",
+      "ilgili": ["parametre", "pekistirmeli-ogrenme"]
+    },
+    {
+      "slug": "pekistirmeli-ogrenme",
+      "terim": "Pekiştirmeli öğrenme",
+      "kisa": "Bir modelin denemeler yapıp sonuçlarına göre ödül ya da ceza alarak davranışını geliştirdiği eğitim yöntemi.",
+      "metin": "Pekiştirmeli öğrenmede (reinforcement learning, RL) modele her adımda doğru cevap gösterilmez; bunun yerine model bir görevi dener ve sonucun ne kadar iyi olduğunu gösteren bir ödül sinyali alır. Model zamanla ödülü artıran davranışları öğrenir.\n\nDil modellerinde bu yöntem, kod yazma, matematik ve çok adımlı ajan görevleri gibi sonucu doğrulanabilen işlerde modelleri geliştirmek için yoğun biçimde kullanılıyor. İnsan geri bildirimiyle pekiştirmeli öğrenme (RLHF) ise modellerin yanıtlarını insan tercihlerine yaklaştırmak için kullanılan türüdür.",
+      "eslesme": "pekiştirmeli öğrenme|reinforcement learning|\\bRLHF\\b",
+      "ilgili": ["yapay-zeka-ajani", "gradyan-inisi"]
+    },
+    {
+      "slug": "cikarim",
+      "terim": "Çıkarım (inference)",
+      "kisa": "Eğitilmiş bir yapay zekâ modelinin kullanıcı isteklerine yanıt üretmek için çalıştırılması.",
+      "metin": "Bir modelin yaşamı iki aşamadan oluşur: eğitim ve çıkarım. Eğitim, modelin veriden öğrendiği pahalı ve görece seyrek bir süreçtir; çıkarım ise model her kullanıldığında, yani her soru sorulduğunda ya da her görsel üretildiğinde gerçekleşir.\n\nYapay zekâ kullanımı yaygınlaştıkça toplam hesaplama gücünün giderek daha büyük kısmı çıkarıma gidiyor. Bu nedenle çıkarımı daha ucuz ve hızlı yapan çipler, yazılımlar ve bulut platformları ayrı bir yatırım alanı haline geldi.",
+      "eslesme": "çıkarım|inference",
+      "ilgili": ["token", "yapay-zeka-hizlandiricisi"]
+    },
+    {
+      "slug": "yapay-zeka-ajani",
+      "terim": "Yapay zekâ ajanı",
+      "kisa": "Bir hedef verildiğinde araçları kullanarak birden çok adımı kendi planlayıp yürüten yapay zekâ sistemi.",
+      "metin": "Klasik bir sohbet modeli tek bir soruya tek bir yanıt verir. Ajan ise bir hedefe ulaşmak için adımları kendisi planlar; web'de arama yapmak, kod çalıştırmak, dosya düzenlemek ya da başka uygulamaları kullanmak gibi araçlara başvurur ve sonuçlara göre bir sonraki adıma karar verir.\n\nKodlama ajanları, alışveriş yapan tüketici ajanları ve şirket içi iş akışlarını yürüten ajanlar bu alanın öne çıkan örnekleri. Ajanların yaygınlaşması, uzun bağlam pencereleri, güvenilirlik ve güvenlik konularını daha önemli hale getiriyor.",
+      "eslesme": "ajan(?!s)|agentic|\\bagent",
+      "ilgili": ["baglam-penceresi", "pekistirmeli-ogrenme"]
+    },
+    {
+      "slug": "halusinasyon",
+      "terim": "Halüsinasyon",
+      "kisa": "Bir yapay zekâ modelinin kendinden emin bir şekilde yanlış ya da uydurma bilgi üretmesi.",
+      "metin": "Dil modelleri, bir sonraki en olası kelimeyi tahmin ederek metin üretir; bilgiyi bir veritabanından çekmezler. Bu yüzden zaman zaman var olmayan kaynaklar, yanlış rakamlar ya da hiç yaşanmamış olaylar üretebilirler. Bu hataya halüsinasyon denir.\n\nHalüsinasyon riski, yapay zekânın hukuk, finans ve sağlık gibi hata payının düşük olduğu alanlarda kullanımını sınırlayan başlıca nedenlerden biri. Kaynak gösterme, sonuçları araçlarla doğrulama ve insan denetimi bu riski azaltmak için kullanılan yöntemler.",
+      "eslesme": "halüsinasyon|hallucination",
+      "ilgili": ["benchmark"]
+    },
+    {
+      "slug": "benchmark",
+      "terim": "Benchmark",
+      "kisa": "Yapay zekâ modellerinin yeteneklerini karşılaştırmak için kullanılan standart test ya da test seti.",
+      "metin": "Benchmark'lar, modellerin aynı sorular ya da görevler üzerinde ölçülüp karşılaştırılmasını sağlar. Matematik problemleri (örneğin MATH-500), kodlama görevleri ya da uzman düzeyinde iş görevleri gibi farklı alanlarda ayrı testler bulunur.\n\nBir benchmark'ta yüksek puan, modelin o testte iyi olduğunu gösterir ama gerçek dünyadaki başarıyı her zaman yansıtmaz. Test soruları eğitim verisine karıştığında puanlar şişebilir; bu yüzden yeni ve zor benchmark'lar sürekli geliştiriliyor.",
+      "eslesme": "benchmark|kıyaslama testi",
+      "ilgili": ["benchmark"]
+    },
+    {
+      "slug": "acik-agirlikli-model",
+      "terim": "Açık ağırlıklı model",
+      "kisa": "Eğitilmiş parametreleri (ağırlıkları) herkesin indirip kendi donanımında çalıştırabileceği şekilde yayımlanan yapay zekâ modeli.",
+      "metin": "Açık ağırlıklı modellerde şirket, modelin eğitilmiş ağırlıklarını Hugging Face ya da GitHub gibi platformlarda yayımlar. Bu modeller kendi sunucunuzda, hatta yeterince güçlü bir dizüstü bilgisayarda çalıştırılabilir, ince ayar yapılabilir ve bir hizmete bağımlı kalmadan kullanılabilir.\n\n\"Açık kaynak\" ifadesi sık kullanılsa da çoğu modelin eğitim verisi ve eğitim kodu yayımlanmaz; yalnızca ağırlıkları paylaşılır. Çinli şirketlerin (DeepSeek, Qwen, Meituan gibi) bu alandaki yoğun rekabeti son dönemin öne çıkan başlıklarından.",
+      "eslesme": "açık ağırlık|açık model|open[- ]weight|açık kaynak model",
+      "ilgili": ["deepseek", "alibaba-qwen", "hugging-face"]
+    },
+    {
+      "slug": "ozyinelemeli-kendini-gelistirme",
+      "terim": "Özyinelemeli kendini geliştirme (RSI)",
+      "kisa": "Bir yapay zekâ sisteminin kendi sonraki sürümlerini geliştirme işine anlamlı katkı yaparak ilerlemeyi hızlandırması.",
+      "metin": "Recursive self-improvement (RSI), yapay zekânın kendi araştırma ve geliştirme sürecine katkı vermesiyle her yeni sürümün bir sonrakini daha hızlı getirmesi fikridir. Model ne kadar iyi olursa yapay zekâ araştırmasını o kadar hızlandırır; bu da bir hızlanma döngüsü yaratabilir.\n\nYapay zekâ şirketleri güvenlik politikalarında bu tür bir hızlanmayı kritik eşiklerden biri olarak tanımlıyor ve bu eşiğe yaklaşıldığında ek güvenlik önlemleri almayı taahhüt ediyor. Konu, hem teknik ilerlemenin hızı hem de denetim açısından yakından izleniyor.",
+      "eslesme": "kendini geliştir|öz-geliştiren|özyinelemeli|\\bRSI\\b|dramatik hızlanma",
+      "ilgili": ["anthropic"]
+    },
+    {
+      "slug": "egemen-yapay-zeka",
+      "terim": "Egemen yapay zekâ",
+      "kisa": "Bir ülkenin yapay zekâ modellerini, verisini ve altyapısını kendi denetiminde geliştirme ve işletme hedefi.",
+      "metin": "Egemen yapay zekâ (sovereign AI), bir ülkenin kritik yapay zekâ yeteneklerinde yabancı şirketlere ya da ülkelere bağımlı kalmamak için kendi modellerini, veri merkezlerini ve hesaplama kapasitesini oluşturmasını ifade eder. Yerel dil ve kültüre uygun modeller de bu hedefin bir parçasıdır.\n\nGüney Kore, Körfez ülkeleri ve Avrupa'daki birçok ülke bu amaçla bütçe ayırıyor. Bu yatırımlar çip ihracat kuralları ve veri merkezi kapasitesiyle birlikte yapay zekâyı bir ulusal güvenlik konusu haline getiriyor.",
+      "eslesme": "egemen yapay zek|egemen AI|sovereign AI",
+      "ilgili": ["cin", "veri-merkezleri"]
+    },
+    {
+      "slug": "yapay-zeka-hizlandiricisi",
+      "terim": "Yapay zekâ hızlandırıcısı",
+      "kisa": "Yapay zekâ modellerinin eğitimi ve çalıştırılması için tasarlanmış GPU ve benzeri özel çipler.",
+      "metin": "Yapay zekâ hesaplamaları çok sayıda basit matematik işlemin paralel yapılmasını gerektirir. GPU'lar ve bu iş için özel tasarlanan çipler (örneğin NVIDIA'nın GPU'ları, AMD'nin Instinct serisi, Google'ın TPU'ları, Huawei'nin Ascend çipleri) bu işlemleri genel amaçlı işlemcilere göre çok daha hızlı ve verimli yapar.\n\nBu çiplerin arzı, fiyatı ve ihracat kuralları yapay zekâ yarışının en belirleyici unsurlarından biri. Büyük modellerin eğitimi için on binlerce hızlandırıcının birlikte çalışması gerektiğinden, çipler arasındaki bağlantı ve veri merkezi altyapısı da en az çipin kendisi kadar önemli.",
+      "eslesme": "hızlandırıcı|\\bGPU|\\bTPU|Ascend|Instinct",
+      "ilgili": ["nvidia", "amd", "huawei", "optik-ara-baglanti"]
+    },
+    {
+      "slug": "optik-ara-baglanti",
+      "terim": "Optik ara bağlantı",
+      "kisa": "Veri merkezlerinde çipler ve sunucular arasında veriyi elektrik yerine ışıkla taşıyan bağlantı teknolojisi.",
+      "metin": "Büyük yapay zekâ modelleri tek bir çipe sığmaz; binlerce çipin sürekli veri alışverişi yaparak birlikte çalışması gerekir. Bu trafiğin hızı ve enerji maliyeti, sistemin toplam performansını belirler. Optik bağlantılar, lazer ve fiber kullanarak uzun mesafelerde bakır kablolardan çok daha yüksek hız ve verim sağlar.\n\nBu nedenle optik bileşen üreten şirketler yapay zekâ altyapısının kritik tedarikçileri haline geldi ve bu alanda büyük satın almalar yaşanıyor.",
+      "eslesme": "optik bağlantı|optik bileşen|optik ara bağlantı|optical interconnect",
+      "ilgili": ["marvell", "veri-merkezleri", "yapay-zeka-hizlandiricisi"]
+    },
+    {
+      "slug": "s-1-belgesi",
+      "terim": "S-1 belgesi",
+      "kisa": "ABD'de halka arz olmak isteyen şirketlerin SEC'e sunduğu, finansal tablolarını ve risklerini açıklayan kayıt beyannamesi.",
+      "metin": "S-1, bir şirketin ABD borsalarında hisse satabilmesi için Menkul Kıymetler ve Borsa Komisyonu'na (SEC) verdiği ayrıntılı belgedir. Gelir, zarar, nakit akışı, yönetim yapısı, iş modeli ve yatırımcıların bilmesi gereken riskler bu belgede açıklanır. Güncellenmiş sürümleri S-1/A olarak adlandırılır.\n\nHalka arz sürecindeki yapay zekâ şirketlerinin S-1 belgeleri, normalde gizli kalan gelir ve işlem gücü harcaması gibi rakamları ilk kez kamuya açtığı için sektör açısından önemli bir bilgi kaynağıdır.",
+      "eslesme": "S-1|halka arz belgesi",
+      "ilgili": ["halka-arz", "anthropic"]
+    }
+  ]
+}
