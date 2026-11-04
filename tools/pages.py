@@ -379,11 +379,20 @@ def how_section():
 </section>"""
 
 
+SOCIAL_LABELS = [("youtube", "YouTube"), ("instagram", "Instagram"), ("x", "X"), ("linkedin", "LinkedIn")]
+
+
+def social_links(show):
+    soc = show.get("social") or {}
+    return "".join(f'<a class="btn btn-ghost" href="{e(soc[k], quote=True)}" rel="me">{label}</a>'
+                   for k, label in SOCIAL_LABELS if soc.get(k))
+
+
 def close_section(show):
     feed = f"{show['site_url'].rstrip('/')}/{show['feed_path']}"
     return f"""<section class="close">
   <h2><span>{t('close1')}</span><span>{t('close2')}</span></h2>
-  <div class="row"><a class="btn btn-ghost" href="{feed}">{t('rss')}</a></div>
+  <div class="row"><a class="btn btn-ghost" href="{feed}">{t('rss')}</a>{social_links(show)}</div>
 </section>
 <footer class="bot">
   <span>{e(show['copyright'])}</span>
