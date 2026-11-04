@@ -9,5 +9,16 @@
     "guid": "halimiz-2026-11-03",
     "notes_md": "episodes/2026-11-03/notes.md",
     "pub_date": "2026-11-03T21:19:53+03:00"
+  },
+  {
+    "date": "2026-11-04",
+    "title": "4 Kasım: AMD'nin 3. çeyreği, NVIDIA'nın Çin kuralı, ChatGPT'de 1,2 milyar kullanıcı",
+    "summary": "AMD'nin veri merkezi geliri MI450 lansmanıyla neredeyse ikiye katlandı, NVIDIA'nın Asyalı bulut müşterilerine Çin'e satışı sınırlayan yeni bir kural koyduğu ortaya çıktı ve ChatGPT haftalık 1,2 milyar kullanıcıya ulaştı.",
+    "audio_url": "https://github.com/Derinbay-Labs/halimiz-podcast/releases/download/2026-11-04/halimiz-2026-11-04.mp3",
+    "audio_bytes": 15215998,
+    "duration_seconds": 1268.0,
+    "guid": "halimiz-2026-11-04",
+    "notes_md": "episodes/2026-11-04/notes.md",
+    "pub_date": "2026-11-04T12:18:46+03:00"
   }
 ]
