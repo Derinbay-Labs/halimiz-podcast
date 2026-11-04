@@ -263,6 +263,15 @@ def topics(notes_md):
     return out
 
 
+def analytics(show):
+    """Cloudflare Web Analytics beacon (cookie-less); token lives in podcast.json."""
+    token = show.get("cf_beacon_token")
+    if not token:
+        return ""
+    return ('<script defer src="https://static.cloudflareinsights.com/beacon.min.js" '
+            f'data-cf-beacon=\'{{"token": "{token}"}}\'></script>')
+
+
 def page(show, title, desc, canonical, body, jsonld, image):
     site = show["site_url"].rstrip("/")
     i18n = json.dumps(I18N, ensure_ascii=False)
@@ -283,6 +292,7 @@ def page(show, title, desc, canonical, body, jsonld, image):
 <link rel="preload" href="/assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
 <style>{CSS}</style>
 <script type="application/ld+json">{json.dumps(jsonld, ensure_ascii=False)}</script>
+{analytics(show)}
 </head><body><div class="wrap">
 {body}
 </div>

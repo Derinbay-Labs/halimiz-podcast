@@ -17,6 +17,7 @@
   "ai_disclosure": "Bu bölüm yapay zekâ yardımı ile hazırlanmıştır. Sesler yapay zekâ sunuculara aittir; içerik, kaynakları bölüm notlarında verilen günlük bültene dayanır. Doğrulanmamış iddialar bölümde öyle belirtilir.",
   "github_repo": "Derinbay-Labs/halimiz-podcast",
   "stats_prefix": "https://op3.dev/e",
+  "cf_beacon_token": "0dec7192e23d4ca5add5c151eed33f99",
   "publisher_url": "https://derinbay.com",
   "platforms": [
     {
