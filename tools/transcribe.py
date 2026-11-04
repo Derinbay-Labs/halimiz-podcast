@@ -38,11 +38,20 @@ def fetch(url, dest):
             f.write(chunk)
 
 
+def decode(audio):
+    """16 kHz mono float32 samples via ffmpeg (avoids PyAV version differences)."""
+    import subprocess
+    import numpy as np
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(audio), "-f", "f32le", "-ac", "1", "-ar", "16000", "-"],
+                         check=True, capture_output=True).stdout
+    return np.frombuffer(raw, dtype=np.float32)
+
+
 def transcribe(audio, model_name, threads):
     from faster_whisper import WhisperModel
     model = WhisperModel(model_name, device="cpu", compute_type="int8", cpu_threads=threads)
     segments, info = model.transcribe(
-        str(audio), language="tr", beam_size=3, vad_filter=True,
+        decode(audio), language="tr", beam_size=3, vad_filter=True,
         vad_parameters={"min_silence_duration_ms": 500},
         condition_on_previous_text=False, word_timestamps=False)
     out = []
