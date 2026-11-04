@@ -10,6 +10,7 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  deployments: read
 
 concurrency:
   group: pages
@@ -50,6 +51,23 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
+      # A Pages deployment that timed out on GitHub's side stays "in progress" and blocks every later
+      # deploy ("due to in progress deployment"). Runs are serialized by the concurrency group, so any
+      # other in-progress deployment at this point is stuck: cancel it.
+      - name: Clear a stuck Pages deployment
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          for sha in $(gh api "repos/$REPO/deployments?environment=github-pages&per_page=10" --jq '.[].sha' | sort -u); do
+            [ "$sha" = "$GITHUB_SHA" ] && continue
+            st=$(gh api "repos/$REPO/pages/deployments/$sha" --jq .status 2>/dev/null || true)
+            case "$st" in
+              deployment_queued|deployment_in_progress|syncing_files|finished_file_sync|updating_pages|purging_cdn)
+                echo "cancelling stuck deployment $sha ($st)"
+                gh api -X POST "repos/$REPO/pages/deployments/$sha/cancel" || true ;;
+            esac
+          done
       - id: deployment
         uses: actions/deploy-pages@v4
       # tell Bing, Yandex and other IndexNow engines which pages changed; best effort
