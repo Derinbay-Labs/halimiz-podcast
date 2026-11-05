@@ -98,9 +98,11 @@ jobs:
           python3 tools/build.py
           git config user.name "Derinbay Labs"
           git config user.email "podcast@derinbay.com"
-          git add -A episodes bolum konu sozluk hafta arsiv feed.xml index.html sitemap.xml
+          # every file build.py writes, so nothing generated is left unstaged
+          git add -A episodes bolum konu sozluk hafta arsiv hakkinda feed.xml index.html sitemap.xml 404.html robots.txt
+          git status --short
           if git commit -m "Transkript: ${{ steps.pick.outputs.dates }}"; then
-            git pull --rebase origin master
+            git pull --rebase --autostash origin master
             git push origin HEAD:master
             gh workflow run pages.yml --repo "$GITHUB_REPOSITORY" --ref master
           else
