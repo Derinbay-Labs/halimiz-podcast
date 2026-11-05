@@ -1,0 +1,54 @@
+{
+ "version": "1.2.0",
+ "chapters": [
+  {
+   "startTime": 0,
+   "title": "Giriş"
+  },
+  {
+   "startTime": 64,
+   "title": "Ara seçimlerde veri merkezleri kaybetti",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-05/#ara-secimlerde-veri-merkezleri-kaybetti"
+  },
+  {
+   "startTime": 129,
+   "title": "Moonshot, Kimi K3.1 Pro'nun ağırlıklarını açtı",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-05/#moonshot-kimi-k3-1-pro-nun-agirliklarini-acti"
+  },
+  {
+   "startTime": 183,
+   "title": "Meta, paralel kodlama ajanı girişimi Conductor'ı satın aldı",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-05/#meta-paralel-kodlama-ajani-girisimi-conductor-i"
+  },
+  {
+   "startTime": 256,
+   "title": "OpenAI, Pierre Computer'ı satın alıyor; Git altyapısı Pando'yu tanıttı",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-05/#openai-pierre-computer-i-satin-aliyor-git"
+  },
+  {
+   "startTime": 452,
+   "title": "OpenAI: GPT-6 Astra bir donanım cihazını bir haftadan kısa sürede tasarladı",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-05/#openai-gpt-6-astra-bir-donanim-cihazini-bir"
+  },
+  {
+   "startTime": 498,
+   "title": "Claude, Xen hipervizöründe iki kritik VM kaçış açığı buldu",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-05/#claude-xen-hipervizorunde-iki-kritik-vm-kacis"
+  },
+  {
+   "startTime": 890,
+   "title": "Anthropic'ten FlashProve: hangi modelin yanıt verdiğini kanıtlayan prototip",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-05/#anthropic-ten-flashprove-hangi-modelin-yanit"
+  },
+  {
+   "startTime": 919,
+   "title": "Reuters: OpenAI çalışanları yıllardır güvenlik açıkları konusunda uyarıyormuş",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-05/#reuters-openai-calisanlari-yillardir-guvenlik"
+  },
+  {
+   "startTime": 970,
+   "title": "Apple, yıllık raporunda AI ajanlarını risk olarak yazdı; iç AI bütçelerini kısıyor",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-05/#apple-yillik-raporunda-ai-ajanlarini-risk"
+  }
+ ]
+}

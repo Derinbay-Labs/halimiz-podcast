@@ -122,6 +122,8 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 <itunes:image href="https://halimiz.derinbay.com/assets/cover.jpg"/>
+<podcast:transcript url="https://halimiz.derinbay.com/bolum/2026-11-05/transkript.srt" type="application/x-subrip" language="tr"/>
+<podcast:chapters url="https://halimiz.derinbay.com/bolum/2026-11-05/chapters.json" type="application/json+chapters"/>
 </item>
 <item>
 <title>4 Kasım: AMD'nin 3. çeyreği, NVIDIA'nın Çin kuralı, ChatGPT'de 1,2 milyar kullanıcı</title>

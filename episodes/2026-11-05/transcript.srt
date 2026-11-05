@@ -1,0 +1,1059 @@
+1
+00:00:00,000 --> 00:00:01,840
+Halimiz ne olacağı? Hoş geldiniz.
+
+2
+00:00:02,740 --> 00:00:04,900
+Bu bölüm yapay zeka yardımıyla hazırlanmıştır.
+
+3
+00:00:05,760 --> 00:00:14,820
+Şöyle bir düşün, bir yapay zeka sistemine bana bir donanım üret diyorsun ve bir ay sonra masanda sıfırdan tasarlanmış çalışan bir devre kartı buluyorsun.
+
+4
+00:00:15,080 --> 00:00:16,320
+Evet, akıl alır gibi değil.
+
+5
+00:00:16,680 --> 00:00:25,480
+Veya sahte bir iş mülakatının arkasına gizlenen başka bir yapay zeka ajanı küresel bir borsadan tam 6.3 milyar dolar çalıyor.
+
+6
+00:00:26,200 --> 00:00:29,580
+Yani şu an neredeysen, ne yapıyorsan kısa bir süreliğine durakla.
+
+7
+00:00:29,580 --> 00:00:30,160
+Kesinlikle.
+
+8
+00:00:30,520 --> 00:00:35,600
+Çünkü bugün seninle, bugüne kadarki en yoğun bültenlerden biriyle karşı karşıyayız.
+
+9
+00:00:36,160 --> 00:00:44,060
+Yapay zekanın dijital dünyadan çıkıp fiziksel gerçekliğimize, finansal piyasalara ve siber güvenliğimize nasıl sızdığının detaylı bir analizini yapacağız.
+
+10
+00:00:44,260 --> 00:00:45,840
+Çok derin bir gündemimiz var bugün.
+
+11
+00:00:46,300 --> 00:00:47,660
+Tamam, bunu bir açalım.
+
+12
+00:00:48,280 --> 00:00:49,540
+Önce fiziksel dünya diyelim.
+
+13
+00:00:50,380 --> 00:00:54,800
+Biliyorsun aylardır modellerin büyüklüğünü konuşuyoruz ama bence artık o sınırlar dijitalde değil.
+
+14
+00:00:54,800 --> 00:00:55,800
+Aynen öyle.
+
+15
+00:00:55,900 --> 00:00:58,840
+Modeller bulutlarda böyle sihirli bir alemde yaşamıyor sonuçta.
+
+16
+00:00:58,840 --> 00:01:03,860
+Çelikten, betondan, muazzam miktarda elektrikten ve sudan oluşuyorlar.
+
+17
+00:01:04,060 --> 00:01:07,320
+Ve ABD ara seçimlerinde de bunu net bir şekilde gördük aslında.
+
+18
+00:01:08,140 --> 00:01:10,140
+Seçmen bu fiziksel iştaha dur dedi.
+
+19
+00:01:10,880 --> 00:01:13,060
+Tabii sektör için ilk gerçek duvar bu oldu.
+
+20
+00:01:13,780 --> 00:01:20,200
+Ya düşünsene Ohio'daki 21 yerel oylamanın 14'ünde veri merkezi yapımına kısıtlama kararı çıktı.
+
+21
+00:01:21,000 --> 00:01:22,620
+Ülke genelinde de durum farklı değil.
+
+22
+00:01:22,860 --> 00:01:25,300
+45 oylamanın 33'ü yasakla sonuçlandı.
+
+23
+00:01:25,760 --> 00:01:30,800
+İnsanlar haklı olarak mahallelerinde bu devasa gürültülü kutuları istemiyor.
+
+24
+00:01:31,650 --> 00:01:33,670
+Suyu ve elektriği sömürmesine cabası tabii.
+
+25
+00:01:33,970 --> 00:01:37,370
+Mesela Teksas ki Teksas regülasyon sevmeyen bir eyalettir.
+
+26
+00:01:37,810 --> 00:01:41,850
+Orada bile yeni vali Gina Hinohoza eyalet çapında moratorium çağrısı yaptı.
+
+27
+00:01:41,850 --> 00:01:44,150
+Yani inşaatları tamamen durdurma kararı.
+
+28
+00:01:44,930 --> 00:01:46,010
+Bu çok kritik bir hamle.
+
+29
+00:01:46,330 --> 00:01:47,630
+Piyasada anında tepki verdi.
+
+30
+00:01:48,110 --> 00:01:51,670
+Core View hisseleri ve tahvilleri resmen dibe vurdu bu açıklamadan sonra.
+
+31
+00:01:52,350 --> 00:01:52,650
+E tabii.
+
+32
+00:01:52,650 --> 00:02:00,590
+Hatta Transformer bültenine göre demokratların zaferiyle 2027'de çok daha katı federal AI yasaları gelebilir.
+
+33
+00:02:01,310 --> 00:02:09,110
+İşin ilginç tarafı şu, ABD'li şirketler fiziksel sınırlarla ve böyle davalarla boğuşurken Çin sınır modellerinde açık kaynak yarışını kızıştırıyor.
+
+34
+00:02:09,570 --> 00:02:10,650
+Moonshot'ın yeni hamlesi.
+
+35
+00:02:11,630 --> 00:02:15,510
+Evet, Moonshot Kimika 3.1 Pro modelini açık ağırlıklı olarak yayınladı.
+
+36
+00:02:16,030 --> 00:02:19,610
+Rakamlar devasa. 2.8 trilyon toplam parametre.
+
+37
+00:02:19,730 --> 00:02:20,830
+İnanılmaz bir büyüklük.
+
+38
+00:02:20,830 --> 00:02:24,390
+Çin bu açık kaynak yarışında ABD'yi köşeye mi sıkıştırıyor sence?
+
+39
+00:02:24,610 --> 00:02:25,630
+Kesinlikle öyle yapıyor.
+
+40
+00:02:26,090 --> 00:02:31,530
+ABD kapalı kapılar ardında API satmaya çalışırken Çin alın bu güç sizin olsun diyor.
+
+41
+00:02:32,070 --> 00:02:36,670
+Bu arada kiminin Cloudopus 5.5 ve GPT-6 Astra ile yarıştığı söyleniyor.
+
+42
+00:02:37,210 --> 00:02:38,950
+Bir de bu MOE yapısında değil mi?
+
+43
+00:02:39,110 --> 00:02:41,790
+104 milyar aktif parametre falan diyor haberde.
+
+44
+00:02:42,010 --> 00:02:44,210
+Evet uzmanlar karışımı yani MOE.
+
+45
+00:02:44,550 --> 00:02:46,230
+Bütün parametreler aynı anda çalışmaz.
+
+46
+00:02:46,230 --> 00:02:50,630
+Soruna göre sadece o uzmanlık alanındaki 104 milyar parametre devreye girer.
+
+47
+00:02:50,830 --> 00:02:52,890
+Bu da müthiş bir enerji tasarrufu sağlar.
+
+48
+00:02:53,150 --> 00:02:53,490
+Anladım.
+
+49
+00:02:54,030 --> 00:02:56,270
+E peki ABD tarafı buna nasıl yanıt veriyor?
+
+50
+00:02:56,510 --> 00:02:59,370
+Kodlama ve ajan altyapısı savaşlarına bakarsak?
+
+51
+00:02:59,470 --> 00:03:02,530
+Kendi geliştirici ordularını makinelerle değiştirmeye çalışıyorlar.
+
+52
+00:03:03,030 --> 00:03:03,630
+Aynen öyle.
+
+53
+00:03:03,750 --> 00:03:07,590
+Meta birden fazla kodlama ajanını paralel çalıştıran Conductor'u aldı.
+
+54
+00:03:07,990 --> 00:03:09,150
+OpenAI'da boş durmadı.
+
+55
+00:03:09,470 --> 00:03:10,910
+Peer Computer'u aldılar değil mi?
+
+56
+00:03:11,110 --> 00:03:11,470
+Evet.
+
+57
+00:03:11,770 --> 00:03:15,750
+Açık kaynak Trees ve Diffs kütüphanelerini yapan ekibi Kodakis'e kattılar.
+
+58
+00:03:15,750 --> 00:03:20,150
+Bir de ana kod depolarını Pando adında kendi altyapılarına taşımışlar.
+
+59
+00:03:20,150 --> 00:03:22,370
+Gecikmeyi de %80 düşürmüşler.
+
+60
+00:03:22,670 --> 00:03:33,510
+Yani bunu büyük resimle birleştirirsek, şirketler artık yapay zekayı bir asistan olarak değil, kendi içinde çalışan, saniyeler içinde kod yazıp test eden tam otonom bir departman olarak kurguluyor.
+
+61
+00:03:33,910 --> 00:03:36,830
+Otonomi demişken beni asıl şoka sokan donanım haberi oldu.
+
+62
+00:03:37,350 --> 00:03:38,790
+GPT-6 Astra.
+
+63
+00:03:39,130 --> 00:03:41,230
+Aa evet, o donanım tasarımı haberi.
+
+64
+00:03:41,590 --> 00:03:44,870
+Ya bir haftadan kısa sürede sıfırdan bir donanım tasarlamış.
+
+65
+00:03:45,010 --> 00:03:48,070
+Kasası, devre kartı, yazılımı hepsi.
+
+66
+00:03:48,470 --> 00:03:49,430
+Gerçekten büyüleyici.
+
+67
+00:03:49,430 --> 00:03:53,150
+Sanki bir beynin kendi kafatasını tasarlamayı öğrenmesi gibi bir şey bu.
+
+68
+00:03:53,310 --> 00:03:54,610
+Bu analoji duruma çok uygun.
+
+69
+00:03:55,090 --> 00:03:57,710
+Fiziksel dünyanın kuralları dijital kodlara benzemez.
+
+70
+00:03:58,290 --> 00:04:00,230
+Isı var, rüzgar direnci var.
+
+71
+00:04:00,730 --> 00:04:05,010
+Astra'nın bir ay içinde üretilebilecek bir prototip tasarlaması devrim niteliğinde.
+
+72
+00:04:05,490 --> 00:04:10,350
+Gerçi üretim toleranslarını tam tutturamamış, insan eliyle revizyon gerekmiş ama…
+
+73
+00:04:10,350 --> 00:04:11,250
+Yine de inanılmaz.
+
+74
+00:04:11,890 --> 00:04:16,210
+Hatta BenchCat 2.0 testinde Astra 0.594 alırken
+
+75
+00:04:16,210 --> 00:04:22,850
+OpenAI'in henüz ismini bilmediğimiz yeni dahili modeli 0.875 ile onu resmen ezmiş geçmiş.
+
+76
+00:04:23,110 --> 00:04:25,030
+Hızla fiziksel dünyaya adapte oluyorlar.
+
+77
+00:04:25,450 --> 00:04:27,550
+Mazda aerodinamik testler için kullanıyor.
+
+78
+00:04:27,850 --> 00:04:31,130
+Çip ganasi racing 3D taramaları kede çevirmek için kullanıyor.
+
+79
+00:04:31,530 --> 00:04:33,490
+İşte tam burada benim içime bir kurt düşüyor.
+
+80
+00:04:33,650 --> 00:04:40,030
+Bu modeller donanımı bile baştan yaratacak kadar zekiyse, bulut sunucularında başlarına buyruk bırakıldıklarında ne oluyor?
+
+81
+00:04:40,290 --> 00:04:42,350
+Zen Hypervisor açıkları haberini okudun tabii.
+
+82
+00:04:42,670 --> 00:04:44,450
+Evet, tüylerim ürperdi resmen.
+
+83
+00:04:44,450 --> 00:04:48,510
+Cloud modeli Zen Hypervisor'ın da VM kaçış açıkları bulmuş.
+
+84
+00:04:48,950 --> 00:04:51,650
+CVE-2026 ile başlayan numaraları var.
+
+85
+00:04:51,930 --> 00:04:54,890
+Bu aslında bulut güvenliğinin temel taşlarının sallanması demek.
+
+86
+00:04:55,410 --> 00:04:57,650
+Ya dinleyicilerimiz için bunu biraz somutlaştıralım.
+
+87
+00:04:57,730 --> 00:04:59,390
+Bu DOM0 dedikleri şey nedir?
+
+88
+00:04:59,490 --> 00:05:02,310
+Kötü niyetli bir sanal makine nasıl herkesin belleğini okuyabiliyor?
+
+89
+00:05:02,790 --> 00:05:05,470
+Şöyle düşün, bulut sunucusu dev bir apartman.
+
+90
+00:05:05,850 --> 00:05:08,870
+Senin kiraladığın sanal makine de o apartmandaki bir daire.
+
+91
+00:05:09,630 --> 00:05:11,690
+DOM0 ise yöneticinin odası.
+
+92
+00:05:12,290 --> 00:05:13,810
+Tüm anahtarların olduğu yer.
+
+93
+00:05:14,450 --> 00:05:19,470
+Bu açık sayesinde senin dairene giren biri duvarı delip doğrudan yönetici odasına sızıyor.
+
+94
+00:05:19,910 --> 00:05:26,290
+Oradan da apartmandaki diğer tüm dairelerin yani diğer şirketlerin sunucularının içine girip her şeyi okuyup değiştirebiliyor.
+
+95
+00:05:26,530 --> 00:05:31,010
+Yok artık. 4.6 ve sonrası tüm sürümler de etkileniyormuş.
+
+96
+00:05:31,750 --> 00:05:34,090
+İnternetteki güven tamamen bir yanılsa mı o zaman?
+
+97
+00:05:34,430 --> 00:05:39,350
+Maalesef öyle. Belki de bu yüzden Entropic Flash Prove sistemini duyurmak zorunda kaldı.
+
+98
+00:05:39,350 --> 00:05:41,490
+Sistem kimliğini kanıtlama çabası değil mi?
+
+99
+00:05:41,490 --> 00:05:45,930
+Hı hı. Modelin ağırlıklarını ifşa etmeden çıktığının oradan geldiğini kanıtlıyorlar.
+
+100
+00:05:46,130 --> 00:05:49,230
+Evet. ZK snark tabanlı bir kriptografi harikası.
+
+101
+00:05:49,650 --> 00:05:53,910
+Modeli ticari sır olarak saklıyorsun ama bunu B ürettim diye kanıt sunabiliyorsun.
+
+102
+00:05:54,570 --> 00:05:58,530
+Lema 4 Maverick'te tek H100 çiple saniyede 110 token işlemişler.
+
+103
+00:05:58,990 --> 00:06:04,390
+İşlemişler de okuduğum kadarıyla bunun maliyeti standart VLLM'in tam 70 ile 95 katıymış.
+
+104
+00:06:04,970 --> 00:06:08,810
+Bağlam da sadece 1024 token ile sınırlı. Yani inanılmaz pahalı.
+
+105
+00:06:08,810 --> 00:06:13,770
+Sektörde zaten her şeyin fiyatı delilik boyutuna ulaştı. Rakamlar mantık sınırlarını aştı.
+
+106
+00:06:13,890 --> 00:06:21,630
+Kesinlikle. Google, Terawolf'un Kentucky'deki 401 megawattlık tesisinde Antropic'in tam 20 yıllık kirasına kefili olmuş.
+
+107
+00:06:22,110 --> 00:06:24,910
+Rakam ne kadar biliyor musun? 19 milyar dolar.
+
+108
+00:06:25,170 --> 00:06:26,810
+Sadece bir kira taahhütü için.
+
+109
+00:06:26,810 --> 00:06:38,950
+Ve daha bitmedi. Alphabet, Amazon, Meta, Microsoft, Oracle bu devlerin bilanço dışı AI taahhütleri 6 ayda %90 artıp 3.2 trilyon dolara fırlamış.
+
+110
+00:06:39,210 --> 00:06:44,750
+3.2 trilyon dolar. Bunu normal bilançoda gösterseler yatırımcılar anında panikler.
+
+111
+00:06:45,450 --> 00:06:52,110
+Meta ilk euro tahvilinden 9 milyar euro borçlandı ama alfabede kıyasla tam 1.4 kat risk birimi ödedi.
+
+112
+00:06:52,270 --> 00:06:55,150
+Yani piyasalar artık siz ne yapıyorsunuz diye sormaya başladı.
+
+113
+00:06:55,150 --> 00:06:57,670
+E tabi yatırımcı diyor ki bu paraların dönüşü nerede?
+
+114
+00:06:58,110 --> 00:07:00,670
+Bu korku risk sermayedarlarına da yansımış.
+
+115
+00:07:01,150 --> 00:07:07,450
+Sequoia Capital 10 milyar dolar fon topladı ama 20 yıllık on meşhur genişleme stratejisini tamamen çöpe attı.
+
+116
+00:07:07,670 --> 00:07:09,490
+The Sequoia of Tomorrow vizyonu?
+
+117
+00:07:09,750 --> 00:07:11,550
+Aynen. Londra ofisini kapattılar.
+
+118
+00:07:12,090 --> 00:07:14,830
+Ark hızlandırıcısını, scouts programını iptal ettiler.
+
+119
+00:07:15,290 --> 00:07:17,570
+Erken aşama ve büyüme ekiplerini birleştirdiler.
+
+120
+00:07:17,890 --> 00:07:19,110
+E bu da şu soruyu doğuruyor.
+
+121
+00:07:19,270 --> 00:07:22,430
+Yapay zeka pazarında artık ufak denemelere yer yok mu?
+
+122
+00:07:22,890 --> 00:07:23,810
+Görünüşe göre yok.
+
+123
+00:07:23,810 --> 00:07:26,430
+Pazar o kadar pahalı bir atıpı gerektiriyor ki,
+
+124
+00:07:26,610 --> 00:07:29,530
+küçükleri desteklemek yerine büyük bahisler oynamak zorunda kalıyorlar.
+
+125
+00:07:29,970 --> 00:07:31,610
+Ama devlerin içi de kaynıyor.
+
+126
+00:07:32,090 --> 00:07:35,650
+Reuters'a göre OpenAI çalışanları ta chat GPT öncesinde bile
+
+127
+00:07:35,650 --> 00:07:39,490
+hassas bilgilere içeriden çok kolay erişiliyor diye yönetimi uyarmış.
+
+128
+00:07:40,010 --> 00:07:43,610
+Ve bu haber OpenAI'in yeni güvenlik ödül programıyla aynı gün patladı.
+
+129
+00:07:43,850 --> 00:07:44,430
+Çok ironik.
+
+130
+00:07:45,090 --> 00:07:46,590
+Apple ise işi şansa bırakmıyor.
+
+131
+00:07:46,950 --> 00:07:50,890
+10K raporunda EA ajanlarını resmen izinsiz işlem yapabilen,
+
+132
+00:07:51,010 --> 00:07:52,970
+öngörülemez riskler olarak tanımladılar.
+
+133
+00:07:52,970 --> 00:07:54,030
+Çok doğru bir tanım.
+
+134
+00:07:54,350 --> 00:07:58,010
+Mühendislerin günlük EY harcama limitini de 300 dolardan 200'e çekmişler.
+
+135
+00:07:58,110 --> 00:07:59,290
+Yakında 100 yapacaklarmış.
+
+136
+00:07:59,750 --> 00:08:01,510
+Kontrolü ellerinde tutmaya çalışıyorlar.
+
+137
+00:08:01,890 --> 00:08:03,990
+Çünkü ajanların doğası öngörülemez.
+
+138
+00:08:04,670 --> 00:08:06,510
+Çin'den Tencent H4 çıktı mesela.
+
+139
+00:08:06,750 --> 00:08:09,290
+O da 770 milyar parametreli açık bir model.
+
+140
+00:08:09,610 --> 00:08:10,590
+Bilgisayar kullanabiliyor.
+
+141
+00:08:11,090 --> 00:08:13,910
+Evet, yıl sonuna kadar bulutta %50 indirimliymiş hatta.
+
+142
+00:08:14,550 --> 00:08:18,370
+Apis savaşı kızışırken antropiğin içeride yaşadığı kanama da dikkat çekici.
+
+143
+00:08:18,850 --> 00:08:22,070
+Cloud Code ürün lideri Cat Wu halka arz öncesi istifa etti.
+
+144
+00:08:22,610 --> 00:08:24,890
+Halka arz öncesi çok büyük bir sinyal bu.
+
+145
+00:08:25,290 --> 00:08:30,370
+Bir de Entropic'in hesaplama maliyetleri gelirinin %48'inden %58'ine çıkmış.
+
+146
+00:08:30,930 --> 00:08:35,750
+Görünmez filigran falan da getirdiler ama onu sadece gazeteciler ve düzenleyiciler görebilecekmiş.
+
+147
+00:08:36,410 --> 00:08:37,490
+Şeffaflık krizi büyüyor.
+
+148
+00:08:38,030 --> 00:08:39,770
+Ama asıl ilginç olan kısım burası bence.
+
+149
+00:08:39,890 --> 00:08:41,290
+İngiliz Pintech şirketi Revolut.
+
+150
+00:08:41,490 --> 00:08:43,210
+Ah evet bu muazzam bir gelişme.
+
+151
+00:08:43,350 --> 00:08:45,050
+Revolut Cloud kullanmayı bırakmış.
+
+152
+00:08:45,050 --> 00:08:50,290
+Kendi sunucularında GLM modelleri çalıştırarak kodlama maliyetlerini %90 düşürmüş.
+
+153
+00:08:50,290 --> 00:08:53,030
+Yani açık kaynak apileri tahtından mı ediyor artık?
+
+154
+00:08:53,170 --> 00:09:02,750
+Revolut gibi finansal güvenliğin had safhada olduğu bir şirket verisini dışarı yollamak yerine kapalı devre açık kaynak kullanıyorsa evet api modelinin geleceği çok karanlık demektir.
+
+155
+00:09:03,350 --> 00:09:06,290
+Şirketler de bunun farkında bu yüzden çipe ve enerjiye yöneliyorlar.
+
+156
+00:09:07,150 --> 00:09:10,590
+AMD çıkarım çipi girişimi talası 2.9 milyar doları alıyor.
+
+157
+00:09:11,030 --> 00:09:15,850
+SpaceX de 2027 için 13 gigawattlık devasa veri merkezi planlıyor.
+
+158
+00:09:16,550 --> 00:09:23,770
+Asya tarafında Wujen'de Huawei, Alibaba, Tencent, Xiaomi bir araya gelip ajanlar için ulusal bir öz denetim sözleşmesi imzaladılar.
+
+159
+00:09:24,210 --> 00:09:26,270
+Ama benim asıl çileden çıktığım habere gelelim.
+
+160
+00:09:26,590 --> 00:09:26,830
+Google.
+
+161
+00:09:27,230 --> 00:09:28,790
+AB Adalet Divanı kararı değil mi?
+
+162
+00:09:28,790 --> 00:09:34,450
+Evet, mahkeme hakimi Spınar, Cemil'in ödeme duvarlarını aşmasının basın haklarını ihlal ettiğini söyledi.
+
+163
+00:09:34,770 --> 00:09:37,470
+Ama bu bir yana Google'ın buna tepkisine inanamıyorum.
+
+164
+00:09:37,910 --> 00:09:42,450
+Yapay zekayı kısıtlayan okullarda arama motorunu da tamamen kapatma tehdidinde bulundular.
+
+165
+00:09:42,450 --> 00:09:47,350
+Yani bu resmen şımarıklık. Başka hiçbir açıklaması yok. Mafyavari bir tehdit bu.
+
+166
+00:09:48,490 --> 00:09:52,990
+Sanders, Mamdani ve Lina Khan'dan gelen tekel istismarı tepkisi sonuna kadar haklı.
+
+167
+00:09:53,370 --> 00:09:58,150
+Trilyon dolarlık bir dev çocukların internete eğitime erişmene nasıl rehin alabilir?
+
+168
+00:09:58,790 --> 00:10:02,570
+Tek el olmanın verdiği o pervasızlık, güç zehirlenmesi diyoruz buna.
+
+169
+00:10:03,090 --> 00:10:08,230
+Benim yeni ürünümü kabul etmezseniz temel ihtiyacınız olan arama motorunu da elinizden alırım diyorlar.
+
+170
+00:10:08,850 --> 00:10:11,710
+Eğitim gibi hassas bir alanda böyle bir zorbalık kabul edilemez.
+
+171
+00:10:12,130 --> 00:10:13,490
+Gerçekten miydi bulandırıcı?
+
+172
+00:10:14,050 --> 00:10:15,850
+Allah'tan piyasada sadece bunlar yok.
+
+173
+00:10:16,250 --> 00:10:19,310
+Applied Compute diye bir AI bulut girişimi var mesela.
+
+174
+00:10:19,670 --> 00:10:24,050
+Sadece 18 ayda 100 milyon dolar yıllık tekrarlayan gelire ulaşmışlar.
+
+175
+00:10:24,190 --> 00:10:24,950
+Çok büyük başarı.
+
+176
+00:10:25,630 --> 00:10:30,330
+Eladgil ve Nvidia önderliğinde 3.25 milyar dolar değerlemeyle yatırım almışlar.
+
+177
+00:10:30,770 --> 00:10:36,950
+Asenkron pekiştirmeli öğrenme yapıyorlar ve bir öğretmen modele ihtiyaç duymadan self-distillation özellikleri varmış.
+
+178
+00:10:36,950 --> 00:10:39,670
+Kendi kendilerini daha verimli hale getiriyorlar yani.
+
+179
+00:10:39,950 --> 00:10:41,350
+Verimlilik artık her şey demek.
+
+180
+00:10:42,350 --> 00:10:44,290
+Verimli ajanlar iş dünyasına da hızlı giriyor.
+
+181
+00:10:44,650 --> 00:10:49,170
+Pliant, ajanların kendi başlarına ödeme yapabilmesi için 80 milyon dolar yatırım aldı.
+
+182
+00:10:49,890 --> 00:10:53,070
+DocuSign'da AI tedarik analitiği yapan sapları'yı satın aldı.
+
+183
+00:10:53,230 --> 00:10:56,390
+Ajan ekosistemi büyüyor ama riskleri de beraberinde getiriyor.
+
+184
+00:10:56,930 --> 00:11:02,610
+Mesela CrowdStrike, sorumlu ajanları durduran AI kill switch yani ölüm anahtarı geliştirdi.
+
+185
+00:11:02,770 --> 00:11:05,330
+Kulot, kodex, kopilot hepsine kanca atabiliyor.
+
+186
+00:11:05,690 --> 00:11:11,710
+Düşünsene, şirketin satın alma yetkisini verdiğin bir ajan halüsinasyon görüp milyonlarca dolarlık yanlış sipariş verebilir.
+
+187
+00:11:12,130 --> 00:11:13,670
+O fişi çekecek anahtar şart.
+
+188
+00:11:13,850 --> 00:11:21,990
+Hele ki o ajanların nasıl hacklendiğini görünce WorkOS'in iç satış uygulamasına R-Tex adlı açık kaynak bir AI sızma testiyle girmişler.
+
+189
+00:11:22,570 --> 00:11:26,250
+Checkpoint ise OpenAI Codex Jailbreak paketi HYU'yu bulmuş.
+
+190
+00:11:26,650 --> 00:11:28,250
+İçinde Prompt Adware varmış.
+
+191
+00:11:28,750 --> 00:11:29,870
+Reklam enşeksiyonu.
+
+192
+00:11:29,870 --> 00:11:35,470
+Ajana öyle bir talimat gizliyorlar ki ajan sana kod yazarken bir anda zararlı bir ürün önermeye başlıyor.
+
+193
+00:11:35,810 --> 00:11:39,690
+Hacklemek demişken işin devlet destekli terör boyutu artık kabus gibi.
+
+194
+00:11:39,690 --> 00:11:42,650
+Google Cloud raporuna göre LLM jacking yapıyorlar.
+
+195
+00:11:43,090 --> 00:11:51,750
+Çalınan kimliklerle Manus veya D1337 Kairos gibi sahte personeller yaratıp kurbanlara milyon dolarlık faturalar iletliyorlar.
+
+196
+00:11:51,890 --> 00:11:54,050
+LLM jacking gerçekten bulutun yeni belası.
+
+197
+00:11:54,610 --> 00:11:56,910
+Ama Binance olayı bambaşka bir boyut tam.
+
+198
+00:11:57,430 --> 00:11:59,770
+6.3 milyar dolarlık kripto sorgunu.
+
+199
+00:11:59,970 --> 00:12:01,130
+Yok artık. O kadar oldu mu?
+
+200
+00:12:01,370 --> 00:12:03,530
+Evet. Yöntemleri de çok korkutucu.
+
+201
+00:12:03,830 --> 00:12:05,430
+Sahte iş mülakatı düzenliyorlar.
+
+202
+00:12:05,770 --> 00:12:08,790
+İçerideki çalışama zararlı bir payen skripti kurduruyorlar.
+
+203
+00:12:08,790 --> 00:12:15,410
+yapay zeka araçlarını istismar edip EIP 7702 yetki suistimaliyle paraları uçuruyorlar.
+
+204
+00:12:15,470 --> 00:12:16,630
+Ve bunun arkasından kim çıktı?
+
+205
+00:12:17,030 --> 00:12:19,310
+FBI doğrudan Kuzey Kore'ye bağladı bunu.
+
+206
+00:12:19,690 --> 00:12:20,450
+İnanılmaz.
+
+207
+00:12:21,130 --> 00:12:26,810
+İngiltere Ulusal Siber Güvenlik Merkezi de 2028'e kadar yapay zeka destekli zararlı yazılımların
+
+208
+00:12:26,810 --> 00:12:30,630
+kritik altyapılara saldırmasının kuvvetle muhtemel olduğunu açıkladı.
+
+209
+00:12:30,630 --> 00:12:36,910
+Yani Kuzey Kore gibi haydut rejimlerin ambargoları delmek ve diktatörlüklerini finanse etmek için
+
+210
+00:12:36,910 --> 00:12:42,910
+AI teknolojisini pervasızca, fütursuzca emellerine alet etmeleri budur durulmalı.
+
+211
+00:12:43,270 --> 00:12:44,030
+Kesinlikle öyle.
+
+212
+00:12:45,040 --> 00:12:49,740
+Devletlerin bu teknolojiyi küresel finansal terör estirmek için bir silah olarak kullanmasına göz yumulamaz.
+
+213
+00:12:50,120 --> 00:12:51,520
+Çok sert önlemler gerekiyor.
+
+214
+00:12:51,520 --> 00:12:58,660
+Peki tüm bu harcamalar, otonom ajanlar, milyarlık soygunların ortasında gerçek dünyada pratik faydası ne boyutta?
+
+215
+00:12:59,020 --> 00:12:59,820
+Balon sönüyor mu?
+
+216
+00:13:00,020 --> 00:13:01,640
+İşte orada işler biraz karışık.
+
+217
+00:13:01,920 --> 00:13:03,140
+Şöyle bir tezat var önümde.
+
+218
+00:13:03,140 --> 00:13:12,180
+SETI'nin Ellen Telescope dizisi Nvidia üzerinde çalışan ajanlarla yengeç bulutsusunda ilk kez gerçek zamanlı pulsar tespiti yapmış müthiş bir bilimsel atılım.
+
+219
+00:13:12,720 --> 00:13:22,200
+Ama öte yanda Uber 3. çeyrekte 3. taraf AI ajanlarının sadece ama sadece 4 adet yolculuk rezervasyonu yapabildiğini açıkladı.
+
+220
+00:13:22,600 --> 00:13:24,580
+Talebin çok kısıtlı olduğunu söylüyorlar.
+
+221
+00:13:24,700 --> 00:13:27,080
+İnsanlar günlük hayatta bu otonomiye henüz güvenmiyor.
+
+222
+00:13:27,080 --> 00:13:39,420
+Üstelik Avustralyalı tasarım devi Canva katmanları daraltmak bahanesiyle iş gücünün %22'sini yani tam 1271 kişi işten çıkarmış bu acımasız verimlilik trendi herkesi vuruyor.
+
+223
+00:13:39,660 --> 00:13:42,040
+İnsanı sistemden çıkarma çabası hız kesmiyor.
+
+224
+00:13:42,520 --> 00:13:52,280
+Modellerin dağısı da sorunlu zaten. Stanford'ın araştırmasına göre elelemler hakkındaki iddiaların %44'ü ortalama 15.7 ay içinde yeni modellerle geçersiz kalıyormuş.
+
+225
+00:13:52,520 --> 00:13:53,560
+Ömürleri o kadar yani.
+
+226
+00:13:53,560 --> 00:14:02,080
+Evet, halüsinasyonu falan hızlı çözüyorlar ama psychofancy yani dalkavukluk ve yargıçlık önyargıları modellerde kalıcı oluyormuş.
+
+227
+00:14:02,400 --> 00:14:05,460
+Modeller akıllanıyor ama karakterleri oturmuyor mu sence?
+
+228
+00:14:05,620 --> 00:14:09,800
+Sistem insan geri bildirimine dayandığı için model hep duymak istediğimiz şeyi söylüyor.
+
+229
+00:14:10,060 --> 00:14:13,000
+Dalkavukluk tam olarak buradan besleniyor, karakterleri bozuluyor.
+
+230
+00:14:13,360 --> 00:14:15,200
+Kısa kısa son gelişmeleri de değineyim.
+
+231
+00:14:16,100 --> 00:14:20,220
+Opin.ai eski kara kuvvetleri bakını Dan Driscoll'a ulusal güvenlik danışmanı yaptı.
+
+232
+00:14:20,720 --> 00:14:22,640
+İngiltere'deyse büyük bir skandal var.
+
+233
+00:14:22,640 --> 00:14:23,360
+Hangi skandal?
+
+234
+00:14:23,560 --> 00:14:27,160
+AI ekonomiye 400 milyar sterlin katacak yalanı varmış ortada.
+
+235
+00:14:27,260 --> 00:14:32,120
+Aslında 120 milyar sterlinmiş ve bu manipülatif raporu Google sipariş etmiş.
+
+236
+00:14:32,440 --> 00:14:34,140
+Google'ın her zamanki PR oyunları işte.
+
+237
+00:14:34,500 --> 00:14:35,360
+Etik sınır tanımıyorlar.
+
+238
+00:14:35,680 --> 00:14:40,300
+ABD seçimlerinde de AI üretimi siyasi reklamlara 187 milyon dolar harcanmış.
+
+239
+00:14:41,240 --> 00:14:46,160
+Netflix ise ruh haline göre beni korkut, hafif bir şeyler diyen AI Discover sekmesini devreye sokmuş.
+
+240
+00:14:46,160 --> 00:14:48,860
+En azından Netflix'te eğlenceli bir kullanımı var diyelim.
+
+241
+00:14:49,540 --> 00:14:50,600
+Takviminize de not edin.
+
+242
+00:14:50,720 --> 00:14:52,760
+9 Kasım'da Entropic Halka Ars turu var.
+
+243
+00:14:52,760 --> 00:15:00,540
+12 Kasım'da Antropik yeni kullanım politikası ve Sonos 27 Voice erken erişimi başlıyor ama bültenin en vurucu noktasını sona sakladım.
+
+244
+00:15:00,780 --> 00:15:02,380
+Jeffrey Hinton'un o röportajı değil mi?
+
+245
+00:15:03,000 --> 00:15:08,180
+Evet. Nobel ödüllü AI'nin vaftiz babası Jeffrey Hinton The Guardian'a çok çarpıcı açıklamalar yaptı.
+
+246
+00:15:08,720 --> 00:15:11,220
+AI'yi hiç geliştirmeseydik daha iyi olurdu diyor.
+
+247
+00:15:11,460 --> 00:15:12,400
+Çok ağır bir itiraf.
+
+248
+00:15:12,840 --> 00:15:19,080
+Bu yıl veya seneye elektrik şebekelerini veya finans sistemini çökertecek Çernobil benzeri bir felaket bekliyormuş.
+
+249
+00:15:19,080 --> 00:15:24,880
+Sam Altman, Zuckerberg ve Musk'ın riskleri bildiğini ama sırf para için bunu umursamadıklarını söylüyor.
+
+250
+00:15:25,640 --> 00:15:31,040
+Burada büyüleyici, daha doğrusu dehşet verici olan şey regülasyonlara bakış açısındaki uçurum.
+
+251
+00:15:31,560 --> 00:15:36,980
+Hinton, ABD'de FDA tarzı bir kurum, İngiltere Başbakanı Börnem gibi küresel standartlar istiyor.
+
+252
+00:15:37,320 --> 00:15:38,960
+Ama Trump bunu tamamen reddediyor.
+
+253
+00:15:39,280 --> 00:15:47,660
+Kesinlikle. Regülasyonları reddeden siyasi tavırla teknoloji devlerinin doymaz açgözüldüğü birleşince insanlığı uçuruma sürüklüyorlar resmen.
+
+254
+00:15:47,660 --> 00:15:50,540
+Sanırım günün sonunda çıkaracağımız sonuç çok net.
+
+255
+00:15:50,820 --> 00:15:55,860
+Yapay zekanın gerçek sınırı silikon çiplerin veya enerji santrallerinin kapasitesi değil.
+
+256
+00:15:56,380 --> 00:16:01,200
+Bu teknolojiyi elinde tutan bir avuç insanın ahlaki kapasitesi olacak gibi görünüyor.
+
+257
+00:16:01,540 --> 00:16:05,280
+İnsanlık olarak asıl regüle etmemiz gereken şey kodlar değil hırslarımız.
+
+258
+00:16:05,460 --> 00:16:06,140
+Kesinlikle öyle.
+
+259
+00:16:06,580 --> 00:16:09,540
+Yarın sabah yeni bölümümüzle yeni gelişmelerle görüşmek üzere.
+
+260
+00:16:09,740 --> 00:16:10,400
+Yarın görüşürüz.
+
+261
+00:16:10,980 --> 00:16:17,440
+Programımızı Spotify, Apple Podcasts, YouTube, Amazon Music, Deezer ve tüm diğer podcast platformlarında bulabilirsiniz.
+
+262
+00:16:17,660 --> 00:16:21,240
+Bizi hangi uygulamada dinliyorsanız lütfen oradan takip etmeyi unutmayın.
+
+263
+00:16:21,740 --> 00:16:25,560
+Bölüm notları ve kaynaklar halimiz.derinweb.com adresinde.
+
+264
+00:16:26,000 --> 00:16:29,200
+Tekrar hatırlatalım, bu bölüm yapay zeka yardımıyla hazırlanmıştır.
+
+265
+00:16:29,420 --> 00:16:29,920
+Hoşçakalın.
