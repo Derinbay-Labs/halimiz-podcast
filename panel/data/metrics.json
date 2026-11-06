@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T23:15:00+03:00",
+ "updated": "2026-11-06T23:14:10+03:00",
  "goal": {
   "daily_downloads": 300,
   "regular_listeners": 500,
@@ -24,6 +24,15 @@
    },
    "site_visits": null,
    "youtube_views": null
+  },
+  {
+   "date": "2026-11-06",
+   "downloads": 9,
+   "by_app": {
+    "GitHub (ham)": 9
+   },
+   "site_visits": null,
+   "youtube_views": null
   }
  ],
  "followers": [],
@@ -33,42 +42,42 @@
   {
    "name": "Yayın ajanı",
    "schedule": "Her gün 06:52",
-   "last_run": "2026-11-05T06:55:00+03:00",
+   "last_run": "2026-11-06T06:55:00+03:00",
    "status": "ok",
-   "note": "5 Kasım bölümü feed.xml'de (06:55)"
+   "note": "6 Kasım bölümü feed.xml'de (06:55)"
   },
   {
    "name": "Transkript + görseller (Actions)",
    "schedule": "Yayından sonra",
    "last_run": "2026-11-05T07:52:00+03:00",
    "status": "ok",
-   "note": "5 Kasım transkript, klip ve audiogram.mp4 üretildi"
+   "note": "6 Kasım transkript, klip ve audiogram.mp4 üretildi"
   },
   {
    "name": "İçerik ajanı",
    "schedule": "Her gün 07:36",
    "last_run": "2026-11-05T07:36:00+03:00",
    "status": "ok",
-   "note": "Onay kuyruğunda 5 Kasım X akşam gönderisi var"
+   "note": "Onay kuyruğunda 6 Kasım gönderileri işlendi; X akşam 18:00'e zamanlandı"
   },
   {
    "name": "Dağıtım sabah (LinkedIn + X)",
    "schedule": "Her gün 08:41",
-   "last_run": "2026-11-05T08:41:00+03:00",
+   "last_run": "2026-11-06T08:41:00+03:00",
    "status": "ok",
    "note": "LinkedIn ve X (thread) linkleri arşivde"
   },
   {
    "name": "Dağıtım öğlen (Shorts + Reels)",
    "schedule": "Her gün 12:37",
-   "last_run": "2026-11-05T12:37:00+03:00",
+   "last_run": "2026-11-06T12:37:00+03:00",
    "status": "ok",
    "note": "Instagram Reels ve YouTube Shorts linkleri arşivde"
   },
   {
    "name": "Ölçüm ajanı",
    "schedule": "Her gün 23:07",
-   "last_run": "2026-11-05T23:15:00+03:00",
+   "last_run": "2026-11-06T23:14:10+03:00",
    "status": "warn",
    "note": "GitHub indirmeleri alındı; OP3, takipçi, site, YouTube kaynaklarına bulut ortamından erişilemedi (tarayıcı yok)"
   },
