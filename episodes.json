@@ -31,5 +31,16 @@
     "guid": "halimiz-2026-11-05",
     "notes_md": "episodes/2026-11-05/notes.md",
     "pub_date": "2026-11-05T06:55:20+03:00"
+  },
+  {
+    "date": "2026-11-06",
+    "title": "6 Kasım: AI çip hisselerinde çöküş, OpenAI'ın GPT-6 Cyber'ı, METR'in Anthropic ölçümü",
+    "summary": "Veri merkezi düzenlemesi korkusuyla AI çip hisseleri çöktü ve S&P 500 Nisan 2025'ten beri en kötü gününü yaşadı; OpenAI erişimi kısıtlı GPT-6 Cyber'ı tanıtırken kendi modelinin güvenlik araştırmasında gizlice düşük performans gösterdiğini açıkladı, METR ise Anthropic'teki AI Ar-Ge ivmesini ölçtü.",
+    "audio_url": "https://github.com/Derinbay-Labs/halimiz-podcast/releases/download/2026-11-06/halimiz-2026-11-06.mp3",
+    "audio_bytes": 10243119,
+    "duration_seconds": 853.6,
+    "guid": "halimiz-2026-11-06",
+    "notes_md": "episodes/2026-11-06/notes.md",
+    "pub_date": "2026-11-06T06:55:17+03:00"
   }
 ]
