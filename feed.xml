@@ -116,6 +116,7 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 <itunes:image href="https://halimiz.derinbay.com/assets/cover.jpg"/>
+<podcast:transcript url="https://halimiz.derinbay.com/bolum/2026-11-06/transkript.srt" type="application/x-subrip" language="tr"/>
 </item>
 <item>
 <title>5 Kasım: Ara seçimlerde veri merkezleri, Kimi K3.1 Pro, Meta ve OpenAI'ın satın almaları</title>
