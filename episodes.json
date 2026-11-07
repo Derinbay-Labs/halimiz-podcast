@@ -42,5 +42,16 @@
     "guid": "halimiz-2026-11-06",
     "notes_md": "episodes/2026-11-06/notes.md",
     "pub_date": "2026-11-06T06:55:17+03:00"
+  },
+  {
+    "date": "2026-11-07",
+    "title": "7 Kasım: Anthropic halka arzına baskı, OpenAI'ın yeni turu, DeepMind'ın RSA bulgusu",
+    "summary": "Satış dalgası Anthropic'in halka arz takvimini ve değerlemesini sorgulatırken OpenAI 1,25 trilyon $ değerlemeyle 11 milyar $ topladı; DeepMind yapay zeka ajanlarıyla eski 1024 bit RSA'da iki zayıflık buldu, Anthropic modeliyle çalışan bir sistem ise 2008'den beri açık bir kuantum hesaplama sanısını kanıtladı.",
+    "audio_url": "https://github.com/Derinbay-Labs/halimiz-podcast/releases/download/2026-11-07/halimiz-2026-11-07.mp3",
+    "audio_bytes": 10259733,
+    "duration_seconds": 854.9,
+    "guid": "halimiz-2026-11-07",
+    "notes_md": "episodes/2026-11-07/notes.md",
+    "pub_date": "2026-11-07T06:54:50+03:00"
   }
 ]
