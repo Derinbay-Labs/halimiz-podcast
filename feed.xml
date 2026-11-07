@@ -94,6 +94,8 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 <itunes:image href="https://halimiz.derinbay.com/assets/cover.jpg"/>
+<podcast:transcript url="https://halimiz.derinbay.com/bolum/2026-11-07/transkript.srt" type="application/x-subrip" language="tr"/>
+<podcast:chapters url="https://halimiz.derinbay.com/bolum/2026-11-07/chapters.json" type="application/json+chapters"/>
 </item>
 <item>
 <title>6 Kasım: AI çip hisselerinde çöküş, OpenAI'ın GPT-6 Cyber'ı, METR'in Anthropic ölçümü</title>
