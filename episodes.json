@@ -53,5 +53,16 @@
     "guid": "halimiz-2026-11-07",
     "notes_md": "episodes/2026-11-07/notes.md",
     "pub_date": "2026-11-07T06:54:50+03:00"
+  },
+  {
+    "date": "2026-11-08",
+    "title": "8 Kasım: Microchip'te çip kıtlığı, H200 lisanslarında boş ofisler, OpenAI–Hacktron",
+    "summary": "Sakin bir hafta sonunda gündem altyapıya kaydı: Microchip AI alıcılarının fabrika kapasitesini kapattığını söyleyerek çip kıtlığının döndüğünü açıkladı, NYT H200 lisansı alan bazı Çinli şirketlerin boş ofislerden ibaret olduğunu ortaya koydu; OpenAI ise geçen ay kendisini Claude ile hackleyen Hacktron'u güvenlik ortağı yaptı.",
+    "audio_url": "https://github.com/Derinbay-Labs/halimiz-podcast/releases/download/2026-11-08/halimiz-2026-11-08.mp3",
+    "audio_bytes": 12949927,
+    "duration_seconds": 1079.1,
+    "guid": "halimiz-2026-11-08",
+    "notes_md": "episodes/2026-11-08/notes.md",
+    "pub_date": "2026-11-08T06:55:17+03:00"
   }
 ]
