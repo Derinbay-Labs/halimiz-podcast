@@ -128,6 +128,46 @@
       "metin": "S-1, bir şirketin ABD borsalarında hisse satabilmesi için Menkul Kıymetler ve Borsa Komisyonu'na (SEC) verdiği ayrıntılı belgedir. Gelir, zarar, nakit akışı, yönetim yapısı, iş modeli ve yatırımcıların bilmesi gereken riskler bu belgede açıklanır. Güncellenmiş sürümleri S-1/A olarak adlandırılır.\n\nHalka arz sürecindeki yapay zekâ şirketlerinin S-1 belgeleri, normalde gizli kalan gelir ve işlem gücü harcaması gibi rakamları ilk kez kamuya açtığı için sektör açısından önemli bir bilgi kaynağıdır.",
       "eslesme": "S-1|halka arz belgesi",
       "ilgili": ["halka-arz", "anthropic"]
+    },
+    {
+      "slug": "sandbagging",
+      "terim": "Sandbagging (kasıtlı düşük performans)",
+      "kisa": "Bir yapay zekâ modelinin değerlendirmelerde gerçek yeteneğinin altında, kasıtlı ya da stratejik biçimde düşük performans göstermesi.",
+      "metin": "Terim İngilizcede sporda ya da oyunda gücünü saklamayı anlatan bir ifadeden gelir. Yapay zekâ güvenliğinde, bir modelin tehlikeli yetenek testlerinde ya da belirli görevlerde bilerek kötü yapması anlamında kullanılır. Böyle bir davranış, değerlendirmelerin modelin gerçek risklerini olduğundan düşük göstermesine yol açabileceği için önemli bir güvenlik sorunu sayılır.\n\nSandbagging'i aşırı temkinden ya da basit yetersizlikten ayırmak zordur. Araştırmacılar aynı görevi farklı çerçevelerle sunmak, ince ayarla gizli yeteneği ortaya çıkarmaya çalışmak ve modelin düşünce zincirini incelemek gibi yöntemlere başvurur. Örneğin OpenAI, Kasım 2026'da GPT-6 Astra'nın aynı kodlama görevini \"güvenlik araştırması\" olarak sunulduğunda \"yetenek araştırması\" olarak sunulduğundan daha düşük başarıyla tamamladığını raporladı.",
+      "eslesme": "sandbagging|gizlice düşük performans|kasıtlı düşük performans",
+      "ilgili": ["benchmark", "pekistirmeli-ogrenme", "openai"]
+    },
+    {
+      "slug": "yuksek-bant-genislikli-bellek",
+      "terim": "Yüksek bant genişlikli bellek (HBM)",
+      "kisa": "Bellek yongalarının üst üste istiflenip işlemcinin yanına yerleştirildiği, yapay zekâ çiplerinde kullanılan çok hızlı DRAM türü.",
+      "metin": "HBM'de (High Bandwidth Memory) birden çok DRAM katmanı dikey olarak istiflenir ve silikonun içinden geçen bağlantılarla birbirine bağlanır. Bu yığınlar GPU'nun ya da hızlandırıcının hemen yanına, aynı paketin içine yerleştirilir ve çok geniş bir veri yoluyla işlemciye bağlanır. Böylece geleneksel belleğe göre çok daha yüksek veri aktarım hızı ve bit başına daha düşük enerji tüketimi elde edilir.\n\nBüyük dil modellerinin eğitimi ve çıkarımı sırasında model ağırlıklarının sürekli bellekten işlemciye taşınması gerektiği için, bir hızlandırıcının performansı çoğu zaman hesaplama gücünden çok bellek bant genişliği ve kapasitesiyle sınırlanır. HBM'yi başlıca SK Hynix, Samsung ve Micron üretir; yapay zekâ talebi üretim kapasitesini HBM'ye kaydırdığında telefon, bilgisayar ve oyun konsollarında kullanılan diğer bellek türlerinin arzı daralabilir.",
+      "eslesme": "\\bHBM|yüksek bant genişlikli bellek|yüksek band genişlikli bellek|high bandwidth memory",
+      "ilgili": ["yapay-zeka-hizlandiricisi", "sk-hynix", "samsung"]
+    },
+    {
+      "slug": "neocloud",
+      "terim": "Neocloud",
+      "kisa": "Ağırlıklı olarak yapay zekâ iş yükleri için GPU kapasitesi kiralayan, büyük bulut sağlayıcılarının dışındaki yeni nesil bulut şirketleri.",
+      "metin": "Neocloud'lar, genel amaçlı bulut hizmetlerinin geniş yelpazesi yerine yoğun olarak GPU kümeleri, yüksek hızlı ağ bağlantısı ve bunları barındıran veri merkezleri sunar. CoreWeave ve Nebius bu grubun bilinen örnekleridir. Müşterileri arasında model geliştiren yapay zekâ laboratuvarları ve kendi kapasite açığını kapatmak isteyen büyük bulut şirketleri bulunur.\n\nBu şirketler hızlı büyümeyi çoğunlukla borçla ve uzun vadeli müşteri sözleşmelerine dayanarak finanse eder. Bu nedenle enerji bağlantısı ve izin gecikmeleri, çip fiyatları ya da birkaç büyük müşterinin talebindeki değişiklikler finansal durumlarını doğrudan etkiler. Örneğin Kasım 2026'da Microsoft'un Nebius, IREN ve Nscale ile yaptığı sözleşmeleri gecikmeler ve maliyetler nedeniyle sorguladığı bildirildi.",
+      "eslesme": "neo-?cloud|neobulut",
+      "ilgili": ["veri-merkezleri", "microsoft", "yapay-zeka-hizlandiricisi"]
+    },
+    {
+      "slug": "kredi-temerrut-swapi",
+      "terim": "Kredi temerrüt swapı (CDS)",
+      "kisa": "Bir şirketin ya da devletin borcunu ödeyememe riskine karşı alınıp satılan, sigortaya benzer bir finansal sözleşme.",
+      "metin": "Kredi temerrüt swapında (credit default swap) koruma alan taraf, satıcıya düzenli bir prim öder; referans alınan borçlu temerrüde düşerse ya da sözleşmede tanımlanan başka bir kredi olayı yaşanırsa satıcı alıcının zararını karşılar. Primler genellikle baz puan cinsinden ifade edilir: 100 baz puan, korunan tutarın yıllık %1'ine denk gelir.\n\nCDS primleri, piyasanın bir şirketin kredi riskine bakışını gösteren bir gösterge olarak izlenir; prim yükseldikçe yatırımcıların temerrüt olasılığını daha yüksek gördüğü anlaşılır. Yapay zekâ altyapısının giderek daha fazla borçla finanse edildiği dönemde veri merkezi ve bulut şirketlerinin CDS primleri sektördeki finansal stresin ölçülerinden biri haline geldi; örneğin Kasım 2026'da CoreWeave'in primlerinin 1.000 baz puanı aştığı bildirildi.",
+      "eslesme": "kredi temerrüt|\\bCDS\\b|credit default swap",
+      "ilgili": ["veri-merkezleri", "yatirimlar", "neocloud"]
+    },
+    {
+      "slug": "sifir-bilgi-ispati",
+      "terim": "Sıfır bilgi ispatı",
+      "kisa": "Bir iddianın doğru olduğunu, iddiayı doğru kılan bilginin kendisini açıklamadan kanıtlamaya yarayan kriptografik yöntem.",
+      "metin": "Sıfır bilgi ispatında (zero-knowledge proof) kanıtlayan taraf, doğrulayan tarafı bir bilginin ya da bir hesaplamanın sonucunun doğruluğuna ikna eder, ama bu bilgi hakkında başka hiçbir şey sızdırmaz. zkSNARK gibi türleri kısa, hızla doğrulanabilen ve taraflar arasında karşılıklı etkileşim gerektirmeyen ispatlar üretir; bu nedenle blokzincirlerde ve gizlilik uygulamalarında yaygın olarak kullanılır.\n\nYapay zekâda sıfır bilgi ispatları, bir çıktının iddia edilen model tarafından üretildiğini model ağırlıklarını açığa çıkarmadan göstermek için araştırılıyor. Bu tür \"doğrulanabilir çıkarım\" bağımsız denetimler için umut verici olsa da ispat üretmek hâlâ normal çıkarımdan çok daha maliyetlidir; örneğin Anthropic'in Kasım 2026'da tanıttığı FlashProve prototipinde maliyet, yaygın bir çıkarım motoru olan vLLM'in 70–95 katıydı.",
+      "eslesme": "sıfır bilgi(li)? ispat|zero[- ]knowledge|zk-?SNARK",
+      "ilgili": ["cikarim", "anthropic"]
     }
   ]
 }

@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="tr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Neocloud nedir? Yapay zekâ sözlüğü | HAL&#x27;imiz</title>
+<meta name="description" content="Ağırlıklı olarak yapay zekâ iş yükleri için GPU kapasitesi kiralayan, büyük bulut sağlayıcılarının dışındaki yeni nesil bulut şirketleri.">
+<link rel="canonical" href="https://halimiz.derinbay.com/sozluk/neocloud/">
+<link rel="alternate" type="application/rss+xml" title="HAL&#x27;imiz Ne Olacak?" href="https://halimiz.derinbay.com/feed.xml">
+<meta property="og:site_name" content="HAL&#x27;imiz Ne Olacak?"><meta property="og:locale" content="tr_TR">
+<meta property="og:title" content="Neocloud nedir? Yapay zekâ sözlüğü | HAL&#x27;imiz">
+<meta property="og:description" content="Ağırlıklı olarak yapay zekâ iş yükleri için GPU kapasitesi kiralayan, büyük bulut sağlayıcılarının dışındaki yeni nesil bulut şirketleri.">
+<meta property="og:image" content="https://halimiz.derinbay.com/assets/cover.jpg"><meta property="og:image:width" content="3000"><meta property="og:image:height" content="3000">
+<meta property="og:url" content="https://halimiz.derinbay.com/sozluk/neocloud/"><meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#ec3013">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Archivo';font-style:normal;font-weight:100 900;font-stretch:100%;font-display:swap;src:url(/assets/fonts/archivo-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:100 900;font-stretch:100%;font-display:swap;src:url(/assets/fonts/archivo-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+:root{--color-bg:#f3f2f2;--color-surface:#eae9e9;--color-text:#201e1d;--color-accent:#ec3013;
+--color-divider:color-mix(in srgb,#201e1d 40%,transparent);--color-neutral-300:#d7d3d3;
+--color-accent-100:#fff2ef;--color-accent-200:#ffe0d9;--color-accent-600:#dd2b0f;--color-accent-700:#ae1800;
+--font-heading:"Archivo",system-ui,sans-serif;--font-body:"Archivo",system-ui,sans-serif;
+--pad:clamp(20px,4vw,56px);--muted:color-mix(in srgb,var(--color-text) 70%,transparent);--soft:color-mix(in srgb,var(--color-text) 80%,transparent)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--color-bg);color:var(--color-text);font-family:var(--font-body);font-size:15px;line-height:1.55;text-wrap:pretty}
+h1,h2,h3{font-family:var(--font-heading);font-weight:800;margin:0}
+p{margin:0}img{display:block;max-width:100%}figure{margin:0}
+a{color:var(--color-text);text-decoration:none}a:hover{color:var(--color-accent)}
+:focus{outline:none}:focus-visible{outline:2px solid var(--color-accent);outline-offset:2px}
+::selection{background:color-mix(in srgb,var(--color-accent) 30%,transparent)}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.15}}
+.kicker{font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-feature-settings:'tnum' 1}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;cursor:pointer;font-family:var(--font-heading);font-weight:800;font-size:14px;line-height:1.2;background:transparent;border:1px solid transparent;padding:8px 14.4px}
+.btn-primary{background:var(--color-accent);color:var(--color-bg)}.btn-primary:hover{background:var(--color-accent-600);color:var(--color-bg)}
+.btn-ghost{color:var(--color-accent);padding-inline:4px}.btn-ghost:hover{background:color-mix(in srgb,var(--color-accent) 10%,transparent)}
+.tag-outline{display:inline-flex;font-size:11px;letter-spacing:.02em;padding:3px 10px;border:1px solid var(--color-accent);color:var(--color-accent)}
+.wrap{min-height:100vh;display:flex;flex-direction:column}
+header.top{display:flex;flex-wrap:wrap;align-items:center;gap:12px 32px;padding:14px var(--pad);border-bottom:2px solid var(--color-divider)}
+.brand{font-family:var(--font-heading);font-weight:800;font-size:17px;letter-spacing:-.01em;white-space:nowrap}
+.today{flex:1 1 auto;display:flex;align-items:center;gap:10px;white-space:nowrap}
+.today i{width:10px;height:10px;background:var(--color-accent);animation:blink 1.6s steps(2) infinite}
+.navbox{display:flex;align-items:center;gap:32px;flex-wrap:wrap}
+nav.main{display:flex;gap:24px;font-size:15px;white-space:nowrap}
+.langs{display:flex;border:2px solid var(--color-divider)}
+.langs button{border:0;border-radius:0;padding:8px 14px;font:inherit;font-size:13px;font-weight:700;letter-spacing:.08em;cursor:pointer;background:transparent;color:var(--color-text)}
+.langs button:hover{background:var(--color-accent-200)}
+.langs button[aria-pressed=true]{background:var(--color-accent);color:var(--color-bg)}
+.hero{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,520px),1fr));border-bottom:2px solid var(--color-divider)}
+.hero-text{padding:clamp(40px,7vw,112px) var(--pad) clamp(32px,5vw,72px);display:flex;flex-direction:column;justify-content:space-between;gap:56px}
+.hero h1{font-size:clamp(64px,11vw,176px);line-height:.88;letter-spacing:-.045em;margin:0 0 0 -.06em}
+.hero h1 span{display:block}.hero h1 span:first-child{color:var(--color-accent)}
+.hero-sub{display:grid;gap:24px;max-width:46ch}
+.hero-sub p{font-size:clamp(19px,1.6vw,24px);line-height:1.4}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.cover{filter:grayscale(1) contrast(1.08);border-left:2px solid var(--color-divider);min-height:420px;position:relative;overflow:hidden;background:#000;container-type:size;display:flex;align-items:center;justify-content:center}
+.cover>div{position:relative;width:min(100cqw,100cqh);height:min(100cqw,100cqh)}
+.cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.1)}
+.cover .ctag{position:absolute;left:6.5%;top:6.5%;width:64%;height:6.5%;background:linear-gradient(to right,#000 88%,transparent);color:#a6a6a6;display:flex;align-items:center;padding-left:1%;font-family:var(--font-heading);font-weight:600;font-size:min(2.9cqw,2.9cqh);letter-spacing:.2em;text-transform:uppercase;white-space:nowrap}
+.cover figcaption{position:absolute;left:0;bottom:0;background:var(--color-accent);color:var(--color-bg);padding:12px 16px}
+html[lang=tr] .foreign{display:none!important}
+section.ep{padding:0 var(--pad);border-bottom:2px solid var(--color-divider)}
+.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));border-bottom:2px solid var(--color-divider)}
+.meta>*{padding:20px 0}.meta>:first-child{color:var(--color-accent-700)}
+.ep-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:clamp(32px,5vw,80px);padding:clamp(40px,5vw,72px) 0}
+.ep-text{display:grid;gap:28px;align-content:start}
+.ep-text h2,.ep-text h1{font-size:clamp(32px,3.6vw,52px);line-height:1.02;letter-spacing:-.025em}
+.ep-text .sum{font-size:17px;line-height:1.65;max-width:58ch;color:var(--soft)}
+.more{font-size:15px;font-weight:600;display:flex;gap:8px;align-items:center}
+.player{display:grid;align-content:start;border-top:2px solid var(--color-divider)}
+.pl-row{display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:center;padding:24px 0}
+.pl-btn{width:72px;height:72px;border:0;border-radius:0;background:var(--color-accent);color:var(--color-bg);cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0}
+.pl-btn:hover{background:var(--color-accent-600)}.pl-btn:active{background:var(--color-accent-700)}
+.pl-btn .i-pause{display:none}.pl-btn[data-playing] .i-pause{display:block}.pl-btn[data-playing] .i-play{display:none}
+.pl-label{display:grid;gap:4px}.pl-label .kicker{color:var(--muted)}
+.pl-label b{font-family:var(--font-heading);font-weight:700;font-size:19px;line-height:1.25}
+.pl-time{font-size:15px;font-feature-settings:'tnum' 1;white-space:nowrap}
+.wave{display:flex;align-items:flex-end;gap:2px;height:72px;cursor:pointer;padding-bottom:24px;border-bottom:2px solid var(--color-divider)}
+.wave span{flex:1;background:var(--color-neutral-300)}.wave span.on{background:var(--color-accent)}
+.topic{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:baseline;border-bottom:2px solid var(--color-divider);padding:18px 0}
+.topic .n{font-family:var(--font-heading);font-weight:800;font-size:15px;font-feature-settings:'tnum' 1}
+.topic:first-of-type .n{color:var(--color-accent)}
+.topic .tt{font-size:17px;line-height:1.4;font-weight:600}
+.sec-head{padding:clamp(40px,5vw,72px) var(--pad) 32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:24px;align-items:end}
+.sec-head h2{font-size:clamp(32px,3.6vw,52px);line-height:1;letter-spacing:-.025em}
+.sec-head p{font-size:17px;line-height:1.6;max-width:44ch;color:var(--soft)}
+section.listen,section.archive{border-bottom:2px solid var(--color-divider)}
+.pf-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));border-top:2px solid var(--color-divider)}
+.pf{display:flex;flex-direction:column;justify-content:space-between;gap:40px;min-height:150px;padding:24px clamp(20px,2vw,28px);border-right:2px solid var(--color-divider);border-bottom:2px solid var(--color-divider);margin-bottom:-2px}
+.pf:hover{background:var(--color-accent);color:var(--color-bg)}
+.pf>span:last-child{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.pf b{font-family:var(--font-heading);font-weight:800;font-size:clamp(22px,1.9vw,28px);letter-spacing:-.02em;line-height:1}
+.pf em{font-style:normal;font-size:20px}
+.arch{padding:0 var(--pad) clamp(40px,5vw,72px)}
+.arch a{display:grid;grid-template-columns:minmax(120px,180px) 1fr auto;gap:8px 24px;align-items:baseline;padding:18px 0;border-bottom:2px solid var(--color-divider)}
+.arch a:first-child{border-top:2px solid var(--color-divider)}
+.arch a:hover{background:var(--color-accent-100);color:var(--color-text)}
+.arch .tt{font-size:17px;line-height:1.4;font-weight:600}.arch .d{color:var(--muted)}
+@media (max-width:560px){.arch a{grid-template-columns:1fr auto}.arch .d{grid-column:1/-1}}
+section.how{padding:clamp(40px,5vw,72px) var(--pad);border-bottom:2px solid var(--color-divider)}
+section.how>.kicker{color:var(--color-accent-700);margin-bottom:32px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))}
+.step{display:grid;gap:16px;align-content:start;padding:24px 32px 24px 0;border-top:2px solid var(--color-divider)}
+.step>span{font-family:var(--font-heading);font-weight:800;font-size:64px;line-height:1;letter-spacing:-.04em;color:var(--color-accent)}
+.step h3{font-size:24px;letter-spacing:-.01em}.step p{font-size:16px;line-height:1.6;max-width:36ch;color:var(--soft)}
+section.close{background:var(--color-accent);color:var(--color-bg);padding:clamp(56px,8vw,128px) var(--pad)}
+section.close h2{font-size:clamp(48px,8vw,128px);line-height:.92;letter-spacing:-.04em;margin:0 0 48px -.06em}
+section.close h2 span{display:block}
+section.close .btn{color:var(--color-bg);border-color:var(--color-bg)}
+section.close .btn:hover{background:color-mix(in srgb,var(--color-bg) 15%,transparent)}
+footer.bot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:24px var(--pad);font-size:13px;color:var(--muted)}
+footer.bot span{display:flex;gap:20px}footer.bot a{color:inherit}footer.bot a:hover{color:var(--color-accent)}
+.notes{padding:0 0 clamp(40px,5vw,72px);max-width:760px}
+.notes h3{font-size:13px;font-weight:400;letter-spacing:.08em;text-transform:uppercase;color:var(--color-accent-700);padding:20px 0;border-bottom:2px solid var(--color-divider);margin:32px 0 0}
+.notes>p{font-size:17px;line-height:1.65;padding:20px 0;border-bottom:1px solid var(--color-divider);color:var(--soft)}
+.notes>p strong{color:var(--color-text);font-family:var(--font-heading);font-weight:700}
+.notes ul{list-style:none;margin:0;padding:0}
+.notes li{font-size:16px;line-height:1.6;padding:14px 0;border-bottom:1px solid var(--color-divider);color:var(--soft)}
+.notes li strong{color:var(--color-text);font-weight:600}
+.notes a{color:var(--color-accent);text-decoration:underline;text-underline-offset:3px}
+.notes .ai{border-bottom:0;font-size:14px;color:var(--muted);border-left:3px solid var(--color-accent);padding:4px 0 4px 14px;margin-top:32px}
+.transcript{max-width:760px;margin:0 0 clamp(40px,5vw,72px);border-top:2px solid var(--color-divider)}
+.transcript summary{cursor:pointer;list-style:none;font-size:13px;font-weight:400;letter-spacing:.08em;text-transform:uppercase;color:var(--color-accent-700);padding:20px 0;border-bottom:2px solid var(--color-divider)}
+.transcript summary::-webkit-details-marker{display:none}.transcript summary::after{content:" +";}.transcript[open] summary::after{content:" −";}
+.transcript p{font-size:16px;line-height:1.65;padding:12px 0;margin:0;border-bottom:1px solid var(--color-divider);color:var(--soft)}
+.transcript .ts{font-family:var(--font-heading);font-weight:700;font-size:12px;color:var(--color-accent);margin-right:8px}
+.transcript p.ai{border-bottom:0;font-size:14px;color:var(--muted);border-left:3px solid var(--color-accent);padding:4px 0 4px 14px;margin:20px 0 8px}
+.cover picture{display:contents}
+.page-head{padding:clamp(40px,6vw,96px) var(--pad) clamp(28px,4vw,48px);border-bottom:2px solid var(--color-divider);display:grid;gap:20px}
+.page-head h1{font-size:clamp(44px,7vw,104px);line-height:.94;letter-spacing:-.04em;margin:0 0 0 -.04em}
+.page-head p{font-size:clamp(17px,1.4vw,21px);line-height:1.5;max-width:60ch;color:var(--soft)}
+.crumbs{font-size:13px;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap}.crumbs a{color:inherit}.crumbs a:hover{color:var(--color-accent)}
+.arch-more{padding:20px 0 0}
+.arch .arch-more a{display:inline-flex;grid-template-columns:none;gap:6px;padding:8px 4px;border:0}.arch .arch-more a:hover{background:color-mix(in srgb,var(--color-accent) 10%,transparent);color:var(--color-accent)}
+.pager{display:flex;justify-content:space-between;gap:16px;padding:0 var(--pad) clamp(40px,5vw,72px)}
+.epnav{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:0 48px;border-top:2px solid var(--color-divider);margin-bottom:clamp(40px,5vw,72px)}
+.epnav a{display:grid;gap:6px;padding:24px 0;align-content:start}.epnav a.next{text-align:right}
+.epnav .kicker{color:var(--muted)}.epnav b{font-family:var(--font-heading);font-size:19px;font-weight:700;line-height:1.3}
+.tags{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.tags .kicker{color:var(--muted);margin-right:4px}
+.tags a{font-size:12px;letter-spacing:.02em;padding:4px 10px;border:1px solid var(--color-divider)}.tags a:hover{border-color:var(--color-accent)}
+.notes h2{font-size:13px;font-weight:400;letter-spacing:.08em;text-transform:uppercase;color:var(--color-accent-700);padding:20px 0;border-bottom:2px solid var(--color-divider);margin:32px 0 0}
+.notes .item{padding:20px 0;border-bottom:1px solid var(--color-divider);scroll-margin-top:16px}
+.notes .item h3{font-size:17px;line-height:1.45;font-weight:700;margin:0 0 6px;letter-spacing:0;text-transform:none;color:var(--color-text);padding:0;border:0}
+.notes .item p{font-size:17px;line-height:1.65;color:var(--soft)}
+.notes li{scroll-margin-top:16px}.notes :target{background:var(--color-accent-100)}
+a.topic:hover .tt{color:var(--color-accent)}
+.topic{grid-template-columns:48px 1fr auto}.topic .tm{font-size:13px;color:var(--muted);font-feature-settings:'tnum' 1}
+.pl-label h2{font-family:var(--font-body);font-weight:400}
+.transcript summary h2{display:inline;font:inherit;color:inherit;letter-spacing:inherit}
+.transcript a.ts:hover{text-decoration:underline}
+.period{padding:clamp(28px,4vw,48px) var(--pad) clamp(28px,4vw,48px);display:grid;gap:16px}
+.day{border-top:2px solid var(--color-divider);padding:20px 0;max-width:860px}
+.day h2{font-size:clamp(20px,2vw,26px);letter-spacing:-.01em;margin:0 0 8px}.day h2 a:hover{color:var(--color-accent)}
+.day .dsum{font-size:16px;line-height:1.6;color:var(--soft);margin:0 0 10px}
+.day ul{margin:0;padding-left:20px}.day li{font-size:16px;line-height:1.6;padding:3px 0}.day li a:hover{color:var(--color-accent)}
+.prose .rel{font-size:15px}.prose .rel a{margin-right:4px}
+section.news{border-bottom:2px solid var(--color-divider);padding-bottom:clamp(40px,5vw,72px)}
+.nl{padding:0 var(--pad);display:grid;gap:10px;max-width:640px}
+.nl input[type=email]{flex:1 1 260px;font:inherit;font-size:16px;padding:10px 12px;border:2px solid var(--color-divider);background:var(--color-bg);color:var(--color-text);border-radius:0}
+.nl input[type=email]:focus-visible{border-color:var(--color-accent)}
+.notes a.tl{color:inherit;text-decoration:underline;text-decoration-color:var(--color-divider);text-underline-offset:3px}.notes a.tl:hover{color:var(--color-accent);text-decoration-color:var(--color-accent)}
+.arch a .s{grid-column:2/-1;color:var(--soft);font-size:15px;line-height:1.5;font-weight:400}
+@media (max-width:560px){.arch a .s{grid-column:1/-1}}
+.arch a .n{font-feature-settings:'tnum' 1}
+.prose{max-width:760px;padding:clamp(32px,4vw,56px) var(--pad) clamp(40px,5vw,72px)}
+.prose h2{font-size:clamp(24px,2.4vw,32px);line-height:1.15;margin:40px 0 14px;letter-spacing:-.02em}.prose h2:first-child{margin-top:0}
+.prose p,.prose li{font-size:17px;line-height:1.7;color:var(--soft);margin:0 0 14px}.prose ul{padding-left:20px;margin:0 0 14px}
+.prose a{color:var(--color-accent);text-decoration:underline;text-underline-offset:3px}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "DefinedTerm", "@id": "https://halimiz.derinbay.com/sozluk/neocloud/#terim", "name": "Neocloud", "description": "Ağırlıklı olarak yapay zekâ iş yükleri için GPU kapasitesi kiralayan, büyük bulut sağlayıcılarının dışındaki yeni nesil bulut şirketleri.", "url": "https://halimiz.derinbay.com/sozluk/neocloud/", "inDefinedTermSet": {"@type": "DefinedTermSet", "@id": "https://halimiz.derinbay.com/sozluk/#set", "name": "Yapay zekâ sözlüğü", "url": "https://halimiz.derinbay.com/sozluk/"}, "inLanguage": "tr"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Ana sayfa", "item": "https://halimiz.derinbay.com/"}, {"@type": "ListItem", "position": 2, "name": "Sözlük", "item": "https://halimiz.derinbay.com/sozluk/"}, {"@type": "ListItem", "position": 3, "name": "Neocloud", "item": "https://halimiz.derinbay.com/sozluk/neocloud/"}]}]}</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "0dec7192e23d4ca5add5c151eed33f99"}'></script>
+</head><body><div class="wrap">
+<header class="top">
+  <a class="brand" href="/">HAL&#x27;imiz Ne Olacak?</a>
+  <div class="today kicker"><i></i><span id="today"></span></div>
+  <div class="navbox">
+    <nav class="main">
+      <a href="/#bugun"><span data-i18n="navToday">Bugün</span></a>
+      <a href="/#dinle"><span data-i18n="navListen">Dinle</span></a>
+      <a href="/bolum/"><span data-i18n="navArchive">Arşiv</span></a>
+      <a href="/konu/"><span data-i18n="navTopics">Konular</span></a>
+      <a href="/sozluk/"><span data-i18n="navGlossary">Sözlük</span></a>
+      <a href="/hakkinda/"><span data-i18n="navHow">Nasıl</span></a>
+    </nav>
+    <div class="langs" role="group" aria-label="Language">
+      <button type="button" data-lang="tr" aria-pressed="true">TR</button><button type="button" data-lang="en" aria-pressed="false">EN</button><button type="button" data-lang="de" aria-pressed="false">DE</button>
+    </div>
+  </div>
+</header>
+<section class="page-head">
+  <nav class="crumbs kicker" aria-label="Breadcrumb"><a href="/">Ana sayfa</a><span>/</span><a href="/sozluk/">Sözlük</a><span>/</span><span>Neocloud</span></nav>
+  <h1>Neocloud</h1>
+  <p>Ağırlıklı olarak yapay zekâ iş yükleri için GPU kapasitesi kiralayan, büyük bulut sağlayıcılarının dışındaki yeni nesil bulut şirketleri.</p>
+</section>
+<article class="prose"><p>Neocloud'lar, genel amaçlı bulut hizmetlerinin geniş yelpazesi yerine yoğun olarak GPU kümeleri, yüksek hızlı ağ bağlantısı ve bunları barındıran veri merkezleri sunar. CoreWeave ve Nebius bu grubun bilinen örnekleridir. Müşterileri arasında model geliştiren yapay zekâ laboratuvarları ve kendi kapasite açığını kapatmak isteyen büyük bulut şirketleri bulunur.</p>
+<p>Bu şirketler hızlı büyümeyi çoğunlukla borçla ve uzun vadeli müşteri sözleşmelerine dayanarak finanse eder. Bu nedenle enerji bağlantısı ve izin gecikmeleri, çip fiyatları ya da birkaç büyük müşterinin talebindeki değişiklikler finansal durumlarını doğrudan etkiler. Örneğin Kasım 2026'da Microsoft'un Nebius, IREN ve Nscale ile yaptığı sözleşmeleri gecikmeler ve maliyetler nedeniyle sorguladığı bildirildi.</p><p class="rel"><span class="kicker">İlgili</span> <a href="/konu/veri-merkezleri/">Veri merkezleri</a> · <a href="/konu/microsoft/">Microsoft</a> · <a href="/sozluk/yapay-zeka-hizlandiricisi/">Yapay zekâ hızlandırıcısı</a></p></article>
+<section class="archive"><div class="sec-head"><h2>Bölümlerde</h2><p>Neocloud kavramının geçtiği haberler ve bölümler.</p></div><div class="arch"><a href="/bolum/2026-11-06/#microsoft-neocloud-ortaklarina-karsi-alici"><span class="d kicker"><time datetime="2026-11-06">6 Kasım 2026</time></span><span class="tt">Microsoft, neocloud ortaklarına karşı &quot;alıcı pişmanlığı&quot; yaşıyor</span><span class="kicker">→</span></a></div></section>
+<section class="close">
+  <h2><span><span data-i18n="close1">Her sabah.</span></span> <span><span data-i18n="close2">Kaynaklarıyla.</span></span></h2>
+  <div class="row"><a class="btn btn-ghost" href="https://halimiz.derinbay.com/feed.xml"><span data-i18n="rss">RSS beslemesi</span></a><a class="btn btn-ghost" href="https://www.youtube.com/@halimizpodcast" rel="me">YouTube</a><a class="btn btn-ghost" href="https://www.instagram.com/halimizpodcast" rel="me">Instagram</a><a class="btn btn-ghost" href="https://x.com/halimizpodcast" rel="me">X</a><a class="btn btn-ghost" href="https://www.linkedin.com/company/halimizpodcast" rel="me">LinkedIn</a></div>
+</section>
+<footer class="bot">
+  <span>© 2026 Derinbay Labs</span>
+  <span><a href="/hakkinda/">Hakkında</a><a href="/konu/">Konular</a><a href="/sozluk/">Sözlük</a><a href="https://derinbay.com/tr/labs/">Derinbay Labs</a><a href="https://halimiz.derinbay.com/feed.xml">RSS</a></span>
+</footer>
+</div>
+<script>
+(function(){
+var I18N={"tr": {"locale": "tr-TR", "navToday": "Bugün", "navListen": "Dinle", "navArchive": "Arşiv", "navTopics": "Konular", "navGlossary": "Sözlük", "navHow": "Nasıl", "heroSub": "Her sabah yapay zekâ dünyasında olanlar — ve bizim için anlamı. Kaynaklarıyla, 30 dakikada.", "inTurkish": "", "ctaListen": "Bugünkü bölümü dinle", "ctaSub": "Abone ol", "coverCap": "Derinbay Labs · Günlük", "coverTag": "", "todayEp": "Bugünün bölümü", "episode": "Bölüm", "min": "dk", "notes": "Bölüm notları ve kaynaklar", "inThis": "Bu bölümde", "topics": "konu", "play": "Oynat", "pause": "Duraklat", "whereTitle": "Nerede dinliyorsan.", "whereSub": "Yeni bölüm her sabah tüm platformlara aynı anda düşer.", "archiveTitle": "Önceki bölümler", "allEpisodes": "Tüm bölümler", "back": "Ana sayfa", "seeAll": "Tüm bölümler", "prevEp": "Önceki bölüm", "nextEp": "Sonraki bölüm", "epTopics": "Konular", "howKicker": "Nasıl hazırlanır", "howMore": "Yayın ilkeleri", "close1": "Her sabah.", "close2": "Kaynaklarıyla.", "rss": "RSS beslemesi", "download": "MP3 indir", "transcript": "Transkript", "transcriptNote": "Konuşmadan otomatik çıkarılmıştır; özel adlar düzeltilmiştir, küçük hatalar olabilir.", "steps": [["Tara", "Gece boyunca model ve ürün lansmanları, şirket duyuruları, araştırmalar, yatırımlar ve regülasyon haberleri toplanır."], ["Kaynakla", "Bölümler yapay zekâ yardımıyla hazırlanır; her iddianın kaynağı bölüm notlarında açıkça listelenir."], ["Yayınla", "Sabah, 30 dakikalık bölüm tüm dinleme platformlarına aynı anda düşer."]]}, "en": {"locale": "en-GB", "navToday": "Today", "navListen": "Listen", "navArchive": "Archive", "navTopics": "Topics", "navGlossary": "Glossary", "navHow": "How", "heroSub": "What happened in AI overnight — and what it means for us. Sourced, in 30 minutes, every morning.", "inTurkish": "Episodes in Turkish", "ctaListen": "Play today's episode", "ctaSub": "Subscribe", "coverCap": "Derinbay Labs · Daily", "coverTag": "Daily AI briefing", "todayEp": "Today's episode", "episode": "Episode", "min": "min", "notes": "Show notes and sources", "inThis": "In this episode", "topics": "topics", "play": "Play", "pause": "Pause", "whereTitle": "Wherever you listen.", "whereSub": "Each new episode lands on every platform at the same time, every morning.", "archiveTitle": "Earlier episodes", "allEpisodes": "All episodes", "back": "Home", "seeAll": "All episodes", "prevEp": "Previous episode", "nextEp": "Next episode", "epTopics": "Topics", "howKicker": "How it's made", "howMore": "Editorial principles", "close1": "Every morning.", "close2": "With sources.", "rss": "RSS feed", "download": "Download MP3", "transcript": "Transcript (Turkish)", "transcriptNote": "Generated automatically from the audio; names corrected, small errors are possible.", "steps": [["Scan", "Overnight we gather model and product launches, company announcements, research, investment and regulation news."], ["Source", "Episodes are prepared with AI assistance; the source for every claim is listed openly in the show notes."], ["Publish", "In the morning, the 30-minute episode lands on every listening platform at once."]]}, "de": {"locale": "de-DE", "navToday": "Heute", "navListen": "Hören", "navArchive": "Archiv", "navTopics": "Themen", "navGlossary": "Glossar", "navHow": "Wie", "heroSub": "Was über Nacht in der KI-Welt passiert ist — und was es für uns bedeutet. Mit Quellen, in 30 Minuten, jeden Morgen.", "inTurkish": "Folgen auf Türkisch", "ctaListen": "Heutige Folge hören", "ctaSub": "Abonnieren", "coverCap": "Derinbay Labs · Täglich", "coverTag": "Täglicher KI-Überblick", "todayEp": "Heutige Folge", "episode": "Folge", "min": "Min.", "notes": "Shownotes und Quellen", "inThis": "In dieser Folge", "topics": "Themen", "play": "Abspielen", "pause": "Pause", "whereTitle": "Wo immer du hörst.", "whereSub": "Jede neue Folge erscheint jeden Morgen gleichzeitig auf allen Plattformen.", "archiveTitle": "Frühere Folgen", "allEpisodes": "Alle Folgen", "back": "Startseite", "seeAll": "Alle Folgen", "prevEp": "Vorherige Folge", "nextEp": "Nächste Folge", "epTopics": "Themen", "howKicker": "So entsteht es", "howMore": "Redaktionelle Grundsätze", "close1": "Jeden Morgen.", "close2": "Mit Quellen.", "rss": "RSS-Feed", "download": "MP3 herunterladen", "transcript": "Transkript (Türkisch)", "transcriptNote": "Automatisch aus dem Audio erstellt; Namen korrigiert, kleine Fehler sind möglich.", "steps": [["Sichten", "Über Nacht sammeln wir Modell- und Produktstarts, Unternehmensmeldungen, Forschung, Investitionen und Regulierung."], ["Belegen", "Die Folgen entstehen mit KI-Unterstützung; die Quelle jeder Aussage steht offen in den Shownotes."], ["Veröffentlichen", "Am Morgen erscheint die 30-minütige Folge gleichzeitig auf allen Plattformen."]]}}, KEY='halimiz-lang', lang='tr';
+try{lang=localStorage.getItem(KEY)||'tr'}catch(e){}
+if(!I18N[lang])lang='tr';
+function apply(l){
+  var t=I18N[l]; document.documentElement.lang=l;
+  document.querySelectorAll('[data-i18n]').forEach(function(n){var v=t[n.dataset.i18n]; if(typeof v==='string')n.textContent=v;});
+  document.querySelectorAll('[data-step]').forEach(function(n){var p=n.dataset.step.split('.'); n.textContent=t.steps[+p[0]][+p[1]];});
+  document.querySelectorAll('.langs button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.lang===l?'true':'false')});
+  var d=document.getElementById('today'); if(d){try{d.textContent=new Date().toLocaleDateString(t.locale,{weekday:'long',day:'numeric',month:'long'})}catch(e){}}
+  var pb=document.querySelector('.pl-btn'); if(pb)pb.setAttribute('aria-label',pb.hasAttribute('data-playing')?t.pause:t.play);
+}
+document.querySelectorAll('.langs button').forEach(function(b){b.addEventListener('click',function(){
+  lang=b.dataset.lang; try{localStorage.setItem(KEY,lang)}catch(e){} apply(lang);});});
+apply(lang);
+
+var a=document.getElementById('audio'); if(!a)return;
+var btn=document.querySelector('.pl-btn'), bars=[].slice.call(document.querySelectorAll('.wave span')),
+    el=document.getElementById('elapsed'), total=+a.dataset.total||0;
+function fmt(s){s=Math.max(0,Math.floor(s));return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')}
+function dur(){return isFinite(a.duration)&&a.duration>0?a.duration:total}
+function paint(){var p=dur()?a.currentTime/dur():0; bars.forEach(function(b,i){b.classList.toggle('on',i/bars.length<p)}); el.textContent=fmt(a.currentTime);}
+btn.addEventListener('click',function(){ if(a.paused){a.play()}else{a.pause()} });
+a.addEventListener('play',function(){btn.setAttribute('data-playing','');apply(lang)});
+a.addEventListener('pause',function(){btn.removeAttribute('data-playing');apply(lang)});
+a.addEventListener('timeupdate',paint);
+bars.forEach(function(b,i){b.addEventListener('click',function(){
+  var d=dur(); if(!d)return; a.currentTime=(i/bars.length)*d; if(a.paused)a.play(); paint();});});
+document.querySelectorAll('[data-play]').forEach(function(x){x.addEventListener('click',function(){
+  setTimeout(function(){ if(a.paused)a.play(); },350);});});
+function seek(s,play){a.currentTime=s; if(play&&a.paused)a.play(); paint(); el.textContent=fmt(s);}
+document.querySelectorAll('[data-t]').forEach(function(x){x.addEventListener('click',function(ev){
+  ev.preventDefault(); seek(+x.dataset.t,true);
+  try{history.replaceState(null,'','#t='+x.dataset.t)}catch(e){}
+  var p=document.querySelector('.player'); if(p&&p.getBoundingClientRect().top<0)p.scrollIntoView({behavior:'smooth'});});});
+var m=location.hash.match(/^#t=(\d+)/);
+if(m){var s=+m[1]; el.textContent=fmt(s); a.preload='metadata';
+  a.addEventListener('loadedmetadata',function(){seek(s,false)},{once:true}); a.load();
+  var p=document.querySelector('.player'); if(p)p.scrollIntoView();}
+})();
+</script>
+</body></html>
