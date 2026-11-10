@@ -1,0 +1,44 @@
+{
+ "version": "1.2.0",
+ "chapters": [
+  {
+   "startTime": 0,
+   "title": "Giriş"
+  },
+  {
+   "startTime": 102,
+   "title": "Anthropic, Claude Fable 5.2 ve Mythos 5.2'yi yayımladı",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-10/#anthropic-claude-fable-5-2-ve-mythos-5-2-yi"
+  },
+  {
+   "startTime": 286,
+   "title": "Anthropic'in halka arz tanıtım turu bugün başlıyor; fiyatlama 18 Kasım'da",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-10/#anthropic-in-halka-arz-tanitim-turu-bugun"
+  },
+  {
+   "startTime": 420,
+   "title": "Huang skandalı Nvidia hissesini vurdu; NYT, Megaspeed soruşturmasının Nvidia'nın müdahalesiyle DOJ'a taşındığını yazdı",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-10/#huang-skandali-nvidia-hissesini-vurdu-nyt"
+  },
+  {
+   "startTime": 598,
+   "title": "Meta, en küçük modeli Muse Ember'ı milyon token başına 0,10 $ girdi fiyatıyla çıkardı",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-10/#meta-en-kucuk-modeli-muse-ember-i-milyon-token"
+  },
+  {
+   "startTime": 735,
+   "title": "Google, 8. nesil TPU ailesine TPU 8tx ve TPU 8i Max'i ekledi",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-10/#google-8-nesil-tpu-ailesine-tpu-8tx-ve-tpu-8i"
+  },
+  {
+   "startTime": 839,
+   "title": "Fireworks AI ikinci ihlali doğruladı: bazı müşterilerin verileri ve model ağırlıkları erişildi",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-10/#fireworks-ai-ikinci-ihlali-dogruladi-bazi"
+  },
+  {
+   "startTime": 946,
+   "title": "Disney ve Adobe, Disney karakterleriyle eğitilen özel Firefly modelleri için çok yıllı ittifak kurdu",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-10/#disney-ve-adobe-disney-karakterleriyle-egitilen"
+  }
+ ]
+}
