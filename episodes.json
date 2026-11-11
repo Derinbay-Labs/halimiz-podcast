@@ -86,5 +86,16 @@
     "guid": "halimiz-2026-11-10",
     "notes_md": "episodes/2026-11-10/notes.md",
     "pub_date": "2026-11-10T06:57:00+03:00"
+  },
+  {
+    "date": "2026-11-11",
+    "title": "11 Kasım: Anthropic'in halka arz fiyat aralığı, Gemini 4 Carbon, Claude Sheets",
+    "summary": "Anthropic halka arz fiyat aralığını hisse başı 70–78 $ olarak belirleyip 17 milyar $'lık 3. çeyrek gelirini açıkladı; aynı gün Google Gemini 4 Carbon'u, Anthropic Claude Sheets ve Meetings'i, OpenAI ise ChatGPT'de işletme ajanlarını tanıttı.",
+    "audio_url": "https://github.com/Derinbay-Labs/halimiz-podcast/releases/download/2026-11-11/halimiz-2026-11-11.mp3",
+    "audio_bytes": 13770904,
+    "duration_seconds": 1147.5,
+    "guid": "halimiz-2026-11-11",
+    "notes_md": "episodes/2026-11-11/notes.md",
+    "pub_date": "2026-11-11T06:54:58+03:00"
   }
 ]
