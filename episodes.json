@@ -66,6 +66,17 @@
     "pub_date": "2026-11-08T06:55:17+03:00"
   },
   {
+    "date": "2026-11-09",
+    "title": "9 Kasım: Nvidia'da Huang soruşturması, Anthropic'in jeneratör anlaşması, Claude Code sızıntısı",
+    "summary": "Nvidia yönetim kurulu, Jensen Huang'ın yabancı istihbarat hedefi olduğu haberleri üzerine bağımsız soruşturma başlattı; Anthropic ise beklenen halka arz tanıtım turu haftasına 1,7 GW'lık gaz jeneratörü anlaşması ve Claude Code'da gizli anahtar sızıntısı tartışmasıyla giriyor.",
+    "audio_url": "https://github.com/Derinbay-Labs/halimiz-podcast/releases/download/2026-11-09/halimiz-2026-11-09.mp3",
+    "audio_bytes": 17600246,
+    "duration_seconds": 1466.6,
+    "guid": "halimiz-2026-11-09",
+    "notes_md": "episodes/2026-11-09/notes.md",
+    "pub_date": "2026-11-09T07:00:00+03:00"
+  },
+  {
     "date": "2026-11-10",
     "title": "10 Kasım: Claude Fable 5.2, Nvidia'da Huang skandalı, Meta'nın Muse Ember'ı",
     "summary": "Anthropic, halka arz tanıtım turunun başladığı gün Claude Fable 5.2 ve Mythos 5.2'yi yayımladı; Nvidia hissesi Huang skandalı ve Megaspeed soruşturmasına dair yeni iddialarla ~%4 geriledi, Meta ve Google ise ucuz model ve yeni TPU'larla karşılık verdi.",
