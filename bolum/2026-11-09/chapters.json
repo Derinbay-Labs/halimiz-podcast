@@ -1,0 +1,39 @@
+{
+ "version": "1.2.0",
+ "chapters": [
+  {
+   "startTime": 0,
+   "title": "Giriş"
+  },
+  {
+   "startTime": 96,
+   "title": "Nvidia yönetim kurulu, Jensen Huang hakkında bağımsız soruşturma başlattı",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-09/#nvidia-yonetim-kurulu-jensen-huang-hakkinda"
+  },
+  {
+   "startTime": 342,
+   "title": "Anthropic halka arz tanıtım turuna bu hafta başlıyor",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-09/#anthropic-halka-arz-tanitim-turuna-bu-hafta"
+  },
+  {
+   "startTime": 523,
+   "title": "Anthropic, veri merkezleri için ~3,4 milyar $'lık gaz jeneratörü üretim sırası satın aldı",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-09/#anthropic-veri-merkezleri-icin-3-4-milyar-lik"
+  },
+  {
+   "startTime": 977,
+   "title": "Apiiro: Claude Code'un \"bir daha sorma\" seçeneği gizli anahtarları GitHub'a sızdırıyor",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-09/#apiiro-claude-code-un-bir-daha-sorma-secenegi"
+  },
+  {
+   "startTime": 1169,
+   "title": "Mahkeme, Claude Max kullanım vaatlerine dair toplu davanın kısmen sürmesine izin verdi",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-09/#mahkeme-claude-max-kullanim-vaatlerine-dair"
+  },
+  {
+   "startTime": 1441,
+   "title": "Gurman: Apple, Siri'yi gelecek yıl ajan haline getirmeyi hedefliyor",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-09/#gurman-apple-siri-yi-gelecek-yil-ajan-haline"
+  }
+ ]
+}
