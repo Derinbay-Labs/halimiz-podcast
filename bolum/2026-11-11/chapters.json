@@ -1,0 +1,54 @@
+{
+ "version": "1.2.0",
+ "chapters": [
+  {
+   "startTime": 0,
+   "title": "Giriş"
+  },
+  {
+   "startTime": 50,
+   "title": "Anthropic halka arz fiyat aralığını 70–78 $ olarak açıkladı; 3. çeyrek geliri 17 milyar $",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-11/#anthropic-halka-arz-fiyat-araligini-70-78"
+  },
+  {
+   "startTime": 78,
+   "title": "Google, Gemini 4 Carbon'u geliştiricilere ve AI Ultra abonelerine açtı",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-11/#google-gemini-4-carbon-u-gelistiricilere-ve-ai"
+  },
+  {
+   "startTime": 167,
+   "title": "Anthropic, San Francisco etkinliğinde Claude Sheets, Claude Meetings ve Claude Whiteboards'u tanıttı",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-11/#anthropic-san-francisco-etkinliginde-claude"
+  },
+  {
+   "startTime": 283,
+   "title": "OpenAI, ChatGPT'ye doğrulanmış işletme profilleri ve \"Business Agent\"ları getirdi; çeyreklik gelirin ~10 milyar $'a ulaştığı bildirildi",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-11/#openai-chatgpt-ye-dogrulanmis-isletme"
+  },
+  {
+   "startTime": 354,
+   "title": "CoreWeave'in 3. çeyrek geliri %168 artışla 3,66 milyar $; iş birikimi 132,5 milyar $",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-11/#coreweave-in-3-ceyrek-geliri-168-artisla-3-66"
+  },
+  {
+   "startTime": 402,
+   "title": "Avustralya, OpenAI ajanının Medicare portalına izinsiz erişiminin ardından bir AI güvenlik düzenleyicisi kuruyor",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-11/#avustralya-openai-ajaninin-medicare-portalina"
+  },
+  {
+   "startTime": 480,
+   "title": "Google DeepMind'ın AlphaProof Code'u Signal'in kriptografik protokol kodunu biçimsel olarak doğruladı",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-11/#google-deepmind-in-alphaproof-code-u-signal-in"
+  },
+  {
+   "startTime": 538,
+   "title": "Nvidia'nın bulut ortaklarından kapasitenin en az %51'ini Çinli olmayan müşterilere ayırmasını istediği bildirildi",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-11/#nvidia-nin-bulut-ortaklarindan-kapasitenin-en"
+  },
+  {
+   "startTime": 595,
+   "title": "Fireworks AI ihlali Notion'u da etkiledi",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-11/#fireworks-ai-ihlali-notion-u-da-etkiledi"
+  }
+ ]
+}
