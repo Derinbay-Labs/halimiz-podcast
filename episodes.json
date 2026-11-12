@@ -97,5 +97,16 @@
     "guid": "halimiz-2026-11-11",
     "notes_md": "episodes/2026-11-11/notes.md",
     "pub_date": "2026-11-11T06:54:58+03:00"
+  },
+  {
+    "date": "2026-11-12",
+    "title": "12 Kasım: Anthropic'in AI Ar-Ge eşiği, AB Dijital Adillik Yasası, AlphaGenome 2",
+    "summary": "Anthropic, halka arz tanıtım turunun ikinci gününde \"AI'ın kendi araştırmasını hızlandırması\" güvenlik eşiğinin aşıldığını SEC dosyasında kabul etti; AB Dijital Adillik Yasası'nı açıkladı, Google DeepMind ise AlphaGenome 2 ve Gemini Robotics 2.5'i tanıttı.",
+    "audio_url": "https://github.com/Derinbay-Labs/halimiz-podcast/releases/download/2026-11-12/halimiz-2026-11-12.mp3",
+    "audio_bytes": 15234806,
+    "duration_seconds": 1269.5,
+    "guid": "halimiz-2026-11-12",
+    "notes_md": "episodes/2026-11-12/notes.md",
+    "pub_date": "2026-11-12T06:56:41+03:00"
   }
 ]
