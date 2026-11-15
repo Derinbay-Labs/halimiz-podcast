@@ -1,0 +1,16 @@
+title = "halimiz-podcast gitleaks config"
+
+[extend]
+useDefault = true
+
+# Narrow, line-level allowlist for values that are public by design. Real findings still fail.
+[[allowlists]]
+description = "Cloudflare web-analytics beacon token (served to every visitor), IndexNow key (hosted publicly as <key>.txt) and a CI cache key"
+targetRules = ["generic-api-key"]
+regexTarget = "line"
+regexes = [
+  '''data-cf-beacon=''',
+  '''"cf_beacon_token"\s*:''',
+  '''"indexnow_key"\s*:''',
+  '''key:\s+\S*whisper\S*''',
+]
