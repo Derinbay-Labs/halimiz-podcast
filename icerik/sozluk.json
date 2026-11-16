@@ -168,6 +168,46 @@
       "metin": "Sıfır bilgi ispatında (zero-knowledge proof) kanıtlayan taraf, doğrulayan tarafı bir bilginin ya da bir hesaplamanın sonucunun doğruluğuna ikna eder, ama bu bilgi hakkında başka hiçbir şey sızdırmaz. zkSNARK gibi türleri kısa, hızla doğrulanabilen ve taraflar arasında karşılıklı etkileşim gerektirmeyen ispatlar üretir; bu nedenle blokzincirlerde ve gizlilik uygulamalarında yaygın olarak kullanılır.\n\nYapay zekâda sıfır bilgi ispatları, bir çıktının iddia edilen model tarafından üretildiğini model ağırlıklarını açığa çıkarmadan göstermek için araştırılıyor. Bu tür \"doğrulanabilir çıkarım\" bağımsız denetimler için umut verici olsa da ispat üretmek hâlâ normal çıkarımdan çok daha maliyetlidir; örneğin Anthropic'in Kasım 2026'da tanıttığı FlashProve prototipinde maliyet, yaygın bir çıkarım motoru olan vLLM'in 70–95 katıydı.",
       "eslesme": "sıfır bilgi(li)? ispat|zero[- ]knowledge|zk-?SNARK",
       "ilgili": ["cikarim", "anthropic"]
+    },
+    {
+      "slug": "odul-hilesi",
+      "terim": "Ödül hilesi (reward hacking)",
+      "kisa": "Bir yapay zekâ sisteminin asıl görevi yerine getirmeden, ödülü ya da başarı ölçütünü kestirme yoldan yükseltmenin yolunu bulması.",
+      "metin": "Pekiştirmeli öğrenmede ve ajan görevlerinde model, kendisine verilen bir ödül sinyalini ya da başarı ölçütünü en üst düzeye çıkarmaya çalışır. Bu ölçüt asıl amacı tam olarak yakalamıyorsa model, işi gerçekten yapmak yerine ölçütün açığını kullanabilir: örneğin kodu düzeltmek yerine testleri her zaman geçecek şekilde değiştirmek ya da görevi tamamlamış gibi görünen bir çıktı üretmek. İngilizcede reward hacking ya da specification gaming olarak da anılır.\n\nÖdül hilesi, model daha yetenekli hale geldikçe ölçütlerdeki küçük açıkları bulmakta da ustalaştığı için yapay zekâ güvenliğinin temel sorunlarından biri sayılır. Laboratuvarlar bunu daha sağlam ödül tasarımı, insan ya da başka bir modelle yapılan denetim ve eğitim sırasında şüpheli davranışların izlenmesiyle azaltmaya çalışır; ancak denetçiler de yanlış alarm üretebildiği için sorun tamamen çözülmüş değildir.",
+      "eslesme": "ödül hile|ödül hack|ödül istismar|reward hack|specification gaming",
+      "ilgili": ["pekistirmeli-ogrenme", "yapay-zeka-ajani", "sandbagging"]
+    },
+    {
+      "slug": "bicimsel-dogrulama",
+      "terim": "Biçimsel doğrulama",
+      "kisa": "Bir yazılımın ya da matematiksel ispatın doğruluğunu, makinenin denetleyebildiği kesin mantık kurallarıyla kanıtlama yöntemi.",
+      "metin": "Biçimsel doğrulama (formal verification), bir programın belirli bir özelliği her koşulda sağladığını ya da bir teoremin doğru olduğunu, testlerle örnek denemek yerine matematiksel olarak ispatlamaktır. İspatlar Lean, Coq (Rocq) veya Isabelle gibi ispat asistanlarında ya da Verus gibi doğrulama araçlarında yazılır; araç her adımı kendi çekirdeğinde denetler, bu yüzden kabul edilen bir ispatta mantıksal boşluk kalmaz. Bir matematik metnini bu dillere aktarmaya biçimselleştirme ya da formalizasyon denir.\n\nBu iş geleneksel olarak çok emek ister: kısa bir kağıt ispatı, makinenin kabul edeceği binlerce satıra dönüşebilir. Yapay zekâ ajanları bu satırları yazmakta giderek daha başarılı hale geldiği için biçimsel doğrulama hem matematik hem de kriptografi ve güvenlik açısından kritik yazılımlar için yeniden gündemde. Ajanın ürettiği ispat makinece denetlendiğinden, modelin hata yapma ya da uydurma riski sonuca taşınmaz; insanın görevi ise ispatlanan özelliğin doğru tanımlandığından emin olmaktır.",
+      "eslesme": "biçimsel|formalizasyon|formal verification|formal doğrulama|Lean'(?:de|da|e|a|in)\\b|Lean (?:dil|formal|ispat)",
+      "ilgili": ["halusinasyon", "yapay-zeka-ajani", "google"]
+    },
+    {
+      "slug": "sorumlu-olcekleme-politikasi",
+      "terim": "Sorumlu Ölçekleme Politikası (RSP)",
+      "kisa": "Anthropic'in, modelleri yetenek eşiklerine ulaştıkça hangi ek güvenlik önlemlerinin zorunlu hale geleceğini tanımlayan iç politikası.",
+      "metin": "Sorumlu Ölçekleme Politikası (Responsible Scaling Policy, RSP), Anthropic'in 2023'te yayımladığı ve zaman içinde güncellediği bir çerçevedir. Politika, modellerin biyolojik silah geliştirmeye yardım etme ya da yapay zekâ araştırmasını kendi başına hızlandırma gibi tehlikeli yeteneklere ne kadar yaklaştığını ölçen eşikler tanımlar ve her eşiğe karşılık gelen güvenlik ve koruma düzeylerini (AI Safety Level, ASL) belirler.\n\nBir eşiğe ulaşılması modelin geliştirilmesini kendiliğinden durdurmaz; ancak şirket, ilgili koruma önlemleri yerine getirilmeden modeli eğitmemeyi ya da yayımlamamayı taahhüt eder. OpenAI'ın Hazırlık Çerçevesi ve Google DeepMind'ın Sınır Güvenliği Çerçevesi benzer yaklaşımlardır. Bu tür politikalar gönüllü taahhütlerdir; uygulanmalarını ve eşik kararlarını büyük ölçüde şirketlerin kendi değerlendirmeleri belirler.",
+      "eslesme": "Sorumlu Ölçekleme|Responsible Scaling|RSP(?![a-zçğıöşü])",
+      "ilgili": ["ozyinelemeli-kendini-gelistirme", "anthropic", "s-1-belgesi"]
+    },
+    {
+      "slug": "model-context-protocol",
+      "terim": "Model Context Protocol (MCP)",
+      "kisa": "Yapay zekâ modellerinin ve ajanlarının dış araçlara, uygulamalara ve veri kaynaklarına ortak bir yolla bağlanmasını sağlayan açık protokol.",
+      "metin": "Model Context Protocol (MCP), Anthropic'in Kasım 2024'te açık standart olarak duyurduğu bir bağlantı protokolüdür. Bir uygulama ya da hizmet, yeteneklerini (araçlar, okunabilir kaynaklar, hazır komutlar) bir MCP sunucusu üzerinden tanımlar; MCP'yi destekleyen bir yapay zekâ istemcisi bu sunucuya bağlanıp araçları çağırabilir. Böylece her model ve her uygulama için ayrı entegrasyon yazmak yerine tek bir ortak arayüz kullanılır; protokol sık sık yapay zekâ için bir \"USB-C\" benzetmesiyle anlatılır.\n\nMCP kısa sürede farklı şirketlerin modelleri, kod editörleri ve ajan çatıları tarafından desteklenmeye başladı. Ajanların dosya sistemine, tasarım programlarına ya da şirket içi verilere erişebilmesini kolaylaştırırken yeni güvenlik soruları da doğurur: bir ajana MCP üzerinden verilen yetkiler, hatalı ya da kötü niyetli bir talimatla beklenmedik işlemlere yol açabilir.",
+      "eslesme": "MCP(?![a-zçğıöşü])|Model Context Protocol",
+      "ilgili": ["yapay-zeka-ajani", "anthropic"]
+    },
+    {
+      "slug": "on-egitim",
+      "terim": "Ön eğitim (pre-training)",
+      "kisa": "Bir dil modelinin büyük miktarda metin ve veri üzerinde bir sonraki token'ı tahmin ederek temel becerilerini kazandığı ilk ve en pahalı eğitim aşaması.",
+      "metin": "Ön eğitim (pre-training), bir dil modelinin eğitiminin ilk aşamasıdır. Model, internetten, kitaplardan, koddan ve başka kaynaklardan derlenen çok büyük veri kümeleri üzerinde, kendisine verilen metnin devamındaki token'ı tahmin etmeyi öğrenir. Bu basit görev, milyarlarca parametre ve trilyonlarca token ölçeğinde tekrarlandığında model dil, olgular ve akıl yürütme kalıpları hakkında geniş bir temel kazanır. Hesaplama maliyetinin büyük kısmı bu aşamada harcanır; binlerce hızlandırıcı haftalar ya da aylar boyunca çalışabilir.\n\nÖn eğitimden çıkan temel model (base model) henüz bir asistan gibi davranmaz. Ardından gelen eğitim sonrası (post-training) aşamalarda, örneğin talimat verisiyle ince ayar ve pekiştirmeli öğrenmeyle, modele soruları yanıtlaması, talimatlara uyması, araç kullanması ve güvenli davranması öğretilir. Haberlerde \"ön eğitim bitti, RL aşamasına geçildi\" denmesi, modelin bu ikinci evreye girdiği anlamına gelir.",
+      "eslesme": "ön ?eğiti|ön-eğiti|pre-?train",
+      "ilgili": ["pekistirmeli-ogrenme", "parametre", "token", "yapay-zeka-hizlandiricisi"]
     }
   ]
 }
