@@ -119,5 +119,16 @@
     "guid": "halimiz-2026-11-15",
     "notes_md": "episodes/2026-11-15/notes.md",
     "pub_date": "2026-11-15T21:50:37+03:00"
+  },
+  {
+    "date": "2026-11-16",
+    "title": "16 Kasım: Bessent'ten Nvidia'ya 10 gün süre, Fed'in AI risk uyarısı, Lutnick'e çip baskısı",
+    "summary": "Nvidia skandalı Washington'a taşındı: Hazine Bakanı Bessent şirketten dışarıdan bir CEO ve Çin satışlarına 10 günde yanıt isterken Ticaret Bakanı Lutnick çıkar çatışması iddialarıyla baskı altında; Fed ise AI'ı finansal istikrara yönelik bir numaralı risk olarak işaretledi. Bu hafta Nvidia bilançosu (17 Kasım) ve Anthropic halka arz fiyatlaması (18 Kasım) piyasanın sınavı olacak.",
+    "audio_url": "https://github.com/Derinbay-Labs/halimiz-podcast/releases/download/2026-11-16/halimiz-2026-11-16.mp3",
+    "audio_bytes": 12284745,
+    "duration_seconds": 1023.7,
+    "guid": "halimiz-2026-11-16",
+    "notes_md": "episodes/2026-11-16/notes.md",
+    "pub_date": "2026-11-16T06:54:43+03:00"
   }
 ]
