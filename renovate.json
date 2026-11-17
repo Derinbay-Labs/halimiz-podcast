@@ -1,0 +1,84 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "dependencyDashboard": {
+    "enabled": false
+  },
+  "extends": [
+    "config:best-practices",
+    ":semanticCommits"
+  ],
+  "timezone": "Europe/Istanbul",
+  "schedule": ["* 0-3 * * 1"],
+  "prConcurrentLimit": 5,
+  "prHourlyLimit": 2,
+  "rangeStrategy": "bump",
+  "rebaseWhen": "conflicted",
+  "postUpdateOptions": ["gomodTidy"],
+  "minimumReleaseAge": "3 days",
+  "ignoreUnstable": true,
+  "labels": ["infra"],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true,
+    "schedule": ["* 0-3 * * 1"]
+  },
+  "packageRules": [
+    {
+      "description": "Our own reusable workflows track @master on purpose; never pin them to a SHA (#324).",
+      "matchPackageNames": ["Derinbay-Labs/company"],
+      "enabled": false
+    },
+    {
+      "description": "Minor and patch updates automerge once CI is green (constitution §4.4).",
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true,
+      "automergeType": "pr",
+      "automergeStrategy": "squash"
+    },
+    {
+      "description": "Hold typescript below 7 until typescript-eslint supports TS 7 (its peer range is <6.1.0; typescript-eslint#10940, company#332). Remove when it ships support.",
+      "matchPackageNames": ["typescript"],
+      "allowedVersions": "<7"
+    },
+    {
+      "description": "Hold eslint and @eslint/js below 10 until eslint-plugin-react, eslint-plugin-import and eslint-plugin-jsx-a11y (via eslint-config-next) declare ESLint 10 peers (company#332). Remove when they do.",
+      "matchPackageNames": ["eslint", "@eslint/js"],
+      "matchUpdateTypes": ["major"],
+      "enabled": false
+    },
+    {
+      "description": "Majors never automerge: one grouped PR reviewed by the owning dev + devops, ADR if behaviour changes.",
+      "matchUpdateTypes": ["major"],
+      "automerge": false,
+      "groupName": "major dependency updates",
+      "labels": ["infra", "decision"]
+    },
+    {
+      "description": "Group GitHub Actions bumps into one PR.",
+      "matchManagers": ["github-actions"],
+      "groupName": "github actions"
+    },
+    {
+      "description": "Group Go module minor/patch bumps.",
+      "matchManagers": ["gomod"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "go modules"
+    },
+    {
+      "description": "Group npm minor/patch bumps.",
+      "matchManagers": ["npm"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "npm packages"
+    },
+    {
+      "description": "Group Gradle/Android minor/patch bumps.",
+      "matchManagers": ["gradle", "gradle-wrapper"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "gradle and android"
+    }
+  ],
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "labels": ["infra", "security"]
+  }
+}
