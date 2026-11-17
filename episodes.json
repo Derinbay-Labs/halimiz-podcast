@@ -130,5 +130,16 @@
     "guid": "halimiz-2026-11-16",
     "notes_md": "episodes/2026-11-16/notes.md",
     "pub_date": "2026-11-16T06:54:43+03:00"
+  },
+  {
+    "date": "2026-11-17",
+    "title": "17 Kasım: ABD'nin uzaktan çip erişimi kuralı, Nvidia bilançosu, Anthropic'e 7 kat talep",
+    "summary": "ABD, Çinli şirketlerin üçüncü ülkelerdeki veri merkezleri üzerinden gelişmiş AI çiplerine uzaktan erişimini kapatan kuralı yayımladı; Nvidia bugün Huang sonrası ilk bilançosunu açıklarken Anthropic'in rekor halka arzında talep, arzın yaklaşık yedi katına çıktı.",
+    "audio_url": "https://github.com/Derinbay-Labs/halimiz-podcast/releases/download/2026-11-17/halimiz-2026-11-17.mp3",
+    "audio_bytes": 19532785,
+    "duration_seconds": 1627.7,
+    "guid": "halimiz-2026-11-17",
+    "notes_md": "episodes/2026-11-17/notes.md",
+    "pub_date": "2026-11-17T06:55:39+03:00"
   }
 ]
