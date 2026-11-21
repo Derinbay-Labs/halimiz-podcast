@@ -24,6 +24,8 @@ import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+import seo  # tools/seo.py
+
 ROOT = Path(__file__).resolve().parent.parent
 IST = timezone(timedelta(hours=3))
 TR_MONTHS = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz",
@@ -63,7 +65,7 @@ def default_texts(notes, date):
     heads = re.findall(r"^\*\*(.+?)\*\*", notes.split("### Diğer gelişmeler")[0], re.M)
     heads = [h.rstrip(".") for h in heads if not h.startswith("Günün öne çıkanı")]
     short = heads[0].split(":")[0] if heads else "Günün yapay zekâ gündemi"
-    return f"{d.day} {TR_MONTHS[d.month - 1]}: {short}", re.sub(r"\\([~$])", r"\1", summary)
+    return f"{d.day} {TR_MONTHS[d.month - 1]}: {short}", seo.unescape_md(summary)
 
 
 def main():

@@ -67,7 +67,7 @@ def _unused_hms(seconds):
 # ---------- tiny markdown → html (enough for the bulletin format) ----------
 
 def _inline(text):
-    text = re.sub(r"\\([~$])", r"\1", text)
+    text = seo.unescape_md(text)
     out, pos = [], 0
     for m in re.finditer(r"\[([^\]]+)\]\((https?://[^)\s]+)\)", text):
         out.append(_fmt(text[pos:m.start()]))
