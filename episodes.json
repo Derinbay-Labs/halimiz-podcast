@@ -110,6 +110,17 @@
     "pub_date": "2026-11-12T06:56:41+03:00"
   },
   {
+    "date": "2026-11-13",
+    "title": "13 Kasım: Huang istifasının piyasa etkisi, OpenAI'a 1,25 trilyon $ değerleme",
+    "summary": "Jensen Huang'ın Nvidia'dan ani istifası AI hisselerinde sert ama ayrışan bir satışa yol açtı; aynı gün OpenAI'ın 1,25 trilyon \\$ değerlemeyle ~15 milyar \\$ topladığı bildirildi. (Bu dönemin diğer önemli haberleri 14 Kasım bülteninde ele alındı.)",
+    "audio_url": "https://github.com/Derinbay-Labs/halimiz-podcast/releases/download/2026-11-13/halimiz-2026-11-13.mp3",
+    "audio_bytes": 14377061,
+    "duration_seconds": 1198.0,
+    "guid": "halimiz-2026-11-13",
+    "notes_md": "episodes/2026-11-13/notes.md",
+    "pub_date": "2026-11-13T07:00:00+03:00"
+  },
+  {
     "date": "2026-11-14",
     "title": "14 Kasım: Huang'ın Nvidia'dan istifası, Anthropic halka arzına ~6 kat talep, Gemini 4 Hydrogen",
     "summary": "Jensen Huang, skandalın ardından Nvidia CEO'luğundan istifa etti ve yerine geçici olarak CFO Colette Kress geldi; Anthropic'in halka arzı fiyatlamadan önce ~6 kat talep topladı, Google ise hızlı ve ucuz Gemini 4 Hydrogen'ı çıkardı. (13 Kasım bülteni yayımlanmadığından bu sayı son 48 saati kapsıyor.)",
