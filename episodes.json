@@ -165,6 +165,17 @@
     "pub_date": "2026-11-19T07:00:00+03:00"
   },
   {
+    "date": "2026-11-20",
+    "title": "20 Kasım: Anthropic Nasdaq'ta ilk gün, Gemini 4 Neon, Trump–Xi–Putin zirvesi",
+    "summary": "Anthropic, 81,3 milyar $'lık rekor halka arzın ardından Nasdaq'taki ilk gününü yaklaşık %17 yükselişle kapattı; Google, fiyat-performans odaklı Gemini 4 Neon'u çıkardı; Shenzhen'deki Trump–Xi–Putin zirvesi AI'ı konuşsa da somut bir atılım olmadan bitti.",
+    "audio_url": "https://github.com/Derinbay-Labs/halimiz-podcast/releases/download/2026-11-20/halimiz-2026-11-20.mp3",
+    "audio_bytes": 9692354,
+    "duration_seconds": 807.7,
+    "guid": "halimiz-2026-11-20",
+    "notes_md": "episodes/2026-11-20/notes.md",
+    "pub_date": "2026-11-20T07:00:00+03:00"
+  },
+  {
     "date": "2026-11-21",
     "title": "21 Kasım: Riemann Hipotezi'ne iki ispat iddiası, Anthropic hissesinde düşüş, Nvidia'ya celp",
     "summary": "Anthropic'te çalışan bir matematikçi Claude ile Riemann Hipotezi'ni Lean'de ispatladığını öne sürdü, aynı gün insan yapımı rakip bir ispat duyuruldu; piyasa tarafında Anthropic hisseleri ikinci günde sert düştü, Nvidia çöküşü ve ABD'deki çip soruşturmaları derinleşti.",
