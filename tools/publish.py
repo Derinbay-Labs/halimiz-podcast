@@ -63,7 +63,7 @@ def default_texts(notes, date):
     heads = re.findall(r"^\*\*(.+?)\*\*", notes.split("### Diğer gelişmeler")[0], re.M)
     heads = [h.rstrip(".") for h in heads if not h.startswith("Günün öne çıkanı")]
     short = heads[0].split(":")[0] if heads else "Günün yapay zekâ gündemi"
-    return f"{d.day} {TR_MONTHS[d.month - 1]}: {short}", summary.replace("\\~", "~")
+    return f"{d.day} {TR_MONTHS[d.month - 1]}: {short}", re.sub(r"\\([~$])", r"\1", summary)
 
 
 def main():
