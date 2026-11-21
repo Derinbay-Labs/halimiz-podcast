@@ -11,7 +11,7 @@ TARAYICI (Taylan'ın kalıcı talimatı)
 ADIMLAR
 1. Claude Docs araçlarıyla (önce guide topic.index ve topic.editing) kuyruk dokümanını oku; bugünün Instagram ve Shorts maddelerini al. Bugünün maddesi yoksa dur ve bildir.
 2. YouTube Shorts: https://studio.youtube.com/channel/UC2XMdwm1ir56RYxp6kAdtTA → Oluştur → Video yükle; audiogram.mp4'ü file_upload ile ver. Başlık ve açıklama dokümandan. "İzleyici": çocuklara yönelik değil. "Değiştirilmiş içerik / yapay zekâ" sorusuna EVET (sentetik ses) işaretle. Görünürlük: Herkese açık. Video sayfasının URL'sini al.
-3. Instagram Reels (INSTAGRAM TEMPOSU'na göre; bugün paylaşım günü değilse bu adımı atla ve nedenini yaz): önce bash'te 5-35 dakika arası rastgele bir süre bekle (sleep). Sonra instagram.com'u aç, ana akışta 1-2 dakika yavaşça aşağı kaydır (beğenme, yorum, takip yok). Oluştur → audiogram.mp4 → Reels. Açıklamayı yapıştırma: computer aracının type eylemiyle birkaç parçada yaz. Kapak seçimi sunuluyorsa quote.png yükle. Gelişmiş ayarlarda "Yapay zekâ etiketi" varsa aç. Paylaş, gönderi URL'sini al. Web yükleme izin vermiyorsa dur ve bildir.
+3. Instagram Reels (INSTAGRAM TEMPOSU'na göre; bugün paylaşım günü değilse bu adımı atla ve nedenini yaz): önce bash'te 5-35 dakika arası rastgele bir süre bekle (sleep). Sonra instagram.com'u aç, ana akışta 1-2 dakika yavaşça aşağı kaydır; kaydırırken INSTAGRAM ETKİLEŞİMİ kuralına göre beğen. Oluştur → audiogram.mp4 → Reels. Açıklamayı yapıştırma: computer aracının type eylemiyle birkaç parçada yaz. Kapak seçimi sunuluyorsa quote.png yükle. Gelişmiş ayarlarda "Yapay zekâ etiketi" varsa aç. Paylaş, gönderi URL'sini al. Web yükleme izin vermiyorsa dur ve bildir.
 4. Dokümanı güncelle: gönderilen maddeleri "## Bugün" altından "## Arşiv" altına, "### <tarih>" başlığına linklerle taşı.
 
 INSTAGRAM TEMPOSU (Taylan'ın kararı, 21 Kasım 2026)
@@ -19,6 +19,7 @@ INSTAGRAM TEMPOSU (Taylan'ın kararı, 21 Kasım 2026)
 - 24 Kasım - 4 Aralık 2026: günde en fazla 1 Reels.
 - 5 Aralık 2026'dan sonra: günde 1 Reels, normal akış.
 - Her Instagram tıklaması ve yazması arasında 2-8 saniye değişken bekle; hızlı, art arda tıklama dizisi yapma. Sayfa yüklenmeden işlem yapma.
+- INSTAGRAM ETKİLEŞİMİ: 24 Kasım 2026'dan itibaren akışta en fazla 3 gönderi beğen (rastgele 0-3 arası; her gün aynı sayı olmasın); yalnızca hesabın takip ettiği yapay zekâ ve teknoloji hesaplarının son 2 günde paylaştığı gönderileri. Beğeniler arasında en az 20 saniye kaydır. Otomasyon ASLA takip etmez, takipten çıkmaz, yorum yazmaz, mesaj atmaz, hikâye beğenmez; takipleri Taylan telefondan elle yapar (docs/instagram-follow.md). 21-23 Kasım'da beğeni yok.
 - Instagram bir uyarı, "otomatik davranış" bildirimi, doğrulama, CAPTCHA veya askıya alma gösterirse hiçbir şeye tıklama, Instagram'ı bırak, Shorts'a devam et ve bildirimde bunu en üstte yaz.
 
 KURALLAR
