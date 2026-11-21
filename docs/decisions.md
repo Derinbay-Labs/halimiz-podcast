@@ -44,6 +44,10 @@ decision issue.
   appeal. Posting goes through Chrome, paced: no Reels for the first three days, at most one
   a day until 2026-12-04, random start delay and waits between actions. Posts end in
   "profildeki link".
+- Instagram engagement (CEO, 2026-11-21): the CEO follows accounts by hand from the phone,
+  3-5 a day up to the 25 in `docs/instagram-follow.md`, more only after 2026-12-05 with no
+  warnings. From 2026-11-24 the noon distribution likes at most 3 recent posts a day from
+  followed AI and tech accounts; automation never follows, comments or sends messages.
 - Browser: the metrics and noon distribution routines use the dedicated kobe Chrome profile `HALimiz` (deviceId
   `f17c296d-28c4-4570-a73d-01a63b5da930`), which holds only the podcast accounts. The YouTube
   subscriber count comes from the YouTube Data API (GCP project `halimiz-podcast-derinbay`, secret `YOUTUBE_API_KEY`).
