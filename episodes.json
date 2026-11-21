@@ -143,6 +143,17 @@
     "pub_date": "2026-11-17T06:55:39+03:00"
   },
   {
+    "date": "2026-11-18",
+    "title": "18 Kasım: Nvidia bilançosu, Huang'ın geri dönmemesi, Anthropic halka arzı, Microsoft Ignite",
+    "summary": "Nvidia, Huang sonrası ilk bilançosunda 115,8 milyar $ gelirle beklentileri aştı ama yönetim kurulu Huang'ı geri almayacağını açıkladı; Anthropic halka arzı bugün fiyatlanıyor, Microsoft Ignite'ta Copilot'u ajanlarla yeniden kurguladı.",
+    "audio_url": "https://github.com/Derinbay-Labs/halimiz-podcast/releases/download/2026-11-18/halimiz-2026-11-18.mp3",
+    "audio_bytes": 11463769,
+    "duration_seconds": 955.3,
+    "guid": "halimiz-2026-11-18",
+    "notes_md": "episodes/2026-11-18/notes.md",
+    "pub_date": "2026-11-18T07:00:00+03:00"
+  },
+  {
     "date": "2026-11-21",
     "title": "21 Kasım: Riemann Hipotezi'ne iki ispat iddiası, Anthropic hissesinde düşüş, Nvidia'ya celp",
     "summary": "Anthropic'te çalışan bir matematikçi Claude ile Riemann Hipotezi'ni Lean'de ispatladığını öne sürdü, aynı gün insan yapımı rakip bir ispat duyuruldu; piyasa tarafında Anthropic hisseleri ikinci günde sert düştü, Nvidia çöküşü ve ABD'deki çip soruşturmaları derinleşti.",
