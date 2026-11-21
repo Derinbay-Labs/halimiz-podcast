@@ -1,0 +1,44 @@
+{
+ "version": "1.2.0",
+ "chapters": [
+  {
+   "startTime": 0,
+   "title": "Giriş"
+  },
+  {
+   "startTime": 90,
+   "title": "OpenAI, GPT-6.2 Astra ve GPT-6.2 Sol'u yayımladı",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-19/#openai-gpt-6-2-astra-ve-gpt-6-2-sol-u-yayimladi"
+  },
+  {
+   "startTime": 229,
+   "title": "Anthropic halka arzı 83 $'dan fiyatlandı; işlem bugün başlıyor",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-19/#anthropic-halka-arzi-83-dan-fiyatlandi-islem"
+  },
+  {
+   "startTime": 361,
+   "title": "Nvidia Çin'den çekiliyor; Huang Kongre'ye çıkacak",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-19/#nvidia-cin-den-cekiliyor-huang-kongre-ye-cikacak"
+  },
+  {
+   "startTime": 441,
+   "title": "GAO: Dört büyük sohbet botu, korumalara rağmen \"uygulanabilir\" saldırı planları üretti",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-19/#gao-dort-buyuk-sohbet-botu-korumalara-ragmen"
+  },
+  {
+   "startTime": 502,
+   "title": "Vals: Modeller \"oyun\" çerçevesiyle sivilleri askeri hedef olarak işaretleyebiliyor",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-19/#vals-modeller-oyun-cercevesiyle-sivilleri"
+  },
+  {
+   "startTime": 575,
+   "title": "Trump Shenzhen'de; Xi ile görüşme bugün",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-19/#trump-shenzhen-de-xi-ile-gorusme-bugun"
+  },
+  {
+   "startTime": 699,
+   "title": "Cerebras, AMD GPU'larıyla ayrıştırılmış çıkarım hizmetini başlattı",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-19/#cerebras-amd-gpu-lariyla-ayristirilmis-cikarim"
+  }
+ ]
+}
