@@ -1,0 +1,28 @@
+name: Bülteni arşive ekle
+
+# Adds missed episodes to the Buttondown archive under their own dates without e-mailing
+# subscribers. Run by hand with the dates to archive.
+on:
+  workflow_dispatch:
+    inputs:
+      dates:
+        description: "Bölüm tarihleri, boşlukla ayrılmış (YYYY-MM-DD)"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Archive
+        env:
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+          DATES: ${{ inputs.dates }}
+        run: |
+          for d in $DATES; do
+            [[ "$d" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]] || { echo "bad date: $d"; exit 1; }
+            python3 tools/newsletter.py --date "$d" --archive
+          done

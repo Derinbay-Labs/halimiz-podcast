@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 """Send an episode's bulletin to newsletter subscribers through Buttondown.
 
-Usage: python3 tools/newsletter.py --date 2026-11-04 [--dry-run]
+Usage: python3 tools/newsletter.py --date 2026-11-04 [--dry-run] [--archive]
 
 Runs in the "Bölüm yayımla" workflow after the site is updated. Needs the repository
 secret BUTTONDOWN_API_KEY; without it the step only prints that it was skipped, so the
 daily publish never fails because of the newsletter. An episode is sent once: if an email
 with the same subject already exists in Buttondown, nothing is sent.
+--archive adds a missed episode to the public archive under its own date without e-mailing
+anyone (Buttondown status "imported"); the "Bülteni arşive ekle" workflow runs it.
 Standard library only.
 """
 import argparse
@@ -60,6 +62,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", required=True)
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--archive", action="store_true",
+                    help="archive under the episode date without sending")
     a = ap.parse_args()
     show = json.loads((ROOT / "podcast.json").read_text(encoding="utf-8"))
     eps = json.loads((ROOT / "episodes.json").read_text(encoding="utf-8"))
@@ -82,8 +86,12 @@ def main():
         if any(r.get("subject") == subject for r in recent.get("results", [])[:20]):
             print(f"newsletter: '{subject}' already exists, skipped")
             return
-        res = request("POST", API, key, {"subject": subject, "body": body, "status": "about_to_send"})
-        print(f"newsletter: queued '{subject}' ({res.get('id', '?')})")
+        email = {"subject": subject, "body": body, "status": "about_to_send"}
+        if a.archive:
+            # 06:52 Istanbul (UTC+3), the daily publish time
+            email.update(status="imported", publish_date=f"{a.date}T03:52:00Z")
+        res = request("POST", API, key, email)
+        print(f"newsletter: {email['status']} '{subject}' ({res.get('id', '?')})")
     except urllib.error.HTTPError as err:
         # never fail the publish because of the newsletter
         print(f"newsletter: Buttondown returned {err.code}: {err.read()[:300]!r}")
