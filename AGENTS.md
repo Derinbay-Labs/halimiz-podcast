@@ -47,3 +47,8 @@ Kobe-bound routines (NotebookLM, publish, YouTube check, both distributions, met
 while Claude Desktop is running on kobe and the PC is awake. Desktop quitting on 2026-11-18
 suspended them for three days. Keep Desktop starting at login and the PC from sleeping; after
 an outage, re-enable the suspended routines and run publish so its catch-up fills the gap.
+
+## Product decisions
+
+Standing CEO decisions (naming, hosting, channels, no-approval rule, marketing) are in
+`docs/decisions.md`; read it before changing a routine or the publishing flow.
