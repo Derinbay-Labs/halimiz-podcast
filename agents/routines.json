@@ -1,0 +1,192 @@
+{
+  "note": "Cloud routines (claude.ai /v1/code/triggers). agents/<file> is the prompt source; sync with RemoteTrigger update after merge. Cron times are Europe/Istanbul.",
+  "routines": [
+    {
+      "trigger_id": "trig_019hezqdfYPsCAKUiSTFiHFG",
+      "name": "Günlük AI & Teknoloji Bülteni",
+      "file": "agents/ai-bulteni.md",
+      "cron": "CRON_TZ=Europe/Istanbul 47 4 * * *",
+      "model": "claude-opus-5-5",
+      "permission_mode": "auto",
+      "connectors": [
+        "Claude_Code_Remote",
+        "Claude_Docs",
+        "Gmail",
+        "Google_Drive"
+      ],
+      "bound_device": null,
+      "chat_project_id": null,
+      "created_kind": "cowork_task"
+    },
+    {
+      "trigger_id": "trig_01DsJg7QgTRikzFAjKbBZPes",
+      "name": "Günlük ABD Borsa Bülteni",
+      "file": "agents/borsa-bulteni.md",
+      "cron": "CRON_TZ=Europe/Istanbul 45 9 * * *",
+      "model": "claude-opus-5-5",
+      "permission_mode": "auto",
+      "connectors": [
+        "Claude_Code_Remote",
+        "Claude_Docs",
+        "Gmail",
+        "Google_Drive"
+      ],
+      "bound_device": null,
+      "chat_project_id": null,
+      "created_kind": "cowork_task"
+    },
+    {
+      "trigger_id": "trig_01REcZ8PeZ1cuW5Lp6698VDG",
+      "name": "HAL'imiz — Dağıtım öğlen (Shorts + Reels)",
+      "file": "agents/dagitim-oglen.md",
+      "cron": "CRON_TZ=Europe/Istanbul 37 12 * * *",
+      "model": "claude-sonnet-5-5",
+      "permission_mode": "auto",
+      "connectors": [
+        "Claude_Code_Remote",
+        "Claude_Docs",
+        "Gmail",
+        "Google_Drive"
+      ],
+      "bound_device": "kobe",
+      "chat_project_id": "claude_proj_011Cgg7qxXUPDxDvyxWy3icq",
+      "created_kind": "cowork_task"
+    },
+    {
+      "trigger_id": "trig_018kAEXNonvHgnWUt3tdqz2n",
+      "name": "HAL'imiz — Dağıtım sabah (LinkedIn + X)",
+      "file": "agents/dagitim-sabah.md",
+      "cron": "CRON_TZ=Europe/Istanbul 41 8 * * *",
+      "model": "claude-sonnet-5-5",
+      "permission_mode": "auto",
+      "connectors": [
+        "Claude_Code_Remote",
+        "Claude_Docs",
+        "Gmail",
+        "Google_Drive"
+      ],
+      "bound_device": "kobe",
+      "chat_project_id": "claude_proj_011Cgg7qxXUPDxDvyxWy3icq",
+      "created_kind": "cowork_task"
+    },
+    {
+      "trigger_id": "trig_013uXdmBTZqApX8aUS3g1XeY",
+      "name": "HAL'imiz — Haftalık içerik (özet, konular, sözlük)",
+      "file": "agents/haftalik-icerik.md",
+      "cron": "CRON_TZ=Europe/Istanbul 41 10 * * 1",
+      "model": "claude-opus-5-5",
+      "permission_mode": "auto",
+      "connectors": [
+        "Claude_Code_Remote",
+        "Claude_Docs",
+        "Gmail",
+        "Google_Drive"
+      ],
+      "bound_device": null,
+      "chat_project_id": "claude_proj_011Cgg7qxXUPDxDvyxWy3icq",
+      "created_kind": "cowork_task"
+    },
+    {
+      "trigger_id": "trig_01XSy8KgqqSBP1KNTfFRi2s8",
+      "name": "HAL'imiz — Haftalık rapor ve reklam önerisi",
+      "file": "agents/haftalik.md",
+      "cron": "CRON_TZ=Europe/Istanbul 13 9 * * 1",
+      "model": "claude-opus-5-5",
+      "permission_mode": "auto",
+      "connectors": [
+        "Claude_Code_Remote",
+        "Claude_Docs",
+        "Gmail",
+        "Google_Drive"
+      ],
+      "bound_device": null,
+      "chat_project_id": "claude_proj_011Cgg7qxXUPDxDvyxWy3icq",
+      "created_kind": "cowork_task"
+    },
+    {
+      "trigger_id": "trig_019Q2s3cMMCzrTkRu7T6yd53",
+      "name": "HAL'imiz — İçerik ajanı (günlük sosyal içerik)",
+      "file": "agents/icerik.md",
+      "cron": "CRON_TZ=Europe/Istanbul 36 7 * * *",
+      "model": "claude-opus-5-5",
+      "permission_mode": "auto",
+      "connectors": [
+        "Claude_Code_Remote",
+        "Claude_Docs",
+        "Gmail",
+        "Google_Drive"
+      ],
+      "bound_device": null,
+      "chat_project_id": "claude_proj_011Cgg7qxXUPDxDvyxWy3icq",
+      "created_kind": "cowork_task"
+    },
+    {
+      "trigger_id": "trig_01QEtgy664Ak7sEj2J1FyrgV",
+      "name": "AI Bülteni → NotebookLM",
+      "file": "agents/notebooklm.md",
+      "cron": "CRON_TZ=Europe/Istanbul 23 5 * * *",
+      "model": "claude-opus-5-5",
+      "permission_mode": "auto",
+      "connectors": [
+        "Claude_Code_Remote",
+        "Claude_Docs",
+        "Gmail",
+        "Google_Drive"
+      ],
+      "bound_device": "kobe",
+      "chat_project_id": null,
+      "created_kind": "cowork_task"
+    },
+    {
+      "trigger_id": "trig_01CfcbxHiP3MZsdttrmr4dKB",
+      "name": "HAL'imiz — Ölçüm ajanı (panel verisi)",
+      "file": "agents/olcum.md",
+      "cron": "CRON_TZ=Europe/Istanbul 7 23 * * *",
+      "model": "claude-sonnet-5-5",
+      "permission_mode": "bypassPermissions",
+      "connectors": [
+        "Claude_Code_Remote",
+        "Claude_Docs",
+        "Gmail",
+        "Google_Drive"
+      ],
+      "bound_device": "kobe",
+      "chat_project_id": "claude_proj_011Cgg7qxXUPDxDvyxWy3icq",
+      "created_kind": "cowork_task"
+    },
+    {
+      "trigger_id": "trig_018xEkp8oqPvWNbtuMQF1Cnb",
+      "name": "HAL'imiz Ne Olacak? — Günlük bölüm yayını",
+      "file": "agents/yayin.md",
+      "cron": "CRON_TZ=Europe/Istanbul 52 6 * * *",
+      "model": "claude-opus-5-5",
+      "permission_mode": "auto",
+      "connectors": [
+        "Claude_Code_Remote",
+        "Claude_Docs",
+        "Gmail",
+        "Google_Drive"
+      ],
+      "bound_device": "kobe",
+      "chat_project_id": "claude_proj_011Cgg7qxXUPDxDvyxWy3icq",
+      "created_kind": "cowork_task"
+    },
+    {
+      "trigger_id": "trig_01FXfy28sMvjPRJn2Nf3pmTY",
+      "name": "HAL'imiz — YouTube podcast kontrolü (RSS)",
+      "file": "agents/youtube-kontrol.md",
+      "cron": "CRON_TZ=Europe/Istanbul 53 7 * * *",
+      "model": "claude-opus-5-5",
+      "permission_mode": "auto",
+      "connectors": [
+        "Claude_Code_Remote",
+        "Claude_Docs",
+        "Gmail",
+        "Google_Drive"
+      ],
+      "bound_device": "kobe",
+      "chat_project_id": "claude_proj_011Cgg7qxXUPDxDvyxWy3icq",
+      "created_kind": "cowork_task"
+    }
+  ]
+}
