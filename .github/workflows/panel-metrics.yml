@@ -1,0 +1,37 @@
+name: Panel ölçümü
+
+# The metrics routine is bound to kobe for Chrome, and kobe-bound routines cannot push. It
+# writes metrics.json to the gitignored .panel-drop/ folder of kobe's checkout; this job runs on
+# a kobe runner and commits it to master, where the panel worker reads it.
+on:
+  schedule:
+    - cron: "40 20 * * *" # 23:40 Istanbul, after the 23:07 metrics routine
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: panel-metrics
+  cancel-in-progress: false
+
+jobs:
+  push:
+    runs-on: [self-hosted, Windows]
+    env:
+      DROP: C:/dev/derinbay-labs/halimiz-podcast/.panel-drop/metrics.json
+    steps:
+      - uses: actions/checkout@v4
+      - name: Copy and commit
+        shell: bash
+        run: |
+          date=$(python tools/panel_drop.py "$DROP" panel/data/metrics.json)
+          if [ -z "$date" ]; then echo "no new metrics"; exit 0; fi
+          git config user.name "Derinbay Labs"
+          git config user.email podcast@derinbay.com
+          git commit -qm "Ölçüm: $date" -- panel/data/metrics.json
+          for i in 1 2 3; do
+            git pull -q --rebase origin master && git push -q origin HEAD:master && exit 0
+            sleep 10
+          done
+          exit 1
