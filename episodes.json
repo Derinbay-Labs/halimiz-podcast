@@ -154,6 +154,17 @@
     "pub_date": "2026-11-18T07:00:00+03:00"
   },
   {
+    "date": "2026-11-19",
+    "title": "19 Kasım: OpenAI GPT-6.2 Astra ve Sol, Anthropic halka arzı 83 $, GAO'nun sohbet botu raporu",
+    "summary": "OpenAI, daha ucuz ve daha güçlü GPT-6.2 Astra ile Sol'u çıkardı; Anthropic halka arzını aralığın üzerinde 83 $'dan fiyatladı ve bugün Nasdaq'ta işlem görmeye başlıyor; ABD'de GAO raporu dört büyük sohbet botunun saldırı planı ürettiğini ortaya koydu.",
+    "audio_url": "https://github.com/Derinbay-Labs/halimiz-podcast/releases/download/2026-11-19/halimiz-2026-11-19.mp3",
+    "audio_bytes": 13626394,
+    "duration_seconds": 1135.5,
+    "guid": "halimiz-2026-11-19",
+    "notes_md": "episodes/2026-11-19/notes.md",
+    "pub_date": "2026-11-19T07:00:00+03:00"
+  },
+  {
     "date": "2026-11-21",
     "title": "21 Kasım: Riemann Hipotezi'ne iki ispat iddiası, Anthropic hissesinde düşüş, Nvidia'ya celp",
     "summary": "Anthropic'te çalışan bir matematikçi Claude ile Riemann Hipotezi'ni Lean'de ispatladığını öne sürdü, aynı gün insan yapımı rakip bir ispat duyuruldu; piyasa tarafında Anthropic hisseleri ikinci günde sert düştü, Nvidia çöküşü ve ABD'deki çip soruşturmaları derinleşti.",
