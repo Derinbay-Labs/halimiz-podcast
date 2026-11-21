@@ -552,7 +552,7 @@ def how_section():
 </section>"""
 
 
-SOCIAL_LABELS = [("youtube", "YouTube"), ("instagram", "Instagram"), ("x", "X"), ("linkedin", "LinkedIn")]
+SOCIAL_LABELS = [("youtube", "YouTube"), ("x", "X"), ("linkedin", "LinkedIn")]
 
 
 def social_links(show):
