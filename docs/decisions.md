@@ -39,10 +39,12 @@ decision issue.
   linkedin.com/company/halimizpodcast. Never use the CEO's personal accounts. The CEO opens new
   accounts; agents fill in the profiles.
 - Instagram: Meta permanently closed @halimizpodcast on 2026-11-20, most likely for browser
-  automation posting Reels from a brand-new account. A new @halimiz.podcast signup on
-  2026-11-21 was suspended at once and is under appeal; Instagram is parked, out of every
-  routine and the site, until the CEO says the account is open.
-- Browser: the metrics routine uses the dedicated kobe Chrome profile `HALimiz` (deviceId
+  automation posting Reels from a brand-new account. The CEO opened the business account
+  @halimiz.podcast on 2026-11-21; it was suspended at signup and reinstated the same day on
+  appeal. Posting goes through Chrome, paced: no Reels for the first three days, at most one
+  a day until 2026-12-04, random start delay and waits between actions. Posts end in
+  "profildeki link".
+- Browser: the metrics and noon distribution routines use the dedicated kobe Chrome profile `HALimiz` (deviceId
   `f17c296d-28c4-4570-a73d-01a63b5da930`), which holds only the podcast accounts. The YouTube
   subscriber count comes from the YouTube Data API (GCP project `halimiz-podcast-derinbay`, secret `YOUTUBE_API_KEY`).
 - Link order in posts:
