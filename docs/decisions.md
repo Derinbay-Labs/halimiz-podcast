@@ -38,11 +38,12 @@ decision issue.
 - Use only podcast-only channels: handle `halimizpodcast`, address podcast@derinbay.com, and
   linkedin.com/company/halimizpodcast. Never use the CEO's personal accounts. The CEO opens new
   accounts; agents fill in the profiles.
+- Instagram: Meta permanently closed @halimizpodcast on 2026-11-20. Instagram is out of every
+  routine and the site; do not open a new account without a CEO decision.
 - Link order in posts:
   - LinkedIn: the episode link first, so it becomes the preview card, then "Spotify'da takip et".
   - X: the episode link last, after Spotify.
   - Shorts: both links.
-  - Instagram: "profildeki link".
 - Email newsletter: Buttondown, list `halimiz`. The publish workflow sends each episode. The repo
   secret is `BUTTONDOWN_API_KEY`.
 - Postiz was rejected because its stack is heavy and it needs a Meta review; the agents post
