@@ -108,6 +108,8 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 <itunes:image href="https://halimiz.derinbay.com/assets/cover.jpg"/>
+<podcast:transcript url="https://halimiz.derinbay.com/bolum/2026-11-21/transkript.srt" type="application/x-subrip" language="tr"/>
+<podcast:chapters url="https://halimiz.derinbay.com/bolum/2026-11-21/chapters.json" type="application/json+chapters"/>
 </item>
 <item>
 <title>17 Kasım: ABD'nin uzaktan çip erişimi kuralı, Nvidia bilançosu, Anthropic'e 7 kat talep</title>
