@@ -110,6 +110,17 @@
     "pub_date": "2026-11-12T06:56:41+03:00"
   },
   {
+    "date": "2026-11-14",
+    "title": "14 Kasım: Huang'ın Nvidia'dan istifası, Anthropic halka arzına ~6 kat talep, Gemini 4 Hydrogen",
+    "summary": "Jensen Huang, skandalın ardından Nvidia CEO'luğundan istifa etti ve yerine geçici olarak CFO Colette Kress geldi; Anthropic'in halka arzı fiyatlamadan önce ~6 kat talep topladı, Google ise hızlı ve ucuz Gemini 4 Hydrogen'ı çıkardı. (13 Kasım bülteni yayımlanmadığından bu sayı son 48 saati kapsıyor.)",
+    "audio_url": "https://github.com/Derinbay-Labs/halimiz-podcast/releases/download/2026-11-14/halimiz-2026-11-14.mp3",
+    "audio_bytes": 14877044,
+    "duration_seconds": 1239.7,
+    "guid": "halimiz-2026-11-14",
+    "notes_md": "episodes/2026-11-14/notes.md",
+    "pub_date": "2026-11-14T07:00:00+03:00"
+  },
+  {
     "date": "2026-11-15",
     "title": "15 Kasım: Nvidia'nın CEO arayışı, Anthropic halka arzında değerleme, ChatGPT Wallet",
     "summary": "Nvidia'nın yönetim kurulu CEO arayışına başlarken büyük yatırımcılar Huang'ın dönüşüne kapı açık bırakılmasını istedi; Anthropic halka arzına yalnızca birkaç gün kala ~1,3–1,4 trilyon $ değerleme ve açıklama soruları gündemde, OpenAI ise ajanlarına alışveriş yaptıran ChatGPT Wallet'ı açtı.",
