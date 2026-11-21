@@ -141,5 +141,16 @@
     "guid": "halimiz-2026-11-17",
     "notes_md": "episodes/2026-11-17/notes.md",
     "pub_date": "2026-11-17T06:55:39+03:00"
+  },
+  {
+    "date": "2026-11-21",
+    "title": "21 Kasım: Riemann Hipotezi'ne iki ispat iddiası, Anthropic hissesinde düşüş, Nvidia'ya celp",
+    "summary": "Anthropic'te çalışan bir matematikçi Claude ile Riemann Hipotezi'ni Lean'de ispatladığını öne sürdü, aynı gün insan yapımı rakip bir ispat duyuruldu; piyasa tarafında Anthropic hisseleri ikinci günde sert düştü, Nvidia çöküşü ve ABD'deki çip soruşturmaları derinleşti.",
+    "audio_url": "https://github.com/Derinbay-Labs/halimiz-podcast/releases/download/2026-11-21/halimiz-2026-11-21.mp3",
+    "audio_bytes": 11058767,
+    "duration_seconds": 921.5,
+    "guid": "halimiz-2026-11-21",
+    "notes_md": "episodes/2026-11-21/notes.md",
+    "pub_date": "2026-11-21T05:43:22+03:00"
   }
 ]
