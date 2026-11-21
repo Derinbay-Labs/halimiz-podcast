@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   archive:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, Linux, light]
     steps:
       - uses: actions/checkout@v4
       - name: Archive
