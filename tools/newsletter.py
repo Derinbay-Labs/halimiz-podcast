@@ -19,6 +19,8 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
+import seo  # tools/seo.py
+
 ROOT = Path(__file__).resolve().parent.parent
 API = "https://api.buttondown.com/v1/emails"
 API_VERSION = "2026-04-01"
@@ -46,7 +48,7 @@ def email_body(show, ep, notes):
             listen.append(f"[{name}]({plat[name]})")
     md = "\n".join(l for l in notes.splitlines()
                    if not l.startswith("## ") and not l.startswith("**Günün öne çıkanı:**")).strip()
-    md = md.replace("\\~", "~")
+    md = seo.unescape_md(md)
     return (f"{ep['summary']}\n\n"
             f"🎧 {' · '.join(listen)}\n\n"
             f"{md}\n\n"

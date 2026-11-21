@@ -8,6 +8,13 @@ import re
 from functools import lru_cache
 from pathlib import Path
 
+_MD_ESCAPE = re.compile(r"\\([~$])")
+
+
+def unescape_md(text):
+    """Drop the backslash the bulletin export puts before ~ and $."""
+    return _MD_ESCAPE.sub(r"\1", text)
+
 TOOLS = Path(__file__).resolve().parent
 
 _TR_ASCII = str.maketrans({"ç": "c", "ğ": "g", "ı": "i", "ö": "o", "ş": "s", "ü": "u", "â": "a", "î": "i", "û": "u",
@@ -104,7 +111,7 @@ LINK_RX = re.compile(r"\[([^\]]+)\]\(((?:https?://|mailto:|/)[^)\s]*)\)")
 
 def plain(md):
     """Markdown → plain text without links (source names are not part of the news)."""
-    t = LINK_RX.sub("", md).replace("\\~", "~")
+    t = unescape_md(LINK_RX.sub("", md))
     t = re.sub(r"\*\*|`", "", t)
     return re.sub(r"\s*·\s*$", "", re.sub(r"\s+", " ", t)).strip(" ·")
 
@@ -145,7 +152,7 @@ def parse_notes(md):
         body = line[2:] if bullet else line
         m = re.match(r"\*\*(.+?)\*\*\s*(.*)", body)
         if m:
-            headline = m.group(1).replace("\\~", "~").strip()
+            headline = unescape_md(m.group(1)).strip()
             clean = re.sub(r"^Güncelleme:\s*", "", headline).rstrip(" .;:")
             rest = m.group(2)
         elif bullet:

@@ -329,7 +329,7 @@ def analytics(show):
 
 
 def _fmt(t_):
-    t_ = html.escape(t_.replace("\\~", "~"), quote=False)
+    t_ = html.escape(seo.unescape_md(t_), quote=False)
     t_ = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", t_)
     return re.sub(r"`([^`]+)`", r"<code>\1</code>", t_)
 
