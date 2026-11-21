@@ -86,12 +86,14 @@ def main():
         if any(r.get("subject") == subject for r in recent.get("results", [])[:20]):
             print(f"newsletter: '{subject}' already exists, skipped")
             return
-        email = {"subject": subject, "body": body, "status": "about_to_send"}
+        status = "imported" if a.archive else "about_to_send"
+        res = request("POST", API, key, {"subject": subject, "body": body, "status": status})
+        print(f"newsletter: {status} '{subject}' ({res.get('id', '?')})")
         if a.archive:
-            # 06:52 Istanbul (UTC+3), the daily publish time
-            email.update(status="imported", publish_date=f"{a.date}T03:52:00Z")
-        res = request("POST", API, key, email)
-        print(f"newsletter: {email['status']} '{subject}' ({res.get('id', '?')})")
+            # Buttondown refuses a past publish_date on create, so backdate the archived email
+            # afterwards to 06:52 Istanbul (UTC+3), the daily publish time.
+            request("PATCH", f"{API}/{res['id']}", key, {"publish_date": f"{a.date}T03:52:00Z"})
+            print(f"newsletter: dated {a.date}")
     except urllib.error.HTTPError as err:
         # never fail the publish because of the newsletter
         print(f"newsletter: Buttondown returned {err.code}: {err.read()[:300]!r}")
