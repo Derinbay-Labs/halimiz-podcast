@@ -24,9 +24,14 @@ jobs:
       - uses: actions/checkout@v4
       - name: Copy and commit
         shell: bash
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: |
           date=$(python tools/panel_drop.py "$DROP" panel/data/metrics.json)
-          if [ -z "$date" ]; then echo "no new metrics"; exit 0; fi
+          # The YouTube subscriber count comes from the Data API, not the routine's browser.
+          python tools/youtube_followers.py panel/data/metrics.json || echo "youtube followers skipped"
+          if git diff --quiet -- panel/data/metrics.json; then echo "no new metrics"; exit 0; fi
+          date=${date:-$(date -u -d '+3 hours' +%F)}
           git config user.name "Derinbay Labs"
           git config user.email podcast@derinbay.com
           git commit -qm "Ölçüm: $date" -- panel/data/metrics.json
