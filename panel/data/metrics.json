@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T23:10:00+03:00",
+ "updated": "2026-11-17T23:10:00+03:00",
  "goal": {
   "daily_downloads": 300,
   "regular_listeners": 500,
@@ -42,53 +42,227 @@
    },
    "site_visits": null,
    "youtube_views": null
+  },
+  {
+   "date": "2026-11-11",
+   "downloads": 97,
+   "by_app": {
+    "GitHub (ham)": 97,
+    "Apple Podcasts (OP3, 4-10 Kas toplam)": 16
+   },
+   "site_visits": null,
+   "youtube_views": null
+  },
+  {
+   "date": "2026-11-12",
+   "downloads": 27,
+   "by_app": {
+    "GitHub (ham)": 27,
+    "Apple Podcasts (OP3, 11 Kas)": 3
+   },
+   "site_visits": 14,
+   "youtube_views": null
+  },
+  {
+   "date": "2026-11-15",
+   "downloads": 24,
+   "by_app": {
+    "GitHub (ham)": 24,
+    "Apple Podcasts (OP3, 4-14 Kas toplam)": 28
+   },
+   "site_visits": 0,
+   "youtube_views": null
+  },
+  {
+   "date": "2026-11-16",
+   "downloads": 30,
+   "by_app": {
+    "GitHub (ham)": 30,
+    "Apple Podcasts (OP3, 4-15 Kas toplam)": 29
+   },
+   "site_visits": null,
+   "youtube_views": null
+  },
+  {
+   "date": "2026-11-17",
+   "downloads": 3,
+   "by_app": {
+    "GitHub (ham)": 281,
+    "Apple Podcasts (OP3, 4-16 Kas toplam)": 32
+   },
+   "site_visits": null,
+   "youtube_views": 13
   }
  ],
- "followers": [],
- "episodes": [],
+ "followers": [
+  {
+   "date": "2026-11-11",
+   "spotify": null,
+   "apple": null,
+   "youtube": 1,
+   "linkedin": 0,
+   "x": null,
+   "instagram": null
+  },
+  {
+   "date": "2026-11-12",
+   "spotify": null,
+   "apple": null,
+   "youtube": 5,
+   "linkedin": 0,
+   "x": null,
+   "instagram": null
+  },
+  {
+   "date": "2026-11-15",
+   "spotify": null,
+   "apple": null,
+   "youtube": 5,
+   "linkedin": 0,
+   "x": null,
+   "instagram": null
+  },
+  {
+   "date": "2026-11-16",
+   "spotify": null,
+   "apple": null,
+   "youtube": 5,
+   "linkedin": 0,
+   "x": null,
+   "instagram": null
+  },
+  {
+   "date": "2026-11-17",
+   "spotify": null,
+   "apple": null,
+   "youtube": 8,
+   "linkedin": 0,
+   "x": null,
+   "instagram": null
+  }
+ ],
+ "episodes": [
+  {
+   "date": "2026-11-05",
+   "title": "5 Kasım: Ara seçimlerde veri merkezleri, Kimi K3.1 Pro, Meta ve OpenAI'ın satın almaları",
+   "downloads_7d": 3,
+   "youtube_views": 79,
+   "shorts_views": 19
+  },
+  {
+   "date": "2026-11-06",
+   "title": "6 Kasım: AI çip hisselerinde çöküş, OpenAI'ın GPT-6 Cyber'ı, METR'in Anthropic ölçümü",
+   "downloads_7d": null,
+   "youtube_views": 27,
+   "shorts_views": 23
+  },
+  {
+   "date": "2026-11-07",
+   "title": "7 Kasım: Anthropic halka arzına baskı, OpenAI'ın yeni turu, DeepMind'ın RSA bulgusu",
+   "downloads_7d": 2,
+   "youtube_views": 7,
+   "shorts_views": 1224
+  },
+  {
+   "date": "2026-11-08",
+   "title": "8 Kasım: Microchip'te çip kıtlığı, H200 lisanslarında boş ofisler, OpenAI–Hacktron",
+   "downloads_7d": 2,
+   "youtube_views": 1,
+   "shorts_views": 2
+  },
+  {
+   "date": "2026-11-09",
+   "title": "9 Kasım: Nvidia'da Huang soruşturması, Anthropic'in jeneratör anlaşması, Claude Code sızıntısı",
+   "downloads_7d": null,
+   "youtube_views": 0,
+   "shorts_views": 95
+  },
+  {
+   "date": "2026-11-10",
+   "title": "10 Kasım: Claude Fable 5.2, Nvidia'da Huang skandalı, Meta'nın Muse Ember'ı",
+   "downloads_7d": 6,
+   "youtube_views": 15,
+   "shorts_views": 130
+  },
+  {
+   "date": "2026-11-11",
+   "title": "11 Kasım: Anthropic'in halka arz fiyat aralığı, Gemini 4 Carbon, Claude Sheets",
+   "downloads_7d": 2,
+   "youtube_views": 37,
+   "shorts_views": 26
+  },
+  {
+   "date": "2026-11-12",
+   "title": "12 Kasım: Anthropic'in AI Ar-Ge eşiği, AB Dijital Adillik Yasası, AlphaGenome 2",
+   "downloads_7d": 3,
+   "youtube_views": 23,
+   "shorts_views": 66
+  },
+  {
+   "date": "2026-11-15",
+   "title": "15 Kasım: Nvidia'nın CEO arayışı, Anthropic halka arzında değerleme, ChatGPT Wallet",
+   "downloads_7d": null,
+   "youtube_views": 11,
+   "shorts_views": null
+  },
+  {
+   "date": "2026-11-16",
+   "title": "16 Kasım: Bessent'ten Nvidia'ya 10 gün süre, Fed'in AI risk uyarısı, Lutnick'e çip baskısı",
+   "downloads_7d": 2,
+   "youtube_views": 11,
+   "shorts_views": null
+  },
+  {
+   "date": "2026-11-17",
+   "title": "17 Kasım: ABD'nin uzaktan çip erişimi kuralı, Nvidia bilançosu, Anthropic'e 7 kat talep",
+   "downloads_7d": null,
+   "youtube_views": 13,
+   "shorts_views": null
+  }
+ ],
  "ads": [],
  "agents": [
   {
    "name": "Yayın ajanı",
    "schedule": "Her gün 06:52",
-   "last_run": "2026-11-07T06:54:50+03:00",
+   "last_run": "2026-11-16T06:54:43+03:00",
    "status": "ok",
-   "note": "7 Kasım bölümü feed.xml'de (06:54)"
+   "note": "17 Kasım bölümü feed.xml'de"
   },
   {
    "name": "Transkript + görseller (Actions)",
    "schedule": "Yayından sonra",
-   "last_run": "2026-11-07T07:37:00+03:00",
+   "last_run": "2026-11-17T07:37:00+03:00",
    "status": "ok",
-   "note": "7 Kasım transkript, klip ve audiogram.mp4 üretildi"
+   "note": "17 Kasım transkript ve klip depoda"
   },
   {
    "name": "İçerik ajanı",
    "schedule": "Her gün 07:36",
-   "last_run": "2026-11-07T07:36:00+03:00",
-   "status": "ok",
-   "note": "Onay kuyruğunda 7 Kasım X akşam gönderisi işlendi"
+   "last_run": "2026-11-12T07:36:00+03:00",
+   "status": "warn",
+   "note": "16 Kasım içerik özeti depoda; onay kuyruğu dokümanı bu çalıştırmada kontrol edilemedi"
   },
   {
    "name": "Dağıtım sabah (LinkedIn + X)",
    "schedule": "Her gün 08:41",
-   "last_run": "2026-11-07T08:41:00+03:00",
-   "status": "ok",
-   "note": "LinkedIn ve X (thread) linkleri arşivde"
+   "last_run": "2026-11-12T08:41:00+03:00",
+   "status": "warn",
+   "note": "Bugünün linkleri arşivde doğrulanamadı"
   },
   {
    "name": "Dağıtım öğlen (Shorts + Reels)",
    "schedule": "Her gün 12:37",
-   "last_run": "2026-11-07T12:37:00+03:00",
-   "status": "ok",
-   "note": "Instagram Reels ve YouTube Shorts linkleri arşivde"
+   "last_run": "2026-11-12T12:37:00+03:00",
+   "status": "warn",
+   "note": "Bugünün linkleri arşivde doğrulanamadı"
   },
   {
    "name": "Ölçüm ajanı",
    "schedule": "Her gün 23:07",
-   "last_run": "2026-11-07T23:10:00+03:00",
+   "last_run": "2026-11-17T23:10:00+03:00",
    "status": "warn",
-   "note": "GitHub indirmeleri alındı; OP3 (ağ engeli) ve tarayıcı kaynakları (takipçi, site, YouTube) bu ortamdan erişilemedi"
+   "note": "GitHub, OP3, YouTube, LinkedIn alındı; Spotify/Apple/Cloudflare/X/Instagram alınamadı; GitHub push bu ortamdan engelli"
   },
   {
    "name": "Haftalık rapor + reklam önerisi",
