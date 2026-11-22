@@ -57,6 +57,8 @@ decision issue.
   - Shorts: both links.
 - Email newsletter: Buttondown, list `halimiz`. The publish workflow sends each episode. The repo
   secret is `BUTTONDOWN_API_KEY`.
+  - Sender name: "HAL'imiz Ne Olacak? Günlük AI Bülteni", set as Author name on Buttondown's
+    Email settings tab (the e-mail "From" name; the API calls do not set it).
 - Postiz was rejected because its stack is heavy and it needs a Meta review; the agents post
   through Chrome.
 - Site content: a glossary under `/sozluk/`, weekly and monthly archive pages, and per-topic
