@@ -207,5 +207,16 @@
     "guid": "halimiz-2026-11-21",
     "notes_md": "episodes/2026-11-21/notes.md",
     "pub_date": "2026-11-21T05:43:22+03:00"
+  },
+  {
+    "date": "2026-11-22",
+    "title": "22 Kasım: Riemann ispatına Lean onayı, ChatGPT kesintisi, Nvidia soruşturması",
+    "summary": "Lean topluluğu, Claude destekli Riemann Hipotezi ispatının biçimsel olarak doğru olduğunu onayladı; aynı gün ChatGPT isteklerinin dörtte üçü saatlerce başarısız oldu ve Nvidia'ya yönelik Kaliforniya soruşturması olası suç ihlallerini de kapsayacak şekilde genişledi.",
+    "audio_url": "https://github.com/Derinbay-Labs/halimiz-podcast/releases/download/2026-11-22/halimiz-2026-11-22.mp3",
+    "audio_bytes": 9818055,
+    "duration_seconds": 818.1,
+    "guid": "halimiz-2026-11-22",
+    "notes_md": "episodes/2026-11-22/notes.md",
+    "pub_date": "2026-11-22T06:54:29+03:00"
   }
 ]
