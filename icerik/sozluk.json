@@ -208,6 +208,46 @@
       "metin": "Ön eğitim (pre-training), bir dil modelinin eğitiminin ilk aşamasıdır. Model, internetten, kitaplardan, koddan ve başka kaynaklardan derlenen çok büyük veri kümeleri üzerinde, kendisine verilen metnin devamındaki token'ı tahmin etmeyi öğrenir. Bu basit görev, milyarlarca parametre ve trilyonlarca token ölçeğinde tekrarlandığında model dil, olgular ve akıl yürütme kalıpları hakkında geniş bir temel kazanır. Hesaplama maliyetinin büyük kısmı bu aşamada harcanır; binlerce hızlandırıcı haftalar ya da aylar boyunca çalışabilir.\n\nÖn eğitimden çıkan temel model (base model) henüz bir asistan gibi davranmaz. Ardından gelen eğitim sonrası (post-training) aşamalarda, örneğin talimat verisiyle ince ayar ve pekiştirmeli öğrenmeyle, modele soruları yanıtlaması, talimatlara uyması, araç kullanması ve güvenli davranması öğretilir. Haberlerde \"ön eğitim bitti, RL aşamasına geçildi\" denmesi, modelin bu ikinci evreye girdiği anlamına gelir.",
       "eslesme": "ön ?eğiti|ön-eğiti|pre-?train",
       "ilgili": ["pekistirmeli-ogrenme", "parametre", "token", "yapay-zeka-hizlandiricisi"]
+    },
+    {
+      "slug": "model-damitma",
+      "terim": "Model damıtma (distillation)",
+      "kisa": "Büyük bir \"öğretmen\" modelin çıktılarını kullanarak daha küçük ya da daha ucuz bir \"öğrenci\" modeli eğitme yöntemi.",
+      "metin": "Model damıtma (knowledge distillation), güçlü bir öğretmen modelin bilgisini başka bir modele aktarma tekniğidir. Öğrenci model, ham verinin yanında ya da yerine öğretmenin ürettiği yanıtlar, olasılık dağılımları veya adım adım muhakeme örnekleri üzerinde eğitilir. Böylece çok daha az parametreye sahip bir model, öğretmenin yeteneklerinin önemli bir kısmını daha düşük maliyetle ve daha hızlı çıkarımla sunabilir; laboratuvarlar küçük ve ucuz model sürümlerini çoğu zaman bu yolla üretir.\n\nAynı yöntem bir rekabet ve güvenlik sorunu da yaratır: bir şirket, rakibinin API'sinden topladığı çıktılarla kendi modelini eğitirse rakibin yıllarca yaptığı yatırımdan ucuza yararlanmış olur. Bu yüzden büyük model sağlayıcıları kullanım koşullarında çıktılarının rakip model eğitiminde kullanılmasını yasaklar, modelin iç muhakeme izlerini gizler ve şüpheli toplu sorgu örüntülerini izler.",
+      "eslesme": "damıt|distill",
+      "ilgili": ["on-egitim", "parametre", "cikarim", "openai", "deepseek"]
+    },
+    {
+      "slug": "ayristirilmis-cikarim",
+      "terim": "Ayrıştırılmış çıkarım (disaggregated inference)",
+      "kisa": "Bir dil modeli isteğinin girdiyi işleme (prefill) ve token üretme (decode) aşamalarını ayrı donanımlarda çalıştırma yaklaşımı.",
+      "metin": "Bir dil modeli bir isteğe yanıt verirken iki farklı iş yapar. Önce prefill aşamasında girdideki tüm token'ları tek seferde işleyip ara belleği (KV önbelleği) oluşturur; bu aşama yoğun hesaplama gerektirir. Ardından decode aşamasında yanıtı token token üretir; burada her adım küçük bir hesaplamadır ama sürekli bellekten veri okumayı gerektirdiği için hız büyük ölçüde bellek bant genişliğine bağlıdır.\n\nAyrıştırılmış çıkarımda bu iki aşama aynı çipte sırayla yürütülmek yerine farklı sunucu ya da çip gruplarına dağıtılır ve ara bellek aralarında aktarılır. Böylece her aşama kendisine en uygun donanımda çalışır, kaynaklar ayrı ayrı ölçeklenir ve uzun girdili istekler token üretimini yavaşlatmaz. Karşılığında sistemler arası hızlı bağlantı ve daha karmaşık bir zamanlama gerekir.",
+      "eslesme": "ayrıştırılmış çıkarım|disaggregated|pre-?fill",
+      "ilgili": ["cikarim", "token", "yuksek-bant-genislikli-bellek", "yapay-zeka-hizlandiricisi", "amd"]
+    },
+    {
+      "slug": "dunya-modeli",
+      "terim": "Dünya modeli (world model)",
+      "kisa": "Bir ortamın nasıl işlediğini öğrenip eylemlere göre bir sonraki durumu öngören ya da etkileşimli olarak üreten yapay zekâ modeli.",
+      "metin": "Dünya modeli, bir ortamın iç kurallarını, yani nesnelerin nasıl hareket ettiğini, bir eylemin neye yol açtığını ve sahnenin zamanla nasıl değiştiğini öğrenen modeldir. Kavram önce pekiştirmeli öğrenme ve robotikte, bir ajanın eylemlerini gerçek dünyada denemeden önce kendi iç simülasyonunda planlayabilmesi için kullanıldı. Son yıllarda büyük video verisiyle eğitilen ve kullanıcının girdilerine göre gerçek zamanlı, etkileşimli sahneler üreten modeller de bu adla anılıyor.\n\nDünya modelleri oyun ve sanal ortam üretiminden robotların ve otonom araçların simülasyonda eğitilmesine kadar geniş bir alanda kullanılabilir. Temel zorluk tutarlılıktır: görüntü üretmek, fizik kurallarını doğru öğrenmekle aynı şey değildir ve modeller uzun süreli etkileşimlerde nesne kalıcılığı ya da fiziksel sınırlar gibi konularda hâlâ hata yapabilir.",
+      "eslesme": "dünya model|world model",
+      "ilgili": ["pekistirmeli-ogrenme", "yapay-zeka-ajani", "google"]
+    },
+    {
+      "slug": "kirmizi-takim",
+      "terim": "Kırmızı takım (red teaming)",
+      "kisa": "Bir yapay zekâ sisteminin zayıf noktalarını bulmak için saldırgan gibi davranarak onu kasıtlı olarak zorlayan test yöntemi.",
+      "metin": "Kırmızı takım çalışması, kökeni askerî tatbikatlara ve siber güvenliğe dayanan bir test yaklaşımıdır: bir ekip, sistemi koruyanların değil saldırganın bakış açısını üstlenir. Yapay zekâda bu, modelden zararlı içerik almaya, güvenlik kurallarını atlatmaya (jailbreak), gizli bilgileri sızdırmaya ya da ajanları yetkileri dışına çıkarmaya yönelik girişimleri sistemli biçimde denemek anlamına gelir. Çalışmayı şirketin kendi ekipleri, bağımsız değerlendirme kuruluşları ya da otomatik saldırı üreten başka modeller yürütebilir.\n\nBulgular, model yayımlanmadan önce ek eğitim, filtreler ve erişim kısıtlamalarıyla açıkların kapatılmasında kullanılır ve çoğu zaman sistem kartlarında özetlenir. Kırmızı takım testi bir sistemin güvenli olduğunu kanıtlamaz; yalnızca denenen saldırılara karşı ne kadar dayanıklı olduğunu gösterir, bu yüzden yayından sonra da sürdürülmesi gerekir.",
+      "eslesme": "kırmızı takım|red[ -]?team",
+      "ilgili": ["sistem-karti", "sorumlu-olcekleme-politikasi", "yapay-zeka-ajani"]
+    },
+    {
+      "slug": "sistem-karti",
+      "terim": "Sistem kartı (system card)",
+      "kisa": "Bir yapay zekâ modeliyle birlikte yayımlanan; yeteneklerini, test sonuçlarını, risklerini ve alınan güvenlik önlemlerini anlatan belge.",
+      "metin": "Sistem kartı ya da model kartı, bir modelin ne için tasarlandığını, nasıl değerlendirildiğini ve hangi sınırlamaları olduğunu açıklayan teknik belgedir. Model kartı fikri, modellerin kullanım amacını ve performansını standart biçimde belgeleme önerisi olarak ortaya çıktı; büyük laboratuvarlar bugün yeni modelleri genellikle benchmark sonuçlarını, kırmızı takım bulgularını, tehlikeli yetenek değerlendirmelerini ve uygulanan önlemleri içeren bir sistem kartıyla yayımlıyor.\n\nSistem kartları, şirketlerin kendi risk çerçevelerinde bir modelin hangi eşiğe ulaştığını da kamuya duyurduğu başlıca yerdir; bu yüzden araştırmacılar, gazeteciler ve düzenleyiciler tarafından yakından okunur. Belgeyi çoğu zaman modeli geliştiren şirket hazırladığı için içerdiği değerlendirmeler bağımsız denetimin yerini tutmaz.",
+      "eslesme": "sistem kart|system card|model kart|model card",
+      "ilgili": ["kirmizi-takim", "benchmark", "sorumlu-olcekleme-politikasi"]
     }
   ]
 }
