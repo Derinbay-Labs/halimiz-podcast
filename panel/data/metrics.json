@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T02:15:00+03:00",
+  "updated": "2026-11-22T23:10:00+03:00",
   "goal": {
     "daily_downloads": 300,
     "regular_listeners": 500,
@@ -105,12 +105,12 @@
     },
     {
       "date": "2026-11-22",
-      "downloads": 8,
+      "downloads": 34,
       "by_app": {
-        "GitHub (ham)": 390,
-        "Apple Podcasts (OP3, 4-20 Kas toplam)": 37
+        "GitHub (ham)": 416,
+        "Apple Podcasts (OP3, 4-21 Kas toplam)": 41
       },
-      "site_visits": 13,
+      "site_visits": 7,
       "youtube_views": 4
     }
   ],
@@ -173,10 +173,19 @@
       "date": "2026-11-22",
       "spotify": 6,
       "apple": null,
-      "youtube": 8,
+      "youtube": null,
       "linkedin": 0,
       "x": 0,
       "instagram": 0
+    },
+    {
+      "date": "2026-11-23",
+      "spotify": null,
+      "apple": null,
+      "youtube": 9,
+      "linkedin": null,
+      "x": null,
+      "instagram": null
     }
   ],
   "episodes": [
@@ -281,9 +290,16 @@
     {
       "date": "2026-11-21",
       "title": "21 Kasım: Riemann Hipotezi'ne iki ispat iddiası, Anthropic hissesinde düşüş, Nvidia'ya celp",
-      "downloads_7d": null,
-      "youtube_views": 4,
+      "downloads_7d": 2,
+      "youtube_views": 5,
       "shorts_views": 11
+    },
+    {
+      "date": "2026-11-22",
+      "title": "22 Kasım: Riemann ispatına Lean onayı, ChatGPT kesintisi, Nvidia soruşturması",
+      "downloads_7d": null,
+      "youtube_views": 0,
+      "shorts_views": 20
     }
   ],
   "ads": [],
@@ -291,44 +307,44 @@
     {
       "name": "Yayın ajanı",
       "schedule": "Her gün 06:52",
-      "last_run": "2026-11-21T05:43:22+03:00",
+      "last_run": "2026-11-22T06:54:29+03:00",
       "status": "ok",
-      "note": "21 Kasım bölümü feed.xml'de (05:43); 22 Kasım yayını henüz beklenmiyor"
+      "note": "22 Kasım bölümü feed.xml'de (06:54)."
     },
     {
       "name": "Transkript + görseller (Actions)",
       "schedule": "Yayından sonra",
-      "last_run": "2026-11-21T06:00:00+03:00",
-      "status": "warn",
-      "note": "21 Kasım transkript depoda; 21 Kasım release'i (audiogram.mp4) henüz yok, son release 20 Kasım"
+      "last_run": "2026-11-22T06:55:00+03:00",
+      "status": "ok",
+      "note": "22 Kasım transkripti depoda; release'te audiogram.mp4 ve quote.png var (03:55 UTC)."
     },
     {
       "name": "İçerik ajanı",
       "schedule": "Her gün 07:36",
-      "last_run": "2026-11-21T07:36:00+03:00",
+      "last_run": "2026-11-22T07:36:00+03:00",
       "status": "ok",
-      "note": "Onay kuyruğunda 21 Kasım Instagram maddesi var; 22 Kasım maddeleri sabah bekleniyor"
+      "note": "Onay kuyruğunda 22 Kasım Instagram maddesi var, işaretli."
     },
     {
       "name": "Dağıtım sabah (LinkedIn + X)",
       "schedule": "Her gün 08:41",
-      "last_run": "2026-11-21T08:41:00+03:00",
+      "last_run": "2026-11-22T08:41:00+03:00",
       "status": "ok",
-      "note": "21 Kasım LinkedIn ve X thread linkleri arşivde; X akşam 18:00 zamanlandı, linki eklenmemiş"
+      "note": "22 Kasım LinkedIn ve X thread linkleri arşivde; X akşam 18:00 için link eklenmemiş."
     },
     {
       "name": "Dağıtım öğlen (Shorts + Reels)",
       "schedule": "Her gün 12:37",
-      "last_run": "2026-11-21T12:37:00+03:00",
+      "last_run": "2026-11-22T12:37:00+03:00",
       "status": "warn",
-      "note": "21 Kasım YouTube Shorts linki arşivde, Instagram Reels linki yok; Instagram profilinde 0 gönderi görünüyor"
+      "note": "22 Kasım YouTube Shorts linki arşivde; Instagram Reels tempo kuralı gereği atlandı (profilde 0 gönderi)."
     },
     {
       "name": "Ölçüm ajanı",
       "schedule": "Her gün 23:07",
-      "last_run": "2026-11-22T02:15:00+03:00",
+      "last_run": "2026-11-22T23:10:00+03:00",
       "status": "ok",
-      "note": "GitHub, OP3, Spotify, Apple (veri eşik altında, boş), LinkedIn, X, Instagram, Cloudflare (son 24 saat: 13 ziyaret) ve YouTube alındı; YouTube abone alanı iş akışında; push 23:40 runner'da"
+      "note": "GitHub, OP3 (veri 21 Kasım'a kadar), Spotify, LinkedIn, X, Instagram, Cloudflare ve YouTube Studio alındı; Apple eşik altında, YouTube abone alanı iş akışında; push 23:40 runner'da."
     },
     {
       "name": "Haftalık rapor + reklam önerisi",
