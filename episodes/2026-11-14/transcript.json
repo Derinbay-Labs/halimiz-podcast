@@ -1,0 +1,1597 @@
+{
+ "date": "2026-11-14",
+ "language": "tr",
+ "duration": 1239.69,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 4.2,
+   "text": "Halimiz ne olacağı hoş geldiniz. Bu benim yapay zeka yardımıyla hazırlanmıştır."
+  },
+  {
+   "start": 4.8,
+   "end": 5.92,
+   "text": "Evet, herkese merhabalar."
+  },
+  {
+   "start": 6.14,
+   "end": 16.14,
+   "text": "Düşün ki 3 trilyon dolarlık, yani dünyanın en değerli şirketinin kurucusu ve asıl beyni tek bir mantıklı acıklama dahi yapılmadan bir gecede kapı önüne konuluyor."
+  },
+  {
+   "start": 16.46,
+   "end": 18.96,
+   "text": "Şirket tamamen sessizliğe bürünüyor tabii bu arada."
+  },
+  {
+   "start": 19.44,
+   "end": 28.18,
+   "text": "Aynen öyle. Hisseler anında çakılıyor ve arka planda inanılmaz bir uluslararası casusluk, işte istihbarat fısıltıları falan dolaşıyor."
+  },
+  {
+   "start": 28.18,
+   "end": 31.46,
+   "text": "Bugün senin önüne koyduğumuz kaynak yığını öylesine ağır ki."
+  },
+  {
+   "start": 31.82,
+   "end": 33.56,
+   "text": "Gerçekten çok ağır bir gündem var."
+  },
+  {
+   "start": 33.72,
+   "end": 43.22,
+   "text": "Yani donanım devlerindeki o akıl almaz krizlerden tut, devletlerin yapay zekayı tek el altına alma çabalarına, sistem çökmelerinden etik rezaletlere kadar her şey var bugün."
+  },
+  {
+   "start": 43.86,
+   "end": 48.42,
+   "text": "Teknoloji dünyasının eksenini kaydıran o son 48 saatin tam kalbine iniyoruz."
+  },
+  {
+   "start": 48.94,
+   "end": 53.68,
+   "text": "Ve emin ol bugünkü asıl amacımız seni bu kaosun içinde salt veriyle boğmak falan değil."
+  },
+  {
+   "start": 54.18,
+   "end": 59.4,
+   "text": "Yüzeydeki o devasa dalgalanmalara, hani basın bültenlerinin o cilalı laflarına takılmayacağız bugün."
+  },
+  {
+   "start": 59.72,
+   "end": 62.62,
+   "text": "Derine inip o kritik neden sorusuna cevap bulacağız değil mi?"
+  },
+  {
+   "start": 62.78,
+   "end": 63.32,
+   "text": "Kesinlikle."
+  },
+  {
+   "start": 63.56,
+   "end": 70.46,
+   "text": "Çünkü birbirinden tamamen bağımsız görünen bu krizler ve atılımlar aslında aynı büyük tektonik kırılmanın parçaları."
+  },
+  {
+   "start": 70.86,
+   "end": 73.68,
+   "text": "Bunu büyük resmine bağlarsak çok daha net anlaşılacak."
+  },
+  {
+   "start": 73.68,
+   "end": 82.06,
+   "text": "O zaman tam da o kırılmanın merkez üstünden dünyanın en değerli şirketinin motorunu otobanda tam hız giderken sökmelerinden başlayalım."
+  },
+  {
+   "start": 82.32,
+   "end": 82.68,
+   "text": "Yani Nvidia'dan."
+  },
+  {
+   "start": 83.48,
+   "end": 84.92,
+   "text": "Evet, Jensen Huang depreminden."
+  },
+  {
+   "start": 85.42,
+   "end": 90.46,
+   "text": "Abi derhal geçerli olmak üzere CEO'luk, başkanlık ve yönetim kurulu üyeliğinden istifa etti adam."
+  },
+  {
+   "start": 90.92,
+   "end": 94.98,
+   "text": "Yerine de 10 yılı aşkın süredir CEO'yu olan Colette Cress'i geçici olarak atadılar."
+  },
+  {
+   "start": 95.18,
+   "end": 96.32,
+   "text": "Ki bu çok radikal bir hamle."
+  },
+  {
+   "start": 96.32,
+   "end": 97.4,
+   "text": "Neden peki?"
+  },
+  {
+   "start": 97.84,
+   "end": 108.8,
+   "text": "Yani söylentilere göre Kimberly Powell adında bir yöneticiyle ve daha da inanılmazı Çin istihbaratıyla bağlantılı olduğu iddia edilen eski Megaspeed yöneticisi Alice Huang ile kişisel ilişkileri var."
+  },
+  {
+   "start": 108.86,
+   "end": 110.74,
+   "text": "İşte burası gerçekten büyüleyici olan kısım."
+  },
+  {
+   "start": 110.74,
+   "end": 115.2,
+   "text": "Hisse anında %14 eridi bu arada. Şirket çıkıp resmi bir gerekçe bile açıklayamadı."
+  },
+  {
+   "start": 115.76,
+   "end": 124.24,
+   "text": "Sence yönetimin bir anda Colette Crease'i başa getirmesi ve ilk kez Harvey Jones'u yönetim kurulu başkanı ataması tamamen bir panik yapmayın tiyatrosu mu?"
+  },
+  {
+   "start": 124.38,
+   "end": 126.5,
+   "text": "Yani kesinlikle bir kriz yönetimi tiyatrosu."
+  },
+  {
+   "start": 126.78,
+   "end": 130.4,
+   "text": "Ama asıl ürkütücü olan şey o sağır edici sessizlik bence."
+  },
+  {
+   "start": 131.02,
+   "end": 138.92,
+   "text": "Nvidia gibi küresel ekonominin donanım omurgasını oluşturan bir yapı kendi vizyonerini bir gecede tasfiye edip tek kelime açıklama yapamıyorsa."
+  },
+  {
+   "start": 138.92,
+   "end": 141.12,
+   "text": "Arka plandaki kriz çok daha büyüktür."
+  },
+  {
+   "start": 141.26,
+   "end": 143.84,
+   "text": "Aynen. Bir magazin skandalının çok ötesindedir."
+  },
+  {
+   "start": 144.38,
+   "end": 147.74,
+   "text": "Alice Huang ve Çin casusluğu iddiaları bize şunu gösteriyor."
+  },
+  {
+   "start": 148.52,
+   "end": 156.4,
+   "text": "Çin, ABD'nin uyguladığı çip ambargolarını delmek için sadece parayı değil, istihbarat ağlarını ve kişisel zaafları da kullanıyor."
+  },
+  {
+   "start": 156.78,
+   "end": 158.42,
+   "text": "Yani resmen bir casusluk filmi gibi."
+  },
+  {
+   "start": 158.88,
+   "end": 165.66,
+   "text": "Öyle. Bir CEO'nun bu ağlarla ilişkilendirilmesi, Amerikan devleti için tedarik zinciri güvenliğinin doğrudan ihlali demek."
+  },
+  {
+   "start": 165.66,
+   "end": 168.08,
+   "text": "Yani kesin bir kırmızı çizginin aşılması."
+  },
+  {
+   "start": 168.66,
+   "end": 172.8,
+   "text": "Kredisin getirilmesi de Pentagon'a ve yatırımcıya direksiyon artık güvenilir ellerde."
+  },
+  {
+   "start": 172.94,
+   "end": 174.7,
+   "text": "Mesajı vermekten başka bir şey değil aslında."
+  },
+  {
+   "start": 174.7,
+   "end": 181.1,
+   "text": "Yani seninle Nvidia'nın bu işin donanımını, o küreklerini üreten adamların krizini konuşuyoruz ama"
+  },
+  {
+   "start": 181.1,
+   "end": 185.42,
+   "text": "diğer yanda o kürekleri alıp kullanan yazılım devleri borsada adeta şov yapıyor."
+  },
+  {
+   "start": 185.82,
+   "end": 187.54,
+   "text": "Antropi'nin halka arzından bahsediyorsun."
+  },
+  {
+   "start": 187.86,
+   "end": 190.06,
+   "text": "Evet, Antropik Nasdaq'ta halka arz ediliyor."
+  },
+  {
+   "start": 190.54,
+   "end": 194.4,
+   "text": "Talepler altı katını aşmış, değerleme 1.4 trilyon dolar bandında."
+  },
+  {
+   "start": 194.9,
+   "end": 195.9,
+   "text": "Korkunç bir rakam bu."
+  },
+  {
+   "start": 195.9,
+   "end": 209.38,
+   "text": "Fakat bekle. Belgelerde çok ilginç iki detay var. Birincisi Morgan Stanley öncülüğündeki bankalar AYTAR yani ABD silah ihracat kontrolü kurallarını gerekçe göstererek Çin ve Hong Kong yatırımcılarını tamamen reddediyor."
+  },
+  {
+   "start": 209.7,
+   "end": 211.04,
+   "text": "Çok kritik bir hamle."
+  },
+  {
+   "start": 211.34,
+   "end": 219.5,
+   "text": "İkincisi de hisselerin %20'si bireysel yatırımcıya ayrılmış. Sence de bu %20'lik dilimi sana bana yani halka açmaları biraz gel gel yapmak değil mi?"
+  },
+  {
+   "start": 219.8,
+   "end": 220.4,
+   "text": "Nasıl yani?"
+  },
+  {
+   "start": 220.4,
+   "end": 227.0,
+   "text": "Hani kurumsallar bir buçuk trilyon doları çok riskli buldu diye o olası balon faturasını bizim üzerimize yıkma hazırlığı olabilir mi bu?"
+  },
+  {
+   "start": 227.3,
+   "end": 233.22,
+   "text": "Yani o yüzde yirmilik bireysel yatırımcı hamlesi kesinlikle klasik bir Wall Street risk transferi diyebiliriz."
+  },
+  {
+   "start": 233.6,
+   "end": 238.4,
+   "text": "Değerlemeler o kadar şişti ki akıllı para dediğimiz büyük fonlar bu seviyelerden girmeye korkuyor."
+  },
+  {
+   "start": 239.12,
+   "end": 240.9,
+   "text": "Patlarsa da küçük yatırımcıya patlasın."
+  },
+  {
+   "start": 241.02,
+   "end": 244.64,
+   "text": "Aynen öyle hasarı tabandaki emeklilik fonlarına yıkma hazırlığı."
+  },
+  {
+   "start": 245.16,
+   "end": 249.18,
+   "text": "Ancak asıl üzerinde durmamız gereken dehşet verici detay o Aytar meselesi."
+  },
+  {
+   "start": 249.18,
+   "end": 250.82,
+   "text": "Silah ihracatı kuralı değil mi o?"
+  },
+  {
+   "start": 251.08,
+   "end": 251.34,
+   "text": "Evet."
+  },
+  {
+   "start": 251.68,
+   "end": 254.66,
+   "text": "Aytar normalde füzeleri, askeri donanımları falan kapsar."
+  },
+  {
+   "start": 255.0,
+   "end": 263.54,
+   "text": "Antropik'in yapay zeka modellerinin bu kapsama alınması Amerikan devletinin algoritmaları artık resmen bir silah olarak gördüğünün hukuki ilanıdır."
+  },
+  {
+   "start": 263.6,
+   "end": 264.22,
+   "text": "İnanılmaz."
+  },
+  {
+   "start": 264.42,
+   "end": 268.5,
+   "text": "Teknolojiyi resmen jeopolitik bir silaha dönüştürdüklerini açıkça itiraf ediyorlar bence."
+  },
+  {
+   "start": 268.9,
+   "end": 276.58,
+   "text": "Ya Antropik bu prestij ve trilyonluk değerlemeler peşinde koşarken Google oyununun kurallarını bambaşka bir yerden fiyattan bozmaya çalışıyor."
+  },
+  {
+   "start": 276.9,
+   "end": 278.16,
+   "text": "Gemini modelleriyle değil mi?"
+  },
+  {
+   "start": 278.16,
+   "end": 282.82,
+   "text": "Evet. Jiminy 4 hydrogen'ı çıkardılar ve rakamlar gerçekten akıl alır gibi değil."
+  },
+  {
+   "start": 282.94,
+   "end": 283.72,
+   "text": "Ne kadar fiyatı?"
+  },
+  {
+   "start": 284.04,
+   "end": 286.94,
+   "text": "Milyon token başına girdi maliyeti sadece 1,5 dolar."
+  },
+  {
+   "start": 287.22,
+   "end": 288.42,
+   "text": "Çıktıysa 7,5 dolar."
+  },
+  {
+   "start": 288.74,
+   "end": 289.86,
+   "text": "Ben bunu görünce şok oldum."
+  },
+  {
+   "start": 290.4,
+   "end": 295.36,
+   "text": "Terminal Bench testinde %57 başarı sağlamış ki eski modelleri %18'lerdeydi."
+  },
+  {
+   "start": 295.5,
+   "end": 296.54,
+   "text": "Muazzam bir sıçrama."
+  },
+  {
+   "start": 296.84,
+   "end": 298.52,
+   "text": "Hız olarak da 2,5 kat daha iyi."
+  },
+  {
+   "start": 299.18,
+   "end": 305.1,
+   "text": "Yapay zekanın bu kadar ucuzlaması ve hızlanması sence de teknolojinin bir nevi fast foodlaşması anlamına gelmiyor mu?"
+  },
+  {
+   "start": 305.2,
+   "end": 306.48,
+   "text": "Alıp anında tüketiyorsun."
+  },
+  {
+   "start": 306.48,
+   "end": 310.72,
+   "text": "Fast food çok güzel bir analoji ama etkisini biraz hafife alıyor bence."
+  },
+  {
+   "start": 311.06,
+   "end": 311.28,
+   "text": "Neden?"
+  },
+  {
+   "start": 311.74,
+   "end": 314.14,
+   "text": "Ben buna zekanın elektrikleşmesi diyorum."
+  },
+  {
+   "start": 314.3,
+   "end": 321.62,
+   "text": "Çünkü kurumsal dünyada o agentic workflows yani otonom ajan iş akışları dediğimiz büyük bir devrim yaşanıyor şu an."
+  },
+  {
+   "start": 322.0,
+   "end": 324.04,
+   "text": "Tamam bunu bir açalım ajan iş akışı derken."
+  },
+  {
+   "start": 324.34,
+   "end": 334.5,
+   "text": "Yani bir yapay zeka ajanının senin e-postalarını okuyup internette araştırma yapıp takvimini düzenlemesi için saniyede binlerce kez kendi kendine soru sorup cevap alması gerekir."
+  },
+  {
+   "start": 334.5,
+   "end": 336.34,
+   "text": "Arka planda sürekli çalışacak yani."
+  },
+  {
+   "start": 336.48,
+   "end": 346.0,
+   "text": "Evet, o yüzden devasa, ağır ve pahalı modellere değil, tıpkı hydrogen gibi aşırı ucuz, inanılmaz hızlı ve arka planda su gibi akan modellere ihtiyacın var."
+  },
+  {
+   "start": 346.34,
+   "end": 352.76,
+   "text": "Google'ın asıl yaptığı şey, yapay zekayı senin sohbet ettiğin bir bottan çıkarıp görünmez bir altyapı motoruna dönüştürmek."
+  },
+  {
+   "start": 353.02,
+   "end": 359.02,
+   "text": "Ama işte o görünmez altyapı motorunun durmaksızın hızlanıp büyümesi toplumun belli kesimlerinin resmen kabusu olmuş durumda."
+  },
+  {
+   "start": 359.06,
+   "end": 360.44,
+   "text": "Davalar açılmaya başlandı bile."
+  },
+  {
+   "start": 360.44,
+   "end": 370.76,
+   "text": "Aynen. Public Citizen, Heat Initiative falan gibi gruplar San Francisco'da Antropic, Google, Meta, OpenAI ve SpaceAI'ya devasa bir dava açtı. İstedikleri şey çok net."
+  },
+  {
+   "start": 371.06,
+   "end": 372.48,
+   "text": "Modelleri durdurmak istiyorlar."
+  },
+  {
+   "start": 372.56,
+   "end": 378.96,
+   "text": "Evet. Felaket riski taşıdıkları gerekçesiyle mevcut modellerden daha yeteneklilerinin geliştirilmesinin engellenmesini istiyorlar mahkemeden."
+  },
+  {
+   "start": 379.42,
+   "end": 385.96,
+   "text": "Sence hukuken bir teknolojinin gelişimini ortada hiçbir zararı yokken sırf potansiyel risk yüzünden durdurmak ne kadar mantıklı?"
+  },
+  {
+   "start": 385.96,
+   "end": 393.6,
+   "text": "Hukuki açıdan muazzam bir paradoks bu aslında. Normalde hukuk birinin canı yandıktan yani o zarar gerçekleştikten sonra devreye girer."
+  },
+  {
+   "start": 393.9,
+   "end": 395.84,
+   "text": "E tabi suçu işlemeden ceza verilmez ki."
+  },
+  {
+   "start": 396.34,
+   "end": 404.46,
+   "text": "Ama davacıların argümanı şu diyorlar ki bu teknoloji nükleer bir reaksiyon gibi. Zarar verdikten sonra dava açacak bir medeniyet kalmayabilir ortada."
+  },
+  {
+   "start": 404.78,
+   "end": 405.92,
+   "text": "Çok iddialı bir argüman."
+  },
+  {
+   "start": 406.32,
+   "end": 415.14,
+   "text": "Potansiyel risk üzerinden inovasyonu durdurmak kulağa biraz totaliter gelse de insan klonlama veya biyolojik silahlar konusunda da benzer önleyici yasaklarımız var tarihte."
+  },
+  {
+   "start": 415.14,
+   "end": 425.56,
+   "text": "Bu dava yapay zekanın hukuki statüsünün salt bir yazılım olmaktan çıkıp varoluşsal bir tehdit kategorisine alınıp alınmayacağını belirleyecek bence çok tarihi bir test."
+  },
+  {
+   "start": 426.12,
+   "end": 433.94,
+   "text": "Onlar mahkeme salonlarında gelişimi durdurun hapsedin bunları derken OpenAI tam tersine gaza basıyor ve modellerini fiziksel dünyaya salıyor."
+  },
+  {
+   "start": 434.14,
+   "end": 435.46,
+   "text": "Robotik hamlesinden bahsediyorsun."
+  },
+  {
+   "start": 435.68,
+   "end": 438.62,
+   "text": "Evet şirket içindeki ayrı robotik ekibini tamamen dağıttılar."
+  },
+  {
+   "start": 439.02,
+   "end": 444.44,
+   "text": "Artık bu araştırmacılar doğrudan Mark Chen ve Greg Brockman'ın ekiplerine yani ana dil modellerine bağlandı."
+  },
+  {
+   "start": 444.44,
+   "end": 446.36,
+   "text": "Bu çok stratejik bir birleşme aslında."
+  },
+  {
+   "start": 446.66,
+   "end": 453.26,
+   "text": "Neden biliyor musun? Çünkü GPT-6 Astra gibi genel modeller hiçbir özel eğitime ihtiyaç duymadan robotları doğrudan yönetebiliyor artık."
+  },
+  {
+   "start": 453.72,
+   "end": 456.32,
+   "text": "Simülasyonda %75'e varan başarı sağlamışlar."
+  },
+  {
+   "start": 456.58,
+   "end": 458.38,
+   "text": "Eski sistemler %50'lerde kalıyordu."
+  },
+  {
+   "start": 458.62,
+   "end": 464.2,
+   "text": "Aynen öyle. Yani beyin artık o kadar gelişti ki eli kolu yönetmek için ayrı bir sinir merkezinde falan ihtiyaç duymuyor."
+  },
+  {
+   "start": 464.3,
+   "end": 465.86,
+   "text": "Omuriliği aradan çıkarmışlar resmen."
+  },
+  {
+   "start": 466.08,
+   "end": 468.6,
+   "text": "O omurilik analojisi tam 12'den vurdu bence."
+  },
+  {
+   "start": 469.24,
+   "end": 475.48,
+   "text": "Eskiden robotik uzmanları mesela bir robot kolunun bardağı tutması için o eyleme özel dar modeller yazardı."
+  },
+  {
+   "start": 475.56,
+   "end": 476.8,
+   "text": "Bu çok hantal bir süreçti."
+  },
+  {
+   "start": 477.04,
+   "end": 478.2,
+   "text": "Şimdi genel model hale ediyor."
+  },
+  {
+   "start": 478.2,
+   "end": 486.98,
+   "text": "Evet. Şimdi OpenAI diyor ki benim dil modelim okuduğu trilyonlarca metin sayesinde dünyanın fiziksel kurallarını, ağırlığı falan zaten anladı."
+  },
+  {
+   "start": 487.56,
+   "end": 488.9,
+   "text": "Yazıdan mekanı öğrenmiş yani."
+  },
+  {
+   "start": 489.12,
+   "end": 495.36,
+   "text": "Aynen. Bir robota bana kahve getir dediğinde model o semantik anlayışı anında mekansal zekaya çevirebiliyor."
+  },
+  {
+   "start": 495.36,
+   "end": 499.58,
+   "text": "Bu, genel yapay zekanın kendi fiziksel bedenini bulmasıdır aslında."
+  },
+  {
+   "start": 499.88,
+   "end": 501.52,
+   "text": "Sektörde büyük yankıları olacak."
+  },
+  {
+   "start": 501.88,
+   "end": 506.22,
+   "text": "Sadece fiziksel dünyayı da değil, siber güvenliği de genel modellerine teslim ediyorlar bu arada."
+  },
+  {
+   "start": 507.0,
+   "end": 507.94,
+   "text": "Daybreak ürünleri, evet."
+  },
+  {
+   "start": 508.06,
+   "end": 510.52,
+   "text": "Open AI Daybreak adında güvenlik ürünleri tanıttı."
+  },
+  {
+   "start": 510.96,
+   "end": 512.32,
+   "text": "Red Team ve Defense Factory."
+  },
+  {
+   "start": 512.86,
+   "end": 516.66,
+   "text": "Model kendi kendine kod tabanındaki açıkları buluyor, doğruluyor ve yamıyor."
+  },
+  {
+   "start": 517.51,
+   "end": 521.61,
+   "text": "Ama beni asıl çileden çıkaran şey Greg Brockman'ın o kaba açıklaması oldu."
+  },
+  {
+   "start": 521.69,
+   "end": 522.55,
+   "text": "Ne dedi tam olarak?"
+  },
+  {
+   "start": 522.55,
+   "end": 526.71,
+   "text": "Dedi ki, şirketler savunmada kullandıkları öncü model kadar güvende olacak."
+  },
+  {
+   "start": 527.41,
+   "end": 528.71,
+   "text": "Bunun meali bence çok açık."
+  },
+  {
+   "start": 529.11,
+   "end": 531.95,
+   "text": "Diyor ki, bizim modelimizi kullanmazsanız yok olursunuz."
+  },
+  {
+   "start": 532.17,
+   "end": 533.31,
+   "text": "Bu nasıl bir şımarıklık ya?"
+  },
+  {
+   "start": 533.59,
+   "end": 536.63,
+   "text": "Kelimenin tam anlamıyla bir mafya koruma haraç sistemi bu."
+  },
+  {
+   "start": 537.05,
+   "end": 540.31,
+   "text": "Yani bu kibri şiddetle eleştirmemiz lazım bence."
+  },
+  {
+   "start": 540.41,
+   "end": 540.93,
+   "text": "Kesinlikle."
+  },
+  {
+   "start": 541.57,
+   "end": 543.31,
+   "text": "Kendi iç yazışmaları sızan şirket bunlar."
+  },
+  {
+   "start": 543.83,
+   "end": 547.63,
+   "text": "İşte daha düne kadar kendi sistemlerinde basit güvenlik açıkları veren bir şirketin,"
+  },
+  {
+   "start": 547.71,
+   "end": 551.77,
+   "text": "şimdi dünyaya dönüp tek kurtarıcınız benim pozları kesmesi büyük bir ikiyüzlülük."
+  },
+  {
+   "start": 551.77,
+   "end": 554.15,
+   "text": "Bize mahkumsunuz dayatması yapıyorlar."
+  },
+  {
+   "start": 554.55,
+   "end": 556.57,
+   "text": "Resmen teknoloji devlerinin kibir şovu."
+  },
+  {
+   "start": 557.21,
+   "end": 563.85,
+   "text": "OpenAI böyle güvenlik mafyacılığı yaparken Entropic'te sessiz sedasız fabrikalara mavi yakalıların arasına sızıyor bu arada."
+  },
+  {
+   "start": 564.39,
+   "end": 566.53,
+   "text": "Cloudform Manufacturing paketini sürdüler."
+  },
+  {
+   "start": 566.89,
+   "end": 571.77,
+   "text": "Evet, arıza teşhisi, teklif hazırlama falan gibi 17 farklı teknik beceri eklemişler."
+  },
+  {
+   "start": 572.19,
+   "end": 574.53,
+   "text": "Autodesk, MS-365 falan hep entegre."
+  },
+  {
+   "start": 574.89,
+   "end": 577.67,
+   "text": "Ama şimdilik insan onayından geçme şartı koymuşlar."
+  },
+  {
+   "start": 578.01,
+   "end": 579.69,
+   "text": "Hımm, human in the loop diyorlar buna."
+  },
+  {
+   "start": 579.69,
+   "end": 585.27,
+   "text": "Sadece bu şart mavi yakalıları ve mühendisleri korumak için mi yoksa tamamen pazarlama makyajı mı?"
+  },
+  {
+   "start": 585.97,
+   "end": 591.17,
+   "text": "Yani bu döngüde insan kavramı şu an tamamen bir halkla ilişkiler kalkanı olarak kullanılıyor."
+  },
+  {
+   "start": 591.37,
+   "end": 592.61,
+   "text": "Tepki çekmemek için yani?"
+  },
+  {
+   "start": 592.81,
+   "end": 596.93,
+   "text": "Aynen. Sendikaları veya devletleri ürkütmemek için konulmuş geçici bir bariyer sadece."
+  },
+  {
+   "start": 597.49,
+   "end": 602.75,
+   "text": "Bugün o mühendis ekrana bakıp yapay zekanın teşhisine sadece onayla tuşuna basarak katılıyor."
+  },
+  {
+   "start": 602.91,
+   "end": 604.01,
+   "text": "Yarın o tuş da kalkacak."
+  },
+  {
+   "start": 604.01,
+   "end": 609.01,
+   "text": "E tabi modelin hata payının insandan düşük olduğu kanıtlandığı an o tuş ortadan kalkacak."
+  },
+  {
+   "start": 609.01,
+   "end": 614.05,
+   "text": "Asıl hedef her zaman tam otomasyondur, mühendisi de sistemin dışına itecekler zamanla."
+  },
+  {
+   "start": 614.31,
+   "end": 617.55,
+   "text": "Tabii tüm bu fabrikaları, ajanları çalıştıracak asıl güç donanım."
+  },
+  {
+   "start": 618.11,
+   "end": 619.77,
+   "text": "O cephede de savaş iyice kızışıyor."
+  },
+  {
+   "start": 620.55,
+   "end": 624.43,
+   "text": "AMD, Instinct MI400 serisinin ayrıntılarını paylaştı tam da bu sırada."
+  },
+  {
+   "start": 624.93,
+   "end": 627.21,
+   "text": "Nvidia'nın krizine çok güzel denk getirdiler."
+  },
+  {
+   "start": 627.41,
+   "end": 629.77,
+   "text": "Yaralı Nvidia'ya kan kusturmaya çalışıyorlar resmen."
+  },
+  {
+   "start": 630.99,
+   "end": 634.09,
+   "text": "MI430X falan devasa HBM4 belleklerle geliyor."
+  },
+  {
+   "start": 634.09,
+   "end": 639.49,
+   "text": "Hatta AMD'nin kendi iddiasına göre DeepSeek R1 testinde Nvidia'nın Vera Rubin'ini geçmişler."
+  },
+  {
+   "start": 639.75,
+   "end": 643.77,
+   "text": "Yalnız bunun altını çizelim. Bu Nvidia tarafından doğrulanmamış bir iddia henüz."
+  },
+  {
+   "start": 643.89,
+   "end": 647.43,
+   "text": "Tabii tabii onu belirtelim. Ama bana bu zamanlama çok manidar geldi."
+  },
+  {
+   "start": 647.85,
+   "end": 651.29,
+   "text": "Huan istifa eder etmez böyle bir tabloyu masaya vurmaları tesadüf mü sence?"
+  },
+  {
+   "start": 652.01,
+   "end": 655.41,
+   "text": "Zamanlamanın kasıtlı olduğu aşikar bence. Tam bir algı operasyonu."
+  },
+  {
+   "start": 655.87,
+   "end": 658.29,
+   "text": "Ama iddialarının teknik bir temeli de var aslında."
+  },
+  {
+   "start": 658.65,
+   "end": 659.39,
+   "text": "Hızla mı alakalı?"
+  },
+  {
+   "start": 659.39,
+   "end": 666.53,
+   "text": "Evet. Modeller artık işlem gücünden çok hafıza hızına yani veriyi işlemciye ne kadar hızlı taşıyabildiklerine takılıyor."
+  },
+  {
+   "start": 666.99,
+   "end": 671.29,
+   "text": "AMD'nin o HBM 4 bellek vurgusu tam da bu darboğazı çözmeye yönelik."
+  },
+  {
+   "start": 671.71,
+   "end": 674.79,
+   "text": "Piyasaya Nvidia alternatifsiz değil mesajı veriyorlar."
+  },
+  {
+   "start": 675.13,
+   "end": 680.67,
+   "text": "Ama bu donanım savaşı verilirken harcanan milyarlarca dolar Amerikan Merkez Bankası'nın uykularını kaçırıyor haberin var mı?"
+  },
+  {
+   "start": 680.87,
+   "end": 682.57,
+   "text": "Fed Gubernörü Bauman'ın açıklamaları."
+  },
+  {
+   "start": 682.87,
+   "end": 684.81,
+   "text": "Evet. Michelle Bauman çok net uyardı."
+  },
+  {
+   "start": 684.81,
+   "end": 692.27,
+   "text": "Dedi ki getiriler beklentiyi karşılamazsa yapay zeka yatırımları piyasada büyük bir düzeltmeyi yani çöküşü tetikleyebilir."
+  },
+  {
+   "start": 692.97,
+   "end": 694.13,
+   "text": "Ortada milyarlar dönüyor."
+  },
+  {
+   "start": 694.75,
+   "end": 697.99,
+   "text": "Bauman tam olarak oradaki finansal kopukluğa işaret ediyor."
+  },
+  {
+   "start": 698.19,
+   "end": 703.51,
+   "text": "Çünkü silikon vadisi şu an biz inşaayı yapalım karlılık nasılsa arkadan gelir sarhoşluğu içinde."
+  },
+  {
+   "start": 703.79,
+   "end": 704.61,
+   "text": "Ama gelmiyor galiba."
+  },
+  {
+   "start": 704.97,
+   "end": 705.73,
+   "text": "İşte sorun orada."
+  },
+  {
+   "start": 706.15,
+   "end": 712.37,
+   "text": "Çiplere ve eğitime gömülen bu devasa sermaye henüz son tüketicide kendini amorti edecek bir karlılık yaratmadı."
+  },
+  {
+   "start": 712.93,
+   "end": 715.05,
+   "text": "Bir balon riski birikiyor makroekonomik olarak."
+  },
+  {
+   "start": 715.47,
+   "end": 718.21,
+   "text": "Ekonomik çöküş korkusu siyaseti de harekete geçirdi tabii."
+  },
+  {
+   "start": 718.67,
+   "end": 722.27,
+   "text": "Demokrat milletvekilleri bir AI bakanlığı kurmak için yasat asla hazırladı."
+  },
+  {
+   "start": 722.49,
+   "end": 724.91,
+   "text": "İleri modelleri izne bağlayacaklar akıllarınca."
+  },
+  {
+   "start": 725.09,
+   "end": 727.23,
+   "text": "Evet, devlet resmen kontrolü ele almak istiyor."
+  },
+  {
+   "start": 727.65,
+   "end": 731.05,
+   "text": "Güvenlik maskesi altında yapıyorlar bunu ama sence de niyetleri çok farklı değil mi?"
+  },
+  {
+   "start": 731.29,
+   "end": 731.85,
+   "text": "Kesinlikle."
+  },
+  {
+   "start": 731.85,
+   "end": 734.81,
+   "text": "Bu hamleyi en sert şekilde eleştirmemiz lazım bence."
+  },
+  {
+   "start": 735.27,
+   "end": 739.95,
+   "text": "Devletlerin Yapay Zeka Bakanlığı kurmak istemesi, o teknolojiyi güvenli kılmak için değil,"
+  },
+  {
+   "start": 739.95,
+   "end": 743.29,
+   "text": "tamamen kendi emelleri doğrultusunda tek elini almak içindesin."
+  },
+  {
+   "start": 743.31,
+   "end": 745.09,
+   "text": "Sansür uygulamak falan istiyorlar bence."
+  },
+  {
+   "start": 745.31,
+   "end": 751.67,
+   "text": "Aynen. Dertleri gözetim, sansür mekanizmaları ve o kitle manipülasyonu gücünü kendi bürokrasilerine bağlamak,"
+  },
+  {
+   "start": 752.03,
+   "end": 757.15,
+   "text": "bakanlık kurmak demek teknolojiyi durdurmak değil, tek elini alıp sivil inovasyonu boğmaktır."
+  },
+  {
+   "start": 757.29,
+   "end": 758.21,
+   "text": "Çok haklısın."
+  },
+  {
+   "start": 758.21,
+   "end": 763.21,
+   "text": "Devletler kontrol etmeye çalışa dursun, şirketlerin AI harcamaları kendi rekorlarını kırıyor gerçi."
+  },
+  {
+   "start": 763.79,
+   "end": 765.29,
+   "text": "Ramp AI Endeksi açıklandı."
+  },
+  {
+   "start": 765.35,
+   "end": 766.37,
+   "text": "Harcamalar zirvede."
+  },
+  {
+   "start": 766.37,
+   "end": 773.95,
+   "text": "Evet. Ekim ayında rekor kırmış ama inanılmaz bir gariplik var. Aylık büyüme hızı %1.65'e yavaşlamış."
+  },
+  {
+   "start": 774.09,
+   "end": 774.99,
+   "text": "Hız kesiliyor yani."
+  },
+  {
+   "start": 775.09,
+   "end": 786.23,
+   "text": "Daha da tuhafı. OpenAI ve Entropy'nin gelirinin %80'i en büyük %1'lik şirketlerden geliyor sadece. Hani bu tabana yayılacaktı. Demek ki bu sadece devlerin oyun alanı, kobilere falan inmemiş hiç."
+  },
+  {
+   "start": 786.23,
+   "end": 790.23,
+   "text": "İşte bu veri az önce konuştuğumuz o balon riskinin vücut bulmuş hali."
+  },
+  {
+   "start": 790.39,
+   "end": 791.87,
+   "text": "Yapay zeka hala çok pahalı."
+  },
+  {
+   "start": 792.33,
+   "end": 796.63,
+   "text": "Dev bankalar bunu alabiliyor ama sokaktaki bir üretici için hala çok lüks."
+  },
+  {
+   "start": 796.89,
+   "end": 798.37,
+   "text": "Sadece elitler kullanıyor yani."
+  },
+  {
+   "start": 798.77,
+   "end": 804.87,
+   "text": "Büyümenin o yüzde bir buçuklara düşmesi de pazarın o mevcut elit kesimde doygunluğa ulaştığını kanıtlıyor aslında."
+  },
+  {
+   "start": 805.23,
+   "end": 810.53,
+   "text": "Bu doygunluk ve büyümenin yavaşlaması o dev altyapıyı kuranları resmen nakit sıkıntısına sokuyor bu arada."
+  },
+  {
+   "start": 811.15,
+   "end": 812.61,
+   "text": "Corvive haberi çok şarpıcıydı."
+  },
+  {
+   "start": 812.73,
+   "end": 814.83,
+   "text": "Ön ödeme istemeye başlamışlar müşterilerden."
+  },
+  {
+   "start": 814.83,
+   "end": 819.73,
+   "text": "Evet, büyümeyi finanse etmek için müşterilerden ön edeme ve daha kısa sözleşmeler istiyorlar."
+  },
+  {
+   "start": 819.83,
+   "end": 821.79,
+   "text": "Yaklaşık 9 milyar dolar beklentileri var."
+  },
+  {
+   "start": 822.21,
+   "end": 823.57,
+   "text": "Resmen nakit açlığı çekiyorlar."
+  },
+  {
+   "start": 823.69,
+   "end": 825.71,
+   "text": "Bu çok ciddi bir kırılganlık göstergesi."
+  },
+  {
+   "start": 826.07,
+   "end": 831.69,
+   "text": "Corvive gibi altyapı şirketleri Nvidia çipleri almak için inanılmaz borçların altına girdiler zamanında."
+  },
+  {
+   "start": 831.79,
+   "end": 832.97,
+   "text": "Şimdi de parayı çıkaramıyorlar."
+  },
+  {
+   "start": 833.35,
+   "end": 838.93,
+   "text": "Eğer müşteriden parayı peşin isteyecek kadar likidite krizine giriyorlarsa borç çarkı zorlanıyor demektir."
+  },
+  {
+   "start": 839.05,
+   "end": 842.83,
+   "text": "O bahsettiğimiz balonun patlama ihtimalinin ilk sinyalleri buradan gelebilir."
+  },
+  {
+   "start": 843.31,
+   "end": 847.19,
+   "text": "Sadece nakit açlığı da değil ki. Ortada korkunç bir enerji açlığı var."
+  },
+  {
+   "start": 847.93,
+   "end": 849.47,
+   "text": "Serebras'ın sözleşmesini gördün mü?"
+  },
+  {
+   "start": 849.63,
+   "end": 850.91,
+   "text": "700 megawattlık olan mı?"
+  },
+  {
+   "start": 851.11,
+   "end": 855.61,
+   "text": "Evet. 2027 sonuna kadar 700 megawattlık veri merkezi sözleşmesi yapmışlar."
+  },
+  {
+   "start": 856.13,
+   "end": 857.83,
+   "text": "Dinleyicilerimiz için bunu somutlaştırayım."
+  },
+  {
+   "start": 858.27,
+   "end": 861.71,
+   "text": "Bütün bir şehrin elektriğini tek bir merkeze bağlamaktan bahsediyoruz."
+  },
+  {
+   "start": 862.01,
+   "end": 863.67,
+   "text": "İnanılmaz bir enerji tüketimi."
+  },
+  {
+   "start": 863.67,
+   "end": 869.09,
+   "text": "Üstelik altyapı rekabetinde OpenAI'ın bile kendi kapasite takviminin gerisinde kaldığı konuşuluyor düşün."
+  },
+  {
+   "start": 869.09,
+   "end": 874.31,
+   "text": "Çünkü olay artık yazılımdan çıktı. Tamamen termodinamik ve altyapısal bir soruna dönüştü."
+  },
+  {
+   "start": 874.77,
+   "end": 876.79,
+   "text": "Ülkelerin enerji şebekeleri buna hazır değil."
+  },
+  {
+   "start": 876.99,
+   "end": 878.83,
+   "text": "Fişi çekecek duruma gelecekler yakında."
+  },
+  {
+   "start": 879.05,
+   "end": 884.35,
+   "text": "Peki bu milyarlarca dolarlık veri merkezlerinde bunca enerjiyle eğitilen modeller ne yapıyor sence?"
+  },
+  {
+   "start": 884.91,
+   "end": 885.33,
+   "text": "Ne yapıyorlar?"
+  },
+  {
+   "start": 885.69,
+   "end": 887.97,
+   "text": "Bazen tam bir ahlaki çöküntü ve etik ihlalleri."
+  },
+  {
+   "start": 888.45,
+   "end": 892.79,
+   "text": "Meta'nın Muse Sohbet Botu, Beniel adında gerçek bir kadını taklit etmiş."
+  },
+  {
+   "start": 893.11,
+   "end": 897.17,
+   "text": "Onun rızası olmadan kiminini kopyalayıp müstehcen rol yapma içeriği üretmiş."
+  },
+  {
+   "start": 897.63,
+   "end": 899.01,
+   "text": "Gerçekten korkunç bir durum."
+  },
+  {
+   "start": 899.09,
+   "end": 901.89,
+   "text": "En mide bulandırıcısı da Meta'nın yaptığı savunma."
+  },
+  {
+   "start": 902.35,
+   "end": 906.69,
+   "text": "Diyorlar ki 18 yaş üstü içindir ve yasal yetişkin içeriğini engellemiyoruz."
+  },
+  {
+   "start": 907.27,
+   "end": 911.75,
+   "text": "Birinin kimliğini çalıp içerik üretmeyi yasal yetişkin içeriği diyerek nasıl geçiştirirsin?"
+  },
+  {
+   "start": 912.35,
+   "end": 916.91,
+   "text": "Meta'nın bu aşırı sorumsuz ve şımarık savunmasını sertçe eleştirmemiz lazım."
+  },
+  {
+   "start": 917.13,
+   "end": 918.17,
+   "text": "Gerçekten şımarıklık bu."
+  },
+  {
+   "start": 918.43,
+   "end": 921.85,
+   "text": "Bu şirketler trilyonlarca dolarlık bir güç zehirlenmesi yaşıyor."
+  },
+  {
+   "start": 922.33,
+   "end": 926.97,
+   "text": "Gerçek bir insanın dijital varlığını rızası dışında klonlamak alenen kimlik hırsızlığıdır."
+  },
+  {
+   "start": 926.97,
+   "end": 932.45,
+   "text": "Meta'nın bu pervasız tavrı teknoloji devlerinin kendi kendilerini regüle edemeyeceklerini gösteriyor."
+  },
+  {
+   "start": 932.55,
+   "end": 937.27,
+   "text": "Çok haklısın. Meta'nın bu sorunlu ürününün bile hemen bir kopyası Çin'den geliyor gerçi."
+  },
+  {
+   "start": 937.51,
+   "end": 938.53,
+   "text": "ByteDance'in asistanı."
+  },
+  {
+   "start": 938.77,
+   "end": 945.87,
+   "text": "Evet haftalar içinde rakip asistanı çıkardılar. Ama asıl bomboşu. ByteDance CEO'su Zhang Yiming açıkça itiraf etmiş."
+  },
+  {
+   "start": 946.21,
+   "end": 949.87,
+   "text": "Diyor ki ABD'yi yakalamamız 2029 veya 2030'u bulabilir."
+  },
+  {
+   "start": 950.29,
+   "end": 952.65,
+   "text": "Çok dürüst ve nadir bir itiraf bu Çin tarafından."
+  },
+  {
+   "start": 952.87,
+   "end": 955.87,
+   "text": "Değil mi? Çin genelde hep biz en iyisiyiz propagandası yapar."
+  },
+  {
+   "start": 955.87,
+   "end": 967.07,
+   "text": "Evet. Bu bize ABD'nin çip ambargolarının gerçekten işe yaradığını, Çin'in temel araştırma tarafında geride kaldığını kanıtlıyor aslında. Ama haftalar içinde ürünü kopyalayabilmeleri de pratikliklerini gösteriyor."
+  },
+  {
+   "start": 967.49,
+   "end": 972.93,
+   "text": "Tabii Çin, ABD'yi yakalamaya çalışırken ABD'nin mevcut sistemleri tel tel dökülüyor. O da ayrı mesele."
+  },
+  {
+   "start": 973.23,
+   "end": 974.85,
+   "text": "Grand Stop olayından bahsediyorsun."
+  },
+  {
+   "start": 975.05,
+   "end": 975.37,
+   "text": "Aynen."
+  },
+  {
+   "start": 975.63,
+   "end": 976.41,
+   "text": "Uçuşlar durdu."
+  },
+  {
+   "start": 976.95,
+   "end": 981.79,
+   "text": "Aynen. 13 Kasım'da ABD'de ülke çapında tüm uçuşlar durduruldu. Sistem çöktü."
+  },
+  {
+   "start": 981.79,
+   "end": 985.03,
+   "text": "Sonra bu işi yapan yüklenici firma Airspace Intel çıktı."
+  },
+  {
+   "start": 985.21,
+   "end": 989.59,
+   "text": "Yeni kurdukları smart yapay zeka sisteminin bununla ilgisi olmadığını iddia etti hemen."
+  },
+  {
+   "start": 989.81,
+   "end": 991.35,
+   "text": "Tabii hemen sorumluluktan kaçıyorlar."
+  },
+  {
+   "start": 991.79,
+   "end": 995.57,
+   "text": "Ya firmalar işler tıkırında giderken her başarıyı yapay zekaya bağlayıp şov yapıyor."
+  },
+  {
+   "start": 995.71,
+   "end": 999.83,
+   "text": "Ama sistem çöktüğünde aman bizimle ilgisi yok demeleri ne kadar inandırıcı Allah aşkına."
+  },
+  {
+   "start": 999.85,
+   "end": 1000.77,
+   "text": "Hiç inandırıcı değil."
+  },
+  {
+   "start": 1001.17,
+   "end": 1004.35,
+   "text": "Güvenlik kritik altyapılarda AI kullanmanın asıl riski bu."
+  },
+  {
+   "start": 1004.65,
+   "end": 1010.43,
+   "text": "Havacılık gibi sistemleri nasıl karar verdiğini tam bilemediğimiz kara kutulara emanet edersen sonuç bu olur."
+  },
+  {
+   "start": 1010.43,
+   "end": 1013.43,
+   "text": "Sistem çöktüğünde sorumluluk alacak bir insan bulamıyorsun."
+  },
+  {
+   "start": 1013.69,
+   "end": 1015.83,
+   "text": "Her şey otonomlaşınca suçlanacak kimse kalmıyor."
+  },
+  {
+   "start": 1016.57,
+   "end": 1019.79,
+   "text": "Ucuz sistemleri bir yana ofislerde de ajanlar artık hiç uyumuyor."
+  },
+  {
+   "start": 1020.35,
+   "end": 1024.99,
+   "text": "Databricks her zaman açık yani Continually On çalışan Gini ajanını çıkardı."
+  },
+  {
+   "start": 1025.31,
+   "end": 1028.07,
+   "text": "Evet arka planda sürekli veri haritalayan bir sistem."
+  },
+  {
+   "start": 1028.73,
+   "end": 1032.07,
+   "text": "Sen işi bırakıp gitsem bile o uzun görevleri tek başına yürütüyor."
+  },
+  {
+   "start": 1032.31,
+   "end": 1033.67,
+   "text": "Şirket verisini haritalıyor falan."
+  },
+  {
+   "start": 1034.09,
+   "end": 1035.29,
+   "text": "Görünmez bir iş arkadaşı gibi."
+  },
+  {
+   "start": 1035.93,
+   "end": 1038.75,
+   "text": "Beyaz yakalı iş gücü için çok şey ifade ediyor bu."
+  },
+  {
+   "start": 1039.47,
+   "end": 1041.43,
+   "text": "Hem mesai arkadaşı hem rakip gibi değil mi?"
+  },
+  {
+   "start": 1041.87,
+   "end": 1042.67,
+   "text": "Tam olarak öyle."
+  },
+  {
+   "start": 1043.63,
+   "end": 1050.37,
+   "text": "Her zaman açık konsepti demek asla yorulmayan, tatil istemeyen ve proaktif çalışan bir gölge iş gücü demek."
+  },
+  {
+   "start": 1051.34,
+   "end": 1056.08,
+   "text": "Yönetim katmanı için harika ama sıradan çalışan için görünmez ve çok dişli bir rakip."
+  },
+  {
+   "start": 1056.88,
+   "end": 1060.6,
+   "text": "O canlar sadece plazalarda değil, hastanelerde de yerini alıyor yavaş yavaş."
+  },
+  {
+   "start": 1060.6,
+   "end": 1063.2,
+   "text": "Google Cloud, Gemini 4 Healthcare'i duyurdu."
+  },
+  {
+   "start": 1063.58,
+   "end": 1065.66,
+   "text": "Epic ve Oracle Health ile entegre ettiler."
+  },
+  {
+   "start": 1065.94,
+   "end": 1067.74,
+   "text": "Ama burada çok ince bir detay var."
+  },
+  {
+   "start": 1068.06,
+   "end": 1069.88,
+   "text": "Entegrasyon tamamen salt okunur."
+  },
+  {
+   "start": 1070.0,
+   "end": 1071.36,
+   "text": "Yani read-only formatta."
+  },
+  {
+   "start": 1071.86,
+   "end": 1073.44,
+   "text": "Şimdilik sadece okuyabiliyor, yazamıyor."
+  },
+  {
+   "start": 1073.5,
+   "end": 1074.12,
+   "text": "Neden sence?"
+  },
+  {
+   "start": 1074.52,
+   "end": 1080.92,
+   "text": "Çünkü sağlıkta yapay zekanın yazma, yani teşhis koyma, reçete yazma kararına henüz kimse güvenemiyor ki."
+  },
+  {
+   "start": 1081.22,
+   "end": 1081.74,
+   "text": "Aynen öyle."
+  },
+  {
+   "start": 1081.94,
+   "end": 1085.14,
+   "text": "Sağlıkta halüsinasyon görmenin bedeli doğrudan insan hayatı çünkü."
+  },
+  {
+   "start": 1085.18,
+   "end": 1085.82,
+   "text": "Risk alamıyorlar."
+  },
+  {
+   "start": 1085.82,
+   "end": 1086.38,
+   "text": "Evet."
+  },
+  {
+   "start": 1086.84,
+   "end": 1093.44,
+   "text": "O salt okunur kısıtlaması, hukuki sorumluluğu hala insan doktorunun elinde tutmak için konulmuş bir güvenlik sübaba aslında."
+  },
+  {
+   "start": 1093.92,
+   "end": 1097.44,
+   "text": "Ama bugün okuyan sistem yarın karar vermeye de başlayacaktır bu kaçınılması."
+  },
+  {
+   "start": 1097.74,
+   "end": 1101.8,
+   "text": "İşten çıktın, arabanı bindin, bak AI orada da seninle."
+  },
+  {
+   "start": 1102.36,
+   "end": 1104.52,
+   "text": "Gemini Live artık CarPlay'e entegre edildi."
+  },
+  {
+   "start": 1104.82,
+   "end": 1107.3,
+   "text": "Sadece o da değil, Google Labs Tabletop'ta geliyor."
+  },
+  {
+   "start": 1107.64,
+   "end": 1111.54,
+   "text": "Evet, masana oturduğunda sana o istemden ortak planlama alanları falan üretiyor."
+  },
+  {
+   "start": 1112.06,
+   "end": 1114.72,
+   "text": "Günlük hayatımızın her arayüzüne resmen sızdılar."
+  },
+  {
+   "start": 1115.24,
+   "end": 1117.64,
+   "text": "Ubiquitous Computing diyorlar işte buna."
+  },
+  {
+   "start": 1117.64,
+   "end": 1122.84,
+   "text": "Yani teknoloji sadece kullandığı bir araç olmaktan çıkıyor, hayatının, çevrenin bizzat kendisine dönüşüyor."
+  },
+  {
+   "start": 1123.52,
+   "end": 1126.84,
+   "text": "Araba, masaüstü, telefon, her yer seninle senkronize."
+  },
+  {
+   "start": 1127.2,
+   "end": 1128.14,
+   "text": "İnanılmaz bir hız."
+  },
+  {
+   "start": 1128.72,
+   "end": 1134.28,
+   "text": "Peki son olarak kapanışa doğru giderken tüm bu batı merkezi yeniliklere karşı doğudan gelen bir sesten bahsedelim."
+  },
+  {
+   "start": 1134.6,
+   "end": 1138.98,
+   "text": "DeepSeek API'yına yerleşik web arama, sayfa okuma, ses araçları falan eklendim."
+  },
+  {
+   "start": 1139.12,
+   "end": 1140.44,
+   "text": "Açık kaynaklı bir model bu."
+  },
+  {
+   "start": 1140.56,
+   "end": 1146.3,
+   "text": "Evet. Sence Çin menşeili bu açık modeller batılı devlerin tekilini ve şımarıklığını dengeleyebilir mi?"
+  },
+  {
+   "start": 1146.72,
+   "end": 1149.32,
+   "text": "Bence pazarın dengelenmesi için en büyük umut onlar."
+  },
+  {
+   "start": 1149.32,
+   "end": 1149.84,
+   "text": "Neden?"
+  },
+  {
+   "start": 1149.84,
+   "end": 1154.66,
+   "text": "Çünkü batıdaki o open AI falan güvenlik bahanesiyle her şeyi kilitliyor."
+  },
+  {
+   "start": 1154.82,
+   "end": 1156.9,
+   "text": "İnsanları kendi sistemlerine mecbur bırakıyor."
+  },
+  {
+   "start": 1157.4,
+   "end": 1163.28,
+   "text": "Deep Seek gibi açık kaynaklı modellerse dünya çapındaki geliştiricilere kendi projelerini yapma imkanı veriyor."
+  },
+  {
+   "start": 1163.68,
+   "end": 1166.18,
+   "text": "Ekosistemin tek elde toplanmasını engelliyorlar."
+  },
+  {
+   "start": 1166.36,
+   "end": 1166.68,
+   "text": "Anladım."
+  },
+  {
+   "start": 1167.24,
+   "end": 1170.82,
+   "text": "Resmen koca bir dünyayı sadece 48 saatte özetledik bugün."
+  },
+  {
+   "start": 1171.38,
+   "end": 1179.52,
+   "text": "Donanımdaki o şok istifadan, hastanelere giren ajanlara, uçuş çökmelerinden devasa veri merkezlerine kadar çok ağır bir gündemdi."
+  },
+  {
+   "start": 1179.52,
+   "end": 1183.3,
+   "text": "Ve bunları büyük resimde birleştirince asıl tablo ortaya çıkıyor aslında."
+  },
+  {
+   "start": 1183.62,
+   "end": 1184.1,
+   "text": "Aynen öyle."
+  },
+  {
+   "start": 1184.46,
+   "end": 1187.52,
+   "text": "Dinleyicilerimiz bugünkü yayını kapatırken bence şunu bir düşünsünler."
+  },
+  {
+   "start": 1188.44,
+   "end": 1193.48,
+   "text": "Bugün yapay zekanın uçuş sistemlerinden hastanelere kadar her yere sızdığını konuştuk."
+  },
+  {
+   "start": 1193.6,
+   "end": 1196.52,
+   "text": "Peki etrafımızdaki hangi insan kararı?"
+  },
+  {
+   "start": 1197.42,
+   "end": 1201.32,
+   "text": "Mesela belki onaylanmayan krediniz ya da başvurduğunuz bir iş."
+  },
+  {
+   "start": 1201.96,
+   "end": 1207.68,
+   "text": "Hangisi çoktan bir algoritma tarafından hiç haberiniz olmadan sessizce alınmaya başlandı bile?"
+  },
+  {
+   "start": 1209.03,
+   "end": 1212.63,
+   "text": "Çok haklısın. Gerçekten ürpertici ve kışkırtıcı bir soru bu."
+  },
+  {
+   "start": 1213.11,
+   "end": 1215.83,
+   "text": "O zaman yarın sabah yeni bölümde görüşmek üzere diyelim."
+  },
+  {
+   "start": 1216.15,
+   "end": 1218.31,
+   "text": "Aynen, yarın sabah yeni bölümde görüşmek üzere."
+  },
+  {
+   "start": 1218.31,
+   "end": 1225.19,
+   "text": "Bizi Spotify, Apple Podcasts, YouTube, Amazon Music, Deezer ve diğer tüm platformlarda bulabilirsin."
+  },
+  {
+   "start": 1225.59,
+   "end": 1228.37,
+   "text": "Hangi uygulamadaysan lütfen oradan takip etmeyi unutma."
+  },
+  {
+   "start": 1228.89,
+   "end": 1230.15,
+   "text": "Bölüm notları da sitemizde."
+  },
+  {
+   "start": 1230.37,
+   "end": 1235.37,
+   "text": "Evet, konuştuğumuz kaynakların hepsi halimiz.derinbay.com adresinde."
+  },
+  {
+   "start": 1235.37,
+   "end": 1238.71,
+   "text": "Ve son olarak bu bölüm yapay zeka yardımıyla hazırlanmıştır."
+  },
+  {
+   "start": 1239.03,
+   "end": 1239.51,
+   "text": "Hoşçakalın."
+  }
+ ]
+}

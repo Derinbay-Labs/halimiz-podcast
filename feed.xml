@@ -92,6 +92,8 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 <itunes:image href="https://halimiz.derinbay.com/assets/cover.jpg"/>
+<podcast:transcript url="https://halimiz.derinbay.com/bolum/2026-11-23/transkript.srt" type="application/x-subrip" language="tr"/>
+<podcast:chapters url="https://halimiz.derinbay.com/bolum/2026-11-23/chapters.json" type="application/json+chapters"/>
 </item>
 <item>
 <title>22 Kasım: Riemann ispatına Lean onayı, ChatGPT kesintisi, Nvidia soruşturması</title>
@@ -757,6 +759,8 @@
 <itunes:episodeType>full</itunes:episodeType>
 <itunes:explicit>false</itunes:explicit>
 <itunes:image href="https://halimiz.derinbay.com/assets/cover.jpg"/>
+<podcast:transcript url="https://halimiz.derinbay.com/bolum/2026-11-14/transkript.srt" type="application/x-subrip" language="tr"/>
+<podcast:chapters url="https://halimiz.derinbay.com/bolum/2026-11-14/chapters.json" type="application/json+chapters"/>
 </item>
 <item>
 <title>13 Kasım: Huang istifasının piyasa etkisi, OpenAI'a 1,25 trilyon $ değerleme</title>
