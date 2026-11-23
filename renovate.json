@@ -47,6 +47,12 @@
       "enabled": false
     },
     {
+      "description": "Hold Python below 3.15: PyPI av (faster-whisper dependency) ships cp312 and cp314 wheels only, so 3.15 builds PyAV from source and fails (halimiz-podcast#33). Remove when PyPI av ships cp315 wheels.",
+      "matchDepNames": ["python"],
+      "matchManagers": ["github-actions"],
+      "allowedVersions": "<3.15"
+    },
+    {
       "description": "Majors never automerge: one grouped PR reviewed by the owning dev + devops, ADR if behaviour changes.",
       "matchUpdateTypes": ["major"],
       "automerge": false,
