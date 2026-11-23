@@ -218,5 +218,16 @@
     "guid": "halimiz-2026-11-22",
     "notes_md": "episodes/2026-11-22/notes.md",
     "pub_date": "2026-11-22T06:54:29+03:00"
+  },
+  {
+    "date": "2026-11-23",
+    "title": "23 Kasım: Pachocki'nin perplexity freni, OpenRouter'da istem hırsızlığı, Nvidia–Çin izi",
+    "summary": "OpenAI'ın baş bilimcisi, modellerin \"perplexity\" eşiğine bağlı sektör çapında bir yavaşlama taahhüdü önerdi; AI çıkarım sağlayıcılarında aylarca süren istem hırsızlığı ortaya çıktı ve Asya hükümetleri AI kaynaklı satış dalgasına karşı pazartesi öncesi piyasa destek önlemlerine hazırlandı.",
+    "audio_url": "https://github.com/Derinbay-Labs/halimiz-podcast/releases/download/2026-11-23/halimiz-2026-11-23.mp3",
+    "audio_bytes": 20102672,
+    "duration_seconds": 1675.2,
+    "guid": "halimiz-2026-11-23",
+    "notes_md": "episodes/2026-11-23/notes.md",
+    "pub_date": "2026-11-23T12:48:50+03:00"
   }
 ]
