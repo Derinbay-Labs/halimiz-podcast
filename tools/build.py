@@ -123,6 +123,46 @@ def notes_html(ep):
 
 # ---------- feed ----------
 
+# YouTube trims an RSS-ingested description past 5,000 characters; stay well under it,
+# measured on the HTML string so the plain-text count is lower still (issue #40).
+DESCRIPTION_CAP = 4800
+NOTES_DROPPED = "<p>Tüm notlar bölüm sayfasında.</p>"
+
+
+def fit_description(head, notes, tail, cap=DESCRIPTION_CAP):
+    """head + as many whole show-note blocks as fit + tail, at most `cap` characters.
+
+    `notes` is md_to_html output: one block (<p>, <h3>, <li>, <ul>, </ul>) per line.
+    Blocks are kept in order and cut only between them; an open list is closed, a heading
+    left without content is dropped, and NOTES_DROPPED marks the cut.
+    """
+    lines = notes.splitlines()
+    full = head + notes + tail
+    if len(full) <= cap:
+        return full
+    kept, in_list = [], False
+    for line in lines:
+        if line == "</ul>":
+            kept.append(line)
+            in_list = False
+            continue
+        opening = line == "<ul>"
+        closer = "</ul>" if in_list or opening else ""
+        if len(head + "\n".join(kept + [line]) + closer + NOTES_DROPPED + tail) > cap:
+            break
+        kept.append(line)
+        in_list = in_list or opening
+    if in_list:
+        kept.append("</ul>")
+    while kept and (kept[-1].startswith("<h3>") or kept[-1] == "<ul>"):
+        kept.pop()
+    while len(kept) >= 2 and kept[-2] == "<ul>" and kept[-1] == "</ul>":
+        del kept[-2:]
+        while kept and kept[-1].startswith("<h3>"):
+            kept.pop()
+    return head + "\n".join(kept) + NOTES_DROPPED + tail
+
+
 def build_feed(show, episodes, extras=None):
     site = show["site_url"].rstrip("/")
     feed_url = f"{site}/{show['feed_path']}"
@@ -165,17 +205,19 @@ def build_feed(show, episodes, extras=None):
     x.append("<generator>Derinbay Labs halimiz-podcast</generator>")
     for ep in episodes:
         page = f"{site}/bolum/{ep['date']}/"
-        body = (f"<p>{html.escape(ep['summary'])}</p>"
-                f"{notes_html(ep)}"
-                f"<p><em>{html.escape(show['ai_disclosure'])}</em></p>"
+        head = f"<p>{html.escape(ep['summary'])}</p>"
+        notes = notes_html(ep)
+        tail = (f"<p><em>{html.escape(show['ai_disclosure'])}</em></p>"
                 f'<p>Bölüm sayfası ve kaynaklar: <a href="{page}">{page}</a><br>'
                 f'Tüm dinleme platformları: <a href="{site}/">{site.split("//")[-1]}</a></p>')
+        body = head + notes + tail
+        description = fit_description(head, notes, tail)
         x.append("<item>")
         x.append(f"<title>{escape(ep['title'])}</title>")
         x.append(f"<link>{escape(page)}</link>")
         x.append(f'<guid isPermaLink="false">{escape(ep["guid"])}</guid>')
         x.append(f"<pubDate>{format_datetime(datetime.fromisoformat(ep['pub_date']))}</pubDate>")
-        x.append(f"<description><![CDATA[{body}]]></description>")
+        x.append(f"<description><![CDATA[{description}]]></description>")
         x.append(f"<content:encoded><![CDATA[{body}]]></content:encoded>")
         x.append(f'<enclosure url="{escape(ep["play_url"])}" length="{ep["audio_bytes"]}" type="audio/mpeg"/>')
         x.append(f"<itunes:duration>{int(round(ep['duration_seconds']))}</itunes:duration>")
