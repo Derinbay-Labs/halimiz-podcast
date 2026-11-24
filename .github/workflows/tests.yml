@@ -10,6 +10,8 @@ permissions:
 
 jobs:
   unit:
+    # self-hosted runner: never run code from a fork PR (public repo)
+    if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository
     runs-on: [self-hosted, Linux, light]
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7

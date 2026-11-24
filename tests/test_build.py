@@ -39,6 +39,13 @@ class FitDescription(unittest.TestCase):
         self.assertLessEqual(len(out), build.DESCRIPTION_CAP)
         self.assertIn("</ul>" + build.NOTES_DROPPED, out)
 
+    def test_cap_holds_at_every_offset(self):
+        # list-only notes: the cut lands inside the list, so the closing </ul> is budgeted
+        long = build.md_to_html("### D\n\n" + "\n".join(f"- m {i} " + "y" * 97 for i in range(80)))
+        for pad in range(0, 300):
+            head = "<p>" + "s" * pad + "</p>"
+            self.assertLessEqual(len(build.fit_description(head, long, TAIL)), build.DESCRIPTION_CAP, pad)
+
     def test_real_feed_items_fit(self):
         show, episodes = build.load()
         for ep in episodes:

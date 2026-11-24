@@ -147,7 +147,7 @@ def fit_description(head, notes, tail, cap=DESCRIPTION_CAP):
             in_list = False
             continue
         opening = line == "<ul>"
-        closer = "</ul>" if in_list or opening else ""
+        closer = "\n</ul>" if in_list or opening else ""
         if len(head + "\n".join(kept + [line]) + closer + NOTES_DROPPED + tail) > cap:
             break
         kept.append(line)
