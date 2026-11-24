@@ -229,5 +229,16 @@
     "guid": "halimiz-2026-11-23",
     "notes_md": "episodes/2026-11-23/notes.md",
     "pub_date": "2026-11-23T12:48:50+03:00"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "24 Kasım: Huang Nvidia'ya döndü, CrowdStrike–Zscaler, BM'nin AI çerçevesi çağrısı",
+    "summary": "Nvidia yönetim kurulu Jensen Huang'ı CEO olarak geri getirdi ve hisse %31 sıçrayarak teknoloji piyasasında Nisan 2025'ten bu yana en güçlü günü tetikledi; aynı gün CrowdStrike 43,9 milyar $'a Zscaler'ı almayı kabul etti, BM de küresel bir AI risk yönetimi çerçevesi için müzakere çağrısı yaptı.",
+    "audio_url": "https://github.com/Derinbay-Labs/halimiz-podcast/releases/download/2026-11-24/halimiz-2026-11-24.mp3",
+    "audio_bytes": 14927606,
+    "duration_seconds": 1243.9,
+    "guid": "halimiz-2026-11-24",
+    "notes_md": "episodes/2026-11-24/notes.md",
+    "pub_date": "2026-11-24T06:56:07+03:00"
   }
 ]
