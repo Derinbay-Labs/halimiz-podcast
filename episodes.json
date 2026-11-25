@@ -240,5 +240,16 @@
     "guid": "halimiz-2026-11-24",
     "notes_md": "episodes/2026-11-24/notes.md",
     "pub_date": "2026-11-24T06:56:07+03:00"
+  },
+  {
+    "date": "2026-11-25",
+    "title": "25 Kasım: GPT-6'nın protein tasarımı, Claude'un VP ≠ VNP ispatı, çip hisselerinde düşüş",
+    "summary": "OpenAI, GPT-6 modellerinin yalnızca akıl yürütme ve kodla laboratuvarda hedefe bağlanan proteinler tasarladığını açıklarken Anthropic, Claude'un 47 yıllık VP ≠ VNP sanısını kanıtladığını öne sürdü; piyasada ise Huang rallisinin ertesi günü çip hisseleri geri çekildi ve Anthropic hissesi halka arz fiyatının altına indi.",
+    "audio_url": "https://github.com/Derinbay-Labs/halimiz-podcast/releases/download/2026-11-25/halimiz-2026-11-25.mp3",
+    "audio_bytes": 18137846,
+    "duration_seconds": 1511.4,
+    "guid": "halimiz-2026-11-25",
+    "notes_md": "episodes/2026-11-25/notes.md",
+    "pub_date": "2026-11-25T06:57:24+03:00"
   }
 ]
