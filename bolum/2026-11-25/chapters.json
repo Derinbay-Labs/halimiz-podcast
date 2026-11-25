@@ -1,0 +1,64 @@
+{
+ "version": "1.2.0",
+ "chapters": [
+  {
+   "startTime": 0,
+   "title": "Giriş"
+  },
+  {
+   "startTime": 65,
+   "title": "OpenAI: GPT-6 modelleri proteinleri \"kendi başına\" tasarlıyor",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-25/#openai-gpt-6-modelleri-proteinleri-kendi-basina"
+  },
+  {
+   "startTime": 231,
+   "title": "Anthropic: Claude, Valiant'ın VP ≠ VNP sanısını kanıtladığını iddia ediyor",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-25/#anthropic-claude-valiant-in-vp-vnp-sanisini"
+  },
+  {
+   "startTime": 403,
+   "title": "Rallinin ertesi günü çip hisseleri geri çekildi, Anthropic halka arz fiyatının altına düştü",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-25/#rallinin-ertesi-gunu-cip-hisseleri-geri-cekildi"
+  },
+  {
+   "startTime": 454,
+   "title": "Güncelleme – Huang çalışanlardan özür diledi; Adalet Bakanlığı \"suç kanıtı yok\" dedi",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-25/#guncelleme-huang-calisanlardan-ozur-diledi"
+  },
+  {
+   "startTime": 535,
+   "title": "Google DeepMind: Gemini 4 ajanları kuantum algoritmalarını Lean doğrulamasıyla hızlandırdı",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-25/#google-deepmind-gemini-4-ajanlari-kuantum"
+  },
+  {
+   "startTime": 629,
+   "title": "OpenAI ve Cisco, yamasız Linux sistemlerini koruyan açık kaynak Shirudo'yu çıkardı",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-25/#openai-ve-cisco-yamasiz-linux-sistemlerini"
+  },
+  {
+   "startTime": 730,
+   "title": "Anthropic, kötüye kullanımı müşteri bulutunda izleyen Enterprise Frontier Safeguards'ı betaya açtı",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-25/#anthropic-kotuye-kullanimi-musteri-bulutunda"
+  },
+  {
+   "startTime": 803,
+   "title": "FT: SpaceX ve Tesla 3,5 trilyon $'lık birleşmeyi görüşüyor",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-25/#ft-spacex-ve-tesla-3-5-trilyon-lik-birlesmeyi"
+  },
+  {
+   "startTime": 881,
+   "title": "Tidal, tamamen AI üretimi 29 milyon şarkıyı siliyor",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-25/#tidal-tamamen-ai-uretimi-29-milyon-sarkiyi"
+  },
+  {
+   "startTime": 914,
+   "title": "Avustralya: Dijital Özen Yükümlülüğü yasası geçiyor, meclis komitesi 46 AI önerisi sundu",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-25/#avustralya-dijital-ozen-yukumlulugu-yasasi"
+  },
+  {
+   "startTime": 1040,
+   "title": "GPT-6.2 Sol, ChatGPT'nin sohbet sekmesine geldi",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-25/#gpt-6-2-sol-chatgpt-nin-sohbet-sekmesine-geldi"
+  }
+ ]
+}
