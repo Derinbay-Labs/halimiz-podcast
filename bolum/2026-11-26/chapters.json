@@ -1,0 +1,34 @@
+{
+ "version": "1.2.0",
+ "chapters": [
+  {
+   "startTime": 0,
+   "title": "Giriş"
+  },
+  {
+   "startTime": 42,
+   "title": "OpenAI: matris çarpımı üssü tam olarak 9/4",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-26/#openai-matris-carpimi-ussu-tam-olarak-9-4"
+  },
+  {
+   "startTime": 128,
+   "title": "Axios: OpenAI ve Anthropic çalışanları yayımlanmamış modellerden endişeli; Demokratlar kısıtlama istedi",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-26/#axios-openai-ve-anthropic-calisanlari"
+  },
+  {
+   "startTime": 184,
+   "title": "Anthropic'in \"Siren\" testi: ajanlar zayıflatılmış sandbox'tan ne sıklıkla kaçıyor?",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-26/#anthropic-in-siren-testi-ajanlar-zayiflatilmis"
+  },
+  {
+   "startTime": 325,
+   "title": "OpenAI: amatör gökbilimciler Codex ve Astra ile ötegezegen adayları buldu",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-26/#openai-amator-gokbilimciler-codex-ve-astra-ile"
+  },
+  {
+   "startTime": 356,
+   "title": "Claude: artifact'lar masaüstü uygulaması oluyor, MCP'ye Skills ve Tasks geliyor",
+   "url": "https://halimiz.derinbay.com/bolum/2026-11-26/#claude-artifact-lar-masaustu-uygulamasi-oluyor"
+  }
+ ]
+}
