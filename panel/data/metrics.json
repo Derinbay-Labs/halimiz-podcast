@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24T23:08:00+03:00",
+  "updated": "2026-11-25T23:12:00+03:00",
   "goal": {
     "daily_downloads": 300,
     "regular_listeners": 500,
@@ -132,6 +132,16 @@
       },
       "site_visits": 6,
       "youtube_views": 4
+    },
+    {
+      "date": "2026-11-25",
+      "downloads": 27,
+      "by_app": {
+        "GitHub (ham)": 491,
+        "Apple Podcasts (OP3, 4-24 Kas toplam)": 49
+      },
+      "site_visits": 9,
+      "youtube_views": 9
     }
   ],
   "followers": [
@@ -227,9 +237,18 @@
     },
     {
       "date": "2026-11-25",
-      "spotify": null,
+      "spotify": 6,
       "apple": null,
       "youtube": 9,
+      "linkedin": 0,
+      "x": 0,
+      "instagram": 1
+    },
+    {
+      "date": "2026-11-26",
+      "spotify": null,
+      "apple": null,
+      "youtube": 10,
       "linkedin": null,
       "x": null,
       "instagram": null
@@ -358,9 +377,16 @@
     {
       "date": "2026-11-24",
       "title": "24 Kasım: Huang Nvidia'ya döndü, CrowdStrike–Zscaler, BM'nin AI çerçevesi çağrısı",
-      "downloads_7d": null,
+      "downloads_7d": 2,
       "youtube_views": 2,
       "shorts_views": 2
+    },
+    {
+      "date": "2026-11-25",
+      "title": "25 Kasım: GPT-6'nın protein tasarımı, Claude'un VP ≠ VNP ispatı, çip hisselerinde düşüş",
+      "downloads_7d": null,
+      "youtube_views": 3,
+      "shorts_views": 6
     }
   ],
   "ads": [],
@@ -368,44 +394,44 @@
     {
       "name": "Yayın ajanı",
       "schedule": "Her gün 06:52",
-      "last_run": "2026-11-24T06:56:07+03:00",
+      "last_run": "2026-11-25T06:57:24+03:00",
       "status": "ok",
-      "note": "24 Kasım bölümü feed.xml'de 06:56'da yayımlandı (release 06:56)."
+      "note": "25 Kasım bölümü feed.xml'de 06:57'de yayımlandı (release 06:57)."
     },
     {
       "name": "Transkript + görseller (Actions)",
       "schedule": "Yayından sonra",
-      "last_run": "2026-11-24T07:07:00+03:00",
+      "last_run": "2026-11-25T07:10:00+03:00",
       "status": "ok",
-      "note": "24 Kasım transkripti depoda; release'te audiogram.mp4 ve quote.png var."
+      "note": "25 Kasım transkripti depoda (episodes/2026-11-25); release'te audiogram.mp4 ve quote.png var."
     },
     {
       "name": "İçerik ajanı",
       "schedule": "Her gün 07:36",
-      "last_run": "2026-11-24T07:37:00+03:00",
+      "last_run": "2026-11-25T07:37:00+03:00",
       "status": "ok",
-      "note": "Onay kuyruğunda 24 Kasım X thread ve X akşam maddeleri işaretli; Instagram/Shorts metinleri Bugün altında görünmüyor ama Reels ve Shorts arşivde."
+      "note": "Onay kuyruğunda 25 Kasım X akşam maddesi işaretli; Instagram ve Shorts metinleri onaylı, arşivde."
     },
     {
       "name": "Dağıtım sabah (LinkedIn + X)",
       "schedule": "Her gün 08:41",
-      "last_run": "2026-11-24T08:41:00+03:00",
-      "status": "bad",
-      "note": "LinkedIn arşivde; X thread ve X akşam yayımlanmamış (x.com'da giriş yapılmış hesap @taylanderinbay, @halimizpodcast değil)."
+      "last_run": "2026-11-25T08:41:00+03:00",
+      "status": "ok",
+      "note": "LinkedIn ve X thread arşivde (@halimizpodcast); X akşam maddesi Bugün altında bekliyor."
     },
     {
       "name": "Dağıtım öğlen (Shorts + Reels)",
       "schedule": "Her gün 12:37",
-      "last_run": "2026-11-24T12:37:00+03:00",
+      "last_run": "2026-11-25T12:37:00+03:00",
       "status": "ok",
-      "note": "24 Kasım için YouTube Shorts ve Instagram Reels linkleri arşivde; Shorts YouTube Studio'da görünüyor."
+      "note": "25 Kasım için YouTube Shorts ve Instagram Reels linkleri arşivde."
     },
     {
       "name": "Ölçüm ajanı",
       "schedule": "Her gün 23:07",
-      "last_run": "2026-11-24T23:08:00+03:00",
+      "last_run": "2026-11-25T23:12:00+03:00",
       "status": "warn",
-      "note": "GitHub, OP3 (veri 23 Kasım'a kadar), Spotify, LinkedIn, X, Instagram, YouTube Studio ve Cloudflare alındı; Apple Podcasts Connect giriş istiyor (boş), reklam kampanyası yok; YouTube abone alanı iş akışında; push 23:40 runner'da."
+      "note": "GitHub, OP3 (veri 24 Kasım'a kadar), Spotify, LinkedIn, X, Instagram, YouTube Studio ve Cloudflare alındı; Apple Podcasts Connect giriş istiyor (boş), reklam kampanyası yok; YouTube abone alanı iş akışında; push 23:40 runner'da."
     },
     {
       "name": "Haftalık rapor + reklam önerisi",
