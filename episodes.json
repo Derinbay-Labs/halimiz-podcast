@@ -251,5 +251,16 @@
     "guid": "halimiz-2026-11-25",
     "notes_md": "episodes/2026-11-25/notes.md",
     "pub_date": "2026-11-25T06:57:24+03:00"
+  },
+  {
+    "date": "2026-11-26",
+    "title": "26 Kasım: OpenAI'ın 9/4 iddiası, laboratuvarlarda güvenlik kaygısı, Anthropic'in Siren testi",
+    "summary": "OpenAI, matris çarpımı üssünün tam olarak 9/4 olduğunu iddia eden bir ön baskı yayımladı; Axios'a göre OpenAI ve Anthropic çalışanları yayımlanmamış modellerin güvenliğinden endişeli, piyasada ise sabah Nasdaq'ı %4,6 düşüren AI satışı kapanışa kadar büyük ölçüde telafi edildi.",
+    "audio_url": "https://github.com/Derinbay-Labs/halimiz-podcast/releases/download/2026-11-26/halimiz-2026-11-26.mp3",
+    "audio_bytes": 10926796,
+    "duration_seconds": 910.5,
+    "guid": "halimiz-2026-11-26",
+    "notes_md": "episodes/2026-11-26/notes.md",
+    "pub_date": "2026-11-26T06:55:06+03:00"
   }
 ]
